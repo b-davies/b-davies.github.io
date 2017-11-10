@@ -4,7 +4,7 @@ email:
 author:      Ben Davies
 description: "Digital archaeologist"
 baseurl:     ""
-url:         "http://b-davies-github.io"
+url:         "http://b-davies.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
