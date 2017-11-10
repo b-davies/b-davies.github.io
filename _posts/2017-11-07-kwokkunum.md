@@ -12,3 +12,5 @@ Shell mounds are a common feature in the coastal and riverside areas in northern
 
 A large part of the work involves 3D laser scanning, which is used to build 3D models and characterise the geometry of the mounds. We used a [Faro Focus X330](https://www.faro.com/en-gb/news/the-new-faro-laser-scanner-focus3d-x-330-the-perfect-instrument-for-3d-documentation-and-land-surveying-2/) terrestrial laser scanner for this. Scans were registered and a point cloud was generated using [Faro Scene 6](https://www.faro.com/products/product-design/faro-scene). Point clouds were decimated and processed using [CloudCompare](http://www.danielgm.net/cc), and then loaded into [SketchFab](https://sketchfab.com) for visualisation.
 
+![_config.yml]({{ site.baseurl }}/images/term_mound.png)
+
