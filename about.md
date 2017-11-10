@@ -5,10 +5,12 @@ permalink: /about/
 tags: about
 ---
 
-I'm an archaeologist who does some digital things. Sometimes I teach at a university. Sometimes I also do [emails](mailto:davies.archaeology@gmail.com)
+I'm an archaeologist who does some digital things. Sometimes I teach at a university. Sometimes I also do 
 and [tweets](http://twitter.com/ba_davies)
 and [blogs](http://simulatingcomplexity.wordpress.com)
 and [gits](http://github.com/b-davies).
+
+I can be reached by email at davies.archaeology AT gmail.com
 
 ### Education
 		
