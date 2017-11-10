@@ -8,7 +8,8 @@ url:         "http://b-davies.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
- - contact.html
+ - publications.md
+ - teaching.md
 
 # Google services
 google_verification:
