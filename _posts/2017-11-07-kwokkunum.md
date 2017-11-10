@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      3D Scanning Shell Mounds at Kwokkunum
+title:      Recent work in western Cape York
 date:       2017-11-07 10:02:00
-summary:    Here's my posts over at the Simulating Complexity blog
+summary:    Laser scanning shell mounds at Kwokkunum
 categories: general
 ---
 
