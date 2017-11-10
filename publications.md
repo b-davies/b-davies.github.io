@@ -27,3 +27,6 @@ Davies, B. and S. Bickler, 2015. Sailing the simulated seas: a new simulation fo
  
 Davies, B., 2011. Review: Fairbairn, Andrew, Susan O’Connor, and Ben Marwick (eds.): Terra Australis 28: New Directions in Archaeological Science. Journal of the Polynesian Society 120(1): 89-91. [[Open Access Journal](http://www.jps.auckland.ac.nz/document/Volume_120_2011/Volume_120%2C_No._1/%5BReview%5D_Fairbairn%2C_Andrew%2C_Susan_O%26%2339%3BConnor%2C_and_Ben_Marwick_%28eds%29%3A_New_Directions_in_Archaeological_Science%2C_reviewed_by_Benjamin_Davies%2C_p_89-91?action=null)]
 
+##Other publications
+
+Davies, B. Agent-based modeling prehistoric landscape use with R and NetLogo. In How To Do Archaeological Science Using R, B Marwick (ed). Book in open review at [https://benmarwick.github.io/How-To-Do-Archaeological-Science-Using-R/index.html](https://benmarwick.github.io/How-To-Do-Archaeological-Science-Using-R/index.html).
