@@ -57,5 +57,3 @@ and [gits](http://github.com/b-davies).
 * Introduction to Agent-Based Modeling in NetLogo
 * One Hour, One Model: An Intro to Agent-Based Models
 
-
-[ Pixyll ](https://github.com/johnotander/pixyll) web layout by [John Otander](http://johnotander.com).
