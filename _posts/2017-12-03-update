@@ -1,0 +1,22 @@
+---
+layout:     post
+title:      Weak patterns for stronger inferences
+date:       2017-12-03 10:02:00
+summary:    Modeling changes in surface hearth condition
+categories: general
+---
+
+While I was writing my dissertation I got interested in the idea of [[pattern-oriented modeling](http://science.sciencemag.org/content/310/5750/987.full)]. We can make any number of models to explain the same phenomenon (the problem of equifinality), but explaining mutiple epiphenomena using the same model is harder. So ideally if we have two or more models that can explain a single pattern equally well (more or less), we should then use the mechanics of these same models to try and explain some other patterns in order to discern between them. 
+
+I adapted this approach in [[a study](http://journals.sagepub.com/doi/abs/10.1177/0959683615609754)] of the effects of erosion and deposition on the temporal distribution of surface archaeological features in arid Australia. Surface hearths from the region display both an increase in frequency through time, and periodic gaps in the chronology. These patterns have been interpreted as resulting from different population or behavioral dynamics (population growth, change in land use intensity, abandonment, etc) and/or time-dependent taphonomic decay. 
+
+In the agent-based model I used, agents moved about the landscape randomly, making datable heat-retainer hearths that sit on the surface. At intervals between 10 and 200 years, these hearths were subject to localised sedimentary "events" that had one of two effects: deposition or erosion. If deposition occurs, hearths on the surface become buried beneath a layer of sediment and are no longer visible in the surface context. If erosion occurs, surface hearths lost their charcoal and could not be dated using the radiocarbon method, and subsurface hearths became exposed again. The simulation was run in fully depositional conditions, fully erosional conditions, and mixed conditions in between. The model also included a parameter where a percentage of the landscape remained stable during a sedimentary event. Simulations were run at a yearly time step over a period of 2000 years. 
+
+That study showed that in mixed erosional/depositional environments, the chronometric data obtained from hearths showed both an increase in frequency toward the present and pronounced gaps in the chronology, even in the absence of any change in population or hearth-building activities. This provided a geomorphological explanation for this pattern that was contrary to the demographic/behavioral explanations already on offer. These two explantory models have different mechanics for explaining the patterning in hearth radiocarbon dates. To explore this issue further, I used an additional pattern that would be sensitive to these mechanisms: luminescence dates on hearth stones, which are not as prone to erosion as charcoal. I predicted from the simulation that if erosion were the culprit, then the gaps should not be as pronounced in the hearth stone dates; but if the cause was changes in hearth-building activities through time, then gaps should be present in both. The result was strongly in favor of the geomorphic model. 
+
+Grimm and Railsback (2012) bring up the idea that used in a model can take on lots of different forms, and that those used in POM do not have to be "strong" statistical patterns; "weak" patterns like shape or categorical associations can also work toward differentiating between generating mechanisms. Indeed, a few "weaker" patterns together might provide better predictions than a single "strong" predictor.
+
+I looked into this usThe condition of surface hearths was also recorded, using a scheme developed by Fanning and co. 
+
+
+![_config.yml]({{ site.baseurl }}/images/scanner.png)
