@@ -7,7 +7,7 @@ tags: publications
 
 ### In press
 
-Davies, B., *In press*. Weaving the common threads of simulation and formation studies in archaeology. Accepted to Computer Applications and Quantitative Methods in Archaeology CAA. Proceedings of the 43rd International Conference. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9) ]
+Davies, B., *In press*. Weaving the common threads of simulation and formation studies in archaeology. Accepted to Computer Applications and Quantitative Methods in Archaeology CAA. Proceedings of the 43rd International Conference. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
 
 ### 2017
 
