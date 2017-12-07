@@ -5,10 +5,9 @@ permalink: /about/
 tags: about
 ---
 
-I'm an archaeologist who does some digital things. Sometimes I teach at a university. Sometimes I also do 
-and [tweets](http://twitter.com/ba_davies)
-and [blogs](http://simulatingcomplexity.wordpress.com)
-and [gits](http://github.com/b-davies).
+I'm an archaeologist who does some digital things. Sometimes I teach at a university. Sometimes I also [tweet](http://twitter.com/ba_davies)
+and [blog](http://simulatingcomplexity.wordpress.com)
+and [git](http://github.com/b-davies).
 
 I can be reached by email at davies.archaeology AT gmail.com
 
@@ -23,7 +22,7 @@ I can be reached by email at davies.archaeology AT gmail.com
 
 ### Projects
 
-#### Western New South Wales Archaeology
+#### [[Western New South Wales Archaeology](https://www.researchgate.net/project/WNSWAP-Western-NSW-Archaeology-Program)]
 
 #### Geography of Interaction in East Polynesia
 
