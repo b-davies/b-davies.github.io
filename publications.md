@@ -7,6 +7,8 @@ tags: publications
 
 ### In press
 
+Davies, B. and S. J. Holdaway *In press*. Windows on the Past? Perspectives on Accumulation, Formation, and Significance from an Australian Holocene Lithic Landscape. Accepted to Mitteilungen der Gesellschaft für Urgeschichte.
+
 Davies, B., *In press*. Weaving the common threads of simulation and formation studies in archaeology. Accepted to Computer Applications and Quantitative Methods in Archaeology CAA. Proceedings of the 43rd International Conference. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
 
 ### 2017
