@@ -13,7 +13,7 @@ Davies, B., *In press*. Weaving the common threads of simulation and formation s
 
 ### 2017
 
-Davies, B. and S. J. Holdaway, 2017. Windows on the Past? Perspectives on Accumulation, Formation, and Significance from an Australian Holocene Lithic Landscape. Accepted to *Mitteilungen der Gesellschaft für Urgeschichte* 26:125-156.
+Davies, B. and S. J. Holdaway, 2017. Windows on the Past? Perspectives on Accumulation, Formation, and Significance from an Australian Holocene Lithic Landscape. *Mitteilungen der Gesellschaft für Urgeschichte* 26:125-156.
 
 Holdaway, S. J., B. Davies, and P. C. Fanning, 2017. Aboriginal use of fire in a landscape context: investigating presence and absence of heat retainer hearths in western New South Wales, Australia. *Current Anthropology* 58(S16):230-242. DOI: 10.1086/691436 [[Open Access Journal](http://www.journals.uchicago.edu/doi/abs/10.1086/691436)] 
 
