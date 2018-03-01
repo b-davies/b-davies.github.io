@@ -7,15 +7,13 @@ tags: publications
 
 ### In press
 
-Davies, B., Holdaway, S. J., and P. C. Fanning, *In press*. Exploring relationships between 
-space, movement, and lithic geometric attributes in the formation of 
-archaeological landscapes. Accepted to *American Antiquity*.
-
-Davies, B. and S. J. Holdaway, *In press*. Windows on the Past? Perspectives on Accumulation, Formation, and Significance from an Australian Holocene Lithic Landscape. Accepted to *Mitteilungen der Gesellschaft für Urgeschichte*.
+Davies, B., Holdaway, S. J., and P. C. Fanning, *In press*. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. Accepted to *American Antiquity*.
 
 Davies, B., *In press*. Weaving the common threads of simulation and formation studies in archaeology. Accepted to Computer Applications and Quantitative Methods in Archaeology CAA. Accepted to *Proceedings of the 43rd International Conference*. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
 
 ### 2017
+
+Davies, B. and S. J. Holdaway, 2017. Windows on the Past? Perspectives on Accumulation, Formation, and Significance from an Australian Holocene Lithic Landscape. Accepted to *Mitteilungen der Gesellschaft für Urgeschichte* 26:125-156.
 
 Holdaway, S. J., B. Davies, and P. C. Fanning, 2017. Aboriginal use of fire in a landscape context: investigating presence and absence of heat retainer hearths in western New South Wales, Australia. *Current Anthropology* 58(S16):230-242. DOI: 10.1086/691436 [[Open Access Journal](http://www.journals.uchicago.edu/doi/abs/10.1086/691436)] 
 
