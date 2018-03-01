@@ -9,6 +9,8 @@ tags: publications
 
 Davies, B., Holdaway, S. J., and P. C. Fanning, *In press*. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. Accepted to *American Antiquity*.
 
+Davies, B. and I. Romanowska, *In press*. An Emergent Community? Agent-Based Modelers in Archaeology. Accepted to *SAA Archaeological Record* 
+
 Davies, B., *In press*. Weaving the common threads of simulation and formation studies in archaeology. Accepted to Computer Applications and Quantitative Methods in Archaeology CAA. Accepted to *Proceedings of the 43rd International Conference*. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
 
 ### 2017
