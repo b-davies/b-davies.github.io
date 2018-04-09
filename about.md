@@ -5,7 +5,7 @@ permalink: /about/
 tags: about
 ---
 
-I'm an archaeologist who does some digital things. Sometimes I teach at a university. Sometimes I also [tweet](http://twitter.com/ba_davies)
+I'm an archaeologist who does some digital things. Sometimes I [teach](https://b-davies.github.io/teaching) at a [university](http://www.arts.auckland.ac.nz/people/profile/b-davies). Sometimes I also [tweet](http://twitter.com/ba_davies)
 and [blog](http://simulatingcomplexity.wordpress.com)
 and [git](http://github.com/b-davies).
 
