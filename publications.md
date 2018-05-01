@@ -7,13 +7,13 @@ tags: publications
 
 ### In press
 
-Davies, B., Holdaway, S. J., and P. C. Fanning, *In press*. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. Accepted to *American Antiquity*.
-
 Davies, B., *In press*. Weaving the common threads of simulation and formation studies in archaeology. Accepted to Computer Applications and Quantitative Methods in Archaeology CAA. Accepted to *Proceedings of the 43rd International Conference*. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
 
 ### 2018
 
-Davies, B. and I. Romanowska, 2018. An Emergent Community? Agent-Based Modelers in Archaeology. *SAA Archaeological Record* 18: 27–32. [[Open Access Journal](http://www.saa.org/Portals/0/SAA/Publications/thesaaarchrec/SAA_Record_March2018_Final.pdf)] 
+Davies, B., Holdaway, S. J., and P. C. Fanning, 2018. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. *American Antiquity* Published online [[Journal](https://doi.org/10.1017/aaq.2018.23)]][[Preprint](10.17605/OSF.IO/92NYB)][[Data and Supplementary Files](https://github.com/b-davies/FMODEL)]
+
+Davies, B. and I. Romanowska, 2018. An Emergent Community? Agent-Based Modelers in Archaeology. *SAA Archaeological Record* 18: 27–32. [[Open Access Journal](http://www.saa.org/Portals/0/SAA/Publications/thesaaarchrec/SAA_Record_March2018_Final.pdf)]
 
 ### 2017
 
