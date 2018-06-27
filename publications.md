@@ -9,6 +9,10 @@ tags: publications
 
 Davies, B., *In press*. Weaving the common threads of simulation and formation studies in archaeology. Accepted to Computer Applications and Quantitative Methods in Archaeology CAA. Accepted to *Proceedings of the 43rd International Conference*. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
 
+Davies, B. and S. Holdaway, *In press* Deflation archaeology. In *Encyclopedia of Global Archaeology*, C. Smith (ed.). Springer.
+
+Davies, B., *In press*. Review: Deep Time Dreaming: Uncovering Ancient Australia-B. Griffiths. Submitted to *Archaeology in Oceania*.
+
 ### 2018
 
 Davies, B., Holdaway, S. J., and P. C. Fanning, 2018. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. *American Antiquity* Published online. DOI: 10.1017/aaq.2018.23  [[Journal](https://doi.org/10.1017/aaq.2018.23)] [[Preprint](https://doi.org/10.17605/OSF.IO/92NYB)] [[Data and Supplementary Files](https://github.com/b-davies/FMODEL)]
@@ -35,7 +39,7 @@ Davies, B. and S. Bickler, 2015. Sailing the simulated seas: a new simulation fo
 
 ### 2011
  
-Davies, B., 2011. Review: Fairbairn, Andrew, Susan O’Connor, and Ben Marwick (eds.): Terra Australis 28: New Directions in Archaeological Science. *Journal of the Polynesian Society* 120(1): 89-91. [[Open Access Journal](http://www.jps.auckland.ac.nz/document/Volume_120_2011/Volume_120%2C_No._1/%5BReview%5D_Fairbairn%2C_Andrew%2C_Susan_O%26%2339%3BConnor%2C_and_Ben_Marwick_%28eds%29%3A_New_Directions_in_Archaeological_Science%2C_reviewed_by_Benjamin_Davies%2C_p_89-91?action=null)]
+Davies, B., 2011. Review: Terra Australis 28: New Directions in Archaeological Science-Fairbairn, Andrew, Susan O’Connor, and Ben Marwick (eds.). *Journal of the Polynesian Society* 120(1): 89-91. [[Open Access Journal](http://www.jps.auckland.ac.nz/document/Volume_120_2011/Volume_120%2C_No._1/%5BReview%5D_Fairbairn%2C_Andrew%2C_Susan_O%26%2339%3BConnor%2C_and_Ben_Marwick_%28eds%29%3A_New_Directions_in_Archaeological_Science%2C_reviewed_by_Benjamin_Davies%2C_p_89-91?action=null)]
 
 ### Other publications
 
