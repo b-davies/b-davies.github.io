@@ -7,17 +7,19 @@ tags: publications
 
 ### In press
 
+Davies, B., Romanowska, I., Harris, K., and S. Crabtree, *In press*. Combining Geographic Information Systems and Agent-Based Models in Archaeology: A step-by-step guide for using agent-based modeling in archaeological research (Part II of III). Accepted to *Advances in Archaeological Practice*.
+
 Davies, B., *In press*. Weaving the common threads of simulation and formation studies in archaeology. Accepted to Computer Applications and Quantitative Methods in Archaeology CAA. Accepted to *Proceedings of the 43rd International Conference*. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
 
 Davies, B. and S. Holdaway, *In press* Deflation archaeology. In *Encyclopedia of Global Archaeology*, C. Smith (ed.). Springer.
-
-Davies, B., *In press*. Review: Deep Time Dreaming: Uncovering Ancient Australia-B. Griffiths. Submitted to *Archaeology in Oceania*.
 
 ### 2018
 
 Davies, B., Holdaway, S. J., and P. C. Fanning, 2018. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. *American Antiquity* Published online. DOI: 10.1017/aaq.2018.23  [[Journal](https://doi.org/10.1017/aaq.2018.23)] [[Preprint](https://doi.org/10.17605/OSF.IO/92NYB)] [[Data and Supplementary Files](https://github.com/b-davies/FMODEL)]
 
-Davies, B. and I. Romanowska, 2018. An Emergent Community? Agent-Based Modelers in Archaeology. *SAA Archaeological Record* 18: 27–32. [[Open Access Journal](http://www.saa.org/Portals/0/SAA/Publications/thesaaarchrec/SAA_Record_March2018_Final.pdf)]
+Davies, B. and I. Romanowska, 2018. An Emergent Community? Agent-Based Modelers in Archaeology. *SAA Archaeological Record* 18: 27–32. [[Open Access Journal](http://www.saa.org/Portals/0/SAA/Publications/thesaaarchrec/SAA_Record_March2018_Final.pdf)] 
+
+Davies, B., 2018. Review: Deep Time Dreaming: Uncovering Ancient Australia-B. Griffiths. *Archaeology in Oceania* Published online ahead of print. DOI: 10.1002/arco.5161  [[Journal](https://onlinelibrary.wiley.com/doi/full/10.1002/arco.5161)]
 
 ### 2017
 
