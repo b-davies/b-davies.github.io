@@ -31,7 +31,7 @@ Marwick, B., Guedes, J. d’Alpoim, Barton, C. M., Bates, L. A., Baxter, M., Bev
 
 ### 2016
 
-Davies, B., Holdaway, S. J., and P. C. Fanning, 2016. Modelling the palimpsest: an exploratory agent-based model of surface archaeological deposit formation in a fluvial arid Australian landscape. *The Holocene* 26(3): 450-463. DOI: 10.1177/0959683615609754 [[Journal](http://journals.sagepub.com/doi/abs/10.1177/0959683615609754)] [[Preprint](https://www.researchgate.net/publication/283276532_Modelling_the_palimpsest_An_exploratory_agent-based_model_of_surface_archaeological_deposit_formation_in_a_fluvial_arid_Australian_landscape)]
+Davies, B., Holdaway, S. J., and P. C. Fanning, 2016. Modelling the palimpsest: an exploratory agent-based model of surface archaeological deposit formation in a fluvial arid Australian landscape. *The Holocene* 26(3): 450-463. DOI: 10.1177/0959683615609754 [[Journal](http://journals.sagepub.com/doi/abs/10.1177/0959683615609754)] [[Preprint](https://www.researchgate.net/publication/283276532_Modelling_the_palimpsest_An_exploratory_agent-based_model_of_surface_archaeological_deposit_formation_in_a_fluvial_arid_Australian_landscape)] [[Data and Supplementary Files](https://github.com/b-davies/HMODEL)]
 
 ### 2015
 
