@@ -190,12 +190,7 @@ Collaborating institutions:
 | !Budget:|&amp;nbsp;|$$$BUDGET k|
 | !Score:|&amp;nbsp;|&lt;&lt;if $SCORE &lt; 3&gt;&gt;&lt;span class=&quot;negativeText&quot;&gt;$SCORE&lt;/span&gt;&lt;&lt;else&gt;&gt;$SCORE&lt;&lt;endif&gt;&gt;|
 
-TRUST $FERN_TRUST
-SATISFACTION $FERN_SATISFACTION
-LEVEL $FERN_LVL
-WANTS $FERNWANTS
-ACT $ACTIONLIST[0]
-$RETREAT2</tw-passagedata><tw-passagedata pid="6" name="StoryInit" tags="" position="15,146" size="100,100">				/****GAME MECHANICS PARAMETERS****/
+</tw-passagedata><tw-passagedata pid="6" name="StoryInit" tags="" position="15,146" size="100,100">				/****GAME MECHANICS PARAMETERS****/
 &lt;&lt;set $TURN = 1&gt;&gt;
 &lt;&lt;set $YEAR = 2018&gt;&gt;
 &lt;&lt;set $BUDGET = 100&gt;&gt;
@@ -801,12 +796,10 @@ Fern will have certain preferences regarding response to SLR and adaptation opti
 
 
 &lt;&lt;if $FERN_LVL == 3&gt;&gt;
-	&lt;&lt;if ($RETREAT2 == true) or ($FERN_SCORE == 1)&gt;&gt;
-		&lt;&lt;set $FERNWANTS &quot;A&quot;&gt;&gt;
-	&lt;&lt;else&gt;&gt;
-		&lt;&lt;set $FERNWANTS &quot;D&quot;&gt;
-		&lt;&lt;set $FERNDISLIKES to &quot;A&quot;&gt;&gt;
+	&lt;&lt;if ($RETREAT2 == false)&gt;&gt;
 
+		&lt;&lt;set $FERNDISLIKES to &quot;A&quot;&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
 &lt;&lt;endif&gt;&gt;
 
 
