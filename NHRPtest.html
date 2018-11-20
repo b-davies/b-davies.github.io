@@ -188,7 +188,7 @@ Collaborating institutions:
 </tw-passagedata><tw-passagedata pid="5" name="StoryCaption" tags="" position="21,10" size="100,100">| !Year:|&amp;nbsp;|$YEAR |
 | !Sea level:|&amp;nbsp;|+$SEALEVEL m|
 | !Budget:|&amp;nbsp;|$$$BUDGET k|
-| !Score:|&amp;nbsp;|&lt;&lt;if $SCORE &lt; 3&gt;&gt;&lt;span class=&quot;negativeText&quot;&gt;$SCORE&lt;/span&gt;&lt;&lt;else&gt;&gt;$SCORE&lt;&lt;endif&gt;&gt;|
+| !Score:|&amp;nbsp;|&lt;&lt;if $SCORE &lt;= 3&gt;&gt;&lt;span class=&quot;negativeText&quot;&gt;$SCORE&lt;/span&gt;&lt;&lt;else&gt;&gt;$SCORE&lt;&lt;endif&gt;&gt;|
 
 </tw-passagedata><tw-passagedata pid="6" name="StoryInit" tags="" position="15,146" size="100,100">				/****GAME MECHANICS PARAMETERS****/
 &lt;&lt;set $TURN = 1&gt;&gt;
@@ -652,7 +652,7 @@ Fern will have certain preferences regarding response to SLR and adaptation opti
 	&lt;&lt;endif&gt;&gt;
 	&lt;&lt;if ($KIM_SCORE == 2)&gt;&gt;
 		&lt;&lt;if ($BEACHNOURISH == true)&gt;&gt;
-			&lt;&lt;set $KIMWANTS to &quot;A&quot;&gt;&gt;
+			
 			&lt;&lt;set $KIMDISLIKES to &quot;C&quot;&gt;&gt;
 		&lt;&lt;else&gt;&gt;
 			&lt;&lt;set $KIMWANTS to &quot;B&quot;&gt;&gt;
@@ -661,7 +661,7 @@ Fern will have certain preferences regarding response to SLR and adaptation opti
 	&lt;&lt;endif&gt;&gt;
 	&lt;&lt;if ($KIM_SCORE == 3)&gt;&gt;
 		&lt;&lt;set $KIMWANTS to &quot;D&quot;&gt;&gt;
-		&lt;&lt;set $KIMDISLIKES to &quot;C&quot;&gt;&gt;
+		&lt;&lt;set $KIMDISLIKES to &quot;A&quot;&gt;&gt;
 	&lt;&lt;endif&gt;&gt;
 &lt;&lt;endif&gt;&gt;
 
@@ -695,12 +695,10 @@ Fern will have certain preferences regarding response to SLR and adaptation opti
 
 
 &lt;&lt;if $KIM_LVL == 3&gt;&gt;
-&lt;&lt;if ($RETREAT2 == true) or ($KIM_SCORE == 1)&gt;&gt;
-		&lt;&lt;set $KIMWANTS &quot;A&quot;&gt;&gt;
-		&lt;&lt;else&gt;&gt;
-	&lt;&lt;set $KIMWANTS &quot;D&quot;&gt;
+&lt;&lt;if ($RETREAT2 == false) )&gt;&gt;
+	&lt;&lt;set $KIMWANTS to &quot;D&quot;&gt;
 	&lt;&lt;set $KIMDISLIKES to &quot;A&quot;&gt;&gt;
-
+	&lt;&lt;endif&gt;&gt;
 &lt;&lt;endif&gt;&gt;
 
 
@@ -875,11 +873,10 @@ Fern will have certain preferences regarding response to SLR and adaptation opti
 			&lt;&lt;set $WEHIDISLIKES to &quot;A&quot;&gt;&gt;
 		&lt;&lt;else&gt;&gt;
 			&lt;&lt;set $WEHIWANTS to &quot;D&quot;&gt;&gt;
-			&lt;&lt;set $WEHIDISLIKES to &quot;C&quot;&gt;&gt;
+			&lt;&lt;set $WEHIDISLIKES to &quot;A&quot;&gt;&gt;
 		&lt;&lt;endif&gt;&gt;
 	&lt;&lt;endif&gt;&gt;
 	&lt;&lt;if ($WEHI_SCORE == 1)&gt;&gt;
-		&lt;&lt;set $WEHIWANTS to &quot;A&quot;&gt;&gt;
 		&lt;&lt;set $WEHIDISLIKES to &quot;C&quot;&gt;&gt;
 	&lt;&lt;endif&gt;&gt;
 	&lt;&lt;if ($WEHI_SCORE == 2)&gt;&gt;
@@ -888,7 +885,7 @@ Fern will have certain preferences regarding response to SLR and adaptation opti
 			&lt;&lt;set $WEHIDISLIKES to &quot;A&quot;&gt;&gt;
 		&lt;&lt;else&gt;&gt;
 			&lt;&lt;set $WEHIWANTS to &quot;D&quot;&gt;&gt;
-			&lt;&lt;set $WEHIDISLIKES to &quot;C&quot;&gt;&gt;
+			&lt;&lt;set $WEHIDISLIKES to &quot;A&quot;&gt;&gt;
 		&lt;&lt;endif&gt;&gt;
 	&lt;&lt;endif&gt;&gt;
 	&lt;&lt;if ($WEHI_SCORE == 3)&gt;&gt;
@@ -899,9 +896,7 @@ Fern will have certain preferences regarding response to SLR and adaptation opti
 
 
 &lt;&lt;if $WEHI_LVL == 3&gt;&gt;
-	&lt;&lt;if ($RETREAT2 == true) or ($WEHI_SCORE == 1)&gt;&gt;
-		&lt;&lt;set $WEHIWANTS &quot;A&quot;&gt;&gt;
-	&lt;&lt;else&gt;&gt;
+	&lt;&lt;if ($RETREAT2 == false) or ($WEHI_SCORE == 1)&gt;&gt;
 		&lt;&lt;set $WEHIWANTS &quot;D&quot;&gt;
 		&lt;&lt;set $WEHIDISLIKES to &quot;A&quot;&gt;&gt;
 	&lt;&lt;endif&gt;&gt;
