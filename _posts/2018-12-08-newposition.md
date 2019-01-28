@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      A new year, a new project!
+title:      A new year, a new project
 date:       2018-12-08 10:02:00
 summary:    Starting a new position, moving overseas, and working in a different region/timescale...
 categories: general
