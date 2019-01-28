@@ -6,6 +6,7 @@ tags: teaching
 ---
 
 ### World Archaeology
+[Syllabus (July 2015)|http://b-davies.github.io/syllabi/anthro101]
 
 This undergraduate survey course was aimed at providing a foundation in human cultural evolution over the last 2 million years. Students were expected to discuss the following topics including basic methods of analysis (survey, excavation, dating, etc.) used in archaeology: differences between modern theories of cultural evolution and earlier ideas of unilineal cultural evolution, significant developments that led to the emergence of modern humans from archaic ancestors, early human migrations and continental discovery, social and cultural changes associated with the domestication of plants and animals, changes that accompanied the beginnings of social complexity and the significance of the rise of complex society. Examples drawn from locations from around the world were used to illustrate these themes and demonstrate archaeological reasoning. 
 
