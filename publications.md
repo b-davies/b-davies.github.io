@@ -7,11 +7,15 @@ tags: publications
 
 ### In press
 
+Romanowska, I., S. Crabtree, K. Harris, and B. Davies. *In press*. Agent-based modeling for archaeologists: A step-by-step guide for using agent-based modeling in archaeological research (Part I of III). Accepted to *Advances in Archaeological Practice*.
+
 Davies, B., Romanowska, I., Harris, K., and S. Crabtree, *In press*. Combining Geographic Information Systems and Agent-Based Models in Archaeology: A step-by-step guide for using agent-based modeling in archaeological research (Part II of III). Accepted to *Advances in Archaeological Practice*.
 
-Davies, B., *In press*. Weaving the common threads of simulation and formation studies in archaeology. Accepted to Computer Applications and Quantitative Methods in Archaeology CAA. Accepted to *Proceedings of the 43rd International Conference*. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
+Crabtree, S., K. Harris, B. Davies, and I. Romanowska . *In press*. Outreach in archaeology with agent-based modeling: A step-by-step guide for using agent-based modeling in archaeological research (Part III of III). Accepted to *Advances in Archaeological Practice*.
 
 ### 2018
+
+Davies, B., 2018. Weaving the common threads of simulation and formation studies in archaeology. In *Oceans of Data: Proceedings of the 44th International Conference on Computer Applications and Quantitative Methods in Archaeology*, M. Matsumoto and E. Uleberg (eds). Oxford: Archaeopress, pp. 481-494. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
 
 Davies, B., Holdaway, S. J., and P. C. Fanning, 2018. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. *American Antiquity* Published online. DOI: 10.1017/aaq.2018.23  [[Journal](https://doi.org/10.1017/aaq.2018.23)] [[Preprint](https://doi.org/10.17605/OSF.IO/92NYB)] [[Data and Supplementary Files](https://github.com/b-davies/FMODEL)]
 
