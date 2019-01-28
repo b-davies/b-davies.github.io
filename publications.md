@@ -19,7 +19,7 @@ Davies, B., 2018. Weaving the common threads of simulation and formation studies
 
 Davies, B., Holdaway, S. J., and P. C. Fanning, 2018. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. *American Antiquity* Published online. DOI: 10.1017/aaq.2018.23  [[Journal](https://doi.org/10.1017/aaq.2018.23)] [[Preprint](https://doi.org/10.17605/OSF.IO/92NYB)] [[Data and Supplementary Files](https://github.com/b-davies/FMODEL)]
 
-Davies, B. and I. Romanowska, 2018. An Emergent Community? Agent-Based Modelers in Archaeology. *SAA Archaeological Record* 18: 27–32. [[Open Access Journal](http://www.saa.org/Portals/0/SAA/Publications/thesaaarchrec/SAA_Record_March2018_Final.pdf)] 
+Davies, B. and I. Romanowska, 2018. An Emergent Community? Agent-Based Modelers in Archaeology. *SAA Archaeological Record* 18: 27–32. [[Open Access Journal](http://cdn.coverstand.com/16146/486133/f0b56e91a16ef761a284d09e0980d3172a546e77.pdf)] 
 
 Davies, B., 2018. Review: Deep Time Dreaming: Uncovering Ancient Australia-B. Griffiths. *Archaeology in Oceania* Published online ahead of print. DOI: 10.1002/arco.5161  [[Journal](https://onlinelibrary.wiley.com/doi/full/10.1002/arco.5161)]
 
@@ -31,7 +31,7 @@ Davies, B. and S. J. Holdaway, 2017. Windows on the Past? Perspectives on Accumu
 
 Holdaway, S. J., Davies, B., and P. C. Fanning, 2017. Aboriginal use of fire in a landscape context: investigating presence and absence of heat retainer hearths in western New South Wales, Australia. *Current Anthropology* 58(S16):230-242. DOI: 10.1086/691436 [[Open Access Journal](http://www.journals.uchicago.edu/doi/abs/10.1086/691436)] 
 
-Marwick, B., Guedes, J. d’Alpoim, Barton, C. M., Bates, L. A., Baxter, M., Bevan, A., Bollwerk, E. A., Bocinsky, R. K., Brughams, T., Carter, A. K., Conrad, C., Contreras, D. A., Costa, S., Crema, E. R., Daggett, A., Davies, B., Drake, B. L., Dye, T. S., France, P., Fullager, R., Giusti, D., Graham, S., Harris, M. D., Hawks, J., Heath, S., Huffer, D., Kansa, E. C., Kansa, S. W., Madsen, M. E., Melcher, J., Negre, J., Neiman, F. D., Opitz, R., Orton, D. C., Przystupa, P., Raviele, M., Riel-Salvatore, J., Riris, P., Romanowska, I., Smith, J., Strupler, N., Ullah, I. I., Vlack, H. G. V., VanValkenberg, N., Watrall, E. C., Webster, C., Wells, J., Winters, J. and C. D. Wren, 2017. Open Science in Archaeology. *SAA Archaeological Record* 17: 8–14. [[Open Access Journal](http://www.saa.org/Portals/0/SAA_Record_Sept_2017_Final_LR.pdf)] [[Preprint](https://osf.io/qcwtc/)]
+Marwick, B., Guedes, J. d’Alpoim, Barton, C. M., Bates, L. A., Baxter, M., Bevan, A., Bollwerk, E. A., Bocinsky, R. K., Brughams, T., Carter, A. K., Conrad, C., Contreras, D. A., Costa, S., Crema, E. R., Daggett, A., Davies, B., Drake, B. L., Dye, T. S., France, P., Fullager, R., Giusti, D., Graham, S., Harris, M. D., Hawks, J., Heath, S., Huffer, D., Kansa, E. C., Kansa, S. W., Madsen, M. E., Melcher, J., Negre, J., Neiman, F. D., Opitz, R., Orton, D. C., Przystupa, P., Raviele, M., Riel-Salvatore, J., Riris, P., Romanowska, I., Smith, J., Strupler, N., Ullah, I. I., Vlack, H. G. V., VanValkenberg, N., Watrall, E. C., Webster, C., Wells, J., Winters, J. and C. D. Wren, 2017. Open Science in Archaeology. *SAA Archaeological Record* 17: 8–14. [[Open Access Journal](http://cdn.coverstand.com/16146/440506/fdad445dd2f62f8005883233c199f6beb9f236b7.1.pdf)] [[Preprint](https://osf.io/qcwtc/)]
 
 ### 2016
 
