@@ -22,7 +22,7 @@ I can be reached by email at davies.archaeology AT gmail.com
 
 ### Projects
 
-### [Exploring the history of coupled climatic and human influences on ecosystem changes during the last one million years](https://nsf.gov/awardsearch/showAward?AWD_ID=1826666)
+#### [Exploring the history of coupled climatic and human influences on ecosystem changes during the last one million years](https://nsf.gov/awardsearch/showAward?AWD_ID=1826666)
 A three-year study based in the Western Cape region of South Africa aimed at using geological and archaeological archives to examine the interactions of climate, human activities, and natural ecosystems over very long timespans.
 
 #### [Western New South Wales Archaeology](https://www.researchgate.net/project/WNSWAP-Western-NSW-Archaeology-Program)
