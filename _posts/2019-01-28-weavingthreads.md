@@ -2,7 +2,7 @@
 layout:     post
 title:      New(ly published) paper!
 date:       2019-01-28 10:02:00
-summary:    New paper in CAA 2016 proceedings!
+summary:    The CAA 2016 proceedings are out!
 categories: general
 ---
 
