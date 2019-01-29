@@ -27,7 +27,7 @@ Davies, B. and S. Holdaway, 2018. Deflation archaeology. In *Encyclopedia of Glo
 
 ### 2017
 
-Davies, B. and S. J. Holdaway, 2017. Windows on the Past? Perspectives on Accumulation, Formation, and Significance from an Australian Holocene Lithic Landscape. *Mitteilungen der Gesellschaft für Urgeschichte* 26:125-156. [[Open Access Journal](http://www.uni-tuebingen.de/index.php?eID=tx_securedownloads&p=88717&u=0&g=0&t=1522139593&hash=c7fa7b8f500206cc2685ed71d6199134a0fa5e54&file=/fileadmin/Uni_Tuebingen/Fakultaeten/MatNat/Fachbereiche/Geowissenschaften/Arbeitsgruppen/Urgeschichte___Naturwissenschaftliche_Arch%C3%A4ologie/%C3%84ltere_Urgeschichte_und_Quart%C3%A4r%C3%B6kologie/Bilder/Publikationen/GFU/Band_26_2016/153_Conard.pdf)]
+Davies, B. and S. J. Holdaway, 2017. Windows on the Past? Perspectives on Accumulation, Formation, and Significance from an Australian Holocene Lithic Landscape. *Mitteilungen der Gesellschaft für Urgeschichte* 26:125-156. [[Open Access Journal](https://uni-tuebingen.de/index.php?eID=tx_securedownloads&p=88717&u=0&g=0&t=1548871446&hash=e91beb1e3898f89898dd95eb75a13f06f3ad8444&file=/fileadmin/Uni_Tuebingen/Fakultaeten/MatNat/Fachbereiche/Geowissenschaften/Arbeitsgruppen/Urgeschichte___Naturwissenschaftliche_Arch%C3%A4ologie/%C3%84ltere_Urgeschichte_und_Quart%C3%A4r%C3%B6kologie/Dokumente/Publikationen/GfU/Band_26_2016/125_Davies___Holdaway.pdf)]
 
 Holdaway, S. J., Davies, B., and P. C. Fanning, 2017. Aboriginal use of fire in a landscape context: investigating presence and absence of heat retainer hearths in western New South Wales, Australia. *Current Anthropology* 58(S16):230-242. DOI: 10.1086/691436 [[Open Access Journal](http://www.journals.uchicago.edu/doi/abs/10.1086/691436)] 
 
