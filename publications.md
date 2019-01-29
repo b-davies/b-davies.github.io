@@ -15,7 +15,7 @@ Crabtree, S., K. Harris, B. Davies, and I. Romanowska . *In press*. Outreach in 
 
 ### 2018
 
-Davies, B., 2018. Weaving the common threads of simulation and formation studies in archaeology. In *Oceans of Data: Proceedings of the 44th International Conference on Computer Applications and Quantitative Methods in Archaeology*, M. Matsumoto and E. Uleberg (eds). Oxford: Archaeopress, pp. 481-494. [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
+Davies, B., 2018. Weaving the common threads of simulation and formation studies in archaeology. In *Oceans of Data: Proceedings of the 44th International Conference on Computer Applications and Quantitative Methods in Archaeology*, M. Matsumoto and E. Uleberg (eds). Oxford: Archaeopress, pp. 481-494. [[Open Access Proceedings](http://archaeopress.com/ArchaeopressShop/Public/displayProductDetail.asp?id={2724F16C-FAC1-4987-8D1E-E85D9F94ACAD})][[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
 
 Davies, B., Holdaway, S. J., and P. C. Fanning, 2018. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. *American Antiquity* Published online. DOI: 10.1017/aaq.2018.23  [[Journal](https://doi.org/10.1017/aaq.2018.23)] [[Preprint](https://doi.org/10.17605/OSF.IO/92NYB)] [[Data and Supplementary Files](https://github.com/b-davies/FMODEL)]
 
