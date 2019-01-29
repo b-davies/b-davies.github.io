@@ -48,6 +48,7 @@ This undergraduate survey course was aimed at providing a foundation in human cu
 	
 ### Short courses and workshops
 * Getting Started with R
+* Introducing Structure from Motion Photogrammetry 
 * Introduction to Agent-Based Modeling in NetLogo
 * One Hour, One Model: An Intro to Agent-Based Models
 
