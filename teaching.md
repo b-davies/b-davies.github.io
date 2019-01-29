@@ -5,6 +5,7 @@ permalink: /teaching/
 tags: teaching
 ---
 
+
 ### Archaeology and Heritage in the Information Age
 [Syllabus (March 2016)](http://b-davies.github.io/syllabi/anthro370.pdf)
 
