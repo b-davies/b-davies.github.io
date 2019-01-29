@@ -5,11 +5,6 @@ permalink: /teaching/
 tags: teaching
 ---
 
-### World Archaeology
-[Syllabus (July 2015)](http://b-davies.github.io/syllabi/anthro101.pdf)
-
-This undergraduate survey course was aimed at providing a foundation in human cultural evolution over the last 2 million years. Students were expected to discuss the following topics including basic methods of analysis (survey, excavation, dating, etc.) used in archaeology: differences between modern theories of cultural evolution and earlier ideas of unilineal cultural evolution, significant developments that led to the emergence of modern humans from archaic ancestors, early human migrations and continental discovery, social and cultural changes associated with the domestication of plants and animals, changes that accompanied the beginnings of social complexity and the significance of the rise of complex society. Examples drawn from locations from around the world were used to illustrate these themes and demonstrate archaeological reasoning. 
-
 ### Archaeology and Heritage in the Information Age
 [Syllabus (March 2016)](http://b-davies.github.io/syllabi/anthro370.pdf)
 
@@ -40,10 +35,15 @@ This introductory undergraduate course focuses on the development of core resear
 
 This co-taught middle and upper division undergraduate course provided an overview of contemporary approaches to Australian archaeology, relationships between Aboriginal hunter gatherers and the archaeological and environmental record, and the changing dynamics between people, land, and history. Specific areas I contributed to included: models of Australian prehistory, Australian lithic technology, the archaeology of the arid zone, Aboriginal Holocene economies, site formation and preservation, late Holocene socioeconomic intensification and Native Title and heritage management in Australia. 
 
+### World Archaeology
+[Syllabus (July 2015)](http://b-davies.github.io/syllabi/anthro101.pdf)
+
+This undergraduate survey course was aimed at providing a foundation in human cultural evolution over the last 2 million years. Students were expected to discuss the following topics including basic methods of analysis (survey, excavation, dating, etc.) used in archaeology: differences between modern theories of cultural evolution and earlier ideas of unilineal cultural evolution, significant developments that led to the emergence of modern humans from archaic ancestors, early human migrations and continental discovery, social and cultural changes associated with the domestication of plants and animals, changes that accompanied the beginnings of social complexity and the significance of the rise of complex society. Examples drawn from locations from around the world were used to illustrate these themes and demonstrate archaeological reasoning. 
+
 
 ### Other Course Contributions
-* [Modeling of Environmental and Social Systems (graduate seminar)](http://www.env.auckland.ac.nz/en/about/our-postgraduate-courses/pg-environmental-science-courses.html#cb3d9ebe7a8afab58c2b52dc8181e5c4)
 * [Archaeology: Understanding the Past](https://artsfaculty.auckland.ac.nz/courses/?Subject=ANTHRO&Number=200)
+* [Modeling of Environmental and Social Systems (graduate seminar)](http://www.env.auckland.ac.nz/en/about/our-postgraduate-courses/pg-environmental-science-courses.html#cb3d9ebe7a8afab58c2b52dc8181e5c4)
 * [History and Tradition in NZ Archaeology](https://artsfaculty.auckland.ac.nz/courses/?Subject=ANTHRO&Number=346)
 	
 ### Short courses and workshops
