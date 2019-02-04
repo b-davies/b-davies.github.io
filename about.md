@@ -26,7 +26,7 @@ I can be reached by email at davies.archaeology AT gmail.com
 A three-year study based in the Western Cape region of South Africa aimed at using geological and archaeological archives to examine the interactions of climate, human activities, and natural ecosystems over very long timespans.
 
 #### [Western New South Wales Archaeology](https://www.researchgate.net/project/WNSWAP-Western-NSW-Archaeology-Program)
-A long-term, multidisciplinary study investigating the formation of surface archaeology in arid and semiarid rangelands of southeastern Australia and implications for human population dynamics and mobility during the late Holocene. 
+A long-term, multidisciplinary study investigating the formation of surface archaeology in arid and semiarid rangelands of southeastern Australia and implications for human population dynamics and mobility during the late Holocene. Project outcomes are being compiled [here](https://wnswap.blogs.auckland.ac.nz).
 
 #### Geography of Interaction in East Polynesia
 A project examining how climate, technology, and human decision-making influence the maintenance of interaction networks in east Polynesia. 
