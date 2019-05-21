@@ -7,6 +7,8 @@ tags: publications
 
 ### In press
 
+Holdaway, S. and B. Davies. *In press*. Surface Stone Artifact Scatters, Settlement Patterns, and New Methods for Stone Artifact Analysis. Accepted to *Journal of Paleolithic Archaeology*.
+
 Romanowska, I., S. Crabtree, K. Harris, and B. Davies. *In press*. Agent-based modeling for archaeologists: A step-by-step guide for using agent-based modeling in archaeological research (Part I of III). Accepted to *Advances in Archaeological Practice*.
 
 Davies, B., Romanowska, I., Harris, K., and S. Crabtree, *In press*. Combining Geographic Information Systems and Agent-Based Models in Archaeology: A step-by-step guide for using agent-based modeling in archaeological research (Part II of III). Accepted to *Advances in Archaeological Practice*.
