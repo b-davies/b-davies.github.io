@@ -7,13 +7,15 @@ tags: publications
 
 ### In press
 
-Holdaway, S. and B. Davies. *In press*. Surface Stone Artifact Scatters, Settlement Patterns, and New Methods for Stone Artifact Analysis. Accepted to *Journal of Paleolithic Archaeology*.
+Holdaway, S. and B. Davies, *In press*. Surface Stone Artifact Scatters, Settlement Patterns, and New Methods for Stone Artifact Analysis. Accepted to *Journal of Paleolithic Archaeology*.
 
-Romanowska, I., S. Crabtree, K. Harris, and B. Davies. *In press*. Agent-based modeling for archaeologists: A step-by-step guide for using agent-based modeling in archaeological research (Part I of III). Accepted to *Advances in Archaeological Practice*.
+### 2019
 
-Davies, B., Romanowska, I., Harris, K., and S. Crabtree, *In press*. Combining Geographic Information Systems and Agent-Based Models in Archaeology: A step-by-step guide for using agent-based modeling in archaeological research (Part II of III). Accepted to *Advances in Archaeological Practice*.
+Romanowska, I., S. Crabtree, K. Harris, and B. Davies, 2019. Agent-based modeling for archaeologists: Part 1 of 3. *Advances in Archaeological Practice* 7(2): 178-184. DOI: 10.1017/aap.2019.6 [[Journal](https://doi.org/10.1017/aap.2019.6)]
 
-Crabtree, S., K. Harris, B. Davies, and I. Romanowska . *In press*. Outreach in archaeology with agent-based modeling: A step-by-step guide for using agent-based modeling in archaeological research (Part III of III). Accepted to *Advances in Archaeological Practice*.
+Davies, B., Romanowska, I., Harris, K., and S. Crabtree, 2019. Combining Geographic Information Systems and Agent-Based Models in Archaeology: Part 2 of 3. *Advances in Archaeological Practice* 7(2): 185-193. DOI: 10.1017/aap.2019.5 [[Journal](https://doi.org/10.1017/aap.2019.5)]
+
+Crabtree, S., K. Harris, B. Davies, and I. Romanowska, 2019. Outreach in archaeology with agent-based modeling: Part 3 of 3. *Advances in Archaeological Practice* 7(2): 194-202. DOI: 10.1017/aap.2019.4 [[Journal](https://doi.org/10.1017/aap.2019.4)]
 
 ### 2018
 
