@@ -11,7 +11,7 @@ Holdaway, S. and B. Davies, *In press*. Surface Stone Artifact Scatters, Settlem
 
 ### 2019
 
-Romanowska, I., S. Crabtree, K. Harris, and B. Davies, 2019. Agent-based modeling for archaeologists: Part 1 of 3. *Advances in Archaeological Practice* 7(2): 178-184. DOI: 10.1017/aap.2019.6 [[Journal](https://doi.org/10.1017/aap.2019.6)]
+Romanowska, I., S. Crabtree, K. Harris, and B. Davies, 2019. Agent-based modeling for archaeologists: Part 1 of 3. *Advances in Archaeological Practice* 7(2): 178-184. DOI: 10.1017/aap.2019.6 [[Journal](https://doi.org/10.1017/aap.2019.6)][[Journal Share Link](https://www.cambridge.org/core/journals/advances-in-archaeological-practice/article/agentbased-modeling-for-archaeologists-part-1-of-3/B044D059FABC3F793205C6407BF32B09/share/00408e6a700aec1dc977a7684d6db80f23963c3e)]
 
 Davies, B., Romanowska, I., Harris, K., and S. Crabtree, 2019. Combining Geographic Information Systems and Agent-Based Models in Archaeology: Part 2 of 3. *Advances in Archaeological Practice* 7(2): 185-193. DOI: 10.1017/aap.2019.5 [[Journal](https://doi.org/10.1017/aap.2019.5)]
 
