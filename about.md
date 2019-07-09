@@ -23,7 +23,10 @@ I can be reached by email at davies.archaeology AT gmail.com
 ### Projects
 
 #### [Exploring the history of coupled climatic and human influences on ecosystem changes during the last one million years](https://nsf.gov/awardsearch/showAward?AWD_ID=1826666)
-A three-year study based in the Western Cape region of South Africa aimed at using geological and archaeological archives to examine the interactions of climate, human activities, and natural ecosystems over very long timespans.
+A three-year study based in the Western Cape region of South Africa aimed at using geological and archaeological archives to examine the interactions of climate, human activities, and natural ecosystems over very long timespans. 
+
+#### Long Term Perspectives on Water Security, Food Security, and Land Management Among Pastoralists Experiencing Change
+A four-year project based in northern Kenya studying the current intersection of development, land management, and changing environmental circumstances in the context of long-term trends in land use among mobile pastoralists communities 
 
 #### [Western New South Wales Archaeology](https://www.researchgate.net/project/WNSWAP-Western-NSW-Archaeology-Program)
 A long-term, multidisciplinary study investigating the formation of surface archaeology in arid and semiarid rangelands of southeastern Australia and implications for human population dynamics and mobility during the late Holocene. Project outcomes are being compiled [here](https://wnswap.blogs.auckland.ac.nz).
@@ -35,5 +38,5 @@ A project examining how climate, technology, and human decision-making influence
 A recently begun project building ‘serious games’ as a participatory approach to building community capacity for envisioning the natural and societal impacts of global climate change and the adaptive management of coastal environments.
 
 #### Kwokkunum Shell Mound Study
-A recently begun project exploring the human ecology and heritage management of monumental shellmounds in far north Queensland, Australia.
+A project exploring the human ecology and heritage management of monumental shellmounds in far north Queensland, Australia.
 
