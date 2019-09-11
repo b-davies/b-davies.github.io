@@ -34,7 +34,7 @@ A long-term, multidisciplinary study investigating the formation of surface arch
 #### Geography of Interaction in East Polynesia
 A project examining how climate, technology, and human decision-making influence the maintenance of interaction networks in east Polynesia. 
 
-#### Adaptive and Interactive Futures
+#### [Adaptive and Interactive Futures](http://adaptivefutures.github.io/seriousgames)
 A recently begun project building ‘serious games’ as a participatory approach to building community capacity for envisioning the natural and societal impacts of global climate change and the adaptive management of coastal environments.
 
 #### Kwokkunum Shell Mound Study
