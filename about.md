@@ -25,7 +25,7 @@ I can be reached by email at davies.archaeology AT gmail.com
 #### [Exploring the history of coupled climatic and human influences on ecosystem changes during the last one million years](https://nsf.gov/awardsearch/showAward?AWD_ID=1826666)
 A three-year study based in the Western Cape region of South Africa aimed at using geological and archaeological archives to examine the interactions of climate, human activities, and natural ecosystems over very long timespans. 
 
-#### Long Term Perspectives on Water Security, Food Security, and Land Management Among Pastoralists Experiencing Change
+#### [Long Term Perspectives on Water Security, Food Security, and Land Management Among Pastoralists Experiencing Change](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1924322)
 A four-year project based in northern Kenya studying the current intersection of development, land management, and changing environmental circumstances in the context of long-term trends in land use among mobile pastoralists communities. 
 
 #### [Western New South Wales Archaeology](https://www.researchgate.net/project/WNSWAP-Western-NSW-Archaeology-Program)
