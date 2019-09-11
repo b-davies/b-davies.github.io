@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 tags: about
 ---
-
+![_config.yml]({{ site.baseurl }}/images/dingofence.jpg)
 I'm an archaeologist who does digital things. I do research at a [university](https://faculty.utah.edu/u6023090-Benjamin_Andrew_Davies/hm/index.hml). Sometimes I [teach](https://b-davies.github.io/teaching). Sometimes I also [tweet](http://twitter.com/ba_davies)
 and [blog](http://simulatingcomplexity.wordpress.com)
 and [git](http://github.com/b-davies).
