@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 tags: about
 ---
-I'm an archaeologist who does digital things. I do research at a [university](https://faculty.utah.edu/u6023090-Benjamin_Andrew_Davies/hm/index.hml). Sometimes I [teach](https://b-davies.github.io/teaching). Sometimes I also [tweet](http://twitter.com/ba_davies)
+I'm an archaeologist interested in mobility, population dynamics, and human adaptations to climate change. I draw on computational techniques in my work, and I am interested in how digital technology is used to learn about and interact with the past. I am a Postdoctoral Research Associate at the [University of Utah](https://faculty.utah.edu/u6023090-Benjamin_Andrew_Davies/hm/index.hml). I [teach](https://b-davies.github.io/teaching). Sometimes I [tweet](http://twitter.com/ba_davies)
 and [blog](http://simulatingcomplexity.wordpress.com)
 and [git](http://github.com/b-davies).
 
@@ -32,10 +32,10 @@ A four-year project based in northern Kenya studying the current intersection of
 A long-term, multidisciplinary study investigating the formation of surface archaeology in arid and semiarid rangelands of southeastern Australia and implications for human population dynamics and mobility during the late Holocene. Project outcomes are being compiled [here](https://wnswap.blogs.auckland.ac.nz).
 
 #### Geography of Interaction in East Polynesia
-A project examining how climate, technology, and human decision-making influence the maintenance of interaction networks in east Polynesia. 
+A project examining how climate, technology, and human decision-making influence the maintenance of interaction networks in East Polynesia. 
 
 #### [Adaptive and Interactive Futures](http://adaptivefutures.github.io/seriousgames)
-A recently begun project building ‘serious games’ as a participatory approach to building community capacity for envisioning the natural and societal impacts of global climate change and the adaptive management of coastal environments.
+A project using ‘serious games’ as a participatory approach to building community capacity for envisioning the natural and societal impacts of global climate change and the adaptive management of coastal environments.
 
 #### Kwokkunum Shell Mound Study
 A project exploring the human ecology and heritage management of monumental shellmounds in far north Queensland, Australia.
