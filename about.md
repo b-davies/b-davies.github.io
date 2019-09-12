@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 tags: about
 ---
-I'm an archaeologist interested in mobility, population dynamics, and human adaptations to climate change. I draw on computational techniques in my work, and I am interested in how digital technology is used to learn about and interact with the past. I am a Postdoctoral Research Associate at the [University of Utah](https://faculty.utah.edu/u6023090-Benjamin_Andrew_Davies/hm/index.hml). 
+I'm an archaeologist interested in mobility, population dynamics, and human adaptations to climate change. I draw on computational techniques in my work, and I am interested in how digital technology is used to learn about and interact with the past. I am a Postdoctoral Research Associate at the [University of Utah](https://faculty.utah.edu/u6023090-Benjamin_Andrew_Davies/hm/index.hml). Sometimes I [tweet](http://twitter.com/ba_davies) and [blog](http://simulatingcomplexity.wordpress.com) and [git](http://github.com/b-davies).
 
 I can be reached by email at davies.archaeology AT gmail.com
 ![_config.yml]({{ site.baseurl }}/images/dingofence.jpg)
