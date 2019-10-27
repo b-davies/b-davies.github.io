@@ -1,0 +1,3695 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="VRV_C14" id="VRV_C14">
+	<SimpleField name="SITE" type="string"></SimpleField>
+	<SimpleField name="SITE_CODE" type="string"></SimpleField>
+	<SimpleField name="LATITUDE" type="float"></SimpleField>
+	<SimpleField name="LONGITUDE" type="float"></SimpleField>
+	<SimpleField name="COUNTRY" type="string"></SimpleField>
+	<SimpleField name="PROVINCE_D" type="string"></SimpleField>
+	<SimpleField name="RFZ" type="string"></SimpleField>
+	<SimpleField name="BIOME" type="string"></SimpleField>
+	<SimpleField name="CONTEXT" type="string"></SimpleField>
+	<SimpleField name="TECHNIQUE" type="string"></SimpleField>
+	<SimpleField name="MATERIAL" type="string"></SimpleField>
+	<SimpleField name="SPECIES" type="string"></SimpleField>
+	<SimpleField name="LAB_ID" type="string"></SimpleField>
+	<SimpleField name="DATE" type="float"></SimpleField>
+	<SimpleField name="UNCERTAINT" type="float"></SimpleField>
+	<SimpleField name="ARCH_PERIO" type="string"></SimpleField>
+	<SimpleField name="ARCH_SUBPE" type="string"></SimpleField>
+	<SimpleField name="SAMPLE_CON" type="string"></SimpleField>
+	<SimpleField name="SITE_TYPE" type="string"></SimpleField>
+	<SimpleField name="DELTA_13" type="float"></SimpleField>
+	<SimpleField name="REFCODE" type="string"></SimpleField>
+	<SimpleField name="NOTES" type="string"></SimpleField>
+</Schema>
+<Folder><name>VRV_C14</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Pancho's Kitchen Midden</SimpleData>
+		<SimpleData name="SITE_CODE">PKM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338999999999999</SimpleData>
+		<SimpleData name="LONGITUDE">18.332999999999998</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">1 LATINA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5605</SimpleData>
+		<SimpleData name="DATE">570</SimpleData>
+		<SimpleData name="UNCERTAINT">20</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-24.199999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333,-32.339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">FRA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6337</SimpleData>
+		<SimpleData name="DATE">640</SimpleData>
+		<SimpleData name="UNCERTAINT">20</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">NIC</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6735</SimpleData>
+		<SimpleData name="DATE">1200</SimpleData>
+		<SimpleData name="UNCERTAINT">20</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">KEPL</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5611</SimpleData>
+		<SimpleData name="DATE">2100</SimpleData>
+		<SimpleData name="UNCERTAINT">20</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Langdam 9</SimpleData>
+		<SimpleData name="SITE_CODE">LGD9</SimpleData>
+		<SimpleData name="LATITUDE">-32.417000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.332999999999998</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Lens on dune</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6274</SimpleData>
+		<SimpleData name="DATE">2150</SimpleData>
+		<SimpleData name="UNCERTAINT">20</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-0.600000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333,-32.417</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Pancho's Kitchen Midden</SimpleData>
+		<SimpleData name="SITE_CODE">PKM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338999999999999</SimpleData>
+		<SimpleData name="LONGITUDE">18.332999999999998</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">4SH. GRINGO</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5990</SimpleData>
+		<SimpleData name="DATE">2940</SimpleData>
+		<SimpleData name="UNCERTAINT">20</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-23.699999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333,-32.339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Scorpion Shelter</SimpleData>
+		<SimpleData name="SITE_CODE">SCP</SimpleData>
+		<SimpleData name="LATITUDE">-32.366999999999997</SimpleData>
+		<SimpleData name="LONGITUDE">18.367000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">DSS14</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6341</SimpleData>
+		<SimpleData name="DATE">3430</SimpleData>
+		<SimpleData name="UNCERTAINT">20</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-0.200000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.367,-32.367</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">BSS1</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6711</SimpleData>
+		<SimpleData name="DATE">985</SimpleData>
+		<SimpleData name="UNCERTAINT">25</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">1.300000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">FS1</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6690</SimpleData>
+		<SimpleData name="DATE">2000</SimpleData>
+		<SimpleData name="UNCERTAINT">25</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-0.100000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">FS3</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6705</SimpleData>
+		<SimpleData name="DATE">2070</SimpleData>
+		<SimpleData name="UNCERTAINT">25</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.300000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">CAN</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-7013</SimpleData>
+		<SimpleData name="DATE">2270</SimpleData>
+		<SimpleData name="UNCERTAINT">25</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-0.300000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Baboon Point Terrace</SimpleData>
+		<SimpleData name="SITE_CODE">BPT</SimpleData>
+		<SimpleData name="LATITUDE">-32.317999999999998</SimpleData>
+		<SimpleData name="LONGITUDE">18.315999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">BPT2</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="SPECIES">Choromytilus meridionalis</SimpleData>
+		<SimpleData name="LAB_ID">UGAMS-5673</SimpleData>
+		<SimpleData name="DATE">1460</SimpleData>
+		<SimpleData name="UNCERTAINT">30</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">jerardino2014dcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.316,-32.318</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Baboon Point Terrace</SimpleData>
+		<SimpleData name="SITE_CODE">BPT</SimpleData>
+		<SimpleData name="LATITUDE">-32.317999999999998</SimpleData>
+		<SimpleData name="LONGITUDE">18.315999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">BPT1</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="SPECIES">Choromytilus meridionalis</SimpleData>
+		<SimpleData name="LAB_ID">UGAMS-5672</SimpleData>
+		<SimpleData name="DATE">1580</SimpleData>
+		<SimpleData name="UNCERTAINT">30</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">jerardino2014dcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.316,-32.318</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">PSS3</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6698</SimpleData>
+		<SimpleData name="DATE">1735</SimpleData>
+		<SimpleData name="UNCERTAINT">30</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.500000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">WS3</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6683</SimpleData>
+		<SimpleData name="DATE">2100</SimpleData>
+		<SimpleData name="UNCERTAINT">30</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.300000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">14 GANDALF</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5981</SimpleData>
+		<SimpleData name="DATE">5530</SimpleData>
+		<SimpleData name="UNCERTAINT">30</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-1.200000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Estuarine Shell</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">ELA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5419</SimpleData>
+		<SimpleData name="DATE">35</SimpleData>
+		<SimpleData name="UNCERTAINT">35</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Scorpion Shelter</SimpleData>
+		<SimpleData name="SITE_CODE">SCP</SimpleData>
+		<SimpleData name="LATITUDE">-32.366999999999997</SimpleData>
+		<SimpleData name="LONGITUDE">18.367000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">DSS5</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6340</SimpleData>
+		<SimpleData name="DATE">450</SimpleData>
+		<SimpleData name="UNCERTAINT">35</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-24.399999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.367,-32.367</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">JAC</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-7897</SimpleData>
+		<SimpleData name="DATE">630</SimpleData>
+		<SimpleData name="UNCERTAINT">35</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="SPECIES">Donax serra</SimpleData>
+		<SimpleData name="LAB_ID">CAMS-113297</SimpleData>
+		<SimpleData name="DATE">3325</SimpleData>
+		<SimpleData name="UNCERTAINT">35</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">orton2006rhl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Connie's Limpet Bar</SimpleData>
+		<SimpleData name="SITE_CODE">CLM</SimpleData>
+		<SimpleData name="LATITUDE">-32.310000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.341999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">Lens</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4020</SimpleData>
+		<SimpleData name="DATE">390</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-22.399999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.342,-32.31</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Spring Cave</SimpleData>
+		<SimpleData name="SITE_CODE">SGC</SimpleData>
+		<SimpleData name="LATITUDE">-32.322000000000003</SimpleData>
+		<SimpleData name="LONGITUDE">18.335999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">2 ASH IV</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4062</SimpleData>
+		<SimpleData name="DATE">460</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-18.300000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.336,-32.322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">SHA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4807</SimpleData>
+		<SimpleData name="DATE">510</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">KIR</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5277</SimpleData>
+		<SimpleData name="DATE">600</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">KIR</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5062</SimpleData>
+		<SimpleData name="DATE">640</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">SYL</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-7894</SimpleData>
+		<SimpleData name="DATE">640</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Hail Storm Midden</SimpleData>
+		<SimpleData name="SITE_CODE">HSM</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.300000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">GBS/PS</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4262a</SimpleData>
+		<SimpleData name="DATE">910</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-21.899999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.3,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">FRA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5070</SimpleData>
+		<SimpleData name="DATE">1130</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">ELA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5071</SimpleData>
+		<SimpleData name="DATE">1140</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">FRA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6736</SimpleData>
+		<SimpleData name="DATE">1180</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">PET</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5405</SimpleData>
+		<SimpleData name="DATE">1190</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">FRA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6738</SimpleData>
+		<SimpleData name="DATE">1210</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">FRA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5031</SimpleData>
+		<SimpleData name="DATE">1240</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">ELA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5415</SimpleData>
+		<SimpleData name="DATE">1290</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">JECH</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5595</SimpleData>
+		<SimpleData name="DATE">1310</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Railway Midden</SimpleData>
+		<SimpleData name="SITE_CODE">RWM</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Lens</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5916</SimpleData>
+		<SimpleData name="DATE">2400</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.400000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">eggshell</SimpleData>
+		<SimpleData name="SPECIES">Struthio camelus</SimpleData>
+		<SimpleData name="LAB_ID">CAMS-113296</SimpleData>
+		<SimpleData name="DATE">6135</SimpleData>
+		<SimpleData name="UNCERTAINT">40</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">orton2006rhl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Open</SimpleData>
+		<SimpleData name="SITE_CODE">EBO</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.315999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">BM</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-2465</SimpleData>
+		<SimpleData name="DATE">705</SimpleData>
+		<SimpleData name="UNCERTAINT">45</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-21.100000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.316,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">KIR</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4799</SimpleData>
+		<SimpleData name="DATE">710</SimpleData>
+		<SimpleData name="UNCERTAINT">45</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">2a LEN</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5855</SimpleData>
+		<SimpleData name="DATE">1660</SimpleData>
+		<SimpleData name="UNCERTAINT">45</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-24.199999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">LEED</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">plant remains</SimpleData>
+		<SimpleData name="LAB_ID">Pta-687</SimpleData>
+		<SimpleData name="DATE">3510</SimpleData>
+		<SimpleData name="UNCERTAINT">45</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+		<SimpleData name="NOTES">Charcoal, bedding grass</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">PET</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6730</SimpleData>
+		<SimpleData name="DATE">570</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">FRA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5061</SimpleData>
+		<SimpleData name="DATE">580</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Open</SimpleData>
+		<SimpleData name="SITE_CODE">EBO</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.315999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Spit 1</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-2460</SimpleData>
+		<SimpleData name="DATE">590</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-23.800000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.316,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">JAC</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-7889</SimpleData>
+		<SimpleData name="DATE">590</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">ELA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5276</SimpleData>
+		<SimpleData name="DATE">620</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Borrow Pit Midden</SimpleData>
+		<SimpleData name="SITE_CODE">BPM</SimpleData>
+		<SimpleData name="LATITUDE">-32.317999999999998</SimpleData>
+		<SimpleData name="LONGITUDE">18.315999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Lens</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4023</SimpleData>
+		<SimpleData name="DATE">640</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-23.399999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl; jerardino2009oss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.316,-32.318</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">PET</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5280</SimpleData>
+		<SimpleData name="DATE">650</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">ELA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4802</SimpleData>
+		<SimpleData name="DATE">680</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">BER</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6721</SimpleData>
+		<SimpleData name="DATE">690</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">1a FUB</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">plant remains</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3600</SimpleData>
+		<SimpleData name="DATE">760</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-23.300000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Spring Cave</SimpleData>
+		<SimpleData name="SITE_CODE">SGC</SimpleData>
+		<SimpleData name="LATITUDE">-32.322000000000003</SimpleData>
+		<SimpleData name="LONGITUDE">18.335999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">3 DBM</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4042</SimpleData>
+		<SimpleData name="DATE">840</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-16.600000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.336,-32.322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Pancho's Kitchen Midden</SimpleData>
+		<SimpleData name="SITE_CODE">PKM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338999999999999</SimpleData>
+		<SimpleData name="LONGITUDE">18.332999999999998</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">2 MISTERIO</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5921</SimpleData>
+		<SimpleData name="DATE">880</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-23.800000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333,-32.339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Nuwedam A</SimpleData>
+		<SimpleData name="SITE_CODE">NWDA</SimpleData>
+		<SimpleData name="LATITUDE">-32.350000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.332999999999998</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Surface</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4478</SimpleData>
+		<SimpleData name="DATE">990</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">open site</SimpleData>
+		<SimpleData name="DELTA_13">-0.100000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333,-32.35</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Scorpion Shelter</SimpleData>
+		<SimpleData name="SITE_CODE">SCP</SimpleData>
+		<SimpleData name="LATITUDE">-32.366999999999997</SimpleData>
+		<SimpleData name="LONGITUDE">18.367000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">DSS8</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6480</SimpleData>
+		<SimpleData name="DATE">1040</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-24.300000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.367,-32.367</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Spring Cave</SimpleData>
+		<SimpleData name="SITE_CODE">SGC</SimpleData>
+		<SimpleData name="LATITUDE">-32.322000000000003</SimpleData>
+		<SimpleData name="LONGITUDE">18.335999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">4 ECHO</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4035</SimpleData>
+		<SimpleData name="DATE">1150</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-19.399999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.336,-32.322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">JAC</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6734</SimpleData>
+		<SimpleData name="DATE">1210</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Open</SimpleData>
+		<SimpleData name="SITE_CODE">EBO</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.315999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">EVEN</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-2469</SimpleData>
+		<SimpleData name="DATE">1470</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-22.300000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.316,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Open</SimpleData>
+		<SimpleData name="SITE_CODE">EBO</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.315999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-2569</SimpleData>
+		<SimpleData name="DATE">1470</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">klein1986psh</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.316,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">2b FRAN</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3309</SimpleData>
+		<SimpleData name="DATE">1580</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-24.000000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">3a KTAT</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5817</SimpleData>
+		<SimpleData name="DATE">1590</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-24.100000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">3a TURNER</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3311</SimpleData>
+		<SimpleData name="DATE">1610</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-23.500000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">3a ABD II</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3310</SimpleData>
+		<SimpleData name="DATE">1620</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-23.500000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">3a ALVIN</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3312</SimpleData>
+		<SimpleData name="DATE">1680</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-23.399999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">3b X-RAY</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5615</SimpleData>
+		<SimpleData name="DATE">1780</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-23.899999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">Spit 7</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3659</SimpleData>
+		<SimpleData name="DATE">2090</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-20.399999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">Spit 2</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3641</SimpleData>
+		<SimpleData name="DATE">2130</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-22.199999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">FS6b</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6707</SimpleData>
+		<SimpleData name="DATE">2160</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.300000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dunefield Midden 11</SimpleData>
+		<SimpleData name="SITE_CODE">DFM11</SimpleData>
+		<SimpleData name="LATITUDE">-32.283000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.350000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-8912</SimpleData>
+		<SimpleData name="DATE">2220</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">orton2006lsl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.35,-32.283</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Railway Midden</SimpleData>
+		<SimpleData name="SITE_CODE">RWM</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Lens</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5917</SimpleData>
+		<SimpleData name="DATE">2450</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.300000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Cape Deseada Midden</SimpleData>
+		<SimpleData name="SITE_CODE">CDM</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.314000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">Shell lens 2</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5918</SimpleData>
+		<SimpleData name="DATE">2450</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.400000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.314,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">Spit 10</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3207</SimpleData>
+		<SimpleData name="DATE">2460</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-23.500000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Cape Deseada Midden</SimpleData>
+		<SimpleData name="SITE_CODE">CDM</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.314000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">Shell lens 2</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5919</SimpleData>
+		<SimpleData name="DATE">2500</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-0.300000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.314,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Kreefbaai C</SimpleData>
+		<SimpleData name="SITE_CODE">KFBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.210000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.327999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Sample G</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4046</SimpleData>
+		<SimpleData name="DATE">2550</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-20.699999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino2010lsm</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.328,-32.21</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Public Resort 1</SimpleData>
+		<SimpleData name="SITE_CODE">PR1</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.332999999999998</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Bottom of midden</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4030</SimpleData>
+		<SimpleData name="DATE">2610</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.300000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">Spit 12</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3720</SimpleData>
+		<SimpleData name="DATE">2820</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-21.000000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">LBED</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">plant remains</SimpleData>
+		<SimpleData name="LAB_ID">Pta-841</SimpleData>
+		<SimpleData name="DATE">3450</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+		<SimpleData name="NOTES">Charcoal, bedding grass</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">MAUR</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">bone</SimpleData>
+		<SimpleData name="SPECIES">Homo sapiens</SimpleData>
+		<SimpleData name="LAB_ID">Pta-1754</SimpleData>
+		<SimpleData name="DATE">3835</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+		<SimpleData name="NOTES">Talus - human burial UCT 373</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">13a DELTA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3605</SimpleData>
+		<SimpleData name="DATE">4330</SimpleData>
+		<SimpleData name="UNCERTAINT">50</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-23.899999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Hail Storm Midden</SimpleData>
+		<SimpleData name="SITE_CODE">HSM</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.300000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Surface</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4018</SimpleData>
+		<SimpleData name="DATE">990</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-21.699999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.3,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">JAC</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6732</SimpleData>
+		<SimpleData name="DATE">1030</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">FRA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6737</SimpleData>
+		<SimpleData name="DATE">1210</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">Spit 3</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3640</SimpleData>
+		<SimpleData name="DATE">1780</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-21.100000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">3b VALIANT</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5616</SimpleData>
+		<SimpleData name="DATE">1800</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-23.699999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">BARN3</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6694</SimpleData>
+		<SimpleData name="DATE">2220</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.700000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="SPECIES">Donax serra</SimpleData>
+		<SimpleData name="LAB_ID">Pta-9396</SimpleData>
+		<SimpleData name="DATE">2280</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">orton2006rhl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Mike Taylor's Midden</SimpleData>
+		<SimpleData name="SITE_CODE">MTM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.317000000000000</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Azonal Vegetation</SimpleData>
+		<SimpleData name="CONTEXT">DGM</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6693</SimpleData>
+		<SimpleData name="DATE">2340</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.500000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+		<SimpleData name="NOTES">Fynbos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317,-32.338</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Kreefbaai C</SimpleData>
+		<SimpleData name="SITE_CODE">KFBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.210000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.327999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Sample E</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4047</SimpleData>
+		<SimpleData name="DATE">2460</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-20.899999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino2010lsm</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.328,-32.21</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Kreefbaai C</SimpleData>
+		<SimpleData name="SITE_CODE">KFBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.210000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.327999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Sample A</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3313</SimpleData>
+		<SimpleData name="DATE">2470</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-19.600000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino2010lsm</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.328,-32.21</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Kreefbaai C</SimpleData>
+		<SimpleData name="SITE_CODE">KFBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.210000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.327999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Sample B</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3589</SimpleData>
+		<SimpleData name="DATE">2490</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-21.500000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino2010lsm</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.328,-32.21</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Public Resort 1</SimpleData>
+		<SimpleData name="SITE_CODE">PR1</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.332999999999998</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Bottom of midden</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4022</SimpleData>
+		<SimpleData name="DATE">2570</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-23.800000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Pancho's Kitchen Midden</SimpleData>
+		<SimpleData name="SITE_CODE">PKM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338999999999999</SimpleData>
+		<SimpleData name="LONGITUDE">18.332999999999998</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">3 TEMPRANO</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5602</SimpleData>
+		<SimpleData name="DATE">2640</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-23.000000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333,-32.339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Eagle Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EAC</SimpleData>
+		<SimpleData name="LATITUDE">-32.326000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.321999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Surface</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5920</SimpleData>
+		<SimpleData name="DATE">2910</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-21.500000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.322,-32.326</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Open</SimpleData>
+		<SimpleData name="SITE_CODE">EBO</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.315999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">SPECKLE</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6265</SimpleData>
+		<SimpleData name="DATE">2920</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-22.699999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.316,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Spring Cave</SimpleData>
+		<SimpleData name="SITE_CODE">SGC</SimpleData>
+		<SimpleData name="LATITUDE">-32.322000000000003</SimpleData>
+		<SimpleData name="LONGITUDE">18.335999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">5 UDF</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4033</SimpleData>
+		<SimpleData name="DATE">2970</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-21.500000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.336,-32.322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Pancho's Kitchen Midden</SimpleData>
+		<SimpleData name="SITE_CODE">PKM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338999999999999</SimpleData>
+		<SimpleData name="LONGITUDE">18.332999999999998</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">6 PENCO</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5923</SimpleData>
+		<SimpleData name="DATE">3060</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-24.199999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333,-32.339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Soutkloof 1</SimpleData>
+		<SimpleData name="SITE_CODE">STK1</SimpleData>
+		<SimpleData name="LATITUDE">-32.445999999999998</SimpleData>
+		<SimpleData name="LONGITUDE">18.335999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Bottom ofSingle lens</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5986</SimpleData>
+		<SimpleData name="DATE">3080</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">0.400000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.336,-32.446</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">5a UM2</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5498</SimpleData>
+		<SimpleData name="DATE">3160</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">0.200000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Kreefbaai C</SimpleData>
+		<SimpleData name="SITE_CODE">KFBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.210000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.327999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Sample I</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4045</SimpleData>
+		<SimpleData name="DATE">3190</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-22.199999999999999</SimpleData>
+		<SimpleData name="REFCODE">jerardino2010lsm</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.328,-32.21</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">5c REBEL</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5662</SimpleData>
+		<SimpleData name="DATE">3410</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">0.000000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Spring Cave</SimpleData>
+		<SimpleData name="SITE_CODE">SGC</SimpleData>
+		<SimpleData name="LATITUDE">-32.322000000000003</SimpleData>
+		<SimpleData name="LONGITUDE">18.335999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">6 BM</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4027</SimpleData>
+		<SimpleData name="DATE">3510</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-19.300000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.336,-32.322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">6SM2</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3604</SimpleData>
+		<SimpleData name="DATE">3520</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-21.100000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Pancho's Kitchen Midden</SimpleData>
+		<SimpleData name="SITE_CODE">PKM</SimpleData>
+		<SimpleData name="LATITUDE">-32.338999999999999</SimpleData>
+		<SimpleData name="LONGITUDE">18.332999999999998</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">7SH. PENCO II</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5743</SimpleData>
+		<SimpleData name="DATE">3570</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="DELTA_13">-24.100000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333,-32.339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">GSFB</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5594</SimpleData>
+		<SimpleData name="DATE">3590</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">BARH</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5317</SimpleData>
+		<SimpleData name="DATE">3940</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">8 FU3</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3608a</SimpleData>
+		<SimpleData name="DATE">4020</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-23.500000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5805</SimpleData>
+		<SimpleData name="DATE">4160</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">orton2006lsl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">10 MELANIE</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3608b</SimpleData>
+		<SimpleData name="DATE">4190</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-23.300000000000001</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5313</SimpleData>
+		<SimpleData name="DATE">4370</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">orton2006lsl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Dorothee pit</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">GifA-13001/SacA-31983</SimpleData>
+		<SimpleData name="DATE">15830</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Robberg</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">tribolo2016cpd</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Dorothee</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">GifA-13002/SacA-31984</SimpleData>
+		<SimpleData name="DATE">15970</SimpleData>
+		<SimpleData name="UNCERTAINT">60</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Robberg</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">tribolo2016cpd</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">PLGB, Level 6 (top)</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">UW-0193</SimpleData>
+		<SimpleData name="DATE">10090</SimpleData>
+		<SimpleData name="UNCERTAINT">65</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">fairhall1976uwd</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">EDDI</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">GaK-4336</SimpleData>
+		<SimpleData name="DATE">20</SimpleData>
+		<SimpleData name="UNCERTAINT">70</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">NKOM</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-1815</SimpleData>
+		<SimpleData name="DATE">320</SimpleData>
+		<SimpleData name="UNCERTAINT">70</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Final LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Verloren Vlei</SimpleData>
+		<SimpleData name="SITE_CODE">VLV</SimpleData>
+		<SimpleData name="LATITUDE">-32.350000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.417000000000002</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Human burial UCT 428</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">bone</SimpleData>
+		<SimpleData name="SPECIES">Homo sapiens</SimpleData>
+		<SimpleData name="LAB_ID">Gx-14815</SimpleData>
+		<SimpleData name="DATE">940</SimpleData>
+		<SimpleData name="UNCERTAINT">70</SimpleData>
+		<SimpleData name="SITE_TYPE">Human burial</SimpleData>
+		<SimpleData name="REFCODE">morris1992scs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.417,-32.35</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Dune Field Midden</SimpleData>
+		<SimpleData name="SITE_CODE">DFM</SimpleData>
+		<SimpleData name="LATITUDE">-32.301000000000002</SimpleData>
+		<SimpleData name="LONGITUDE">18.347999999999999</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">SHA</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-4801</SimpleData>
+		<SimpleData name="DATE">1350</SimpleData>
+		<SimpleData name="UNCERTAINT">70</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">shell midden</SimpleData>
+		<SimpleData name="REFCODE">parkington2009fcs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348,-32.301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">14 HOME</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3596</SimpleData>
+		<SimpleData name="DATE">7700</SimpleData>
+		<SimpleData name="UNCERTAINT">70</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">1.200000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">SMOK</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="LAB_ID">AA-5833</SimpleData>
+		<SimpleData name="DATE">10840</SimpleData>
+		<SimpleData name="UNCERTAINT">70</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">RAYI</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">GaK-4337</SimpleData>
+		<SimpleData name="DATE">1520</SimpleData>
+		<SimpleData name="UNCERTAINT">80</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Verloren Vlei</SimpleData>
+		<SimpleData name="SITE_CODE">VLV</SimpleData>
+		<SimpleData name="LATITUDE">-32.350000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.417000000000002</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Human burial UCT 427</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">bone</SimpleData>
+		<SimpleData name="SPECIES">Homo sapiens</SimpleData>
+		<SimpleData name="LAB_ID">Gx-14816</SimpleData>
+		<SimpleData name="DATE">2670</SimpleData>
+		<SimpleData name="UNCERTAINT">80</SimpleData>
+		<SimpleData name="SITE_TYPE">Human burial</SimpleData>
+		<SimpleData name="REFCODE">morris1992scs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.417,-32.35</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">13b ECHO</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine shell</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5479</SimpleData>
+		<SimpleData name="DATE">6910</SimpleData>
+		<SimpleData name="UNCERTAINT">80</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="DELTA_13">-0.500000000000000</SimpleData>
+		<SimpleData name="REFCODE">jerardino1996csl</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-1872</SimpleData>
+		<SimpleData name="DATE">7910</SimpleData>
+		<SimpleData name="UNCERTAINT">80</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">orton2006lsl</SimpleData>
+		<SimpleData name="NOTES">Transitional</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">MARO</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-1871</SimpleData>
+		<SimpleData name="DATE">8340</SimpleData>
+		<SimpleData name="UNCERTAINT">80</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+		<SimpleData name="NOTES">Transitional</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">FOAM</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5336</SimpleData>
+		<SimpleData name="DATE">10460</SimpleData>
+		<SimpleData name="UNCERTAINT">80</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">SOSE</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="LAB_ID">AA-5834</SimpleData>
+		<SimpleData name="DATE">11415</SimpleData>
+		<SimpleData name="UNCERTAINT">80</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Robberg</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">ALMJ</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">GaK-4335</SimpleData>
+		<SimpleData name="DATE">1120</SimpleData>
+		<SimpleData name="UNCERTAINT">85</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">SOYI</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">plant remains</SimpleData>
+		<SimpleData name="LAB_ID">Pta-1816</SimpleData>
+		<SimpleData name="DATE">3780</SimpleData>
+		<SimpleData name="UNCERTAINT">85</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+		<SimpleData name="NOTES">Estuarine grass bedding</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">MARO</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">eggshell</SimpleData>
+		<SimpleData name="SPECIES">Struthio camelus</SimpleData>
+		<SimpleData name="LAB_ID">AA-5832</SimpleData>
+		<SimpleData name="DATE">8110</SimpleData>
+		<SimpleData name="UNCERTAINT">90</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+		<SimpleData name="NOTES">Transitional</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">BURO</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5305</SimpleData>
+		<SimpleData name="DATE">8860</SimpleData>
+		<SimpleData name="UNCERTAINT">90</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">BSP2</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-686</SimpleData>
+		<SimpleData name="DATE">9600</SimpleData>
+		<SimpleData name="UNCERTAINT">90</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">NEPT</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5306</SimpleData>
+		<SimpleData name="DATE">9640</SimpleData>
+		<SimpleData name="UNCERTAINT">90</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">CRAY</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-2481</SimpleData>
+		<SimpleData name="DATE">10000</SimpleData>
+		<SimpleData name="UNCERTAINT">90</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Farik</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">GifA-13004/SacA-31986</SimpleData>
+		<SimpleData name="DATE">18720</SimpleData>
+		<SimpleData name="UNCERTAINT">90</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">ELSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">tribolo2016cpd</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Frida</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">GifA-13006/SacA-31988</SimpleData>
+		<SimpleData name="DATE">18780</SimpleData>
+		<SimpleData name="UNCERTAINT">90</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">ELSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">tribolo2016cpd</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Fro</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">GifA-13007/SacA-31989</SimpleData>
+		<SimpleData name="DATE">19100</SimpleData>
+		<SimpleData name="UNCERTAINT">90</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">ELSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">tribolo2016cpd</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Fael</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">GifA-13003/SacA-31985</SimpleData>
+		<SimpleData name="DATE">19120</SimpleData>
+		<SimpleData name="UNCERTAINT">90</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">ELSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">tribolo2016cpd</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">BJFR (UCT 375)</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">bone</SimpleData>
+		<SimpleData name="SPECIES">Homo sapiens</SimpleData>
+		<SimpleData name="LAB_ID">Pta-1829</SimpleData>
+		<SimpleData name="DATE">8000</SimpleData>
+		<SimpleData name="UNCERTAINT">95</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Verloren Vlei</SimpleData>
+		<SimpleData name="SITE_CODE">VLV</SimpleData>
+		<SimpleData name="LATITUDE">-32.350000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.417000000000002</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Human burial UCT 429</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">bone</SimpleData>
+		<SimpleData name="SPECIES">Homo sapiens</SimpleData>
+		<SimpleData name="LAB_ID">OxA-455</SimpleData>
+		<SimpleData name="DATE">2400</SimpleData>
+		<SimpleData name="UNCERTAINT">100</SimpleData>
+		<SimpleData name="SITE_TYPE">Human burial</SimpleData>
+		<SimpleData name="REFCODE">morris1992scs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.417,-32.35</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Tortoise Cave</SimpleData>
+		<SimpleData name="SITE_CODE">TTC</SimpleData>
+		<SimpleData name="LATITUDE">-32.341000000000001</SimpleData>
+		<SimpleData name="LONGITUDE">18.399000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Human burial UCT 433</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">bone</SimpleData>
+		<SimpleData name="SPECIES">Homo sapiens</SimpleData>
+		<SimpleData name="LAB_ID">OxA-477</SimpleData>
+		<SimpleData name="DATE">4050</SimpleData>
+		<SimpleData name="UNCERTAINT">100</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">morris1992scs</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.399,-32.341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">URSU</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">bone</SimpleData>
+		<SimpleData name="SPECIES">Homo sapiens</SimpleData>
+		<SimpleData name="LAB_ID">Pta-3086</SimpleData>
+		<SimpleData name="DATE">9750</SimpleData>
+		<SimpleData name="UNCERTAINT">100</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+		<SimpleData name="NOTES">Talus - human burial UCT 374</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">ASHE</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5361</SimpleData>
+		<SimpleData name="DATE">10560</SimpleData>
+		<SimpleData name="UNCERTAINT">100</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">DUST</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-6758</SimpleData>
+		<SimpleData name="DATE">10620</SimpleData>
+		<SimpleData name="UNCERTAINT">100</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">SMOK</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5369</SimpleData>
+		<SimpleData name="DATE">10660</SimpleData>
+		<SimpleData name="UNCERTAINT">100</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">GBAN</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-0737</SimpleData>
+		<SimpleData name="DATE">10700</SimpleData>
+		<SimpleData name="UNCERTAINT">100</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Fro</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">GifA-13008/SacA-31990</SimpleData>
+		<SimpleData name="DATE">19960</SimpleData>
+		<SimpleData name="UNCERTAINT">100</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">ELSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">tribolo2016cpd</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">PBGB</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta-0732</SimpleData>
+		<SimpleData name="DATE">10640</SimpleData>
+		<SimpleData name="UNCERTAINT">110</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">GBS1</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta- 6756</SimpleData>
+		<SimpleData name="DATE">11370</SimpleData>
+		<SimpleData name="UNCERTAINT">110</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Robberg</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">JOFR</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">plant remains</SimpleData>
+		<SimpleData name="LAB_ID">GaK-4339</SimpleData>
+		<SimpleData name="DATE">2950</SimpleData>
+		<SimpleData name="UNCERTAINT">115</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Wilton</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+		<SimpleData name="NOTES">Estuarine grass bedding</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">SOSE</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta- 6761</SimpleData>
+		<SimpleData name="DATE">13260</SimpleData>
+		<SimpleData name="UNCERTAINT">120</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Robberg</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">GBS2</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta- 6757</SimpleData>
+		<SimpleData name="DATE">13020</SimpleData>
+		<SimpleData name="UNCERTAINT">130</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Robberg</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">KAMA, Level 6 (bottom)</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">UW-0192</SimpleData>
+		<SimpleData name="DATE">11070</SimpleData>
+		<SimpleData name="UNCERTAINT">140</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">fairhall1976uwd</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">MOS1</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">Pta- 4321</SimpleData>
+		<SimpleData name="DATE">13600</SimpleData>
+		<SimpleData name="UNCERTAINT">140</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Robberg</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">YMFD</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">bone</SimpleData>
+		<SimpleData name="SPECIES">Homo sapiens</SimpleData>
+		<SimpleData name="LAB_ID">OxA-456</SimpleData>
+		<SimpleData name="DATE">9800</SimpleData>
+		<SimpleData name="UNCERTAINT">160</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">ALBA</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">bone</SimpleData>
+		<SimpleData name="SPECIES">Homo sapiens</SimpleData>
+		<SimpleData name="LAB_ID">OxA-478</SimpleData>
+		<SimpleData name="DATE">10860</SimpleData>
+		<SimpleData name="UNCERTAINT">180</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">SPIN</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta- 5308</SimpleData>
+		<SimpleData name="DATE">17800</SimpleData>
+		<SimpleData name="UNCERTAINT">180</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Robberg</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">DS06</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta- 1597</SimpleData>
+		<SimpleData name="DATE">20180</SimpleData>
+		<SimpleData name="UNCERTAINT">220</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">ELSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">OAKO</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta- 5304</SimpleData>
+		<SimpleData name="DATE">20500</SimpleData>
+		<SimpleData name="UNCERTAINT">240</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">ELSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">CRAY</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">marine other</SimpleData>
+		<SimpleData name="SPECIES">Jasus lalandii</SimpleData>
+		<SimpleData name="LAB_ID">Pta-2592</SimpleData>
+		<SimpleData name="DATE">9950</SimpleData>
+		<SimpleData name="UNCERTAINT">270</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Oakhurst</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">DS02</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="LAB_ID">GaK  4338</SimpleData>
+		<SimpleData name="DATE">12450</SimpleData>
+		<SimpleData name="UNCERTAINT">280</SimpleData>
+		<SimpleData name="ARCH_PERIO">LSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Robberg</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">Ibis</SimpleData>
+		<SimpleData name="TECHNIQUE">AMS</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">GifA-13009/SacA-31991</SimpleData>
+		<SimpleData name="DATE">33270</SimpleData>
+		<SimpleData name="UNCERTAINT">430</SimpleData>
+		<SimpleData name="ARCH_PERIO">MSA</SimpleData>
+		<SimpleData name="ARCH_SUBPE">Final MSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">tribolo2016cpd</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">NORT</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-5311</SimpleData>
+		<SimpleData name="DATE">41700</SimpleData>
+		<SimpleData name="UNCERTAINT">1700</SimpleData>
+		<SimpleData name="ARCH_PERIO">MSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_C14">
+		<SimpleData name="SITE">Elands Bay Cave</SimpleData>
+		<SimpleData name="SITE_CODE">EBC</SimpleData>
+		<SimpleData name="LATITUDE">-32.317000000000000</SimpleData>
+		<SimpleData name="LONGITUDE">18.318000000000001</SimpleData>
+		<SimpleData name="COUNTRY">South Africa</SimpleData>
+		<SimpleData name="PROVINCE_D">Western Cape</SimpleData>
+		<SimpleData name="RFZ">W</SimpleData>
+		<SimpleData name="BIOME">Fynbos Biome</SimpleData>
+		<SimpleData name="CONTEXT">DS11</SimpleData>
+		<SimpleData name="TECHNIQUE">conventional 14C</SimpleData>
+		<SimpleData name="MATERIAL">charcoal</SimpleData>
+		<SimpleData name="LAB_ID">Pta-1596</SimpleData>
+		<SimpleData name="DATE">42800</SimpleData>
+		<SimpleData name="UNCERTAINT">1900</SimpleData>
+		<SimpleData name="ARCH_PERIO">MSA</SimpleData>
+		<SimpleData name="SITE_TYPE">rock shelter</SimpleData>
+		<SimpleData name="REFCODE">parkington1992mss</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.318,-32.317</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="VRV_sahris" id="VRV_sahris">
+	<SimpleField name="siteid" type="float"></SimpleField>
+	<SimpleField name="siteno" type="string"></SimpleField>
+	<SimpleField name="fullsitena" type="string"></SimpleField>
+	<SimpleField name="sitetype" type="string"></SimpleField>
+	<SimpleField name="grading" type="string"></SimpleField>
+	<SimpleField name="archivesta" type="string"></SimpleField>
+	<SimpleField name="declaratio" type="string"></SimpleField>
+	<SimpleField name="gid" type="float"></SimpleField>
+	<SimpleField name="eid" type="float"></SimpleField>
+	<SimpleField name="latitude" type="float"></SimpleField>
+	<SimpleField name="longitude" type="float"></SimpleField>
+	<SimpleField name="grading_wi" type="string"></SimpleField>
+	<SimpleField name="SiteStatus" type="string"></SimpleField>
+</Schema>
+<Folder><name>VRV_sahris</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">18366</SimpleData>
+		<SimpleData name="siteno">KMD13</SimpleData>
+		<SimpleData name="fullsitena">Koopmansdrif 12</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">17421</SimpleData>
+		<SimpleData name="eid">80482</SimpleData>
+		<SimpleData name="latitude">-32.350780999999998</SimpleData>
+		<SimpleData name="longitude">18.451466000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.451466,-32.350781</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20422</SimpleData>
+		<SimpleData name="siteno">TR747(1)</SimpleData>
+		<SimpleData name="fullsitena">Traverse 747/209 1</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">23605</SimpleData>
+		<SimpleData name="eid">82538</SimpleData>
+		<SimpleData name="latitude">-32.342641000000000</SimpleData>
+		<SimpleData name="longitude">18.489491000000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.489491,-32.342641</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20426</SimpleData>
+		<SimpleData name="siteno">TR747(2)</SimpleData>
+		<SimpleData name="fullsitena">Traverse 747/209 2</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">23609</SimpleData>
+		<SimpleData name="eid">82542</SimpleData>
+		<SimpleData name="latitude">-32.343566000000003</SimpleData>
+		<SimpleData name="longitude">18.490686000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.490686,-32.343566</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20865</SimpleData>
+		<SimpleData name="siteno">WKP12</SimpleData>
+		<SimpleData name="fullsitena">Witklip 12</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="grading">Grade IIIa</SimpleData>
+		<SimpleData name="gid">26087</SimpleData>
+		<SimpleData name="eid">82981</SimpleData>
+		<SimpleData name="latitude">-32.392181999999998</SimpleData>
+		<SimpleData name="longitude">18.457286000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.457286,-32.392182</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17542</SimpleData>
+		<SimpleData name="siteno">GB18</SimpleData>
+		<SimpleData name="fullsitena">Grootberg 18</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">16114</SimpleData>
+		<SimpleData name="eid">79658</SimpleData>
+		<SimpleData name="latitude">-32.286217000000001</SimpleData>
+		<SimpleData name="longitude">18.531700000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.5317,-32.286217</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">41928</SimpleData>
+		<SimpleData name="siteno">MOSS-NAT13</SimpleData>
+		<SimpleData name="fullsitena">Mosselbaai Natuurreservaat 13</SimpleData>
+		<SimpleData name="sitetype">Shell Midden, Artefacts</SimpleData>
+		<SimpleData name="grading">Grade IIIc</SimpleData>
+		<SimpleData name="gid">33480</SimpleData>
+		<SimpleData name="eid">260095</SimpleData>
+		<SimpleData name="latitude">-32.345832999999999</SimpleData>
+		<SimpleData name="longitude">18.320833000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.320833,-32.345833</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16447</SimpleData>
+		<SimpleData name="siteno">BL1</SimpleData>
+		<SimpleData name="fullsitena">Bloukop 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14388</SimpleData>
+		<SimpleData name="eid">78563</SimpleData>
+		<SimpleData name="latitude">-32.332998000000003</SimpleData>
+		<SimpleData name="longitude">18.384647000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.384647,-32.332998</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">3387</SimpleData>
+		<SimpleData name="siteno">BPT PHS</SimpleData>
+		<SimpleData name="fullsitena">Baboon Point Provincial Heritage Site</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Deposit, Artefacts, Shell Midden, Cultural Landscape, Building, Palaeontological, Natural</SimpleData>
+		<SimpleData name="grading">Grade II</SimpleData>
+		<SimpleData name="declaratio">Provincial Heritage Site</SimpleData>
+		<SimpleData name="gid">14509</SimpleData>
+		<SimpleData name="eid">58501</SimpleData>
+		<SimpleData name="latitude">-32.317974000000000</SimpleData>
+		<SimpleData name="longitude">18.317342000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317342,-32.317974</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17423</SimpleData>
+		<SimpleData name="siteno">EB16</SimpleData>
+		<SimpleData name="fullsitena">Elands Bay 16</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Deposit</SimpleData>
+		<SimpleData name="grading">Grade IIIa</SimpleData>
+		<SimpleData name="gid">15881</SimpleData>
+		<SimpleData name="eid">79539</SimpleData>
+		<SimpleData name="latitude">-32.336224000000001</SimpleData>
+		<SimpleData name="longitude">18.326191000000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.326191,-32.336224</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17431</SimpleData>
+		<SimpleData name="siteno">EB8</SimpleData>
+		<SimpleData name="fullsitena">Eland&amp;#039;s Bay 8</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="grading">Grade IIIa</SimpleData>
+		<SimpleData name="gid">15889</SimpleData>
+		<SimpleData name="eid">79547</SimpleData>
+		<SimpleData name="latitude">-32.338934000000002</SimpleData>
+		<SimpleData name="longitude">18.331830000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.33183,-32.338934</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">87094</SimpleData>
+		<SimpleData name="siteno">EBC</SimpleData>
+		<SimpleData name="fullsitena">Elands Bay Cave</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Rock Art, Deposit, Shell Midden</SimpleData>
+		<SimpleData name="grading">Grade IIIa</SimpleData>
+		<SimpleData name="gid">40917</SimpleData>
+		<SimpleData name="eid">330891</SimpleData>
+		<SimpleData name="latitude">-32.317625999999997</SimpleData>
+		<SimpleData name="longitude">18.317937000000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317937,-32.317626</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16222</SimpleData>
+		<SimpleData name="siteno">BB24</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 24</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">14123</SimpleData>
+		<SimpleData name="eid">78338</SimpleData>
+		<SimpleData name="latitude">-32.336663999999999</SimpleData>
+		<SimpleData name="longitude">18.370615000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.370615,-32.336664</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20428</SimpleData>
+		<SimpleData name="siteno">TR747(4)</SimpleData>
+		<SimpleData name="fullsitena">Traverse 747/209 4</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">23611</SimpleData>
+		<SimpleData name="eid">82544</SimpleData>
+		<SimpleData name="latitude">-32.342919999999999</SimpleData>
+		<SimpleData name="longitude">18.487677999999999</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.487678,-32.34292</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20429</SimpleData>
+		<SimpleData name="siteno">TR747(5)</SimpleData>
+		<SimpleData name="fullsitena">Traverse 747/209 5</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">23612</SimpleData>
+		<SimpleData name="eid">82545</SimpleData>
+		<SimpleData name="latitude">-32.345041999999999</SimpleData>
+		<SimpleData name="longitude">18.490114999999999</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.490115,-32.345042</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20430</SimpleData>
+		<SimpleData name="siteno">TR747(6)</SimpleData>
+		<SimpleData name="fullsitena">Traverse 747/209 6</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">23613</SimpleData>
+		<SimpleData name="eid">82546</SimpleData>
+		<SimpleData name="latitude">-32.345230999999998</SimpleData>
+		<SimpleData name="longitude">18.488251000000002</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.488251,-32.345231</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20431</SimpleData>
+		<SimpleData name="siteno">TR747(7)</SimpleData>
+		<SimpleData name="fullsitena">Traverse 747/209 7</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">23614</SimpleData>
+		<SimpleData name="eid">82547</SimpleData>
+		<SimpleData name="latitude">-32.345770999999999</SimpleData>
+		<SimpleData name="longitude">18.483723000000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.483723,-32.345771</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20432</SimpleData>
+		<SimpleData name="siteno">TR747(8)</SimpleData>
+		<SimpleData name="fullsitena">Traverse 747/209 8</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">23615</SimpleData>
+		<SimpleData name="eid">82548</SimpleData>
+		<SimpleData name="latitude">-32.347580000000001</SimpleData>
+		<SimpleData name="longitude">18.483991000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.483991,-32.34758</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20433</SimpleData>
+		<SimpleData name="siteno">TR747(9)</SimpleData>
+		<SimpleData name="fullsitena">Traverse 747/209 9</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">23616</SimpleData>
+		<SimpleData name="eid">82549</SimpleData>
+		<SimpleData name="latitude">-32.347191000000002</SimpleData>
+		<SimpleData name="longitude">18.482568000000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.482568,-32.347191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19881</SimpleData>
+		<SimpleData name="siteno">SKF1</SimpleData>
+		<SimpleData name="fullsitena">Soutkloof 1</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Deposit, Shell Midden</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">45491</SimpleData>
+		<SimpleData name="eid">81997</SimpleData>
+		<SimpleData name="latitude">-32.444063000000000</SimpleData>
+		<SimpleData name="longitude">18.335156999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.335157,-32.444063</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17422</SimpleData>
+		<SimpleData name="siteno">EB15</SimpleData>
+		<SimpleData name="fullsitena">Elands Bay 15</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="grading">Grade IIIa</SimpleData>
+		<SimpleData name="gid">15880</SimpleData>
+		<SimpleData name="eid">79538</SimpleData>
+		<SimpleData name="latitude">-32.317722000000003</SimpleData>
+		<SimpleData name="longitude">18.315120000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.31512,-32.317722</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17416</SimpleData>
+		<SimpleData name="siteno">EB1</SimpleData>
+		<SimpleData name="fullsitena">Eland&amp;#039;s Bay Cave 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit</SimpleData>
+		<SimpleData name="grading">Grade II</SimpleData>
+		<SimpleData name="gid">15874</SimpleData>
+		<SimpleData name="eid">79532</SimpleData>
+		<SimpleData name="latitude">-32.317819000000000</SimpleData>
+		<SimpleData name="longitude">18.317917000000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.317917,-32.317819</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">44088</SimpleData>
+		<SimpleData name="siteno">OREX02</SimpleData>
+		<SimpleData name="fullsitena">Orex Road, West Coast 02</SimpleData>
+		<SimpleData name="sitetype">Shell Midden, Artefacts</SimpleData>
+		<SimpleData name="grading">Grade IIIa</SimpleData>
+		<SimpleData name="gid">34470</SimpleData>
+		<SimpleData name="eid">265292</SimpleData>
+		<SimpleData name="latitude">-32.217511999999999</SimpleData>
+		<SimpleData name="longitude">18.330860000000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.33086,-32.217512</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">44089</SimpleData>
+		<SimpleData name="siteno">OREX03</SimpleData>
+		<SimpleData name="fullsitena">Orex Road, West Coast 03</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="grading">Grade IIIa</SimpleData>
+		<SimpleData name="gid">34471</SimpleData>
+		<SimpleData name="eid">265293</SimpleData>
+		<SimpleData name="latitude">-32.206183000000003</SimpleData>
+		<SimpleData name="longitude">18.327427000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.327427,-32.206183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">44090</SimpleData>
+		<SimpleData name="siteno">OREX04</SimpleData>
+		<SimpleData name="fullsitena">Orex Road, West Coast 04</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="grading">Grade IIIc</SimpleData>
+		<SimpleData name="gid">34472</SimpleData>
+		<SimpleData name="eid">265294</SimpleData>
+		<SimpleData name="latitude">-32.304898999999999</SimpleData>
+		<SimpleData name="longitude">18.344936000000001</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.344936,-32.304899</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17424</SimpleData>
+		<SimpleData name="siteno">EB17</SimpleData>
+		<SimpleData name="fullsitena">Elands Bay 17</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Deposit, Shell Midden</SimpleData>
+		<SimpleData name="grading">Grade IIIa</SimpleData>
+		<SimpleData name="gid">15882</SimpleData>
+		<SimpleData name="eid">79540</SimpleData>
+		<SimpleData name="latitude">-32.317748000000002</SimpleData>
+		<SimpleData name="longitude">18.316307999999999</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.316308,-32.317748</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">41933</SimpleData>
+		<SimpleData name="siteno">MOSS-NAT19</SimpleData>
+		<SimpleData name="fullsitena">Mosselbaai Natuurreservaat 19</SimpleData>
+		<SimpleData name="sitetype">Shell Midden, Artefacts</SimpleData>
+		<SimpleData name="grading">Grade IIIc</SimpleData>
+		<SimpleData name="gid">33485</SimpleData>
+		<SimpleData name="eid">260137</SimpleData>
+		<SimpleData name="latitude">-32.345832999999999</SimpleData>
+		<SimpleData name="longitude">18.320833000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.320833,-32.345833</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">41934</SimpleData>
+		<SimpleData name="siteno">MOSS-NAT20</SimpleData>
+		<SimpleData name="fullsitena">Mosselbaai Natuurreservaat 20</SimpleData>
+		<SimpleData name="sitetype">Shell Midden, Artefacts</SimpleData>
+		<SimpleData name="grading">Grade IIIc</SimpleData>
+		<SimpleData name="gid">33486</SimpleData>
+		<SimpleData name="eid">260138</SimpleData>
+		<SimpleData name="latitude">-32.345832999999999</SimpleData>
+		<SimpleData name="longitude">18.320833000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.320833,-32.345833</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">41947</SimpleData>
+		<SimpleData name="siteno">MOSS-NAT22</SimpleData>
+		<SimpleData name="fullsitena">Mosselbaai Natuurreservaat 22</SimpleData>
+		<SimpleData name="sitetype">Shell Midden, Artefacts</SimpleData>
+		<SimpleData name="grading">Grade IIIc</SimpleData>
+		<SimpleData name="gid">33499</SimpleData>
+		<SimpleData name="eid">260152</SimpleData>
+		<SimpleData name="latitude">-32.345832999999999</SimpleData>
+		<SimpleData name="longitude">18.320833000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.320833,-32.345833</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">41948</SimpleData>
+		<SimpleData name="siteno">MOSS-NAT23</SimpleData>
+		<SimpleData name="fullsitena">Mosselbaai Natuurreservaat 23</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="grading">Grade IIIb</SimpleData>
+		<SimpleData name="gid">33500</SimpleData>
+		<SimpleData name="eid">260153</SimpleData>
+		<SimpleData name="latitude">-32.345832999999999</SimpleData>
+		<SimpleData name="longitude">18.320833000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.320833,-32.345833</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16161</SimpleData>
+		<SimpleData name="siteno">AND10</SimpleData>
+		<SimpleData name="fullsitena">Aan de Klipheuwel 10</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">13987</SimpleData>
+		<SimpleData name="eid">78277</SimpleData>
+		<SimpleData name="latitude">-32.260719999999999</SimpleData>
+		<SimpleData name="longitude">18.520370000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.52037,-32.26072</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16171</SimpleData>
+		<SimpleData name="siteno">AND9</SimpleData>
+		<SimpleData name="fullsitena">Aan de Klipheuwel 9</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">13997</SimpleData>
+		<SimpleData name="eid">78287</SimpleData>
+		<SimpleData name="latitude">-32.262889999999999</SimpleData>
+		<SimpleData name="longitude">18.521480000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.52148,-32.26289</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16209</SimpleData>
+		<SimpleData name="siteno">BB1</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14110</SimpleData>
+		<SimpleData name="eid">78325</SimpleData>
+		<SimpleData name="latitude">-32.320765999999999</SimpleData>
+		<SimpleData name="longitude">18.335529999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.33553,-32.320766</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16213</SimpleData>
+		<SimpleData name="siteno">BB14</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 14</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">14114</SimpleData>
+		<SimpleData name="eid">78329</SimpleData>
+		<SimpleData name="latitude">-32.332830999999999</SimpleData>
+		<SimpleData name="longitude">18.350798999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.350799,-32.332831</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16215</SimpleData>
+		<SimpleData name="siteno">BB16</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 16</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">14116</SimpleData>
+		<SimpleData name="eid">78331</SimpleData>
+		<SimpleData name="latitude">-32.321218999999999</SimpleData>
+		<SimpleData name="longitude">18.326429000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.326429,-32.321219</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16220</SimpleData>
+		<SimpleData name="siteno">BB22</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 22</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">14121</SimpleData>
+		<SimpleData name="eid">78336</SimpleData>
+		<SimpleData name="latitude">-32.317760000000000</SimpleData>
+		<SimpleData name="longitude">18.332290000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.33229,-32.31776</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16221</SimpleData>
+		<SimpleData name="siteno">BB23</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 23</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">14122</SimpleData>
+		<SimpleData name="eid">78337</SimpleData>
+		<SimpleData name="latitude">-32.321542000000001</SimpleData>
+		<SimpleData name="longitude">18.353092000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.353092,-32.321542</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16223</SimpleData>
+		<SimpleData name="siteno">BB25</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 25</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">14124</SimpleData>
+		<SimpleData name="eid">78339</SimpleData>
+		<SimpleData name="latitude">-32.319372000000001</SimpleData>
+		<SimpleData name="longitude">18.353268000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.353268,-32.319372</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16227</SimpleData>
+		<SimpleData name="siteno">BB29</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 29</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Deposit, Shell Midden</SimpleData>
+		<SimpleData name="gid">14128</SimpleData>
+		<SimpleData name="eid">78343</SimpleData>
+		<SimpleData name="latitude">-32.328080000000000</SimpleData>
+		<SimpleData name="longitude">18.366304000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.366304,-32.32808</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16228</SimpleData>
+		<SimpleData name="siteno">BB3</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 3</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">14129</SimpleData>
+		<SimpleData name="eid">78344</SimpleData>
+		<SimpleData name="latitude">-32.324139000000002</SimpleData>
+		<SimpleData name="longitude">18.353860999999998</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.353861,-32.324139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16231</SimpleData>
+		<SimpleData name="siteno">BB6</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 6</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14132</SimpleData>
+		<SimpleData name="eid">78347</SimpleData>
+		<SimpleData name="latitude">-32.321567999999999</SimpleData>
+		<SimpleData name="longitude">18.329395000000002</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.329395,-32.321568</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16233</SimpleData>
+		<SimpleData name="siteno">BB8</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaansberg 8</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14134</SimpleData>
+		<SimpleData name="eid">78349</SimpleData>
+		<SimpleData name="latitude">-32.316875000000003</SimpleData>
+		<SimpleData name="longitude">18.356114999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.356115,-32.316875</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16253</SimpleData>
+		<SimpleData name="siteno">BBK5</SimpleData>
+		<SimpleData name="fullsitena">Bobbejaanskop 5</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14155</SimpleData>
+		<SimpleData name="eid">78369</SimpleData>
+		<SimpleData name="latitude">-32.249380000000002</SimpleData>
+		<SimpleData name="longitude">18.441739999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.44174,-32.24938</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16368</SimpleData>
+		<SimpleData name="siteno">BFB1</SimpleData>
+		<SimpleData name="fullsitena">Bobbegaansfonteinberge 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14295</SimpleData>
+		<SimpleData name="eid">78484</SimpleData>
+		<SimpleData name="latitude">-32.245047999999997</SimpleData>
+		<SimpleData name="longitude">18.481971000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.481971,-32.245048</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16373</SimpleData>
+		<SimpleData name="siteno">BFB14</SimpleData>
+		<SimpleData name="fullsitena">Bobbegaansfonteinberge 14</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14300</SimpleData>
+		<SimpleData name="eid">78489</SimpleData>
+		<SimpleData name="latitude">-32.245835000000000</SimpleData>
+		<SimpleData name="longitude">18.491185000000002</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.491185,-32.245835</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16379</SimpleData>
+		<SimpleData name="siteno">BFB2</SimpleData>
+		<SimpleData name="fullsitena">Bobbegaansfonteinberge 2</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14306</SimpleData>
+		<SimpleData name="eid">78495</SimpleData>
+		<SimpleData name="latitude">-32.245173000000001</SimpleData>
+		<SimpleData name="longitude">18.482361999999998</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.482362,-32.245173</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16383</SimpleData>
+		<SimpleData name="siteno">BFB3</SimpleData>
+		<SimpleData name="fullsitena">Bobbegaansfonteinberge 3</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14310</SimpleData>
+		<SimpleData name="eid">78499</SimpleData>
+		<SimpleData name="latitude">-32.245280999999999</SimpleData>
+		<SimpleData name="longitude">18.482754000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.482754,-32.245281</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16386</SimpleData>
+		<SimpleData name="siteno">BFB6</SimpleData>
+		<SimpleData name="fullsitena">Bobbegaansfonteinberge 6</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14313</SimpleData>
+		<SimpleData name="eid">78502</SimpleData>
+		<SimpleData name="latitude">-32.246862000000000</SimpleData>
+		<SimpleData name="longitude">18.488866999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.488867,-32.246862</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16387</SimpleData>
+		<SimpleData name="siteno">BFB7</SimpleData>
+		<SimpleData name="fullsitena">Bobbegaansfonteinberge 7</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14314</SimpleData>
+		<SimpleData name="eid">78503</SimpleData>
+		<SimpleData name="latitude">-32.247148000000003</SimpleData>
+		<SimpleData name="longitude">18.489767000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.489767,-32.247148</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16388</SimpleData>
+		<SimpleData name="siteno">BFB8</SimpleData>
+		<SimpleData name="fullsitena">Bobbegaansfonteinberge 8</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14315</SimpleData>
+		<SimpleData name="eid">78504</SimpleData>
+		<SimpleData name="latitude">-32.244940999999997</SimpleData>
+		<SimpleData name="longitude">18.479960999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.479961,-32.244941</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16444</SimpleData>
+		<SimpleData name="siteno">BHW1-1</SimpleData>
+		<SimpleData name="fullsitena">Bonteheuwel 1 - 1</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">14374</SimpleData>
+		<SimpleData name="eid">78560</SimpleData>
+		<SimpleData name="latitude">-32.313411000000002</SimpleData>
+		<SimpleData name="longitude">18.355248000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.355248,-32.313411</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16449</SimpleData>
+		<SimpleData name="siteno">BL3</SimpleData>
+		<SimpleData name="fullsitena">Bloukop 3</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">14390</SimpleData>
+		<SimpleData name="eid">78565</SimpleData>
+		<SimpleData name="latitude">-32.336162000000002</SimpleData>
+		<SimpleData name="longitude">18.390332999999998</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.390333,-32.336162</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19525</SimpleData>
+		<SimpleData name="siteno">RDB3</SimpleData>
+		<SimpleData name="fullsitena">Rondeberg EB 3</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">19308</SimpleData>
+		<SimpleData name="eid">81641</SimpleData>
+		<SimpleData name="latitude">-32.398201000000000</SimpleData>
+		<SimpleData name="longitude">18.379054000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.379054,-32.398201</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">16829</SimpleData>
+		<SimpleData name="siteno">CLB1</SimpleData>
+		<SimpleData name="fullsitena">Connie&amp;#039;s Limpet Bar 1</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">15018</SimpleData>
+		<SimpleData name="eid">78945</SimpleData>
+		<SimpleData name="latitude">-32.315778000000002</SimpleData>
+		<SimpleData name="longitude">18.336015000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.336015,-32.315778</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17126</SimpleData>
+		<SimpleData name="siteno">DFM1</SimpleData>
+		<SimpleData name="fullsitena">Dunefield Midden 1</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">15436</SimpleData>
+		<SimpleData name="eid">79242</SimpleData>
+		<SimpleData name="latitude">-32.301046999999997</SimpleData>
+		<SimpleData name="longitude">18.348773000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.348773,-32.301047</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17132</SimpleData>
+		<SimpleData name="siteno">DFM15</SimpleData>
+		<SimpleData name="fullsitena">Dunefield Midden 15</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">15442</SimpleData>
+		<SimpleData name="eid">79248</SimpleData>
+		<SimpleData name="latitude">-32.303807999999997</SimpleData>
+		<SimpleData name="longitude">18.346502999999998</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.346503,-32.303808</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17138</SimpleData>
+		<SimpleData name="siteno">DFM20</SimpleData>
+		<SimpleData name="fullsitena">Dunefield Midden 20</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">15448</SimpleData>
+		<SimpleData name="eid">79254</SimpleData>
+		<SimpleData name="latitude">-32.303100000000001</SimpleData>
+		<SimpleData name="longitude">18.346747000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.346747,-32.3031</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17145</SimpleData>
+		<SimpleData name="siteno">DFM27</SimpleData>
+		<SimpleData name="fullsitena">Dunefield Midden 27</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">15455</SimpleData>
+		<SimpleData name="eid">79261</SimpleData>
+		<SimpleData name="latitude">-32.301065000000001</SimpleData>
+		<SimpleData name="longitude">18.347249999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.34725,-32.301065</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17186</SimpleData>
+		<SimpleData name="siteno">DK2</SimpleData>
+		<SimpleData name="fullsitena">Diepkloof 2</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="grading">Grade IIIa</SimpleData>
+		<SimpleData name="gid">15541</SimpleData>
+		<SimpleData name="eid">79302</SimpleData>
+		<SimpleData name="latitude">-32.387022999999999</SimpleData>
+		<SimpleData name="longitude">18.453203999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.453204,-32.387023</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17535</SimpleData>
+		<SimpleData name="siteno">GB11</SimpleData>
+		<SimpleData name="fullsitena">Grootberg 11</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">16107</SimpleData>
+		<SimpleData name="eid">79651</SimpleData>
+		<SimpleData name="latitude">-32.286900000000003</SimpleData>
+		<SimpleData name="longitude">18.532699999999998</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.5327,-32.2869</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17549</SimpleData>
+		<SimpleData name="siteno">GB24</SimpleData>
+		<SimpleData name="fullsitena">Grootberg 24</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">16121</SimpleData>
+		<SimpleData name="eid">79665</SimpleData>
+		<SimpleData name="latitude">-32.286299999999997</SimpleData>
+		<SimpleData name="longitude">18.531082999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.531083,-32.2863</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">18111</SimpleData>
+		<SimpleData name="siteno">KFB2</SimpleData>
+		<SimpleData name="fullsitena">Kreefbaai 2</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">17134</SimpleData>
+		<SimpleData name="eid">80227</SimpleData>
+		<SimpleData name="latitude">-32.208491000000002</SimpleData>
+		<SimpleData name="longitude">18.326532000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.326532,-32.208491</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">18115</SimpleData>
+		<SimpleData name="siteno">KFB6</SimpleData>
+		<SimpleData name="fullsitena">Kreefbaai 6</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">17138</SimpleData>
+		<SimpleData name="eid">80231</SimpleData>
+		<SimpleData name="latitude">-32.222417000000000</SimpleData>
+		<SimpleData name="longitude">18.333333000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.333333,-32.222417</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">18116</SimpleData>
+		<SimpleData name="siteno">KFB7</SimpleData>
+		<SimpleData name="fullsitena">Kreefbaai 7</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">17139</SimpleData>
+		<SimpleData name="eid">80232</SimpleData>
+		<SimpleData name="latitude">-32.219278000000003</SimpleData>
+		<SimpleData name="longitude">18.331582999999998</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.331583,-32.219278</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">18734</SimpleData>
+		<SimpleData name="siteno">LVB1</SimpleData>
+		<SimpleData name="fullsitena">Langvleiberge 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">17949</SimpleData>
+		<SimpleData name="eid">80850</SimpleData>
+		<SimpleData name="latitude">-32.226036000000001</SimpleData>
+		<SimpleData name="longitude">18.467635999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.467636,-32.226036</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">18743</SimpleData>
+		<SimpleData name="siteno">LVB2</SimpleData>
+		<SimpleData name="fullsitena">Langvleiberge 2</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">17958</SimpleData>
+		<SimpleData name="eid">80859</SimpleData>
+		<SimpleData name="latitude">-32.221089999999997</SimpleData>
+		<SimpleData name="longitude">18.474945000000002</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.474945,-32.22109</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">18744</SimpleData>
+		<SimpleData name="siteno">LVB3</SimpleData>
+		<SimpleData name="fullsitena">Langvleiberge 3</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">17959</SimpleData>
+		<SimpleData name="eid">80860</SimpleData>
+		<SimpleData name="latitude">-32.218918000000002</SimpleData>
+		<SimpleData name="longitude">18.470198000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.470198,-32.218918</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19085</SimpleData>
+		<SimpleData name="siteno">NWD1</SimpleData>
+		<SimpleData name="fullsitena">Nuwedam EB 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">18590</SimpleData>
+		<SimpleData name="eid">81201</SimpleData>
+		<SimpleData name="latitude">-32.354965999999997</SimpleData>
+		<SimpleData name="longitude">18.343288000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.343288,-32.354966</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19087</SimpleData>
+		<SimpleData name="siteno">NWD3</SimpleData>
+		<SimpleData name="fullsitena">Nuwedam EB 3</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">18592</SimpleData>
+		<SimpleData name="eid">81203</SimpleData>
+		<SimpleData name="latitude">-32.363464999999998</SimpleData>
+		<SimpleData name="longitude">18.352314000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.352314,-32.363465</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19169</SimpleData>
+		<SimpleData name="siteno">OW1</SimpleData>
+		<SimpleData name="fullsitena">Onder Wadrif 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">18745</SimpleData>
+		<SimpleData name="eid">81285</SimpleData>
+		<SimpleData name="latitude">-32.208680999999999</SimpleData>
+		<SimpleData name="longitude">18.383236000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.383236,-32.208681</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20793</SimpleData>
+		<SimpleData name="siteno">WDSP2</SimpleData>
+		<SimpleData name="fullsitena">Wadrifsoutpan 2</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit, Shell Midden</SimpleData>
+		<SimpleData name="gid">25970</SimpleData>
+		<SimpleData name="eid">82909</SimpleData>
+		<SimpleData name="latitude">-32.211294000000002</SimpleData>
+		<SimpleData name="longitude">18.369523999999998</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.369524,-32.211294</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19469</SimpleData>
+		<SimpleData name="siteno">PTH1</SimpleData>
+		<SimpleData name="fullsitena">Pepper Tree Hill 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">19232</SimpleData>
+		<SimpleData name="eid">81585</SimpleData>
+		<SimpleData name="latitude">-32.353979000000002</SimpleData>
+		<SimpleData name="longitude">18.495231000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.495231,-32.353979</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19484</SimpleData>
+		<SimpleData name="siteno">PWK3</SimpleData>
+		<SimpleData name="fullsitena">Prinswillem se klip 3</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">19255</SimpleData>
+		<SimpleData name="eid">81600</SimpleData>
+		<SimpleData name="latitude">-32.344298000000002</SimpleData>
+		<SimpleData name="longitude">18.543156000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.543156,-32.344298</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19485</SimpleData>
+		<SimpleData name="siteno">PWK4</SimpleData>
+		<SimpleData name="fullsitena">Prinswillem se klip 4</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">19256</SimpleData>
+		<SimpleData name="eid">81601</SimpleData>
+		<SimpleData name="latitude">-32.344538999999997</SimpleData>
+		<SimpleData name="longitude">18.542915000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.542915,-32.344539</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19490</SimpleData>
+		<SimpleData name="siteno">PWK9</SimpleData>
+		<SimpleData name="fullsitena">Prinswillem se klip 9</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">19261</SimpleData>
+		<SimpleData name="eid">81606</SimpleData>
+		<SimpleData name="latitude">-32.344538999999997</SimpleData>
+		<SimpleData name="longitude">18.544440000000002</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.54444,-32.344539</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19500</SimpleData>
+		<SimpleData name="siteno">RB2</SimpleData>
+		<SimpleData name="fullsitena">Rooiberg 2</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">19281</SimpleData>
+		<SimpleData name="eid">81616</SimpleData>
+		<SimpleData name="latitude">-32.429149000000002</SimpleData>
+		<SimpleData name="longitude">18.485560000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.48556,-32.429149</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19501</SimpleData>
+		<SimpleData name="siteno">RB3</SimpleData>
+		<SimpleData name="fullsitena">Rooiberg 3</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">19282</SimpleData>
+		<SimpleData name="eid">81617</SimpleData>
+		<SimpleData name="latitude">-32.429464000000003</SimpleData>
+		<SimpleData name="longitude">18.485337999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.485338,-32.429464</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19503</SimpleData>
+		<SimpleData name="siteno">RB5</SimpleData>
+		<SimpleData name="fullsitena">Rooiberg 5</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">19284</SimpleData>
+		<SimpleData name="eid">81619</SimpleData>
+		<SimpleData name="latitude">-32.430135000000000</SimpleData>
+		<SimpleData name="longitude">18.484155999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.484156,-32.430135</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19506</SimpleData>
+		<SimpleData name="siteno">RB8</SimpleData>
+		<SimpleData name="fullsitena">Rooiberg 8</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">19287</SimpleData>
+		<SimpleData name="eid">81622</SimpleData>
+		<SimpleData name="latitude">-32.427737999999998</SimpleData>
+		<SimpleData name="longitude">18.487974999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.487975,-32.427738</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19507</SimpleData>
+		<SimpleData name="siteno">RB9</SimpleData>
+		<SimpleData name="fullsitena">Rooiberg 9</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">19288</SimpleData>
+		<SimpleData name="eid">81623</SimpleData>
+		<SimpleData name="latitude">-32.428789000000002</SimpleData>
+		<SimpleData name="longitude">18.488420999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.488421,-32.428789</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19514</SimpleData>
+		<SimpleData name="siteno">RBV1</SimpleData>
+		<SimpleData name="fullsitena">Rooiberg/Verlore 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">19297</SimpleData>
+		<SimpleData name="eid">81630</SimpleData>
+		<SimpleData name="latitude">-32.350245000000001</SimpleData>
+		<SimpleData name="longitude">18.385745000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.385745,-32.350245</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19517</SimpleData>
+		<SimpleData name="siteno">RDB1</SimpleData>
+		<SimpleData name="fullsitena">Rondeberg EB 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">19300</SimpleData>
+		<SimpleData name="eid">81633</SimpleData>
+		<SimpleData name="latitude">-32.395046999999998</SimpleData>
+		<SimpleData name="longitude">18.379860000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.37986,-32.395047</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19526</SimpleData>
+		<SimpleData name="siteno">RDB4</SimpleData>
+		<SimpleData name="fullsitena">Rondeberg EB 4</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">19309</SimpleData>
+		<SimpleData name="eid">81642</SimpleData>
+		<SimpleData name="latitude">-32.397823000000002</SimpleData>
+		<SimpleData name="longitude">18.379453999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.379454,-32.397823</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19527</SimpleData>
+		<SimpleData name="siteno">RDB5</SimpleData>
+		<SimpleData name="fullsitena">Rondeberg EB 5</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">19310</SimpleData>
+		<SimpleData name="eid">81643</SimpleData>
+		<SimpleData name="latitude">-32.398296999999999</SimpleData>
+		<SimpleData name="longitude">18.379701000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.379701,-32.398297</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19871</SimpleData>
+		<SimpleData name="siteno">SK3</SimpleData>
+		<SimpleData name="fullsitena">Skuinskraal 3</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">22888</SimpleData>
+		<SimpleData name="eid">81987</SimpleData>
+		<SimpleData name="latitude">-32.440617000000003</SimpleData>
+		<SimpleData name="longitude">18.499677999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.499678,-32.440617</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19932</SimpleData>
+		<SimpleData name="siteno">SL16</SimpleData>
+		<SimpleData name="fullsitena">Slangkop 16</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">22967</SimpleData>
+		<SimpleData name="eid">82048</SimpleData>
+		<SimpleData name="latitude">-32.308954999999997</SimpleData>
+		<SimpleData name="longitude">18.396778000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.396778,-32.308955</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">19934</SimpleData>
+		<SimpleData name="siteno">SL3</SimpleData>
+		<SimpleData name="fullsitena">Slangkop 3</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">22969</SimpleData>
+		<SimpleData name="eid">82050</SimpleData>
+		<SimpleData name="latitude">-32.303727000000002</SimpleData>
+		<SimpleData name="longitude">18.401907000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.401907,-32.303727</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20460</SimpleData>
+		<SimpleData name="siteno">UIT1</SimpleData>
+		<SimpleData name="fullsitena">Uitkykberg 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">23681</SimpleData>
+		<SimpleData name="eid">82576</SimpleData>
+		<SimpleData name="latitude">-32.331910000000001</SimpleData>
+		<SimpleData name="longitude">18.405306000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.405306,-32.33191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20461</SimpleData>
+		<SimpleData name="siteno">UIT2</SimpleData>
+		<SimpleData name="fullsitena">Uitkykberg 2</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">23682</SimpleData>
+		<SimpleData name="eid">82577</SimpleData>
+		<SimpleData name="latitude">-32.332594999999998</SimpleData>
+		<SimpleData name="longitude">18.406227999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.406228,-32.332595</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">21085</SimpleData>
+		<SimpleData name="siteno">UIT3</SimpleData>
+		<SimpleData name="fullsitena">Uitkykberg 3</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="gid">23683</SimpleData>
+		<SimpleData name="eid">89315</SimpleData>
+		<SimpleData name="latitude">-32.333896000000003</SimpleData>
+		<SimpleData name="longitude">18.406870999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.406871,-32.333896</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20584</SimpleData>
+		<SimpleData name="siteno">VK1</SimpleData>
+		<SimpleData name="fullsitena">Vensterklip 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">25686</SimpleData>
+		<SimpleData name="eid">82700</SimpleData>
+		<SimpleData name="latitude">-32.276870000000002</SimpleData>
+		<SimpleData name="longitude">18.428889999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.42889,-32.27687</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20588</SimpleData>
+		<SimpleData name="siteno">VK5</SimpleData>
+		<SimpleData name="fullsitena">Vensterklip 5</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">25690</SimpleData>
+		<SimpleData name="eid">82704</SimpleData>
+		<SimpleData name="latitude">-32.276184999999998</SimpleData>
+		<SimpleData name="longitude">18.427855000000001</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.427855,-32.276185</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20732</SimpleData>
+		<SimpleData name="siteno">WAAI2</SimpleData>
+		<SimpleData name="fullsitena">Waaihoek 2</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">25893</SimpleData>
+		<SimpleData name="eid">82848</SimpleData>
+		<SimpleData name="latitude">-32.313611000000002</SimpleData>
+		<SimpleData name="longitude">18.392778000000000</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.392778,-32.313611</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20734</SimpleData>
+		<SimpleData name="siteno">WAD1</SimpleData>
+		<SimpleData name="fullsitena">Wadrif 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">25895</SimpleData>
+		<SimpleData name="eid">82850</SimpleData>
+		<SimpleData name="latitude">-32.223075999999999</SimpleData>
+		<SimpleData name="longitude">18.391535999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.391536,-32.223076</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20735</SimpleData>
+		<SimpleData name="siteno">WAD3</SimpleData>
+		<SimpleData name="fullsitena">Wadrif 3</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">25896</SimpleData>
+		<SimpleData name="eid">82851</SimpleData>
+		<SimpleData name="latitude">-32.223847999999997</SimpleData>
+		<SimpleData name="longitude">18.392462999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.392463,-32.223848</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20794</SimpleData>
+		<SimpleData name="siteno">WDSP20</SimpleData>
+		<SimpleData name="fullsitena">Wadrifsoutpan 20</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">25971</SimpleData>
+		<SimpleData name="eid">82910</SimpleData>
+		<SimpleData name="latitude">-32.209732000000002</SimpleData>
+		<SimpleData name="longitude">18.337285999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.337286,-32.209732</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20796</SimpleData>
+		<SimpleData name="siteno">WDSP4</SimpleData>
+		<SimpleData name="fullsitena">Wadrifsoutpan 4</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="gid">25973</SimpleData>
+		<SimpleData name="eid">82912</SimpleData>
+		<SimpleData name="latitude">-32.210523999999999</SimpleData>
+		<SimpleData name="longitude">18.366624000000002</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.366624,-32.210524</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20797</SimpleData>
+		<SimpleData name="siteno">WDSP5</SimpleData>
+		<SimpleData name="fullsitena">Wadrifsoutpan 5</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">25974</SimpleData>
+		<SimpleData name="eid">82913</SimpleData>
+		<SimpleData name="latitude">-32.213121999999998</SimpleData>
+		<SimpleData name="longitude">18.374898000000002</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.374898,-32.213122</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20798</SimpleData>
+		<SimpleData name="siteno">WDSP6</SimpleData>
+		<SimpleData name="fullsitena">Wadrifsoutpan 6</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">25975</SimpleData>
+		<SimpleData name="eid">82914</SimpleData>
+		<SimpleData name="latitude">-32.208115999999997</SimpleData>
+		<SimpleData name="longitude">18.364605999999998</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.364606,-32.208116</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20799</SimpleData>
+		<SimpleData name="siteno">WDSP7</SimpleData>
+		<SimpleData name="fullsitena">Wadrifsoutpan 7</SimpleData>
+		<SimpleData name="sitetype">Artefacts, Shell Midden</SimpleData>
+		<SimpleData name="gid">25976</SimpleData>
+		<SimpleData name="eid">82915</SimpleData>
+		<SimpleData name="latitude">-32.209254000000001</SimpleData>
+		<SimpleData name="longitude">18.368120999999999</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.368121,-32.209254</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">20863</SimpleData>
+		<SimpleData name="siteno">WKP10</SimpleData>
+		<SimpleData name="fullsitena">Witklip 10</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts</SimpleData>
+		<SimpleData name="grading">Grade IIIa</SimpleData>
+		<SimpleData name="gid">26085</SimpleData>
+		<SimpleData name="eid">82979</SimpleData>
+		<SimpleData name="latitude">-32.392603000000001</SimpleData>
+		<SimpleData name="longitude">18.457446999999998</SimpleData>
+		<SimpleData name="grading_wi">Grade IIIa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.457447,-32.392603</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">17185</SimpleData>
+		<SimpleData name="siteno">DK1</SimpleData>
+		<SimpleData name="fullsitena">Diepkloof 1</SimpleData>
+		<SimpleData name="sitetype">Rock Art, Artefacts, Deposit</SimpleData>
+		<SimpleData name="gid">49730</SimpleData>
+		<SimpleData name="eid">79301</SimpleData>
+		<SimpleData name="latitude">-32.386560000000003</SimpleData>
+		<SimpleData name="longitude">18.453068999999999</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.453069,-32.38656</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#VRV_sahris">
+		<SimpleData name="siteid">107979</SimpleData>
+		<SimpleData name="siteno">Elands Bay Cave</SimpleData>
+		<SimpleData name="sitetype">Archaeological</SimpleData>
+		<SimpleData name="gid">56450</SimpleData>
+		<SimpleData name="eid">405912</SimpleData>
+		<SimpleData name="latitude">-32.318545999999998</SimpleData>
+		<SimpleData name="longitude">18.317560000000000</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>18.31756,-32.318546</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
