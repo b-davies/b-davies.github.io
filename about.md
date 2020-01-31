@@ -26,6 +26,9 @@ A three-year study based in the Western Cape region of South Africa aimed at usi
 #### [Long Term Perspectives on Water Security, Food Security, and Land Management Among Pastoralists Experiencing Change](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1924322)
 A four-year project based in northern Kenya studying the current intersection of development, land management, and changing environmental circumstances in the context of long-term trends in land use among mobile pastoralists communities. 
 
+#### [Using Serious Games to Address Air Quality as an Environmental Health Problem]
+This project will develop a research-informed serious game to support collective learning in diverse communities regarding issues relating air quality in Utah. Players work to reduce emissions while avoiding stress on local economies and community health. Instead of focusing strictly on technological solutions, this game will emphasize social challenges to achieving clean air goals, especially those tied to community values.
+
 #### [Western New South Wales Archaeology](https://www.researchgate.net/project/WNSWAP-Western-NSW-Archaeology-Program)
 A long-term, multidisciplinary study investigating the formation of surface archaeology in arid and semiarid rangelands of southeastern Australia and implications for human population dynamics and mobility during the late Holocene. Project outcomes are being compiled [here](https://wnswap.blogs.auckland.ac.nz).
 
