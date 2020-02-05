@@ -7,7 +7,7 @@ tags: publications
 
 ### In press
 
-Emmitt, J., K. Allely, B. Davies, E. Hoffman, and S. Holdaway. Preliminary archaeological survey of shell mounds at Kwokkunum, Albatross Bay, Cape York, Australia. Accepted to Queensland Archaeological Research. 
+Emmitt, J., K. Allely, B. Davies, E. Hoffman, and S. Holdaway. Preliminary archaeological survey of shell mounds at Kwokkunum, Albatross Bay, Cape York, Australia. Accepted to *Queensland Archaeological Research*. 
 
 ### 2019
 
