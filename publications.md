@@ -5,6 +5,10 @@ permalink: /publications/
 tags: publications
 ---
 
+### In press
+
+Emmitt, J., K. Allely, B. Davies, E. Hoffman, and S. Holdaway. Preliminary archaeological survey of shell mounds at Kwokkunum, Albatross Bay, Cape York, Australia. Accepted to Queensland Archaeological Research. 
+
 ### 2019
 
 Holdaway, S. and B. Davies, 2019. Surface Stone Artifact Scatters, Settlement Patterns, and New Methods for Stone Artifact Analysis. *Journal of Paleolithic Archaeology* Published online. DOI: 10.1007/s41982-019-00030-8 [[Open Access Journal](https://doi.org/10.1007/s41982-019-00030-8)]
