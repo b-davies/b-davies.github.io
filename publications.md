@@ -9,6 +9,8 @@ tags: publications
 
 Emmitt, J., K. Allely, B. Davies, E. Hoffman, and S. Holdaway, 2020. Preliminary archaeological survey of shell mounds at Kwokkunum, Albatross Bay, Cape York, Australia. *Queensland Archaeological Research* 23: 9-24. DOI: 10.25120/qar.23.2020.3718 [[Open Access Journal](https://doi.org/10.25120/qar.23.2020.3718)]
 
+Davies, B., 2020. Review: Oxford Handbook of Prehistoric Oceania - E Cochrane and T. Hunt (eds.). *Journal of the Polynesian Society* 129(1): 113-115.
+
 ### 2019
 
 Holdaway, S. and B. Davies, 2019. Surface Stone Artifact Scatters, Settlement Patterns, and New Methods for Stone Artifact Analysis. *Journal of Paleolithic Archaeology* Published online. DOI: 10.1007/s41982-019-00030-8 [[Open Access Journal](https://doi.org/10.1007/s41982-019-00030-8)]
@@ -27,7 +29,8 @@ Davies, B., Holdaway, S. J., and P. C. Fanning, 2018. Exploring relationships be
 
 Davies, B. and I. Romanowska, 2018. An Emergent Community? Agent-Based Modelers in Archaeology. *SAA Archaeological Record* 18: 27–32. [[Open Access Journal](http://cdn.coverstand.com/16146/486133/f0b56e91a16ef761a284d09e0980d3172a546e77.pdf)] 
 
-Davies, B., 2018. Review: Deep Time Dreaming: Uncovering Ancient Australia-B. Griffiths. *Archaeology in Oceania* Published online ahead of print. DOI: 10.1002/arco.5161  [[Journal](https://onlinelibrary.wiley.com/doi/full/10.1002/arco.5161)]
+Davies, B., 2018. Review: Deep Time Dreaming: Uncovering Ancient Australia - .
+B. Griffiths. *Archaeology in Oceania* Published online ahead of print. DOI: 10.1002/arco.5161  [[Journal](https://onlinelibrary.wiley.com/doi/full/10.1002/arco.5161)]
 
 Davies, B. and S. Holdaway, 2018. Deflation archaeology. In *Encyclopedia of Global Archaeology*, C. Smith (ed.). Springer. DOI: 10.1007/978-3-319-51726-1_911-2 [[Book](http://doi.org/10.1007/978-3-319-51726-1_911-2)]
 
