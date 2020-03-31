@@ -9,7 +9,7 @@ tags: publications
 
 Emmitt, J., K. Allely, B. Davies, E. Hoffman, and S. Holdaway, 2020. Preliminary archaeological survey of shell mounds at Kwokkunum, Albatross Bay, Cape York, Australia. *Queensland Archaeological Research* 23: 9-24. DOI: 10.25120/qar.23.2020.3718 [[Open Access Journal](https://doi.org/10.25120/qar.23.2020.3718)]
 
-Davies, B., 2020. Review: Oxford Handbook of Prehistoric Oceania - E Cochrane and T. Hunt (eds.). *Journal of the Polynesian Society* 129(1): 113-115. [[Download](http://b-davies.github.io/files/Davies%202020%20Oceania%20Prehistory%20Handbook%20Review.pdf)]
+Davies, B., 2020. Review: Oxford Handbook of Prehistoric Oceania - E. Cochrane and T. Hunt (eds). *Journal of the Polynesian Society* 129(1): 113-115. [[Download](http://b-davies.github.io/files/Davies%202020%20Oceania%20Prehistory%20Handbook%20Review.pdf)]
 
 ### 2019
 
@@ -48,14 +48,18 @@ Davies, B., Holdaway, S. J., and P. C. Fanning, 2016. Modelling the palimpsest: 
 
 ### 2015
 
-Davies, B., 2015. Review: Computational Approaches to Archaeological Spaces-A. Bevan and M. Lake. *Journal of Pacific Archaeology* 6(2):65. [[Journal](http://www.pacificarchaeology.org/index.php/journal/article/view/171)]
+Davies, B., 2015. Review: Computational Approaches to Archaeological Spaces-A. Bevan and M. Lake (eds). *Journal of Pacific Archaeology* 6(2):65. [[Journal](http://www.pacificarchaeology.org/index.php/journal/article/view/171)]
 
 Davies, B. and S. Bickler, 2015. Sailing the simulated seas: a new simulation for evaluating prehistoric seafaring. In *Across Space and Time: Computer Applications and Quantitative Methods in Archaeology CAA. Proceedings of the 41st International Conference, Perth, WA, Australia, March 25 – 28, 2013*.  Amsterdam: Amsterdam University Press. [[Open Access Proceedings](http://www.oapen.org/search?keyword=9789089647153)] [[Preprint](https://www.researchgate.net/publication/308100959_Sailing_the_Simulated_Seas_a_New_Simulation_for_Evaluating_Prehistoric_Seafaring)]
 
+### 2014
+
+Davies, B., 2011. Review: Hawaiki Rising:  Hōkūle‘a, Nainoa Thompson, and the Hawaiian Renaissance - S. Low. *Rapa Nui Journal* 28(2): 89-90.
+
 ### 2011
  
-Davies, B., 2011. Review: Terra Australis 28: New Directions in Archaeological Science-Fairbairn, Andrew, Susan O’Connor, and Ben Marwick (eds.). *Journal of the Polynesian Society* 120(1): 89-91. [[Open Access Journal](http://www.jps.auckland.ac.nz/document/Volume_120_2011/Volume_120%2C_No._1/%5BReview%5D_Fairbairn%2C_Andrew%2C_Susan_O%26%2339%3BConnor%2C_and_Ben_Marwick_%28eds%29%3A_New_Directions_in_Archaeological_Science%2C_reviewed_by_Benjamin_Davies%2C_p_89-91?action=null)]
+Davies, B., 2011. Review: Terra Australis 28: New Directions in Archaeological Science-A. Fairbairn, S. O’Connor, and B. Marwick (eds). *Journal of the Polynesian Society* 120(1): 89-91. [[Open Access Journal](http://www.jps.auckland.ac.nz/document/Volume_120_2011/Volume_120%2C_No._1/%5BReview%5D_Fairbairn%2C_Andrew%2C_Susan_O%26%2339%3BConnor%2C_and_Ben_Marwick_%28eds%29%3A_New_Directions_in_Archaeological_Science%2C_reviewed_by_Benjamin_Davies%2C_p_89-91?action=null)]
 
 ### Other publications
 
-Davies, B. Agent-based modeling prehistoric landscape use with R and NetLogo. In How To Do Archaeological Science Using R, B Marwick (ed). Book in open review at [https://benmarwick.github.io/How-To-Do-Archaeological-Science-Using-R/index.html](https://benmarwick.github.io/How-To-Do-Archaeological-Science-Using-R/index.html).
+Davies, B. Agent-based modeling prehistoric landscape use with R and NetLogo. In How To Do Archaeological Science Using R, B. Marwick (ed). Book in open review at [https://benmarwick.github.io/How-To-Do-Archaeological-Science-Using-R/index.html](https://benmarwick.github.io/How-To-Do-Archaeological-Science-Using-R/index.html).
