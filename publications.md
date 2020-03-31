@@ -9,7 +9,7 @@ tags: publications
 
 Emmitt, J., K. Allely, B. Davies, E. Hoffman, and S. Holdaway, 2020. Preliminary archaeological survey of shell mounds at Kwokkunum, Albatross Bay, Cape York, Australia. *Queensland Archaeological Research* 23: 9-24. DOI: 10.25120/qar.23.2020.3718 [[Open Access Journal](https://doi.org/10.25120/qar.23.2020.3718)]
 
-Davies, B., 2020. Review: Oxford Handbook of Prehistoric Oceania - E Cochrane and T. Hunt (eds.). *Journal of the Polynesian Society* 129(1): 113-115.
+Davies, B., 2020. Review: Oxford Handbook of Prehistoric Oceania - E Cochrane and T. Hunt (eds.). *Journal of the Polynesian Society* 129(1): 113-115. [[Download](http://b-davies.github.io/files/Davies 2020 Oceania Prehistory Handbook Review.pdf)]]
 
 ### 2019
 
