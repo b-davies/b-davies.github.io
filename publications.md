@@ -54,7 +54,7 @@ Davies, B. and S. Bickler, 2015. Sailing the simulated seas: a new simulation fo
 
 ### 2014
 
-Davies, B., 2011. Review: Hawaiki Rising:  Hōkūle‘a, Nainoa Thompson, and the Hawaiian Renaissance - S. Low. *Rapa Nui Journal* 28(2): 89-90.
+Davies, B., 2011. Review: Hawaiki Rising:  Hōkūle‘a, Nainoa Thompson, and the Hawaiian Renaissance - S. Low. *Rapa Nui Journal* 28(2): 89-90. [[Open Access Journal](http://islandheritage.org/wordpress/wp-content/uploads/2014/07/Book_Reviews_RNJ_Oct2014.pdf)] [[Download](http://b-davies.github.io/files/Davies%202014%20Hawaiki%20Rising%20Review.pdf)]
 
 ### 2011
  
