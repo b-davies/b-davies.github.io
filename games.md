@@ -40,5 +40,4 @@ An inventive table top board game helped them explore different climate scenario
 The ‘Climate Adaptation Challenge’ game works a bit like Monopoly. One version of the game was created for dairy farming and the other representing a dry stock farm. Using 3D-printed pieces and specially-designed NIWA play money, players were encouraged to make decisions about their own farming practices, in response to expected increases in extreme rainfall brought on by climate change.
 
 Each player rolled a 12-sided dice to simulate 10 years on the farm. Three sides of the dice represent 'severe flood', four 'high flood' and five 'no event'. Players used the 'pathways approach' to explore, develop and implement strategies to address climate impacts, without compromising or shutting off other options.
-
 <img src="https://niwa.co.nz/sites/niwa.co.nz/files/styles/full_screen_feature/public/Minister-James-Shaw-Climate-Adaptation-Challenge.jpg?itok=DRRvQGHr">
