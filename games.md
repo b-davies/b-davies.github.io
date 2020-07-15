@@ -41,3 +41,15 @@ The ‘Climate Adaptation Challenge’ game works a bit like Monopoly. One versi
 
 Each player rolled a 12-sided dice to simulate 10 years on the farm. Three sides of the dice represent 'severe flood', four 'high flood' and five 'no event'. Players used the 'pathways approach' to explore, develop and implement strategies to address climate impacts, without compromising or shutting off other options.
 <img src="https://niwa.co.nz/sites/niwa.co.nz/files/styles/full_screen_feature/public/Minister-James-Shaw-Climate-Adaptation-Challenge.jpg?itok=DRRvQGHr">
+
+
+### Impact: A Foresight Game
+[Link](https://ideacouture.com/impact/)
+
+IMPACT: A Foresight Game is a serious board game that teaches you to think critically and imaginatively about emerging technology and the future of society.
+Designed by the foresight strategists at Idea Couture, IMPACT invites participants to take on professions of the future and navigate change in order to achieve their character’s preferred future state.
+Through playing the game, participants will:
+Learn the basics of futures thinking including some of the key terminology
+Learn about the latest advances in science and technology (neurotech, nanotech, artificial intelligence, IoT, biotech, robotics)
+Practice thinking about how these emerging technologies could evolve and the various ways they could influence society
+
