@@ -8,8 +8,15 @@ permalink: /games/
 
 ### The Last Straw
 [Link](http://www.thelaststraw.ca/)
+The Last Straw! is a fun and exciting teaching tool on the social determinants of health. The game has three objectives:
+to promote discussion about the social determinants of health;
+to help players build empathy with marginalized people and gain an awareness of players' own social location;
+to encourage learning in a fun and supportive environment.
+In keeping with current research on the social determinants of health, socioeconomic status is a primary determinant of health in this game, as are race, gender, sexual orientation and other factors.
 
-This upper division undergraduate course was aimed at exploring the transformative role of digital technology in archaeology and cultural heritage. In lectures, students were encouraged to discuss the fundamentals of different approaches within the context of the broader goals of archaeology and heritage management. Topics included: spatial data, complex systems and simulation, virtual reality, and the preservation of digital objects, among others. Experts in laser scanning, 3D modeling and archaeogaming were invited and provided interactive demonstrations. In labs, students were introduced to a range of techniques including data manipulation and visualization in R, social network analysis, augmented reality using mobile devices, and reconstructing historical landscapes in game engines. By the end of the course students were able to thoughtfully assess applications of different methods and approaches to digital archaeology and heritage, obtain and organize open-source data, and utilize data across multiple digital platforms.
-<img src="http://www.thelaststraw.ca/attachments/Image/TLS-Board.gif">
+Feedback consistently demonstrates that players gain a better understanding of the social determinants of health and the interplay between forces at individual and community levels.  Both players and facilitators ("Game Masters") report having a great time playing the game.
+
+We have also developed a training manual and video to help Game Masters get the most out of the game.
+<img src="http://www.thelaststraw.ca/attachments/Image/TLS-Board.gif" width=354px height=535px>
 
 
