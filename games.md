@@ -8,6 +8,7 @@ permalink: /games/
 
 ### The Last Straw
 [Link](http://www.thelaststraw.ca/)
+
 The Last Straw! is a fun and exciting teaching tool on the social determinants of health. The game has three objectives:
 
 *to promote discussion about the social determinants of health;
