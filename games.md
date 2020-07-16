@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Games Examples
+title: Serious Games Examples
 permalink: /games/
 ---
-
-## Serious Games examples
 
 ### The Last Straw
 [Link](http://www.thelaststraw.ca/)
