@@ -29,6 +29,9 @@ A four-year project based in northern Kenya studying the current intersection of
 #### [Using Serious Games to Address Air Quality as an Environmental Health Problem](https://1u4u.utah.edu/funded_projects/funded_project_view.php?view_project_id=115)
 This project will develop a research-informed serious game to support collective learning in diverse communities regarding issues relating air quality in Utah. Instead of focusing strictly on technological solutions, this game will emphasize social challenges to achieving clean air goals, especially those tied to community values.
 
+#### Examining Pyrotechnology and Ecosystem Change in the Archaeological Record
+This study will investigate the use of fire by early hominins, and the extent to which early hominins modified their environments through the application of fire. Multiproxy analyses, combined with modeling of paleofire scenarios, will be used to assess archaeological signatures of pyrotechnology in the vicinity of Koobi Fora, Kenya.
+
 #### [Western New South Wales Archaeology](https://www.researchgate.net/project/WNSWAP-Western-NSW-Archaeology-Program)
 A long-term, multidisciplinary study investigating the formation of surface archaeology in arid and semiarid rangelands of southeastern Australia and implications for human population dynamics and mobility during the late Holocene. Project outcomes are being compiled [here](https://wnswap.blogs.auckland.ac.nz).
 
