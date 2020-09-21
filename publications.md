@@ -6,6 +6,8 @@ tags: publications
 ---
 
 ### 2020
+Faith, J. T., D. Braun, B. Davies, L. DeSantis, M. Douglass, I. Esteban, V. Hare, N. Levin, J. Luyt, R. Pickering, M. Power, J. Sealy, and D. Stynder. Ecometrics and the paleoecological implications of Pleistocene faunas from the western coastal plains of the Cape Floristic Region, South Africa. *Journal of Quaternary Science* DOI: 10.1002/jqs.3247 [[Journal](http://dx.doi.org/10.1002/jqs.3247)]
+
 Carney, M. and B. Davies, 2020. Agent-based modeling, scientific reproducibility, and taphonomy: a successful model implementation case study. *Journal of Computer Applications in Archaeology* 3(1): 182-196. DOI: 10.5334/jcaa.52 [[Open Access Journal](https://doi.org/10.5334/jcaa.52)] [[Preprint](https://osf.io/preprints/socarxiv/tckav/)]
 
 Emmitt, J., K. Allely, B. Davies, E. Hoffman, and S. Holdaway, 2020. Preliminary archaeological survey of shell mounds at Kwokkunum, Albatross Bay, Cape York, Australia. *Queensland Archaeological Research* 23: 9-24. DOI: 10.25120/qar.23.2020.3718 [[Open Access Journal](https://doi.org/10.25120/qar.23.2020.3718)]
