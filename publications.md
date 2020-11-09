@@ -6,6 +6,8 @@ tags: publications
 ---
 
 ### 2020
+Douglass, M., B. Davies, D. Braun, J. T. Faith, M. Power, and J. Reeves. Deriving original nodule size of lithic reduction sets from cortical curvature: an application to monitor stone artifact transport from bipolar reduction. Accepted to *Journal of Archaeological Science: Reports*.
+
 Faith, J. T., D. Braun, B. Davies, L. DeSantis, M. Douglass, I. Esteban, V. Hare, N. Levin, J. Luyt, R. Pickering, M. Power, J. Sealy, and D. Stynder. Ecometrics and the paleoecological implications of Pleistocene faunas from the western coastal plains of the Cape Floristic Region, South Africa. *Journal of Quaternary Science* DOI: 10.1002/jqs.3247 [[Journal](http://dx.doi.org/10.1002/jqs.3247)]
 
 Carney, M. and B. Davies, 2020. Agent-based modeling, scientific reproducibility, and taphonomy: a successful model implementation case study. *Journal of Computer Applications in Archaeology* 3(1): 182-196. DOI: 10.5334/jcaa.52 [[Open Access Journal](https://doi.org/10.5334/jcaa.52)] [[Preprint](https://osf.io/preprints/socarxiv/tckav/)]
