@@ -5,9 +5,15 @@ permalink: /publications/
 tags: publications
 ---
 
-### 2020
-Douglass, M., B. Davies, D. Braun, J. T. Faith, M. Power, and J. Reeves. Deriving original nodule size of lithic reduction sets from cortical curvature: an application to monitor stone artifact transport from bipolar reduction. Accepted to *Journal of Archaeological Science: Reports*.
+### In press
+Davies, B., M. Douglass, P. Fanning, and S. Holdaway. Resilience and reversibility: engaging with archaeological record formation to inform on past resilience. Accepted to *Archaeological Review from Cambridge*.
 
+Braun, D., J. T. Faith, M. Douglass, M. Power, B. Davies, V. Aldeias, N. Conard, R Cutts, L. Dupont, I. Esteban, A. Kandel, N. Levin, J. Luyt, J. Parkington, R. Pickering, L. Quick, J. Sealy, and D. Stynder. Ecosystem engineering in the Quaternary of the west coast of South Africa. Accepted to *Evolutionary Anthropology*. 
+
+### 2021
+Douglass, M., B. Davies, D. Braun, J. T. Faith, M. Power, and J. Reeves. Deriving original nodule size of lithic reduction sets from cortical curvature: an application to monitor stone artifact transport from bipolar reduction. *Journal of Archaeological Science: Reports* 35. [[Author Share Link](https://authors.elsevier.com/c/1cIDm,rVDBVSlm)]
+
+### 2020
 Faith, J. T., D. Braun, B. Davies, L. DeSantis, M. Douglass, I. Esteban, V. Hare, N. Levin, J. Luyt, R. Pickering, M. Power, J. Sealy, and D. Stynder. Ecometrics and the paleoecological implications of Pleistocene faunas from the western coastal plains of the Cape Floristic Region, South Africa. *Journal of Quaternary Science* DOI: 10.1002/jqs.3247 [[Journal](http://dx.doi.org/10.1002/jqs.3247)]
 
 Carney, M. and B. Davies, 2020. Agent-based modeling, scientific reproducibility, and taphonomy: a successful model implementation case study. *Journal of Computer Applications in Archaeology* 3(1): 182-196. DOI: 10.5334/jcaa.52 [[Open Access Journal](https://doi.org/10.5334/jcaa.52)] [[Preprint](https://osf.io/preprints/socarxiv/tckav/)]
