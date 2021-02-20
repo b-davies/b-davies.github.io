@@ -12,7 +12,7 @@ Davies, B., M. Douglass, P. Fanning, and S. Holdaway. Resilience and reversibili
 ### 2021
 Douglass, M., B. Davies, D. Braun, J. T. Faith, M. Power, and J. Reeves. Deriving original nodule size of lithic reduction sets from cortical curvature: an application to monitor stone artifact transport from bipolar reduction. *Journal of Archaeological Science: Reports* 35. [[Journal](https://doi.org/10.1016/j.jasrep.2020.102671)] [[Author Share Link](https://authors.elsevier.com/c/1cIDm,rVDBVSlm)] 
 
-Braun, D., J. T. Faith, M. Douglass, M. Power, B. Davies, V. Aldeias, N. Conard, R Cutts, L. Dupont, I. Esteban, A. Kandel, N. Levin, J. Luyt, J. Parkington, R. Pickering, L. Quick, J. Sealy, and D. Stynder. Ecosystem engineering in the Quaternary of the west coast of South Africa. *Evolutionary Anthropology* Published online. [[Journal](https://doi.org/10.1002/evan.21886)]
+Braun, D., J. T. Faith, M. Douglass, M. Power, B. Davies, V. Aldeias, N. Conard, R Cutts, L. Dupont, I. Esteban, A. Kandel, N. Levin, J. Luyt, J. Parkington, R. Pickering, L. Quick, J. Sealy, and D. Stynder. Ecosystem engineering in the Quaternary of the west coast of South Africa. *Evolutionary Anthropology* Published online. [[Journal](https://doi.org/10.1002/evan.21886)][[Author Share Link](https://onlinelibrary.wiley.com/share/author/GJAD8EMTMAPQPDEAWUZM?target=10.1002/evan.21886)]
 
 ### 2020
 Faith, J. T., D. Braun, B. Davies, L. DeSantis, M. Douglass, I. Esteban, V. Hare, N. Levin, J. Luyt, R. Pickering, M. Power, J. Sealy, and D. Stynder. Ecometrics and the paleoecological implications of Pleistocene faunas from the western coastal plains of the Cape Floristic Region, South Africa. *Journal of Quaternary Science* DOI: 10.1002/jqs.3247 [[Journal](http://dx.doi.org/10.1002/jqs.3247)]
