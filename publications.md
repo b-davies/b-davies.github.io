@@ -8,6 +8,7 @@ tags: publications
 ### In press
 Davies, B., M. Douglass, P. Fanning, and S. Holdaway. Resilience and reversibility: engaging with archaeological record formation to inform on past resilience. Accepted to *Archaeological Review from Cambridge*.
 
+Faith, J.T., A. Du, A. K. Behrensmeyer, B. Davies, D. B. Patterson, J. Rowan, and B. Wood. Rethinking the ecological drivers of hominin evolution. Accepted to Trends in Ecology and Evolution. [[Journal](https://doi.org/10.1016/j.tree.2021.04.011)]
 
 ### 2021
 Douglass, M., B. Davies, D. Braun, J. T. Faith, M. Power, and J. Reeves. Deriving original nodule size of lithic reduction sets from cortical curvature: an application to monitor stone artifact transport from bipolar reduction. *Journal of Archaeological Science: Reports* 35. [[Journal](https://doi.org/10.1016/j.jasrep.2020.102671)] [[Author Share Link](https://authors.elsevier.com/c/1cIDm,rVDBVSlm)] 
