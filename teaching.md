@@ -6,7 +6,6 @@ tags: teaching
 ---
 
 ### Archaeological Science
-[Syllabus (September 2021)](http://b-davies.github.io/syllabi/anth2030.pdf)
 *Online course*
 
 This core undergraduate course in archaeology surveyed different methodological approaches to the analysis of archaeological objects and sites drawn from the natural sciences. Initial lectures provide an overview of the discipline's history and theoretical frameworks before diving into weekly discussions of specific methods. Topics included: artifact classification, relative and absolute dating, geoarchaeology, lithic analysis, ceramic analysis, zooarchaeology, archaeobotany, bioarchaeology, and archaeochemistry. Students are taught strengths and limitations of these different methods in order to crtically consider their application in different archaeological cases. Weekly lectures were supplemented with guest lectures by specialists in these areas. Students completing this course come away with a broad understanding of archaeological science and are well-situated to pursue upper-division archaeology courses, field schools, and lab assistantships.
@@ -23,10 +22,8 @@ This upper division undergraduate course was aimed at exploring the transformati
 This middle-division undergraduate course surveyed the archaeology of ancestral Māori in Aotearoa New Zealand. The course covered chronological periods from the earliest human migrations into the Pacific Islands to the New Zealand wars of the mid-19th century. Major themes of the course such as adaptation, mobility, interaction, conflict, and colonialism are discussed in terms of changes in material culture and social organization. The course also gives an overview of archaeological methods and reasoning in the context of well-known archaeological sites such as Wairau Bar, Shag River Mouth, Houhora, Oruarangi, and Palliser Bay. Throughout the course, students are asked to consider how archaeology and oral tradition have been used and misused in constructing historical narratives. 
 
 ### Geographic Information Systems
-[Syllabus (September 2021)](http://b-davies.github.io/syllabi/EC3850.pdf)
 
 This upper division undergraduate course teaches students how to use Geographic Information Systems (GIS) with a focus on environmental science. Each week was divided into a lecture and lab exercise. Lectures cover basic concepts from GIScience and geography such as data formats, map projections, and mapping conventions. These also integrate in-class and outdoor activities demonstrating how spatial data is collected, transformed, analyzed, and visualized to address environmental science questions. Lab exercises introduce students to ESRI ArcGIS and other GIS and spatial software, building iteratively and covering concepts such as data management, coordinate systems, map styles, vector and raster operations, web mapping, and spatial analysis. By the end of the course, students have developed competency in the use of GIS software and its application for a range of environmental science contexts.
-
 
 ### Landscape Archaeology (graduate seminar)
 [Syllabus (July 2015)](http://b-davies.github.io/syllabi/anthro703.pdf)
