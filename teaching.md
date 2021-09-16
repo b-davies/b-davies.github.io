@@ -53,7 +53,7 @@ This undergraduate survey course was aimed at providing a foundation in human cu
 
 ### Other Course Contributions
 * [Archaeology: Understanding the Past](https://artsfaculty.auckland.ac.nz/courses/?Subject=ANTHRO&Number=200)
-* [Modeling of Environmental and Social Systems (graduate seminar)](http://www.env.auckland.ac.nz/en/about/our-postgraduate-courses/pg-environmental-science-courses.html#cb3d9ebe7a8afab58c2b52dc8181e5c4)
+* [Modeling of Environmental and Social Systems (graduate seminar)](https://courseoutline.auckland.ac.nz/dco/course/ENVSCI/704/1205)
 * [History and Tradition in NZ Archaeology](https://artsfaculty.auckland.ac.nz/courses/?Subject=ANTHRO&Number=346)
 	
 ### Short courses and workshops
