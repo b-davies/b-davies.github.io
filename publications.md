@@ -6,11 +6,15 @@ tags: publications
 ---
 
 ### In press
-Davies, B., M. Douglass, P. Fanning, and S. Holdaway. Resilience and reversibility: engaging with archaeological record formation to inform on past resilience. Accepted to *Archaeological Review from Cambridge*.
+Davies, B., M. Power, M. Douglass, D. Braun, S. Mosher, L. Quick, I. Esteban, J. Sealy, J. Parkington, and J. T. Faith.  Fire and the management of late Holocene landscapes in southern Africa. Accepted to *Quaternary Science Reviews*.
 
-Faith, J.T., A. Du, A. K. Behrensmeyer, B. Davies, D. B. Patterson, J. Rowan, and B. Wood. Rethinking the ecological drivers of hominin evolution. Accepted to Trends in Ecology and Evolution. [[Journal](https://doi.org/10.1016/j.tree.2021.04.011)]
+Davies, B., M. Douglass, D. Braun, J. Parkington, M. Power, and J. T. Faith. From quartz curvature to late Holocene mobility at Spring Cave, Western Cape, South Africa. Under review at *Archaeological and Anthropological Sciences*.
 
 ### 2021
+Davies, B., M. Douglass, P. Fanning, and S. Holdaway. Resilience and reversibility: engaging with archaeological record formation to inform on past resilience. Archaeological Review from Cambridge 36(1):51-74. [[Open Access Journal](https://doi.org/10.17863/CAM.79041)]
+
+Faith, J.T., A. Du, A. K. Behrensmeyer, B. Davies, D. B. Patterson, J. Rowan, and B. Wood. Rethinking the ecological drivers of hominin evolution. Trends in Ecology and Evolution 36(9):797-807. [[Journal](https://doi.org/10.1016/j.tree.2021.04.011)] [[Author copy](https://b-davies.github.io/files/papers/faith_et_al_2021_rethinking_ecological_drivers.pdf)]
+
 Douglass, M., B. Davies, D. Braun, J. T. Faith, M. Power, and J. Reeves. Deriving original nodule size of lithic reduction sets from cortical curvature: an application to monitor stone artifact transport from bipolar reduction. *Journal of Archaeological Science: Reports* 35. [[Journal](https://doi.org/10.1016/j.jasrep.2020.102671)] [[Author Share Link](https://authors.elsevier.com/c/1cIDm,rVDBVSlm)] 
 
 Braun, D., J. T. Faith, M. Douglass, M. Power, B. Davies, V. Aldeias, N. Conard, R Cutts, L. Dupont, I. Esteban, A. Kandel, N. Levin, J. Luyt, J. Parkington, R. Pickering, L. Quick, J. Sealy, and D. Stynder. Ecosystem engineering in the Quaternary of the west coast of South Africa. *Evolutionary Anthropology* Published online. [[Journal](https://doi.org/10.1002/evan.21886)][[Author Share Link](https://onlinelibrary.wiley.com/share/author/GJAD8EMTMAPQPDEAWUZM?target=10.1002/evan.21886)]
