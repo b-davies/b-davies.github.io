@@ -8,7 +8,7 @@ tags: publications
 ### In press
 Davies, B., M. Power, M. Douglass, D. Braun, S. Mosher, L. Quick, I. Esteban, J. Sealy, J. Parkington, and J. T. Faith.  Fire and the management of late Holocene landscapes in southern Africa. Accepted to *Quaternary Science Reviews*.
 
-Davies, B., M. Douglass, D. Braun, J. Parkington, M. Power, and J. T. Faith. From quartz curvature to late Holocene mobility at Spring Cave, Western Cape, South Africa. Under review at *Archaeological and Anthropological Sciences*.
+Davies, B., M. Douglass, D. Braun, J. Parkington, M. Power, and J. T. Faith. From quartz curvature to late Holocene mobility at Spring Cave, Western Cape, South Africa. Accepted to *Archaeological and Anthropological Sciences*.
 
 ### 2021
 Davies, B., M. Douglass, P. Fanning, and S. Holdaway. Resilience and reversibility: engaging with archaeological record formation to inform on past resilience. Archaeological Review from Cambridge 36(1):51-74. [[Open Access Journal](https://doi.org/10.17863/CAM.79041)]
