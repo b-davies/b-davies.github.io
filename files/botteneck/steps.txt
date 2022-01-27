@@ -1,0 +1,39 @@
+1) Add these global variables:
+
+average
+sd
+
+
+2) Add this turtle-owned variable:
+
+trait
+
+
+3) Add sliders to the Interface for the following variables:
+
+n-turtles 
+num-bottlenecks
+turtles-removed-percent
+
+4) Add a setup procedure that
+-clears the model
+-sets the variable average to 0
+-sets the sd variable to 1
+-creates n-turtles turtles
+-gives those turtles a trait drawn from a random normal distribution (using average and sd)
+-resets time
+
+5) Add a go procedure that
+-asks a percentage of turtles to be removed (die)
+-recalculates the average variable as the mean trait of the remaining turtles
+-recalculates the standard-deviation variable as the mean trait of the remaining turtles
+-creates enough new turtles to bring the population back to n-turtles
+-gives those turtles a trait drawn from a random normal distribution (using the new average and sd)
+-advances time
+-stops the model if the number of bottlenecks equals num-bottlenecks
+
+6) Make some setup and go buttons
+
+7) Make a monitor that shows the mean trait of the turtles
+
+8) Make a histogram of the turtle trait values, with x-axis limits at -3 and 3.
