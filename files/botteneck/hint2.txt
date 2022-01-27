@@ -1,0 +1,5 @@
+Hint #2
+
+An easy way to get a percentage of a population of agents is to use n-of and count. For example, to ask 50 percent of all turtles, you could code it as 
+
+ask n-of (count turtles * 0.5) turtles 

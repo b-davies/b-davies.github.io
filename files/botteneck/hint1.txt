@@ -1,0 +1,13 @@
+Hint #1
+
+There are lots of ways this model could be built. Some likely primitives you might use are:
+
+clear-all
+of
+n-of
+mean
+count
+standard-deviation
+random-normal
+
+The NetLogo dictionary can show you how to use them if you're not sure. 

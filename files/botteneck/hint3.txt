@@ -1,0 +1,5 @@
+Hint #3
+
+This model is treating number of bottlenecks like ticks. You can use the variable ticks as a stop condition when you reach the number of bottlenecks. For example, create a slider called number-of-bottlenecks and then put in your go procedure:
+
+if ticks = number-of-bottlenecks [ stop ] 
