@@ -1,0 +1,25 @@
+--- 
+title: "Spatial R Exercise 1"
+author: "Ben Davies"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  Spatial R Exercise 1
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+
+# Adding the `sf` package
+
+First, we'll include the `sf` package that we'll use for working with vector data.
+
+```{r, warning=FALSE}
+require(sf)
+```
+
+Remember that this package is built as an update of the `sp` package. This uses the *Simple Features* object format, where spatial data are stored as dataframes with a special "geometry" column. This makes them more flexible for use by other packages. You can read more about Simple Features [here](http://wiki.gis.com/wiki/index.php/Simple_Features), and about the history of spatial data handling in R [here](https://link.springer.com/article/10.1007/s10109-020-00336-0).

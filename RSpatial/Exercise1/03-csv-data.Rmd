@@ -1,0 +1,82 @@
+# Creating `sf` objects from table data
+
+## Adding CSV data
+
+Now let's say we have some point data and we want to add it to the map. However, in this case we've got it stored as a comma-separated values (CSV) file. Let's use `read.csv` to read the data in, and `class` to look at the object class. 
+
+```{r}
+#Import the SARadiocarbon.csv data
+c14table<-read.csv("SARadiocarbon.csv")
+class(c14table)
+```
+
+These data are radiocarbon dates from the [South African Radiocarbon Database](https://www.cambridge.org/core/journals/antiquity/article/abs/an-archaeological-radiocarbon-database-for-southern-africa/26FE99E995C4507015704D552CB0C196). The `read.csv` function reads this in as a dataframe only, so it isn't being treated as an sf object just yet. Let's take a look at the dataframe using the `head` function, which gives a preview of the first 6 rows:
+
+```{r}
+#Take a look at the first 6 rows
+head(c14table)
+```
+
+
+Among the columns in this dataset is one called `BIOME`, which tells us from which biome the date was recovered. There are more than 2000 dates in the set, but there probably aren't that many biomes in the dataset. Again, we can use `unique` to get a list of the ones included here.
+
+
+```{r}
+#Get unique biome names
+unique(c14table$BIOME)
+```
+
+While there are some minor differences, these match up pretty well with the names from our biomes shapefile. If we wanted just the dates from the grasslands, we could subset the data using this column.
+
+```{r}
+#Get the grassland dates
+c14grass<-subset(c14table,BIOME=="Grassland Biome")
+unique(c14grass$BIOME)
+```
+
+Terrific. Now we want to make this usable with `sf`. Lucky for us this is already spatial data: coordinates are stored in the columns `LONGITUDE` and `LATITUDE`. We can use these columns as arguments with the `st_as_sf` to coerce the dataframe to a point dataset.
+
+
+```{r}
+#Convert to point object
+c14points<-st_as_sf(c14grass,coords=c("LONGITUDE","LATITUDE"),remove=FALSE)
+```
+Notice that we added an argument to the `st_as_sf` function that says `remove=FALSE`. This means that when we use `LONGITUDE` and `LATITUDE` to generate our geometry, we don't remove these columns. These will come in handy later on. For now, let's check on the class of this new object.
+
+```{r}
+class(c14points)
+```
+
+
+OK, now it's in the sf class, so we can add it to our map.
+
+```{r}
+#Add to plot
+plot(st_geometry(grassland),axes=T,col="light green")
+plot(st_geometry(c14points),add=T)
+```
+
+## Subsetting using location data
+
+Not bad! Notice that one point just east of the edge of the grassland boundary? It's not clear what's happened there: it could be from a site that is in a transition zone, or maybe was mislabeled by the data authors. Whatever it is, let's say we don't want to include that point. We can use subset again, but this time we only want to include points that are inside our grassland object. We'll use `st_bbox` to get the extent of the grassland object:
+
+```{r}
+st_bbox(grassland)
+```
+
+These values are the maximum and minimum x and y coordinates for the grassland object. We can see that the `xmax`, or the longitude that is the furthest to the east, is 31.66951. We can use `subset` and the `LONGITUDE` column we kept to pare it down.
+
+```{r}
+c14points2<-subset(c14points, LONGITUDE < 31.66951)
+```
+
+And then we plot again..
+
+```{r}
+#Add to plot
+plot(st_geometry(grassland),axes=T,col="light green")
+plot(st_geometry(c14points2),add=T)
+```
+
+Fixed! This is an example of *spatial subsetting*. In this case, since there was only one point we wanted to prune and we had the `LONGITUDE` data handy, it was pretty easy to do it this way. But if the , we'd probably want to find a way to crop the points using the biome shape itself. This is something we'll cover in more detail in another session.
+

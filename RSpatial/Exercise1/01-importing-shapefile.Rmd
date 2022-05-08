@@ -1,0 +1,61 @@
+# Working with spatial data
+
+## Reading in a shapefile
+
+Now that we have access to the `sf` package, we'll read in a shapefile (south_africa_border.shp) with the borders of the countries in southern Africa: South Africa, Lesotho, and Eswatini. 
+
+```{r result='hide'}
+#Import the south_africa_border.shp shapefile. 
+southernAfrica<-st_read("south_africa_border.shp")
+```
+
+This dataset comes from [Natural Earth](www.naturalearthdata.com), and it includes 95 variables about these 3 countries, including population, GDP, country names in other languages, etc. If you wanted to take a look at it in more detail, you could use `str(southernAfrica)`, but you can also take my word for it.
+
+## Plotting spatial data
+
+Next we'll use `plot` and `st_geometry` to plot the borders.
+
+
+```{r result='show'}
+#Plot geometry
+plot(st_geometry(southernAfrica))
+```
+ 
+While we all probably have a sense of where southern Africa is, it's usually a good idea to include some information about the geography. We'll learn more about making maps later, but for now we can just include the axes to give us latitude and longitude.
+
+```{r }
+#Plot geometry with axes
+plot(st_geometry(southernAfrica),axes=T)
+```
+
+
+If we want to see the information in the dataset, we could just use the `plot` function by itself.
+
+```{r}
+plot(southernAfrica)
+```
+
+You may notice that this gives us the first nine variables (or columns) in the dataset. Since a vector dataset might contain hundreds of variables, the `sf` package will stop after 9 plots by default so that R doesn't freak out. 
+You may also notice that for many of these, there's no differences between these countries. It's probably more useful to target a specific variable of interest. For example, if we want to access the population estimate for each country and plot that, we first need to figure out which variable corresponds to the population. You can get a list of variable names using `colnames` or just by typing `southernAfrica$` into the command line.
+
+```{r}
+colnames(southernAfrica)
+```
+
+There's a lot of variables here, but once we know the name of the variable we are interested in, we can plot this using brackets to include the variable name:
+
+ 
+```{r}
+plot(southernAfrica['POP_EST'])
+```
+
+This shows us that, unsurprisingly, there are population differences between South Africa, Lesotho, and Eswatini. But more importantly, it shows that you can import and explore this data using a few lines of code. 
+
+## Try it yourself!
+
+Add some code to see if you can do the following with the southern Africa data:
+
+* Figure out which variable/column gives the gross domestic product (GDP) estimate for each country
+* Plot the GDP data with latitude/longitude axes
+* Can you think of a way to plot the population estimate and GDP side by side (with axes)?
+
