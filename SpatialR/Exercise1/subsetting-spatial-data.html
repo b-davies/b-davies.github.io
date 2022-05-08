@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Subsetting spatial data | Spatial R Exercise 1</title>
+  <meta name="description" content="Chapter 3 Subsetting spatial data | Spatial R Exercise 1" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Subsetting spatial data | Spatial R Exercise 1" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Chapter 3 Subsetting spatial data | Spatial R Exercise 1" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Subsetting spatial data | Spatial R Exercise 1" />
+  
+  <meta name="twitter:description" content="Chapter 3 Subsetting spatial data | Spatial R Exercise 1" />
+  
+
+<meta name="author" content="Ben Davies" />
+
+
+<meta name="date" content="2022-05-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="importing-and-plotting-spatial-data.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Spatial R Example 1</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Adding <code>sf</code> package</a></li>
+<li class="chapter" data-level="2" data-path="importing-and-plotting-spatial-data.html"><a href="importing-and-plotting-spatial-data.html"><i class="fa fa-check"></i><b>2</b> Importing and plotting spatial data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="importing-and-plotting-spatial-data.html"><a href="importing-and-plotting-spatial-data.html#reading-in-a-shapefile"><i class="fa fa-check"></i><b>2.1</b> Reading in a shapefile</a></li>
+<li class="chapter" data-level="2.2" data-path="importing-and-plotting-spatial-data.html"><a href="importing-and-plotting-spatial-data.html#plotting-spatial-data"><i class="fa fa-check"></i><b>2.2</b> Plotting spatial data</a></li>
+<li class="chapter" data-level="2.3" data-path="importing-and-plotting-spatial-data.html"><a href="importing-and-plotting-spatial-data.html#try-it-yourself"><i class="fa fa-check"></i><b>2.3</b> Try it yourself!</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="subsetting-spatial-data.html"><a href="subsetting-spatial-data.html"><i class="fa fa-check"></i><b>3</b> Subsetting spatial data</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="subsetting-spatial-data.html"><a href="subsetting-spatial-data.html#adding-more-data"><i class="fa fa-check"></i><b>3.1</b> Adding more data</a></li>
+<li class="chapter" data-level="3.2" data-path="subsetting-spatial-data.html"><a href="subsetting-spatial-data.html#subsetting-spatial-data-1"><i class="fa fa-check"></i><b>3.2</b> Subsetting spatial data</a></li>
+<li class="chapter" data-level="3.3" data-path="subsetting-spatial-data.html"><a href="subsetting-spatial-data.html#try-it-yourself-1"><i class="fa fa-check"></i><b>3.3</b> Try it yourself!</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Spatial R Exercise 1</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="subsetting-spatial-data" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Subsetting spatial data<a href="subsetting-spatial-data.html#subsetting-spatial-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="adding-more-data" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Adding more data<a href="subsetting-spatial-data.html#adding-more-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this step, we’ll import some more slightly more interesting data: biomes in southern Africa.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="subsetting-spatial-data.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Import SABiomes.csv data</span></span>
+<span id="cb13-2"><a href="subsetting-spatial-data.html#cb13-2" aria-hidden="true" tabindex="-1"></a>biomes<span class="ot">&lt;-</span><span class="fu">st_read</span>(<span class="st">&quot;SABiomes.shp&quot;</span>)</span></code></pre></div>
+<pre><code>## Reading layer `SABiomes&#39; from data source 
+##   `C:\Users\bdav_\Dropbox\Teaching\Spatial R Short Course\Bookdown\Exercise1\SABiomes.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 287 features and 7 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: 16.45696 ymin: -34.8334 xmax: 32.89179 ymax: -22.12917
+## Geodetic CRS:  WGS 84</code></pre>
+<p>This dataset comes from the <a href="https://www.sanbi.org/">South Africa National Biodiversity Institute</a> and is based on a <a href="https://www.cabdirect.org/cabdirect/abstract/20073221934">2006 classification scheme by Mucina and Rutherford</a>.</p>
+<p>You might notice that when you import this dataset, it reports the following:</p>
+<p><code>Geometry type: MULTIPOLYGON</code></p>
+<p>The “multi” types of geometry isn’t something we have seen yet, but you may be familiar with these if you have used other GIS platforms. The main difference between a <code>POLYGON</code> and <code>MULTIPOLYGON</code> geometry is that in a <code>POLYGON</code> geometry, each individual polygon is a distinct feature, while in a <code>MULTIPOLYGON</code> geometry, multiple polygons might be included in a single feature. You could think about it in terms of the main islands of Hawaii:</p>
+<p><img src="hawaii.png" /></p>
+<p>A<code>POLYGON</code> dataset might have separate features for Oahu, Maui, Kauai, and so on, while a <code>MULTIPOLYGON</code> dataset might have 8 polygons that are all a single feature called “Hawaii”. For the biomes dataset, some areas may include disconnected components, but are here considered to be a single feature or “multipolygon”.</p>
+<p>Let’s use the <code>unique</code> function to take a look at how many different biomes are in this dataset:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="subsetting-spatial-data.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#How many features are in this dataset?</span></span>
+<span id="cb15-2"><a href="subsetting-spatial-data.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(biomes<span class="sc">$</span>BIOMENAME)</span></code></pre></div>
+<pre><code>## [1] &quot;Forests&quot;                   &quot;Grassland&quot;                
+## [3] &quot;Savanna&quot;                   &quot;Nama-Karoo&quot;               
+## [5] &quot;Desert&quot;                    &quot;Fynbos&quot;                   
+## [7] &quot;Indian Ocean Coastal Belt&quot; &quot;Succulent Karoo&quot;          
+## [9] &quot;Albany Thicket&quot;</code></pre>
+<p>This shows us the names of all 9 of the primary biomes in South Africa. Now we can look at their distribution by plotting them. We probably don’t need to plot every variable, so let’s just use the <code>BIOMECODE</code> variable to plot by.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="subsetting-spatial-data.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot by biome code</span></span>
+<span id="cb17-2"><a href="subsetting-spatial-data.html#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(biomes[<span class="st">&#39;BIOMECODE&#39;</span>])</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>Lovely! We should also add axes.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="subsetting-spatial-data.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot by biome code with axes</span></span>
+<span id="cb18-2"><a href="subsetting-spatial-data.html#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(biomes[<span class="st">&#39;BIOMECODE&#39;</span>],<span class="at">axes=</span>T)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+</div>
+<div id="subsetting-spatial-data-1" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Subsetting spatial data<a href="subsetting-spatial-data.html#subsetting-spatial-data-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now let’s say we’re only intrested in the grassland areas. We can use <code>subset</code> to reduce the dataset just to grassland areas.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="subsetting-spatial-data.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot just grasslands</span></span>
+<span id="cb19-2"><a href="subsetting-spatial-data.html#cb19-2" aria-hidden="true" tabindex="-1"></a>grassland<span class="ot">&lt;-</span><span class="fu">subset</span>(biomes,BIOMENAME<span class="sc">==</span><span class="st">&quot;Grassland&quot;</span>)</span>
+<span id="cb19-3"><a href="subsetting-spatial-data.html#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(grassland))</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>Again, let’s include the axes, and let’s also make the color light green.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="subsetting-spatial-data.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Print the grasslands green with axes</span></span>
+<span id="cb20-2"><a href="subsetting-spatial-data.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(grassland),<span class="at">axes=</span>T,<span class="at">col=</span><span class="st">&quot;light green&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>Looking good so far!</p>
+</div>
+<div id="try-it-yourself-1" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Try it yourself!<a href="subsetting-spatial-data.html#try-it-yourself-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Modify the blank code chunk below to see if you can do the following with the biomes data:</p>
+<ul>
+<li>Subset the data so that it is just the savanna biome</li>
+<li>Plot this and choose a complementary color. If you’re not sure what the options are for colors, <a href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf">try this document</a>.</li>
+<li>Change the type and thickness of the lines used to draw the features with the <code>lty</code> and <code>lwd</code> arguments. These take numeric values and default to 1. See what happens when you change these.</li>
+<li>See if you can plot the geometry of the southern Africa, and then add the savanna.</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="importing-and-plotting-spatial-data.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-interrogating-subsetting.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

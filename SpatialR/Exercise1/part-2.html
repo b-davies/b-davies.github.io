@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Part 2 | Spatial R Exercise 1</title>
+  <meta name="description" content="Chapter 2 Part 2 | Spatial R Exercise 1" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Part 2 | Spatial R Exercise 1" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Chapter 2 Part 2 | Spatial R Exercise 1" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Part 2 | Spatial R Exercise 1" />
+  
+  <meta name="twitter:description" content="Chapter 2 Part 2 | Spatial R Exercise 1" />
+  
+
+<meta name="author" content="Ben Davies" />
+
+
+<meta name="date" content="2022-05-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="part-3.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Spatial R Example 1</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Part 1</a></li>
+<li class="chapter" data-level="2" data-path="part-2.html"><a href="part-2.html"><i class="fa fa-check"></i><b>2</b> Part 2</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="part-2.html"><a href="part-2.html#reading-in-a-shapefile"><i class="fa fa-check"></i><b>2.1</b> Reading in a shapefile</a></li>
+<li class="chapter" data-level="2.2" data-path="part-2.html"><a href="part-2.html#plotting-spatial-data"><i class="fa fa-check"></i><b>2.2</b> Plotting spatial data</a></li>
+<li class="chapter" data-level="2.3" data-path="part-2.html"><a href="part-2.html#try-it-yourself"><i class="fa fa-check"></i><b>2.3</b> Try it yourself!</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="part-3.html"><a href="part-3.html"><i class="fa fa-check"></i><b>3</b> Part 3</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="part-3.html"><a href="part-3.html#adding-more-data"><i class="fa fa-check"></i><b>3.1</b> Adding more data</a></li>
+<li class="chapter" data-level="3.2" data-path="part-3.html"><a href="part-3.html#subsetting-using-attribute-data"><i class="fa fa-check"></i><b>3.2</b> Subsetting using attribute data</a></li>
+<li class="chapter" data-level="3.3" data-path="part-3.html"><a href="part-3.html#try-it-yourself-1"><i class="fa fa-check"></i><b>3.3</b> Try it yourself!</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="part-4.html"><a href="part-4.html"><i class="fa fa-check"></i><b>4</b> Part 4</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="part-4.html"><a href="part-4.html#adding-csv-data"><i class="fa fa-check"></i><b>4.1</b> Adding CSV data</a></li>
+<li class="chapter" data-level="4.2" data-path="part-4.html"><a href="part-4.html#subsetting-using-location-data"><i class="fa fa-check"></i><b>4.2</b> Subsetting using location data</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="part-5.html"><a href="part-5.html"><i class="fa fa-check"></i><b>5</b> Part 5</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="part-5.html"><a href="part-5.html#making-spatial-data"><i class="fa fa-check"></i><b>5.1</b> Making spatial data</a></li>
+<li class="chapter" data-level="5.2" data-path="part-5.html"><a href="part-5.html#writing-to-file"><i class="fa fa-check"></i><b>5.2</b> Writing to file</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bring-it-all-together.html"><a href="bring-it-all-together.html"><i class="fa fa-check"></i><b>6</b> Bring it all together!</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Spatial R Exercise 1</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="part-2" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Part 2<a href="part-2.html#part-2" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="reading-in-a-shapefile" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Reading in a shapefile<a href="part-2.html#reading-in-a-shapefile" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now that we have access to the <code>sf</code> package, we’ll read in a shapefile (south_africa_border.shp) with the borders of the countries in southern Africa: South Africa, Lesotho, and Eswatini.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="part-2.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Import the south_africa_border.shp shapefile. </span></span>
+<span id="cb4-2"><a href="part-2.html#cb4-2" aria-hidden="true" tabindex="-1"></a>southernAfrica<span class="ot">&lt;-</span><span class="fu">st_read</span>(<span class="st">&quot;south_africa_border.shp&quot;</span>)</span></code></pre></div>
+<pre><code>## Reading layer `south_africa_border&#39; from data source 
+##   `C:\Users\bdav_\Dropbox\Teaching\Spatial R Short Course\Bookdown\Exercise1\south_africa_border.shp&#39; 
+##   using driver `ESRI Shapefile&#39;
+## Simple feature collection with 3 features and 94 fields
+## Geometry type: POLYGON
+## Dimension:     XY
+## Bounding box:  xmin: 16.46998 ymin: -34.82195 xmax: 32.89308 ymax: -22.12645
+## Geodetic CRS:  WGS 84</code></pre>
+<p>This dataset comes from <a href="www.naturalearthdata.com">Natural Earth</a>, and it includes 95 variables about these 3 countries, including population, GDP, country names in other languages, etc. If you wanted to take a look at it in more detail, you could use <code>str(southernAfrica)</code>, but you can also take my word for it.</p>
+</div>
+<div id="plotting-spatial-data" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Plotting spatial data<a href="part-2.html#plotting-spatial-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Next we’ll use <code>plot</code> and <code>st_geometry</code> to plot the borders.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="part-2.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot geometry</span></span>
+<span id="cb6-2"><a href="part-2.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(southernAfrica))</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>While we all probably have a sense of where southern Africa is, it’s usually a good idea to include some information about the geography. We’ll learn more about making maps later, but for now we can just include the axes to give us latitude and longitude.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="part-2.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot geometry with axes</span></span>
+<span id="cb7-2"><a href="part-2.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(southernAfrica),<span class="at">axes=</span>T)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>If we want to see the information in the dataset, we could just use the <code>plot</code> function by itself.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="part-2.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(southernAfrica)</span></code></pre></div>
+<pre><code>## Warning: plotting the first 9 out of 94 attributes; use max.plot = 94 to plot
+## all</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>You may notice that this gives us the first nine variables (or columns) in the dataset. Since a vector dataset might contain hundreds of variables, the <code>sf</code> package will stop after 9 plots by default so that R doesn’t freak out.
+You may also notice that for many of these, there’s no differences between these countries. It’s probably more useful to target a specific variable of interest. For example, if we want to access the population estimate for each country and plot that, we first need to figure out which variable corresponds to the population. You can get a list of variable names using <code>colnames</code> or just by typing <code>southernAfrica$</code> into the command line.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="part-2.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(southernAfrica)</span></code></pre></div>
+<pre><code>##  [1] &quot;featurecla&quot; &quot;scalerank&quot;  &quot;LABELRANK&quot;  &quot;SOVEREIGNT&quot; &quot;SOV_A3&quot;    
+##  [6] &quot;ADM0_DIF&quot;   &quot;LEVEL&quot;      &quot;TYPE&quot;       &quot;ADMIN&quot;      &quot;ADM0_A3&quot;   
+## [11] &quot;GEOU_DIF&quot;   &quot;GEOUNIT&quot;    &quot;GU_A3&quot;      &quot;SU_DIF&quot;     &quot;SUBUNIT&quot;   
+## [16] &quot;SU_A3&quot;      &quot;BRK_DIFF&quot;   &quot;NAME&quot;       &quot;NAME_LONG&quot;  &quot;BRK_A3&quot;    
+## [21] &quot;BRK_NAME&quot;   &quot;BRK_GROUP&quot;  &quot;ABBREV&quot;     &quot;POSTAL&quot;     &quot;FORMAL_EN&quot; 
+## [26] &quot;FORMAL_FR&quot;  &quot;NAME_CIAWF&quot; &quot;NOTE_ADM0&quot;  &quot;NOTE_BRK&quot;   &quot;NAME_SORT&quot; 
+## [31] &quot;NAME_ALT&quot;   &quot;MAPCOLOR7&quot;  &quot;MAPCOLOR8&quot;  &quot;MAPCOLOR9&quot;  &quot;MAPCOLOR13&quot;
+## [36] &quot;POP_EST&quot;    &quot;POP_RANK&quot;   &quot;GDP_MD_EST&quot; &quot;POP_YEAR&quot;   &quot;LASTCENSUS&quot;
+## [41] &quot;GDP_YEAR&quot;   &quot;ECONOMY&quot;    &quot;INCOME_GRP&quot; &quot;WIKIPEDIA&quot;  &quot;FIPS_10_&quot;  
+## [46] &quot;ISO_A2&quot;     &quot;ISO_A3&quot;     &quot;ISO_A3_EH&quot;  &quot;ISO_N3&quot;     &quot;UN_A3&quot;     
+## [51] &quot;WB_A2&quot;      &quot;WB_A3&quot;      &quot;WOE_ID&quot;     &quot;WOE_ID_EH&quot;  &quot;WOE_NOTE&quot;  
+## [56] &quot;ADM0_A3_IS&quot; &quot;ADM0_A3_US&quot; &quot;ADM0_A3_UN&quot; &quot;ADM0_A3_WB&quot; &quot;CONTINENT&quot; 
+## [61] &quot;REGION_UN&quot;  &quot;SUBREGION&quot;  &quot;REGION_WB&quot;  &quot;NAME_LEN&quot;   &quot;LONG_LEN&quot;  
+## [66] &quot;ABBREV_LEN&quot; &quot;TINY&quot;       &quot;HOMEPART&quot;   &quot;MIN_ZOOM&quot;   &quot;MIN_LABEL&quot; 
+## [71] &quot;MAX_LABEL&quot;  &quot;NE_ID&quot;      &quot;WIKIDATAID&quot; &quot;NAME_AR&quot;    &quot;NAME_BN&quot;   
+## [76] &quot;NAME_DE&quot;    &quot;NAME_EN&quot;    &quot;NAME_ES&quot;    &quot;NAME_FR&quot;    &quot;NAME_EL&quot;   
+## [81] &quot;NAME_HI&quot;    &quot;NAME_HU&quot;    &quot;NAME_ID&quot;    &quot;NAME_IT&quot;    &quot;NAME_JA&quot;   
+## [86] &quot;NAME_KO&quot;    &quot;NAME_NL&quot;    &quot;NAME_PL&quot;    &quot;NAME_PT&quot;    &quot;NAME_RU&quot;   
+## [91] &quot;NAME_SV&quot;    &quot;NAME_TR&quot;    &quot;NAME_VI&quot;    &quot;NAME_ZH&quot;    &quot;geometry&quot;</code></pre>
+<p>There’s a lot of variables here, but once we know the name of the variable we are interested in, we can plot this using brackets to include the variable name:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="part-2.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(southernAfrica[<span class="st">&#39;POP_EST&#39;</span>])</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>This shows us that, unsurprisingly, there are population differences between South Africa, Lesotho, and Eswatini. But more importantly, it shows that you can import and explore this data using a few lines of code.</p>
+</div>
+<div id="try-it-yourself" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Try it yourself!<a href="part-2.html#try-it-yourself" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Add some code to see if you can do the following with the southern Africa data:</p>
+<ul>
+<li>Figure out which variable/column gives the gross domestic product (GDP) estimate for each country</li>
+<li>Plot the GDP data with latitude/longitude axes</li>
+<li>Can you think of a way to plot the population estimate and GDP side by side (with axes)?</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="part-3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-importing-shapefile.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
