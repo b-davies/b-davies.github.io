@@ -1,0 +1,14 @@
+adding-the-terra-package
+making-raster-data
+generating-rasters
+non-numeric-rasters
+try-it-yourself
+working-with-raster-data
+reading-in-a-raster-dataset
+extract-values-from-raster
+multilayer-rasters
+reading-in-a-multilayer-raster-dataset
+plotting
+raster-algebra
+try-it-yourself-1
+bring-it-all-together
