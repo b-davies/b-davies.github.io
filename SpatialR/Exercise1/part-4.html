@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Part 4 | Spatial R Exercise 1</title>
+  <meta name="description" content="Chapter 4 Part 4 | Spatial R Exercise 1" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Part 4 | Spatial R Exercise 1" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Chapter 4 Part 4 | Spatial R Exercise 1" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Part 4 | Spatial R Exercise 1" />
+  
+  <meta name="twitter:description" content="Chapter 4 Part 4 | Spatial R Exercise 1" />
+  
+
+<meta name="author" content="Ben Davies" />
+
+
+<meta name="date" content="2022-05-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="part-3.html"/>
+<link rel="next" href="part-5.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Spatial R Example 1</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Part 1</a></li>
+<li class="chapter" data-level="2" data-path="part-2.html"><a href="part-2.html"><i class="fa fa-check"></i><b>2</b> Part 2</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="part-2.html"><a href="part-2.html#reading-in-a-shapefile"><i class="fa fa-check"></i><b>2.1</b> Reading in a shapefile</a></li>
+<li class="chapter" data-level="2.2" data-path="part-2.html"><a href="part-2.html#plotting-spatial-data"><i class="fa fa-check"></i><b>2.2</b> Plotting spatial data</a></li>
+<li class="chapter" data-level="2.3" data-path="part-2.html"><a href="part-2.html#try-it-yourself"><i class="fa fa-check"></i><b>2.3</b> Try it yourself!</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="part-3.html"><a href="part-3.html"><i class="fa fa-check"></i><b>3</b> Part 3</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="part-3.html"><a href="part-3.html#adding-more-data"><i class="fa fa-check"></i><b>3.1</b> Adding more data</a></li>
+<li class="chapter" data-level="3.2" data-path="part-3.html"><a href="part-3.html#subsetting-using-attribute-data"><i class="fa fa-check"></i><b>3.2</b> Subsetting using attribute data</a></li>
+<li class="chapter" data-level="3.3" data-path="part-3.html"><a href="part-3.html#try-it-yourself-1"><i class="fa fa-check"></i><b>3.3</b> Try it yourself!</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="part-4.html"><a href="part-4.html"><i class="fa fa-check"></i><b>4</b> Part 4</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="part-4.html"><a href="part-4.html#adding-csv-data"><i class="fa fa-check"></i><b>4.1</b> Adding CSV data</a></li>
+<li class="chapter" data-level="4.2" data-path="part-4.html"><a href="part-4.html#subsetting-using-location-data"><i class="fa fa-check"></i><b>4.2</b> Subsetting using location data</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="part-5.html"><a href="part-5.html"><i class="fa fa-check"></i><b>5</b> Part 5</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="part-5.html"><a href="part-5.html#making-spatial-data"><i class="fa fa-check"></i><b>5.1</b> Making spatial data</a></li>
+<li class="chapter" data-level="5.2" data-path="part-5.html"><a href="part-5.html#writing-to-file"><i class="fa fa-check"></i><b>5.2</b> Writing to file</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bring-it-all-together.html"><a href="bring-it-all-together.html"><i class="fa fa-check"></i><b>6</b> Bring it all together!</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Spatial R Exercise 1</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="part-4" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Part 4<a href="part-4.html#part-4" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="adding-csv-data" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Adding CSV data<a href="part-4.html#adding-csv-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now let’s say we have some point data and we want to add it to the map. However, in this case we’ve got it stored as a comma-separated values (CSV) file. Let’s use <code>read.csv</code> to read the data in, and <code>class</code> to look at the object class.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="part-4.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Import the SARadiocarbon.csv data</span></span>
+<span id="cb21-2"><a href="part-4.html#cb21-2" aria-hidden="true" tabindex="-1"></a>c14table<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">&quot;SARadiocarbon.csv&quot;</span>)</span>
+<span id="cb21-3"><a href="part-4.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(c14table)</span></code></pre></div>
+<pre><code>## [1] &quot;data.frame&quot;</code></pre>
+<p>These data are radiocarbon dates from the <a href="https://www.cambridge.org/core/journals/antiquity/article/abs/an-archaeological-radiocarbon-database-for-southern-africa/26FE99E995C4507015704D552CB0C196">South African Radiocarbon Database</a>. The <code>read.csv</code> function reads this in as a dataframe only, so it isn’t being treated as an sf object just yet. Let’s take a look at the dataframe using the <code>head</code> function, which gives a preview of the first 6 rows:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="part-4.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Take a look at the first 6 rows</span></span>
+<span id="cb23-2"><a href="part-4.html#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(c14table)</span></code></pre></div>
+<pre><code>##         SITE SITE_CODE LATITUDE LONGITUDE      COUNTRY PROVINCE_DISTRICT RFZ
+## 1 Thula Mela       TUM  -22.431    31.194 South Africa           Limpopo   S
+## 2 Thula Mela       TUM  -22.431    31.194 South Africa           Limpopo   S
+## 3 Thula Mela       TUM  -22.431    31.194 South Africa           Limpopo   S
+## 4 Thula Mela       TUM  -22.431    31.194 South Africa           Limpopo   S
+## 5 Thula Mela       TUM  -22.431    31.194 South Africa           Limpopo   S
+## 6 Thula Mela       TUM  -22.431    31.194 South Africa           Limpopo   S
+##           BIOME CONTEXT        TECHNIQUE MATERIAL      SPECIES   LAB_ID DATE
+## 1 Savanna Biome         conventional 14C charcoal              Pta-6079  480
+## 2 Savanna Biome         conventional 14C charcoal              Pta-7107  530
+## 3 Savanna Biome         conventional 14C charcoal              Pta-7103  390
+## 4 Savanna Biome         conventional 14C charcoal              Pta-7105  560
+## 5 Savanna Biome         conventional 14C     bone Homo sapiens Pta-7276  370
+## 6 Savanna Biome         conventional 14C     bone Homo sapiens Pta-7243  520
+##   UNCERTAINTY ARCH_PERIOD ARCH_SUBPERIOD SAMPLE_CONTEXT  SITE_TYPE DELTA_13
+## 1          30    Iron Age                               settlement       NA
+## 2          30    Iron Age                               settlement       NA
+## 3          35    Iron Age                               settlement       NA
+## 4          35    Iron Age                               settlement       NA
+## 5          40    Iron Age                               settlement       NA
+## 6          40    Iron Age                               settlement       NA
+##        REFCODE   NOTES
+## 1 vogel2000rds   Khami
+## 2 vogel2000rds Mutamba
+## 3 vogel2000rds   Khami
+## 4 vogel2000rds Mutamba
+## 5 vogel2000rds   Khami
+## 6 vogel2000rds   Khami</code></pre>
+<p>Among the columns in this dataset is one called <code>BIOME</code>, which tells us from which biome the date was recovered. There are more than 2000 dates in the set, but there probably aren’t that many biomes in the dataset. Again, we can use <code>unique</code> to get a list of the ones included here.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="part-4.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Get unique biome names</span></span>
+<span id="cb25-2"><a href="part-4.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(c14table<span class="sc">$</span>BIOME)</span></code></pre></div>
+<pre><code>##  [1] &quot;Savanna Biome&quot;             &quot;Grassland Biome&quot;          
+##  [3] &quot;Succulent Karoo Biome&quot;     &quot;Azonal Vegetation&quot;        
+##  [5] &quot;Desert Biome&quot;              &quot;Nama-Karoo Biome&quot;         
+##  [7] &quot;Fynbos Biome&quot;              &quot;Thicket Biome&quot;            
+##  [9] &quot;Forests&quot;                   &quot;Indian Ocean Coastal Belt&quot;
+## [11] &quot;&quot;</code></pre>
+<p>While there are some minor differences, these match up pretty well with the names from our biomes shapefile. If we wanted just the dates from the grasslands, we could subset the data using this column.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="part-4.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Get the grassland dates</span></span>
+<span id="cb27-2"><a href="part-4.html#cb27-2" aria-hidden="true" tabindex="-1"></a>c14grass<span class="ot">&lt;-</span><span class="fu">subset</span>(c14table,BIOME<span class="sc">==</span><span class="st">&quot;Grassland Biome&quot;</span>)</span>
+<span id="cb27-3"><a href="part-4.html#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(c14grass<span class="sc">$</span>BIOME)</span></code></pre></div>
+<pre><code>## [1] &quot;Grassland Biome&quot;</code></pre>
+<p>Terrific. Now we want to make this usable with <code>sf</code>. Lucky for us this is already spatial data: coordinates are stored in the columns <code>LONGITUDE</code> and <code>LATITUDE</code>. We can use these columns as arguments with the <code>st_as_sf</code> to coerce the dataframe to a point dataset.</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="part-4.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Convert to point object</span></span>
+<span id="cb29-2"><a href="part-4.html#cb29-2" aria-hidden="true" tabindex="-1"></a>c14points<span class="ot">&lt;-</span><span class="fu">st_as_sf</span>(c14grass,<span class="at">coords=</span><span class="fu">c</span>(<span class="st">&quot;LONGITUDE&quot;</span>,<span class="st">&quot;LATITUDE&quot;</span>),<span class="at">remove=</span><span class="cn">FALSE</span>)</span></code></pre></div>
+<p>Notice that we added an argument to the <code>st_as_sf</code> function that says <code>remove=FALSE</code>. This means that when we use <code>LONGITUDE</code> and <code>LATITUDE</code> to generate our geometry, we don’t remove these columns. These will come in handy later on. For now, let’s check on the class of this new object.</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="part-4.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(c14points)</span></code></pre></div>
+<pre><code>## [1] &quot;sf&quot;         &quot;data.frame&quot;</code></pre>
+<p>OK, now it’s in the sf class, so we can add it to our map.</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="part-4.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Add to plot</span></span>
+<span id="cb32-2"><a href="part-4.html#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(grassland),<span class="at">axes=</span>T,<span class="at">col=</span><span class="st">&quot;light green&quot;</span>)</span>
+<span id="cb32-3"><a href="part-4.html#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(c14points),<span class="at">add=</span>T)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+</div>
+<div id="subsetting-using-location-data" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Subsetting using location data<a href="part-4.html#subsetting-using-location-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Not bad! Notice that one point just east of the edge of the grassland boundary? It’s not clear what’s happened there: it could be from a site that is in a transition zone, or maybe was mislabeled by the data authors. Whatever it is, let’s say we don’t want to include that point. We can use subset again, but this time we only want to include points that are inside our grassland object. We’ll use <code>st_bbox</code> to get the extent of the grassland object:</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="part-4.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st_bbox</span>(grassland)</span></code></pre></div>
+<pre><code>##      xmin      ymin      xmax      ymax 
+##  22.33500 -33.06480  31.66951 -22.99997</code></pre>
+<p>These values are the maximum and minimum x and y coordinates for the grassland object. We can see that the <code>xmax</code>, or the longitude that is the furthest to the east, is 31.66951. We can use <code>subset</code> and the <code>LONGITUDE</code> column we kept to pare it down.</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="part-4.html#cb35-1" aria-hidden="true" tabindex="-1"></a>c14points2<span class="ot">&lt;-</span><span class="fu">subset</span>(c14points, LONGITUDE <span class="sc">&lt;</span> <span class="fl">31.66951</span>)</span></code></pre></div>
+<p>And then we plot again..</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="part-4.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Add to plot</span></span>
+<span id="cb36-2"><a href="part-4.html#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(grassland),<span class="at">axes=</span>T,<span class="at">col=</span><span class="st">&quot;light green&quot;</span>)</span>
+<span id="cb36-3"><a href="part-4.html#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(c14points2),<span class="at">add=</span>T)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p>Fixed! This is an example of <em>spatial subsetting</em>. In this case, since there was only one point we wanted to prune and we had the <code>LONGITUDE</code> data handy, it was pretty easy to do it this way. But if the , we’d probably want to find a way to crop the points using the biome shape itself. This is something we’ll cover in more detail in another session.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="part-3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="part-5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-csv-data.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
