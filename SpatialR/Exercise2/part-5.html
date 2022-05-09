@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Part 5 | Spatial R Exercise 1</title>
+  <meta name="description" content="Chapter 5 Part 5 | Spatial R Exercise 1" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Part 5 | Spatial R Exercise 1" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Chapter 5 Part 5 | Spatial R Exercise 1" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Part 5 | Spatial R Exercise 1" />
+  
+  <meta name="twitter:description" content="Chapter 5 Part 5 | Spatial R Exercise 1" />
+  
+
+<meta name="author" content="Ben Davies" />
+
+
+<meta name="date" content="2022-05-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="part-4.html"/>
+<link rel="next" href="bring-it-all-together.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Spatial R Example 1</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Part 1</a></li>
+<li class="chapter" data-level="2" data-path="part-2.html"><a href="part-2.html"><i class="fa fa-check"></i><b>2</b> Part 2</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="part-2.html"><a href="part-2.html#reading-in-a-shapefile"><i class="fa fa-check"></i><b>2.1</b> Reading in a shapefile</a></li>
+<li class="chapter" data-level="2.2" data-path="part-2.html"><a href="part-2.html#plotting-spatial-data"><i class="fa fa-check"></i><b>2.2</b> Plotting spatial data</a></li>
+<li class="chapter" data-level="2.3" data-path="part-2.html"><a href="part-2.html#try-it-yourself"><i class="fa fa-check"></i><b>2.3</b> Try it yourself!</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="part-3.html"><a href="part-3.html"><i class="fa fa-check"></i><b>3</b> Part 3</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="part-3.html"><a href="part-3.html#adding-more-data"><i class="fa fa-check"></i><b>3.1</b> Adding more data</a></li>
+<li class="chapter" data-level="3.2" data-path="part-3.html"><a href="part-3.html#subsetting-using-attribute-data"><i class="fa fa-check"></i><b>3.2</b> Subsetting using attribute data</a></li>
+<li class="chapter" data-level="3.3" data-path="part-3.html"><a href="part-3.html#try-it-yourself-1"><i class="fa fa-check"></i><b>3.3</b> Try it yourself!</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="part-4.html"><a href="part-4.html"><i class="fa fa-check"></i><b>4</b> Part 4</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="part-4.html"><a href="part-4.html#adding-csv-data"><i class="fa fa-check"></i><b>4.1</b> Adding CSV data</a></li>
+<li class="chapter" data-level="4.2" data-path="part-4.html"><a href="part-4.html#subsetting-using-location-data"><i class="fa fa-check"></i><b>4.2</b> Subsetting using location data</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="part-5.html"><a href="part-5.html"><i class="fa fa-check"></i><b>5</b> Part 5</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="part-5.html"><a href="part-5.html#making-spatial-data"><i class="fa fa-check"></i><b>5.1</b> Making spatial data</a></li>
+<li class="chapter" data-level="5.2" data-path="part-5.html"><a href="part-5.html#writing-to-file"><i class="fa fa-check"></i><b>5.2</b> Writing to file</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bring-it-all-together.html"><a href="bring-it-all-together.html"><i class="fa fa-check"></i><b>6</b> Bring it all together!</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Spatial R Exercise 1</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="part-5" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Part 5<a href="part-5.html#part-5" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="making-spatial-data" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Making spatial data<a href="part-5.html#making-spatial-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Lastly, let’s add some data we make ourselves. Let’s say we have a section of grassland we want to use as a study area. To do this, we’re going to make a square polygon using longitude/latitude coordinates. First, we use <code>list</code> and <code>rbind</code> to create a list object with a matrix of coordinate pairs:</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="part-5.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Make polygon list</span></span>
+<span id="cb37-2"><a href="part-5.html#cb37-2" aria-hidden="true" tabindex="-1"></a>polygonList <span class="ot">=</span> <span class="fu">list</span>(<span class="fu">rbind</span>(<span class="fu">c</span>(<span class="fl">26.5</span>, <span class="sc">-</span><span class="dv">28</span>), <span class="fu">c</span>(<span class="fl">29.5</span>, <span class="sc">-</span><span class="dv">28</span>), <span class="fu">c</span>(<span class="fl">29.5</span>, <span class="sc">-</span><span class="dv">30</span>), <span class="fu">c</span>(<span class="fl">26.5</span>, <span class="sc">-</span><span class="dv">30</span>), <span class="fu">c</span>(<span class="fl">26.5</span>, <span class="sc">-</span><span class="dv">28</span>)))</span></code></pre></div>
+<p>Next, we trainslate this list into a polygon object with <code>st_polygon</code>, and then a feature collection with <code>st_sfc</code>:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="part-5.html#cb38-1" aria-hidden="true" tabindex="-1"></a>polygonObject<span class="ot">&lt;-</span><span class="fu">st_polygon</span>(polygonList)</span>
+<span id="cb38-2"><a href="part-5.html#cb38-2" aria-hidden="true" tabindex="-1"></a>polygonCollection<span class="ot">&lt;-</span><span class="fu">st_sfc</span>(polygonObject)</span></code></pre></div>
+<p>Now we generate some “data” to include. Since it’s only one feature we’re making, we can just give it a feature number of 1. We turn this into a dataframe, and then combine them with the feature collection to make a new simple features dataset with <code>st_sf</code>:</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="part-5.html#cb39-1" aria-hidden="true" tabindex="-1"></a>featureNum<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">1</span>)</span>
+<span id="cb39-2"><a href="part-5.html#cb39-2" aria-hidden="true" tabindex="-1"></a>data<span class="ot">&lt;-</span><span class="fu">data.frame</span>(featureNum)</span>
+<span id="cb39-3"><a href="part-5.html#cb39-3" aria-hidden="true" tabindex="-1"></a>polygonData<span class="ot">&lt;-</span><span class="fu">st_sf</span>(data,polygonCollection)</span></code></pre></div>
+<p>Finally, we need to tell it what coordinate system we are using. The EPSG coordinate system code for the WGS84 Geographic Coordinate System (the standard used in GPS) is 4326. We can assign this easily using <code>st_crs</code>, and use the same function to check it:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="part-5.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(polygonData) <span class="ot">&lt;-</span> <span class="dv">4326</span></span>
+<span id="cb40-2"><a href="part-5.html#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(polygonData)</span></code></pre></div>
+<pre><code>## Coordinate Reference System:
+##   User input: EPSG:4326 
+##   wkt:
+## GEOGCRS[&quot;WGS 84&quot;,
+##     DATUM[&quot;World Geodetic System 1984&quot;,
+##         ELLIPSOID[&quot;WGS 84&quot;,6378137,298.257223563,
+##             LENGTHUNIT[&quot;metre&quot;,1]]],
+##     PRIMEM[&quot;Greenwich&quot;,0,
+##         ANGLEUNIT[&quot;degree&quot;,0.0174532925199433]],
+##     CS[ellipsoidal,2],
+##         AXIS[&quot;geodetic latitude (Lat)&quot;,north,
+##             ORDER[1],
+##             ANGLEUNIT[&quot;degree&quot;,0.0174532925199433]],
+##         AXIS[&quot;geodetic longitude (Lon)&quot;,east,
+##             ORDER[2],
+##             ANGLEUNIT[&quot;degree&quot;,0.0174532925199433]],
+##     USAGE[
+##         SCOPE[&quot;Horizontal component of 3D system.&quot;],
+##         AREA[&quot;World.&quot;],
+##         BBOX[-90,-180,90,180]],
+##     ID[&quot;EPSG&quot;,4326]]</code></pre>
+<p>Lastly, we want to plot our newly created study area polygon with our other data:</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="part-5.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Add to plot</span></span>
+<span id="cb42-2"><a href="part-5.html#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(grassland),<span class="at">axes=</span>T,<span class="at">col=</span><span class="st">&quot;light green&quot;</span>)</span>
+<span id="cb42-3"><a href="part-5.html#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(c14points2),<span class="at">add=</span>T)</span>
+<span id="cb42-4"><a href="part-5.html#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(polygonData),<span class="at">add=</span>T)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+</div>
+<div id="writing-to-file" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Writing to file<a href="part-5.html#writing-to-file" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>And if we want to export our new data as a shapefile, we can use <code>st_write</code>:</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="part-5.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Export it to shapefile</span></span>
+<span id="cb43-2"><a href="part-5.html#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="co">#st_write(polygonData,&quot;sampleArea.shp&quot;,driver=&quot;ESRI shapefile&quot;)</span></span></code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="part-4.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bring-it-all-together.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-making-data.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
