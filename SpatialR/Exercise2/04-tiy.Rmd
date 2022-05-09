@@ -1,0 +1,9 @@
+# Bring it all together!
+
+Try to write code to do the following on your own:
+
+* Load the turkanaRain raster dataset
+* Create a subset of the last 50 months in the dataset
+* Use `global` to get the mean values for this subset and then create a histogram from these values (hint: you may need to use the `$` operator)
+* Create a raster that is the sum of the last 10 years (120 months) of rainfall data
+* Plot this raster in a blue palette

@@ -1,0 +1,26 @@
+--- 
+title: "Spatial R Exercise 2"
+author: "Ben Davies"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  Spatial R Exercise 2
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+
+# Adding the `terra` package
+
+First, we'll include the `terra` package that we'll use for working with raster data. We'll also include a package called `RColorBrewer` for plotting. 
+
+```{r, warning=FALSE}
+require("terra")
+require("RColorBrewer")
+```
+
+The `terra` package is built as an update of the `raster`` package. Its main advantage is that it can handle large datafiles without loading them into memory, which helps to speed up operations using high resolution raster data. You can read more about the history of spatial data handling in R [here](https://link.springer.com/article/10.1007/s10109-020-00336-0).

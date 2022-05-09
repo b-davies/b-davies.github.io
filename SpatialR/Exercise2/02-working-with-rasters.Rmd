@@ -1,0 +1,103 @@
+# Working with raster data
+
+## Reading in a raster dataset
+
+Let's use the `rast` function to read in an elevation from the area around Ngorongoro Crater and Olduvai Gorge in Tanzania. 
+
+```{r }
+#Import the ngoronogoro.tif raster 
+ngorongoro<-rast("ngorongoro.tif")
+```
+
+This dataset comes from [General Bathymetric Chart of the Oceans (GEBCO)](https://www.gebco.net/), a bathymetric product from the British Oceanographic Data Centre that also serves as a decent source for terrestrial elevation data. 
+
+We can take a look at the attributes of this dataset just by calling its name.
+
+```{r }
+#Examine the data attributes
+ngorongoro
+```
+ 
+Here we can get a lot of helpful information. Going line by line:
+* the class a `terra` SpatRaster
+* the dimensions of the raster are 240x240 with one layer
+* the resolution is 0.004166667 (this may seem a bit arbitrary, but this is the decimal degree equivalent of 15 seconds, or 0.25 minutes, of latitude/longitude; . 
+* the extent of the raster is 35 to 36 degrees longitude, -3.5
+* the coordinate reference system is WGS 84 (EPSG:4326), or longitude/latitude
+
+A couple of things you might notice. First, the latitude values for the extent are negative values. This is because we are using decimal degrees rather than degrees:minues:seconds to refer to geographic coordinates, and decimal degrees below the equator go from 0 to -90. 
+
+Second, the resolution of  0.004166667 may seem a little arbitrary. This value the decimal degree equivalent of 0.25 minutes, of latitude/longitude. You can read more about these two systems [here](https://gisgeography.com/decimal-degrees-dd-minutes-seconds-dms/). 
+
+
+## Extract values from raster
+
+Rasters are gridded data representing a continuous dataset across space. We can interrogate this data by finding individual values, or summarizing these for some focal area or the entire dataset. 
+
+First, let's get some individual values out of this. First, let's find the minimum elevation of the dataset.
+
+```{r}
+#Get minimum value for the whole dataset
+global(ngorongoro,"min")
+```
+
+And then the maximum elevation:
+
+```{r}
+#Get minimum value for the whole dataset
+global(ngorongoro,"max")
+```
+
+This gives a sense of the range of values, but it doesn't tell us much about they vary. One way we could characterize this would be to get the mean and standard deviation for all the elevation on the grid. 
+
+```{r}
+#Get mean for the whole dataset
+global(ngorongoro,"mean")
+
+#Get standard deviation for the whole dataset
+global(ngorongoro,"sd")
+```
+
+This shows an average of around 1641 meters a.s.l. and a standard deviation of around 460 meters.  If we're interested in the shape of the distribution, we could plug the raster into a histogram and see how they are distributed.
+
+```{r}
+#histogram of raster values
+hist(ngorongoro)
+```
+This tells us a fair bit more about how t However, the thing that makes geographic data interesting is that they not only vary, but co-vary with location. 
+
+We can see this by extracting a transect of elevation values. We'll do this by taking all the values in a row across the middle of the raster. Rows are numbered top to bottom; knowing that the raster is 240x240, the midde row is 120. Once we have that, we can turn it into a vector of values using the `$` operator.
+
+```{r}
+#Get elevation across middle row
+elevationTransect<-ngorongoro[120,]
+#Turn it into a vector
+elevation<-elevationTransect$ngorongoro
+#Show values
+elevation
+```
+
+This is all the elevation in each cell of row 120. To visualize how this changes over space, we should also have the sequence of decimal degrees between 35 and 36 longitude in our raster. We can use `seq` to generate these.
+
+```{r}
+#Get a list of decimal degrees
+degrees<-seq(35,36,length.out=240)
+degrees
+```
+Now we can plot these together to see how elevation changes across space!
+
+```{r}
+plot(degrees,elevation,type="l")
+```
+
+What we can see from this plot is that there is a plain in the west that sits around 1600 meters a.s.l. (close to our mean value). Going east from there is a steep elevation gain followed by some peaks, and then a steep drop off levels below 1000 meters a.s.l. 
+
+We can also see this when we plot the data.
+
+```{r }
+#Plot raster
+plot(ngorongoro)
+```
+
+
+
