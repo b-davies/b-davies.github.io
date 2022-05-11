@@ -1,0 +1,12 @@
+making-maps-with-r
+adding-packages
+getting-going-with-ggplot2-and-geom_sf
+add-some-data
+plotting-a-geom_sf-object
+changing-appearances
+try-it-yourself
+mapping-multiple-datasets
+add-data
+combining-datasets-in-a-plot
+adding-map-elements
+bringing-it-all-together
