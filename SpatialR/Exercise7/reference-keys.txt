@@ -1,0 +1,10 @@
+getting-started-with-point-patterns
+loading-packages
+working-with-point-data-in-spatstat
+what-is-a-owin-object-what-is-a-ppp-object
+evaluating-patterns
+nearest-neighbor
+quadrat-analysis
+kernel-density-estimation
+try-it-yourself
+bringing-it-all-together
