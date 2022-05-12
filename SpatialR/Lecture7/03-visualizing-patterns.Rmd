@@ -1,7 +1,0 @@
-# Bringing it all together!
-
-OK, now you've seen how we get started with doing some spatial analysis in `spatstat`. Like `sf` and `terra`, this package has its own quirks and conventions that take some getting used to. For this exercise, see if you can do the following:
-
-*Load in the makiloa_boundary2.shp and primary_features.shp files as vector data
-*Convert the boundary to an owin object and the features to a point pattern
-*Explore the pattern using quadrats, kernel density, and nearest neighbor distance
