@@ -1,0 +1,100 @@
+# Evaluating patterns
+
+Now that we've got an understanding of `spatstat` objects, let's put them to use. Methods of spatial analysis developed for points usually concern two main aspects of their spatial patterning: density and distance. 
+
+## Nearest neighbor
+
+Spatial patterning in point data is often characterized by how our observed data are clustered or dispersed. Clustering might indicate some underlying process of attraction (e.g., resource abundance), while dispersed points may indicate A useful metric here is nearest neighbor distance: how far is each point from 
+
+```{r}
+head(nndist(primatesPoints))
+```
+
+The Clark-Evans test helps us to summarize these relationships over the entire dataset. Basically, this approach:
+
+* Determines the average of distances between individual points in the observed data and their nearest neighbouring points.
+*Simulates distributions for the same number of points randomly distributed in the same space and calculates the same average nearest neighbour distance. 
+*Divides the average nearest neighbour distance for the observed data by the mean of the simulated distributions. 
+
+For this metric, values over 1 tend to indicate patterns that are uniformly distributed, while values We can see what this looks like with our randomly distributed points:
+
+```{r}
+
+x<-runif(100,0,1)
+y<-runif(100,0,1)
+xy<-data.frame(x,y)
+w<-owin(c(min(x),max(x)),c(min(y),max(y)))
+data<-as.ppp(xy,w)
+
+mean(nndist(data))
+clarkevans(data)
+```
+
+Here, we can see that the data are pretty close to one. This is what we'd expect from randomly distributed data. Now let's take a look at our primate data. 
+
+```{r}
+
+mean(nndist(primatesPoints))
+clarkevans(primatesPoints)
+```
+
+
+Our primate groups are, on average around a kilometer from their nearest neighbor. And, confirming what we could see from the, there is some notable clustering.
+
+# Quadrat analysis
+
+For quadrat analysis, we divide the up the study area into a regular grid and then count how many instances there are of a thing in that grid. In the case of Ecuador, we'll divide it into a 8x8 grid.
+
+```{r}
+plot(quadrats(ecWin,8,8),main="")
+```
+
+We can also create a primate dataset without marks. This is mostly just so they won't plot. 
+
+```{r}
+p<-unmark(primatesPoints)
+```
+
+Now we can use `quadratcounts`
+
+```{r}
+quad <- quadratcount(p, nx= 8, ny=8)
+#plot points
+plot(p, pch=16, cols="grey", main="") 
+plot(quad, add=TRUE)  
+
+```
+
+Just looking at this pattern, we can see that some quadrats have more than 100 observations, while others have none at all. This suggests intuitively that the distribution of is patterned, but we can estimate whether this is meaningful using `quadrat.test`.
+
+```{r}
+quadrat.test(p, 8, 8)
+```
+
+Note that the p-value is < 2.2e-16. This means that the
+
+
+## Kernel Density Estimation 
+
+We can visualize broad scale patterning in our data through a kernel density estimate (KDE). This is similar to the above approaches in that it calculates the number of of instances
+
+```{r}
+ecDensity <- density(p)
+plot(ecDensity,main="Primate Observation Density")
+plot(p,add=T)
+```
+
+
+These exercises are meant to introduce you to `spatstat` and start looking at spatial analysis in R. 
+
+## Try it yourself
+
+`spatstat` comes with some pre-made datasets to test things out with. These are already saved as `ppp` objects when you call them. Try doing the following:
+
+* Look at nearest neighbor with the `redwoods` and `amacrine` datasets
+* Create a kernel density estimate from the `cells` data
+* Do a quadrat analysis, including the quadrat test, using the `nztrees` data
+
+
+
+

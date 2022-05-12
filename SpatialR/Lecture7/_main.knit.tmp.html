@@ -1,0 +1,201 @@
+<div id="getting-started-with-point-patterns" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Getting started with point patterns</h1>
+<p>Oftentimes, the geographic data we obtain in the anthropological sciences is expressed as point data. For example, points might be used to record the distribution of objects in an archaeological excavation, observations of primate activity in a study area, or instances of interpersonal violence among a population. In all instances, there is an underlying assumption that space and location matter.</p>
+<p>In this exercise, we’ll examine some methods for assessing patterning in point data.</p>
+<div id="loading-packages" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Loading packages</h2>
+<p>For working with point data, we will introduce the <code>spatstat</code> package into our suite of tools.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&quot;sf&quot;</span>)</span></code></pre></div>
+<pre><code>## Loading required package: sf</code></pre>
+<pre><code>## Linking to GEOS 3.9.1, GDAL 3.3.2, PROJ 7.2.1; sf_use_s2() is TRUE</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&quot;spatstat&quot;</span>)</span></code></pre></div>
+<pre><code>## Loading required package: spatstat</code></pre>
+<pre><code>## Loading required package: spatstat.data</code></pre>
+<pre><code>## Loading required package: spatstat.geom</code></pre>
+<pre><code>## spatstat.geom 2.4-0</code></pre>
+<pre><code>## Loading required package: spatstat.random</code></pre>
+<pre><code>## spatstat.random 2.2-0</code></pre>
+<pre><code>## Loading required package: spatstat.core</code></pre>
+<pre><code>## Loading required package: nlme</code></pre>
+<pre><code>## Loading required package: rpart</code></pre>
+<pre><code>## spatstat.core 2.4-2</code></pre>
+<pre><code>## Loading required package: spatstat.linnet</code></pre>
+<pre><code>## spatstat.linnet 2.3-2</code></pre>
+<pre><code>## 
+## spatstat 2.3-4       (nickname: &#39;Watch this space&#39;) 
+## For an introduction to spatstat, type &#39;beginner&#39;</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&quot;ggplot2&quot;</span>)</span></code></pre></div>
+<pre><code>## Loading required package: ggplot2</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&quot;leaflet&quot;</span>)</span></code></pre></div>
+<pre><code>## Loading required package: leaflet</code></pre>
+<p>The <code>spatstat</code> package was developed in 2002 by Adrian Baddeley principally for the analysis of 2D point patterns, and this package is still arguably the most widely used software for this application.</p>
+<!--chapter:end:index.Rmd-->
+</div>
+</div>
+<div id="working-with-point-data-in-spatstat" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Working with point data in <code>spatstat</code></h1>
+<p>There are two principal objects required for analyzing point data in <code>spatstat</code>:</p>
+<ul>
+<li>a set of points expressed as coordinates in 2D space (a <code>ppp</code> object)</li>
+<li>a window of observation delineating where (an <code>owin</code> object)</li>
+</ul>
+<p>Points can come from a number of sources. Here, we’ll create some data and convert them into a <code>ppp</code> object.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">100</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">100</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>xy<span class="ot">&lt;-</span><span class="fu">data.frame</span>(x,y)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>w<span class="ot">&lt;-</span><span class="fu">owin</span>(<span class="fu">c</span>(<span class="fu">min</span>(x),<span class="fu">max</span>(x)),<span class="fu">c</span>(<span class="fu">min</span>(y),<span class="fu">max</span>(y)))</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>data<span class="ot">&lt;-</span><span class="fu">as.ppp</span>(xy,w)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(data)</span></code></pre></div>
+<p><img src="_main_files/figure-epub3/unnamed-chunk-4-1.png" /><!-- -->
+## Converting <code>sf</code> data to <code>owin</code> and <code>ppp</code></p>
+<p>An important thing to keep in mind about point data analysis in <code>spatstat</code> is that it is concerned with distance relationships in two-dimensions. This means that any data that is not in a flat-plane coordinate space will not work. So for us to use <code>spatstat</code>, our data must either exist in a non-geographic space (as in our random points above), or must be in a projected coordinate space.</p>
+<p>Here, we’ll load in</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>ecuador<span class="ot">&lt;-</span><span class="fu">read_sf</span>(<span class="st">&quot;ecuador.shp&quot;</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>ecuador<span class="ot">&lt;-</span><span class="fu">st_transform</span>(ecuador,<span class="dv">32717</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>ecWin<span class="ot">&lt;-</span> <span class="fu">as.owin</span>(ecuador)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>ecWin</span></code></pre></div>
+<pre><code>## window: polygonal boundary
+## enclosing rectangle: [490690.4, 1147851.6] x [9445216, 10160820] units</code></pre>
+<p>When making point data</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>primates<span class="ot">&lt;-</span><span class="fu">read_sf</span>(<span class="st">&quot;SAPrimateObservations.csv&quot;</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>primates<span class="ot">&lt;-</span><span class="fu">subset</span>(primates,countryCode<span class="sc">==</span><span class="st">&quot;EC&quot;</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>primates<span class="ot">&lt;-</span><span class="fu">st_as_sf</span>(primates,<span class="at">coords=</span><span class="fu">c</span>(<span class="st">&quot;decimalLongitude&quot;</span>,<span class="st">&quot;decimalLatitude&quot;</span>))</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(primates)<span class="ot">&lt;-</span><span class="dv">4326</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>primates<span class="ot">&lt;-</span><span class="fu">st_transform</span>(primates,<span class="dv">32717</span>)</span></code></pre></div>
+<p>OK, let’s make sure that’s in good shape:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>g1<span class="ot">&lt;-</span><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data=</span>ecuador) <span class="sc">+</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data=</span>primates)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(g1)</span></code></pre></div>
+<p><img src="_main_files/figure-epub3/unnamed-chunk-7-1.png" /><!-- -->
+Oops! Apparently someone observed primates out in the Galapagos! We’ll want to trim those points out before we convert.</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>primates<span class="ot">&lt;-</span><span class="fu">st_crop</span>(primates,ecuador)</span></code></pre></div>
+<pre><code>## Warning: attribute variables are assumed to be spatially constant throughout all
+## geometries</code></pre>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>g1<span class="ot">&lt;-</span><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data=</span>ecuador) <span class="sc">+</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data=</span>primates)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(g1)</span></code></pre></div>
+<p><img src="_main_files/figure-epub3/unnamed-chunk-9-1.png" /><!-- --></p>
+<p>That’s better. OK, to turn this <code>sf</code> into a <code>ppp</code> object, we’ll use <code>as.ppp</code>.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>primatesPoints<span class="ot">&lt;-</span><span class="fu">as.ppp</span>(primates)</span></code></pre></div>
+<pre><code>## Warning in as.ppp.sf(primates): only first attribute column is used for marks</code></pre>
+<p>Note that warning. “Marks” is point pattern analysis slang for attributes. Our primates data has quite a few of them. Traditionally, <code>spatstat</code> only allowed for a single column of marks, so when it converts other data to <code>ppp</code> it only keeps the first column.</p>
+<p>Let’s take a look at that pattern now.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(primatesPoints)</span></code></pre></div>
+<pre><code>## Warning in default.charmap(ntypes, chars): Too many types to display every type
+## as a different character</code></pre>
+<p><img src="_main_files/figure-epub3/unnamed-chunk-11-1.png" /><!-- --></p>
+<p>Yikes, what a mess. Here, <code>spatstat</code> is trying to plot all of the marks that came over with this data. This isn’t really something we want to deal with at the moment, so we can get rid of them with <code>unmark</code>.</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>primatesPoints<span class="ot">&lt;-</span><span class="fu">unmark</span>(primatesPoints)</span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(primatesPoints)</span></code></pre></div>
+<p><img src="_main_files/figure-epub3/unnamed-chunk-13-1.png" /><!-- --></p>
+<p>Much better!</p>
+<div id="what-is-a-owin-object-what-is-a-ppp-object" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> What is a <code>owin</code> object? What is a <code>ppp</code> object?</h2>
+<p>These objects are not something we’ve encountered before, so it’s worth looking at their structure a bit. The <code>owin</code> carries a few pieces of information that relate to its geometry, such as whether it is a rectangle or polygon, its extent, and the vertices that form its boundary.</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>ecWin<span class="sc">$</span>type</span></code></pre></div>
+<pre><code>## [1] &quot;polygonal&quot;</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>primatesPoints<span class="sc">$</span>n</span></code></pre></div>
+<pre><code>## [1] 2637</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(primatesPoints<span class="sc">$</span>x)</span></code></pre></div>
+<pre><code>## [1] 1005545.2  943889.4  643055.4  643072.1 1005801.4 1005801.4</code></pre>
+<p>If a <code>ppp</code> object has marks, these would be stored as a vector or, in the case of more than one set of marks, a dataframe.</p>
+<p>Finally, it also carries its own window object:</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(primatesPoints<span class="sc">$</span>window)</span></code></pre></div>
+<p><img src="_main_files/figure-epub3/unnamed-chunk-16-1.png" /><!-- --></p>
+<p>Of course, here it is just the rectangular extent of the points. But much of the space this rectangle occupies would not really be considered the area of interest. This is what we need the <code>ecWin</code> object for: so we can assign a custom window to the point pattern.</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>primatesPoints<span class="sc">$</span>window<span class="ot">&lt;-</span>ecWin</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(primatesPoints)</span></code></pre></div>
+<p><img src="_main_files/figure-epub3/unnamed-chunk-17-1.png" /><!-- --></p>
+<!--chapter:end:01-intro.Rmd-->
+</div>
+</div>
+<div id="evaluating-patterns" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Evaluating patterns</h1>
+<p>Now that we’ve got an understanding of <code>spatstat</code> objects, let’s put them to use. Methods of spatial analysis developed for points usually concern two main aspects of their spatial patterning: density and distance.</p>
+<div id="nearest-neighbor" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Nearest neighbor</h2>
+<p>Spatial patterning in point data is often characterized by how our observed data are clustered or dispersed. Clustering might indicate some underlying process of attraction (e.g., resource abundance), while dispersed points may indicate A useful metric here is nearest neighbor distance: how far is each point from</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">nndist</span>(primatesPoints))</span></code></pre></div>
+<pre><code>## [1]   101.73072 16672.19195    60.50261    60.50261     0.00000     0.00000</code></pre>
+<p>The Clark-Evans test helps us to summarize these relationships over the entire dataset. Basically, this approach:</p>
+<ul>
+<li>Determines the average of distances between individual points in the observed data and their nearest neighbouring points.
+<em>Simulates distributions for the same number of points randomly distributed in the same space and calculates the same average nearest neighbour distance.
+</em>Divides the average nearest neighbour distance for the observed data by the mean of the simulated distributions.</li>
+</ul>
+<p>For this metric, values over 1 tend to indicate patterns that are uniformly distributed, while values We can see what this looks like with our randomly distributed points:</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">100</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">100</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>xy<span class="ot">&lt;-</span><span class="fu">data.frame</span>(x,y)</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>w<span class="ot">&lt;-</span><span class="fu">owin</span>(<span class="fu">c</span>(<span class="fu">min</span>(x),<span class="fu">max</span>(x)),<span class="fu">c</span>(<span class="fu">min</span>(y),<span class="fu">max</span>(y)))</span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>data<span class="ot">&lt;-</span><span class="fu">as.ppp</span>(xy,w)</span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">nndist</span>(data))</span></code></pre></div>
+<pre><code>## [1] 0.05685164</code></pre>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">clarkevans</span>(data)</span></code></pre></div>
+<pre><code>##    naive Donnelly      cdf 
+## 1.154814 1.105702 1.084147</code></pre>
+<p>Here, we can see that the data are pretty close to one. This is what we’d expect from randomly distributed data. Now let’s take a look at our primate data.</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">nndist</span>(primatesPoints))</span></code></pre></div>
+<pre><code>## [1] 1171.82</code></pre>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">clarkevans</span>(primatesPoints)</span></code></pre></div>
+<pre><code>##     naive       cdf 
+## 0.2415733 0.1920958</code></pre>
+<p>Our primate groups are, on average around a kilometer from their nearest neighbor. And, confirming what we could see from the, there is some notable clustering.</p>
+</div>
+</div>
+<div id="quadrat-analysis" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Quadrat analysis</h1>
+<p>For quadrat analysis, we divide the up the study area into a regular grid and then count how many instances there are of a thing in that grid. In the case of Ecuador, we’ll divide it into a 8x8 grid.</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">quadrats</span>(ecWin,<span class="dv">8</span>,<span class="dv">8</span>),<span class="at">main=</span><span class="st">&quot;&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-epub3/unnamed-chunk-21-1.png" /><!-- --></p>
+<p>We can also create a primate dataset without marks. This is mostly just so they won’t plot.</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>p<span class="ot">&lt;-</span><span class="fu">unmark</span>(primatesPoints)</span></code></pre></div>
+<p>Now we can use <code>quadratcounts</code></p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>quad <span class="ot">&lt;-</span> <span class="fu">quadratcount</span>(p, <span class="at">nx=</span> <span class="dv">8</span>, <span class="at">ny=</span><span class="dv">8</span>)</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="co">#plot points</span></span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(p, <span class="at">pch=</span><span class="dv">16</span>, <span class="at">cols=</span><span class="st">&quot;grey&quot;</span>, <span class="at">main=</span><span class="st">&quot;&quot;</span>) </span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(quad, <span class="at">add=</span><span class="cn">TRUE</span>)  </span></code></pre></div>
+<p><img src="_main_files/figure-epub3/unnamed-chunk-23-1.png" /><!-- --></p>
+<p>Just looking at this pattern, we can see that some quadrats have more than 100 observations, while others have none at all. This suggests intuitively that the distribution of is patterned, but we can estimate whether this is meaningful using <code>quadrat.test</code>.</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quadrat.test</span>(p, <span class="dv">8</span>, <span class="dv">8</span>)</span></code></pre></div>
+<pre><code>## Warning: Some expected counts are small; chi^2 approximation may be inaccurate</code></pre>
+<pre><code>## 
+##  Chi-squared test of CSR using quadrat counts
+## 
+## data:  p
+## X2 = 11974, df = 49, p-value &lt; 2.2e-16
+## alternative hypothesis: two.sided
+## 
+## Quadrats: 50 tiles (irregular windows)</code></pre>
+<p>Note that the p-value is &lt; 2.2e-16. This means that the</p>
+<div id="kernel-density-estimation" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Kernel Density Estimation</h2>
+<p>We can visualize broad scale patterning in our data through a kernel density estimate (KDE). This is similar to the above approaches in that it calculates the number of of instances</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>ecDensity <span class="ot">&lt;-</span> <span class="fu">density</span>(p)</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(ecDensity,<span class="at">main=</span><span class="st">&quot;Primate Observation Density&quot;</span>)</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(p,<span class="at">add=</span>T)</span></code></pre></div>
+<p><img src="_main_files/figure-epub3/unnamed-chunk-25-1.png" /><!-- --></p>
+<p>These exercises are meant to introduce you to <code>spatstat</code> and start looking at spatial analysis in R.</p>
+</div>
+<div id="try-it-yourself" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Try it yourself</h2>
+<p><code>spatstat</code> comes with some pre-made datasets to test things out with. These are already saved as <code>ppp</code> objects when you call them. Try doing the following:</p>
+<ul>
+<li>Look at nearest neighbor with the <code>redwoods</code> and <code>amacrine</code> datasets</li>
+<li>Create a kernel density estimate from the <code>cells</code> data</li>
+<li>Do a quadrat analysis, including the quadrat test, using the <code>nztrees</code> data</li>
+</ul>
+<!--chapter:end:02-visualizing-patterns.Rmd-->
+</div>
+</div>
+<div id="bringing-it-all-together" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Bringing it all together!</h1>
+<p>OK, now you’ve seen how we get started with doing some spatial analysis in <code>spatstat</code>. Like <code>sf</code> and <code>terra</code>, this package has its own quirks and conventions that take some getting used to. For this exercise, see if you can do the following:</p>
+<p><em>Load in the makiloa_boundary2.shp and primary_features.shp files as vector data
+</em>Convert the boundary to an owin object and the features to a point pattern
+*Explore the pattern using quadrats, kernel density, and nearest neighbor distance</p>
+<!--chapter:end:03-visualizing-patterns.Rmd-->
+</div>

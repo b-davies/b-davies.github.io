@@ -1,0 +1,43 @@
+--- 
+title: "Spatial R Exercise 7"
+author: "Ben Davies"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  This is a minimal example of using the bookdown package to write a book.
+  The HTML output format for this example is bookdown::gitbook,
+  set in the _output.yml file.
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+# Getting started with point patterns 
+
+Oftentimes, the geographic data we obtain in the anthropological sciences is expressed as point data. For example, points might be used to record the distribution of objects in an archaeological excavation, observations of primate activity in a study area, or instances of interpersonal violence among a population. In all instances, there is an underlying assumption that space and location matter. 
+
+In this exercise, we'll examine some methods for assessing patterning in point data. 
+
+## Loading packages
+
+For working with point data, we will introduce the `spatstat` package into our suite of tools. 
+
+```{r}
+require("sf")
+require("spatstat")
+require("ggplot2")
+require("leaflet")
+```
+
+The `spatstat` package was developed in 2002 by	Adrian Baddeley principally for the analysis of 2D point patterns, and this package is still arguably the most widely used software for this application. 
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
