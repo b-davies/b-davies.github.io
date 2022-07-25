@@ -5,8 +5,6 @@ permalink: /publications/
 tags: publications
 ---
 
-
-
 ### 2022
 Davies, B., M. Power, M. Douglass, D. Braun, S. Mosher, L. Quick, I. Esteban, J. Sealy, J. Parkington, and J. T. Faith.  Fire and the management of late Holocene landscapes in southern Africa. *Quaternary Science Reviews* 289(107600):1-10. [[Journal](https://doi.org/10.1016/j.quascirev.2022.107600)] [[Author Copy](https://b-davies.github.io/files/papers/Davies2021_FireSouthAfrica.pdf)] [[Supplementary Information](https://b-davies.github.io/files/papers/Davies2021_FireSouthAfrica_SI.pdf)] [[Data and Code](https://doi.org/10.5281/zenodo.5130699)]
 
@@ -44,14 +42,14 @@ Crabtree, S., K. Harris, B. Davies, and I. Romanowska, 2019. Outreach in archaeo
 
 Davies, B., 2018. Weaving the common threads of simulation and formation studies in archaeology. In *Oceans of Data: Proceedings of the 44th International Conference on Computer Applications and Quantitative Methods in Archaeology*, M. Matsumoto and E. Uleberg (eds). Oxford: Archaeopress, pp. 481-494. [[Open Access Proceedings](http://archaeopress.com/ArchaeopressShop/Public/displayProductDetail.asp?id={2724F16C-FAC1-4987-8D1E-E85D9F94ACAD})] [[Preprint](https://osf.io/preprints/socarxiv/tyjc9)]
 
-Davies, B., Holdaway, S. J., and P. C. Fanning, 2018. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. *American Antiquity* Published online. DOI: 10.1017/aaq.2018.23  [[Journal](https://doi.org/10.1017/aaq.2018.23)] [[Preprint](https://doi.org/10.17605/OSF.IO/92NYB)] [[Data and Supplementary Files](https://github.com/b-davies/FMODEL)]
+Davies, B., Holdaway, S. J., and P. C. Fanning, 2018. Exploring relationships between space, movement, and lithic geometric attributes in the formation of archaeological landscapes. *American Antiquity* 83(3): 444-461. [[Journal](https://doi.org/10.1017/aaq.2018.23)] [[Preprint](https://doi.org/10.17605/OSF.IO/92NYB)] [[Data and Supplementary Files](https://github.com/b-davies/FMODEL)]
 
 Davies, B. and I. Romanowska, 2018. An Emergent Community? Agent-Based Modelers in Archaeology. *SAA Archaeological Record* 18: 27–32. [[Open Access Journal](http://cdn.coverstand.com/16146/486133/f0b56e91a16ef761a284d09e0980d3172a546e77.pdf)] 
 
 Davies, B., 2018. Review: Deep Time Dreaming: Uncovering Ancient Australia - .
-B. Griffiths. *Archaeology in Oceania* Published online ahead of print. DOI: 10.1002/arco.5161  [[Journal](https://onlinelibrary.wiley.com/doi/full/10.1002/arco.5161)]
+B. Griffiths. *Archaeology in Oceania* 53(3): 220-221.  [[Journal](https://onlinelibrary.wiley.com/doi/full/10.1002/arco.5161)]
 
-Davies, B. and S. Holdaway, 2018. Deflation archaeology. In *Encyclopedia of Global Archaeology*, C. Smith (ed.). Springer. DOI: 10.1007/978-3-319-51726-1_911-2 [[Book](http://doi.org/10.1007/978-3-319-51726-1_911-2)]
+Davies, B. and S. Holdaway, 2018. Deflation archaeology. In *Encyclopedia of Global Archaeology*, C. Smith (ed.). Amsterdam: Springer. DOI: 10.1007/978-3-319-51726-1_911-2 [[Book](http://doi.org/10.1007/978-3-319-51726-1_911-2)]
 
 ### 2017
 
