@@ -6,6 +6,7 @@ tags: teaching
 ---
 
 ### Archaeological Science
+[Syllabus (September 2021)](http://b-davies.github.io/syllabi/anth2030.pdf)
 *Online course*
 
 This core undergraduate course in archaeology surveyed different methodological approaches to the analysis of archaeological objects and sites drawn from the natural sciences. Initial lectures provide an overview of the discipline's history and theoretical frameworks before diving into weekly discussions of specific methods. Topics included: artifact classification, relative and absolute dating, geoarchaeology, lithic analysis, ceramic analysis, zooarchaeology, archaeobotany, bioarchaeology, and archaeochemistry. Students are taught strengths and limitations of these different methods in order to crtically consider their application in different archaeological cases. Weekly lectures were supplemented with guest lectures by specialists in these areas. Students completing this course come away with a broad understanding of archaeological science and are well-situated to pursue upper-division archaeology courses, field schools, and lab assistantships.
@@ -57,8 +58,9 @@ This undergraduate survey course was aimed at providing a foundation in human cu
 * [History and Tradition in NZ Archaeology](https://artsfaculty.auckland.ac.nz/courses/?Subject=ANTHRO&Number=346)
 	
 ### Short courses and workshops
+* Agent-Based Modeling in Anthropological Sciences *Online course*
 * Getting Started with R
 * Introducing Structure from Motion Photogrammetry 
 * Introduction to Agent-Based Modeling in NetLogo
 * One Hour, One Model: An Intro to Agent-Based Models
-
+* Spatial R for Anthropological Sciences *Online course*
