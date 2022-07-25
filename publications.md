@@ -5,10 +5,11 @@ permalink: /publications/
 tags: publications
 ---
 
-### In press
-Davies, B., M. Power, M. Douglass, D. Braun, S. Mosher, L. Quick, I. Esteban, J. Sealy, J. Parkington, and J. T. Faith.  Fire and the management of late Holocene landscapes in southern Africa. Accepted to *Quaternary Science Reviews*.
+
 
 ### 2022
+Davies, B., M. Power, M. Douglass, D. Braun, S. Mosher, L. Quick, I. Esteban, J. Sealy, J. Parkington, and J. T. Faith.  Fire and the management of late Holocene landscapes in southern Africa. *Quaternary Science Reviews*. [[Journal](https://doi.org/10.1016/j.quascirev.2022.107600] [[Author Copy](https://b-davies.github.io/files/papers/Davies2021_FireSouthAfrica.pdf)] [[Supplementary Information](https://b-davies.github.io/files/papers/Davies2021_FireSouthAfrica_SI.pdf)] [[Data and Code](https://doi.org/10.5281/zenodo.5130699)]
+
 Davies, B., M. Douglass, D. Braun, J. Parkington, M. Power, and J. T. Faith. From quartz curvature to late Holocene mobility at Spring Cave, Western Cape, South Africa. *Archaeological and Anthropological Sciences* 14(59): 1-12. [[Journal](https://doi.org/10.1007/s12520-022-01533-2)] [[Author Copy](https://b-davies.github.io/files/papers/Davies_etal_2022_QuartzCurvatureSpringCave.pdf)] [[Supplementary Information](https://b-davies.github.io/files/papers/Davies_etal_2022_QuartzCurvatureSpringCaveSI.pdf)] [[Data and Code](https://doi.org/10.5281/zenodo.6247712)]
 
 ### 2021
