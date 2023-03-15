@@ -29,7 +29,7 @@ A four-year project based in northern Kenya studying the current intersection of
 #### [Exploring the history of coupled climatic and human influences on ecosystem changes during the last one million years](https://nsf.gov/awardsearch/showAward?AWD_ID=1826666)
 A three-year study based in the Western Cape region of South Africa aimed at using geological and archaeological archives to examine the interactions of climate, human activities, and natural ecosystems over very long timespans. 
 
-#### [Using Serious Games to Address Air Quality as an Environmental Health Problem](https://1u4u.utah.edu/funded_projects/funded_project_view.php?view_project_id=115)
+#### [Using Serious Games to Address Air Quality as an Environmental Health Problem](https://1u4u.utah.edu/funded_projects/funded_2020/funded_project_view.php?view_project_id=115)
 This project will develop a research-informed serious game to support collective learning in diverse communities regarding issues relating air quality in Utah. Instead of focusing strictly on technological solutions, this game will emphasize social challenges to achieving clean air goals, especially those tied to community values.
 
 #### [Examining Pyrotechnology and Ecosystem Change in the Archaeological Record](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2018896&HistoricalAwards=false)
