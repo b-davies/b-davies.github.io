@@ -20,7 +20,7 @@ I can be reached by email at davies.archaeology AT gmail.com
 
 ### Projects
 
-#### [Drivers and proxies of behavioral diversity in Late Pleistocene and Holocene hunter-gathererss](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2244673)
+#### [Drivers and proxies of behavioral diversity in Late Pleistocene and Holocene hunter-gatherers](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2244673)
 A three-year study aimed at understanding drivers in the emergence of biological and cultural regionalism in Northern and Central Malawi during the late Pleistocene and early Holocene.
 
 #### [Long Term Perspectives on Water Security, Food Security, and Land Management Among Pastoralists Experiencing Change](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1924322)
