@@ -1,0 +1,39 @@
+# Bickety Bam! {.unnumbered}
+
+Data visualization is a critical skill for anyone interested in using data to think and persuade. 
+
+This course focuses on three aspects of data visualization: 
+
+* What makes a good data visualization?
+* Designing, improving, and communicating with visualizations, and 
+* Technical computer skills needed to create visualizations.
+
+##  What is Data Visualization? {-}
+
+Data visualization is the practice of turning data into graphics. Good graphics are more easily interpreted than the raw data. A well-designed visualization is faithful to the original data and does not mislead the intended audience. Almost every data visualization is a simplification and approximation of a raw dataset, and thus involves a perspective --- the goals and biases of the person producing the visualization.
+
+Data visualization approaches vary. For some purposes, highly customized graphic design and visual style are paramount. That's not our focus. We emphasize standardized graphical presentations --- which span a wide variety of visualizations --- that minimize the use of graphical elements not directly linked to the data.
+
+## What is the purpose of data visualization? {-}
+
+Data visualization is used to help tell [stories](https://clauswilke.com/dataviz/telling-a-story.html) with data. The usual goal is to communicate an interpretation of a data set to a particular audience, to make an argument you have worked out from an analysis of the data. The visualization is a device to help you do that. Visualizations are best when accompanied by written explanations. Even if a [picture is worth a thousand words](https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words), visualizations do not usually stand on their own. Once the message is understood and internalized, a good visualization can sometimes tell the story "by itself".
+  
+## Course Goals {#goals .unnumbered}
+
+By the end of the course you will be familiar with several aspects of data visualzation.
+
+*Visual impact and aesthetic aspects of graphics*
+
+- Understand the relationship between the structure of your data and the perceptual features of your graphics.
+- Describe aesthetic features of good plots. 
+- Use length, shape, size, colour, annotations, and other features to effectively display data and enable comparative visual interpretation.
+
+*Visualization as communication*
+
+- Visualization is a visual language for communication, which should be accompanied by written interpretations.
+- Visualizations should be developed through an iterative process akin to editing text, including the process of refining plots to highlight key features of the data, labeling items of interest, annotating plots, and changing overall appearance.
+- Visualizations can be presented in different formats for different audiences and different communications goals.
+- Communication effectiveness should be evaluated by peer-review and critical, constructive feedback.
+
+
+

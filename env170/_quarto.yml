@@ -1,0 +1,24 @@
+project:
+  type: book
+  output-dir: docs
+  
+book:
+  title: "ENV 170 Course Supplement"
+  author: "Ben Davies"
+  date: "2023-09-01"
+  chapters:
+    - index.qmd
+   
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    cap-location: margin
+    reference-location: margin
+    # citation-location: margin
+    code-link: true
+
+
