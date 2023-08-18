@@ -6,6 +6,9 @@ tags: about
 ---
 I am a researcher interested in mobility, population dynamics, and human adaptations to climate change. I draw on computational techniques in my work, and I am interested in how digital technology is used to learn about and interact with the past, present, and future. I am a lecturer in the [Environmental Studies program](https://as.tufts.edu/environmentalstudies/) at Tufts University, and previously held postodctoral positions in the [Yale Paleoarchaeology Lab](https://campuspress.yale.edu/jcthompson/paleoarchaeology-lab/) and the [University of Utah Anthropology Department](https://faculty.utah.edu/u6023090-Benjamin_Andrew_Davies/hm/index.hml). Sometimes I [tweet](http://twitter.com/ba_davies) and [blog](http://simulatingcomplexity.wordpress.com) and [git](http://github.com/b-davies).
 
+<div id='PurpleAirWidget_181787_module_TEMP_C_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
+<script src='https://www.purpleair.com/pa.widget.js?key=C6RKVFL1HABLW6ZC&module=TEMP_C&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_181787_module_TEMP_C_conversion_C0_average_10_layer_standard'></script>
+
 I can be reached by email at davies.archaeology AT gmail.com
 ![_config.yml]({{ site.baseurl }}/images/dingofence.jpg)
 
