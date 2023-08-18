@@ -2,7 +2,7 @@
 layout: page
 title: Conditions at home!
 permalink: /purpleair/
-tags: about
+tags: aq
 ---
 
 <div id='PurpleAirWidget_181787_module_TEMP_C_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
