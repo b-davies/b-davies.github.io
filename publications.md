@@ -4,6 +4,9 @@ title: Publications
 permalink: /publications/
 tags: publications
 ---
+### 2023
+
+Davies, K., B. Davies, P. Blackett, P. Holland, N. Craddock-Henry. Adaptive and interactive futures: developing ‘serious games’ for coastal community engagement and decision making. In *Re-Envisioning the Anthropocene Ocean*, R. Craig and J. McCarthy (eds). Salt Lake City: University of Utah Press. [[Full-Text Link](https://www.researchgate.net/publication/370773215_Adaptive_and_Interactive_Futures_Developing_Serious_Games_for_Coastal_Community_Engagement_and_Decision-Making_in_Craig_RK_McCarthy_JM_Eds_Re-Envisioning_the_Anthropocene_Ocean_University_of_Utah_Pres)]
 
 ### 2022
 Davies, B., M. Power, M. Douglass, D. Braun, S. Mosher, L. Quick, I. Esteban, J. Sealy, J. Parkington, and J. T. Faith.  Fire and the management of late Holocene landscapes in southern Africa. *Quaternary Science Reviews* 289(107600):1-10. [[Journal](https://doi.org/10.1016/j.quascirev.2022.107600)] [[Author Copy](https://b-davies.github.io/files/papers/Davies2021_FireSouthAfrica.pdf)] [[Supplementary Information](https://b-davies.github.io/files/papers/Davies2021_FireSouthAfrica_SI.pdf)] [[Data and Code](https://doi.org/10.5281/zenodo.5130699)]
