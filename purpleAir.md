@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Conditions at home!
+title: PM2.5 Air Quality Index at Bromfield Pearson
 permalink: /purpleair/
 tags: aq
 ---
