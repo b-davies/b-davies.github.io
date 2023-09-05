@@ -1,9 +1,20 @@
 ---
 layout: page
-title: PM2.5 Air Quality Index at Bromfield Pearson
+title: Zoom Links for Tuesday classes
 permalink: /purpleair/
 tags: aq
 ---
 
-<div id='PurpleAirWidget_181787_module_AQI_conversion_C0_average_0_layer_standard'>Loading PurpleAir Widget...</div>
-<script src='https://www.purpleair.com/pa.widget.js?key=C6RKVFL1HABLW6ZC&module=AQI&conversion=C0&average=0&layer=standard&container=PurpleAirWidget_181787_module_AQI_conversion_C0_average_0_layer_standard'></script>
+Zoom Link for ENV 120
+https://tufts.zoom.us/j/93312380154?pwd=UEVKaWtCREhWQnpYQXpyVGdiRDdqQT09
+Password: 132333
+
+Zoom Link for ENV 170
+https://tufts.zoom.us/j/91374840952?pwd=SSs3Slo3WFBFRkEzYXU4eCtJWktXZz09
+Password: 243444
+
+
+
+
+
+
