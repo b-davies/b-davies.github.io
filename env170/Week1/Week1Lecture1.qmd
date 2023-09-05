@@ -73,6 +73,10 @@ Students will also explore how aesthetic design choices contribute to the useful
 
 ![[Milken Institute School of Public Health](http://publichealth.gwu.edu/) at the George Washington University (<https://onlinepublichealth.gwu.edu/resources/climate-change-emissions-data/>)](InClassStatic/Climate_Change_carbon_v_vulnerability.png){fig-align="center"}
 
+## 
+
+![Crowdsourced neighborhood boundaries (https://bostonography.com/2017/official-unofficial-neighborhoods-2017/)](InClassStatic/BostonNeighborhoods.JPG)
+
 ## How we get there
 
 ::: columns
