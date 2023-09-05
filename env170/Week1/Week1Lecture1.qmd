@@ -63,7 +63,7 @@ Students will also explore how aesthetic design choices contribute to the useful
 
 ## 
 
-{{< video InClassStatic/GISTEMP_Curves_July2023_1080p60.mp4 >}} NASA Scientific Visualization Studio (https://svs.gsfc.nasa.gov/5137/)
+{{< video https://svs.gsfc.nasa.gov/vis/a000000/a005100/a005137/GISTEMP_Curves_July2023_1080p60.mp4 >}} NASA Scientific Visualization Studio (https://svs.gsfc.nasa.gov/5137/)
 
 ## 
 
