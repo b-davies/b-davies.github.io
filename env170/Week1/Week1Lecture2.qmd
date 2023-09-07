@@ -37,11 +37,13 @@ editor: visual
 
 ## Checking in
 
-How did it go yesterday?
+::: incremental
+-   How did it go yesterday?
 
-How much do you feel like you remember?
+-   How much do you feel like you remember?
 
-Ready to keep going?
+-   Ready to keep going?
+:::
 
 ## Introducing R scripts
 
@@ -209,4 +211,4 @@ See if you can use help to find the function for the **Kolmogorov-Smirnov Test**
 
 -   How to handle different kinds of files and organize projects
 
--   What to do when things go wrong
+-   More on what to do when things go wrong
