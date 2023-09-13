@@ -253,7 +253,7 @@ Try it yourself!
 <p><code style="color: blue">raro21_22</code></p>
 <p><img src="Week2Static/raro2122oops.jpg" class="img-fluid"></p>
 <p>You can see now that there are 727 rows, so we now have two years of data together. However, we now have 13 columns! What gives?! This problem is actually not an issue with the data, but stems from something we did to it: we changed the names in the <code>raro2022mod</code> columns. Because of this, R treats them as different variables, and so when it combines them, it creates a new column for each unique column name. It then fills in the portions for which it has no data (for example, <em>PRECIP_IN</em> for the 2021 data) with NAs.</p>
-<p>What can we do to fix this? We could rename all our columns for the 2021 data to match the 2022 data. But also remember that we still have our raw data for 2022 saved as raro2022, so we can just substitute that in to combine them both:</p>
+<p>What can we do to fix this? We could rename all our columns for the 2021 data to match the 2022 data. But also remember that we still have our raw data for 2022 saved as <code>raro2022</code>, so we can just substitute that in to combine them both:</p>
 <p><code style="color: blue">raro21_22&lt;-bind_rows(raro2021,raro2022)</code></p>
 <p>And when we have a look at the tibble:</p>
 <p><code style="color: blue">raro21_22</code></p>
@@ -337,9 +337,9 @@ Try it yourself!
 <p><code style="color: blue">head(raroPrecipCM)</code></p>
 <p><strong><code>[1]     NA 0.0508 0.1016 0.1270 0.1016     NA</code></strong></p>
 <p>Note that nothing happened to the NA values, and that’s just as it should be. As they indicate the absence of data, there is nothing to multiply, and so these remain unchanged.</p>
-<p>Now we’d like to add this new vector to our raroWeather2 tibble. To do this, we’ll use the <code>$</code> operator again, but in a new way:</p>
+<p>Now we’d like to add this new vector to our <code>raro21_22</code> tibble. To do this, we’ll use the <code>$</code> operator again, but in a new way:</p>
 <p><code style="color: blue">raro21_22$PRECIP_CM&lt;-raroPrecipCM</code></p>
-<p>What we’ve done here is use <code>$</code> to access a column that doesn’t exist in our raroWeather2 data, which is called <em>PRECIP_CM.</em> If we then assign something to that invented column, as long as the object we’re assigning fits (that is, the vector is as long as the number of rows in the tibble), then it will create a new column and attach the vector data there. If we now look at our tibble:</p>
+<p>What we’ve done here is use <code>$</code> to access a column that doesn’t exist in our <code>raro21_22</code> tibble, which is called <em>PRECIP_CM.</em> If we then assign something to that invented column, as long as the object we’re assigning fits (that is, the vector is as long as the number of rows in the tibble), then it will create a new column and attach the vector data there. If we now look at our tibble:</p>
 <p><code style="color: blue">raro21_22</code></p>
 <p>…we see the new column added to the mix:</p>
 <p><img src="Week2Static/tibble8cols.jpg" class="img-fluid"></p>
