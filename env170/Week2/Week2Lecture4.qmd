@@ -1,0 +1,183 @@
+---
+title: "Environmental Data Visualization and Analysis"
+author: "Week 2 Lecture 4"
+format: revealjs
+---
+
+## Quick review
+
+What can we do to improve this code?
+
+`#create a variable of 500 numbers from a standard normal distribution`{style="color: green"}
+
+`x<-rnorm(0,1)`
+
+`#create another variable from the same data but squared`{style="color: green"}
+
+`x^2`
+
+`#make it into a scatter plot`{style="color: green"}
+
+`scatterplot(x,y)`
+
+## Quick review
+
+What can we do to improve this code?
+
+```{r}
+#| echo=TRUE
+#create a variable of 500 numbers from a standard normal distribution
+x<-rnorm(500,0,1)
+
+#create another variable from the same data but squared
+y<-x^2
+
+#make it into a scatter plot
+plot(x,y)
+
+```
+
+## Quick review
+
+What can we do to improve this code?
+
+```{r}
+#| echo=TRUE
+#create a variable of 500 numbers from a standard normal distribution
+x<-rnorm(500,0,1)
+
+#create another variable from the same data but squared
+y<-x^2
+
+#make it into a scatter plot
+plot(x,y)
+points(c(-1,1),c(6,6))
+
+```
+
+## Sensor of the day
+
+Weather stations!
+
+![](Week2Static/weatherstation2.jpg)
+
+## Sensor of the day
+
+![](Week2Static/CDO.jpg){fig-align="center"}
+
+[NOAA Climate Data Online](https://www.ncei.noaa.gov/cdo-web/)
+
+## Sensor of the day
+
+Instruments may include:
+
+-   Thermometer: Temperature
+
+-   Rain gauge: Precipitation
+
+-   Barometer: Atmospheric pressure
+
+-   Anemometer: Wind speed
+
+-   Wind vane: Wind direction
+
+-   Pyranometer: Solar radiation
+
+## Finding data
+
+The main assignment for this course will involve conducting your own data analysis and visualization using data of your choice.
+
+That data is out there, somewhere, waiting for you...
+
+## What kind of data?
+
+Data are most useful when they are in *machine-readable* formats
+
+-   .csv, .tsv, .txt, .ncdf, .jpg, .tiff, .xml, .kml, .shp
+
+![](Week2Static/raroCSV.jpg)
+
+## What kind of data?
+
+Data are most useful when they are in *non-proprietary*, *widely-used* formats
+
+![](https://libapps.s3.amazonaws.com/accounts/96025/images/image_format-support-matrix.png){fig-align="center"}
+
+## Activity: Take the Weather With You
+
+Visit the Climate Data Online portal: <https://www.ncei.noaa.gov/cdo-web/>
+
+-   Choose **Browse Datasets**, expand **Daily Summaries**, then click **Search Tool**
+
+-   Search for station data in any part of the world and add it to your cart
+
+-   Select the option to download a **Custom GHCN-Daily CSV** and choose the data types you want to include
+
+-   Download it to your computer, move it to the appropriate spot in your file system, then read it into R using `read_csv`
+
+## Reliable sources
+
+Primary data often come from government clearinghouses (.gov), research institutions (.edu), or from non-governmental organizations (.org)
+
+[Example 1](http://data.uis.unesco.org/)
+
+Published alongside research publications (Figshare, Zenodo, etc.)
+
+[Example 2](https://figshare.com/categories/Environmental_sciences/26863?categories=26932)
+
+Data that you or someone you know collects
+
+[Example 3](https://b-davies.github.io/files/SPRING_CAVE_LITHICS.csv)
+
+## Metadata
+
+Metadata are data about data.
+
+![](https://media.tenor.com/bD9vHNiR1rQAAAAd/boom-mind-blown.gif)
+
+## Metadata
+
+Metadata are data about data.
+
+\
+These are tell us things like how the data were collected, by whom, when, how it is structured, etc.
+
+## Examples of metadata
+
+\
+Example 1: [CDO Daily Sumamries](https://www.ncei.noaa.gov/cdo-web/datasets/GHCND/locations/FIPS:AY/detail#stationlist)\
+
+Example 2: [USGS Earthquake Archives](https://earthquake.usgs.gov/earthquakes/search/)
+
+## Activity: The hunt for more data
+::: {style="font-size: 80%;"}
+On Canvas, there is a page listing data sources you might use in this course.
+
+Choose 2 sources of interest and download some data, ideally stored in .csv or similar, but if it's something else we can try and figure it out
+
+Store the data somewhere that makes sense for your file system so you can come back to it.
+
+Be prepared to answer the following questions:
+
+-   What was the data?
+
+-   How easy was it to figure out the interface? Did anything trip you up?
+
+-   Were there any metadata that accompanied the data?
+:::
+
+## Messy data
+
+Data often comes with issues caused by data entry error, poor data management decisions, or
+
+![https://openscapes.org/blog/2020-10-12-tidy-data/](Week2Static/messyData.png)
+
+## Next week
+
+::: incremental
+-   What makes a good visualization?
+
+-   Visualizing quantities and distributions
+
+-   Introducing ggplot2 and the grammar of graphics
+:::
