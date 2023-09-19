@@ -1,0 +1,236 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Now You See It: Basics of Visualization"
+format: revealjs
+editor: visual
+---
+
+## Warm-up activity
+
+::: {style="font-size: 80%;"}
+-   Create a project and file system for this week's lecture
+
+-   Download the *middlesexEColi.csv* dataset from Canvas to the appropriate place in your file system and read it into R
+
+    -   This is data from *E. coli* tests conducted on Middlesex County surface water sources between 2018 and 2022.
+
+-   Create a histogram of the results of these tests. The horizontal (x) axis is colony forming units per 100mL sample (cfu/100mL)
+
+-   After you've plotted the histogram, you can use the `abline` function with the argument `v=235` to draw a vertical line at 235, and color it red.
+
+    -   The value of 235 cfu/100mL is the State of Massachusetts accepted level for *E. coli*
+:::
+
+## Sensor of the day
+
+The Mystic River Water Quality Buoy!
+
+::: columns
+::: {.column width="50%"}
+![](https://www.epa.gov/sites/default/files/2014-12/monitoringbuoy325x240.jpg){fig-align="center" width="406"}
+:::
+
+::: {.column width="50%"}
+![](Week3Static/buoy-mystic-equip.jpg){fig-align="center" width="410"}
+:::
+:::
+
+## Sensor of the day
+
+![[Mystic River Buoy Readings](https://www.epa.gov/mysticriver/live-water-quality-data-mystic-river)\
+[National Water Quality Monitoring Council](https://www.waterqualitydata.us/)](Week3Static/2023-mystic-river-buoy-r.png)
+
+## Why visualize?
+
+Visualization helps us to identify patterns and structures in data that are not evident from tables or numerical summaries.
+
+![Faith, J. Tyler. 2018. "Paleodietary Change and Its Implications for Aridity Indices Derived from δ18O of Herbivore Tooth Enamel." [https://doi.org/10.1016/j.palaeo.2017.11.045.](https://doi.org/10.1016/j.palaeo.2017.11.045)](Week3Static/printTable.jpg){fig-align="center"}
+
+## Why visualize?
+
+![](Week3Static/data%20table.jpg){fig-align="center"}
+
+Marine Reservoir Correction data from [calib.org](http://calib.org/marine/index.html)
+
+## Why visualize?
+
+::: columns
+::: {.column width="30%"}
+::: {style="font-size: 80%;"}
+**Mean *x*:** 9
+
+**Mean *y*:** 7.5
+
+**Pearson correlation coefficient (*r*):** 0.816
+
+**Coefficient of determination (*R^2^*):** 0.67
+:::
+:::
+
+::: {.column width="70%"}
+![](Week3Static/Anscombe1.png){fig-align="center"}
+:::
+:::
+
+## Why visualize?
+
+![Avenue, CC BY-SA 3.0 \<https://creativecommons.org/licenses/by-sa/3.0\>, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/3/30/Anscombe%27s_quartet_3_cropped.jpg){fig-align="center"}
+
+## Why visualize?
+
+![Matejka and Fitzmaurice, 2017. "Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing." https://doi.org/10.1145/3025453.3025912.](Week3Static/datasaurus.gif){fig-align="center"}
+
+Also see: [datasaurus](https://cran.r-project.org/web/packages/datasauRus/vignettes/Datasaurus.html) package
+
+## How to make a good visualization
+
+::: incremental
+-   Choose the right chart for the data
+
+-   Maximize the data-to-ink ratio
+
+-   Make deliberate design decisions
+:::
+
+## What kind of visualization?
+
+The type of visualization that should be used depends on the kind of information being conveyed.
+
+## What kind of visualization?
+
+![Wilke, Claus. 2019. *Fundamentals of Data Visualization*](Week3Static/chartTypes.png){fig-align="center"}
+
+## What kind of visualization?
+
+![Wilke, Claus. 2019. *Fundamentals of Data Visualization*](Week3Static/chartTypes2.png){fig-align="center"}
+
+## Data-ink
+
+Data-ink (per Tufte 1983[^1]) refers to ink (or pixels) that, if erased, would reduce the information being presented.
+
+[^1]: Tufte, Edward. 1982. *The Visual Display of Quantitative Information*. Graphics Press.
+
+Ideally, the ratio between data and total ink should be close to 1.
+
+## Activity: To erase or not to erase?
+
+![<https://simplexct.com/data-ink-ratio>](https://img.pagecloud.com/Let5aQyhIfGfH1cte70SYkHQSNw=/918x0/filters:no_upscale()/simplexct/images/image-tfe54.png){fig-align="center"}
+
+## Activity: To erase or not to erase?
+
+![<https://simplexct.com/data-ink-ratio>](Week3Static/greenhouseGases.jpg)
+
+## Chartjunk
+
+The most egregious use of non-data ink is often referred to as *chartjunk*.
+
+![Su, Yu-Sung. 2008. \"It\'s Easy to Produce Chartjunk Using Microsoft®Excel 2007 but Hard to Make Good Graphs.\" <https://doi.org/10.1016/j.csda.2008.03.007>.](Week3Static/chartjunk1.jpg){fig-align="center"}
+
+## Chartjunk
+
+![Su, Yu-Sung. 2008. \"It\'s Easy to Produce Chartjunk Using Microsoft®Excel 2007 but Hard to Make Good Graphs.\" <https://doi.org/10.1016/j.csda.2008.03.007>.](Week3Static/chartjunk2.jpg)
+
+## Data-ink: Can it go too far?
+
+![](Week3Static/tufte.jpg)
+
+## Can chartjunk be useful?
+
+::: columns
+::: {.column width="50%"}
+![](Week3Static/monstrous1.jpg)
+:::
+
+::: {.column width="50%"}
+![](Week3Static/monstrous2.jpg)
+:::
+:::
+
+## Being Deliberate About Design
+
+How does this choice help someone understand the data?
+
+::: incremental
+-   Contrast
+
+-   Clarity
+
+-   Highlighting
+
+-   Messaging
+:::
+
+## Accessibility
+
+Some design choices affect some audiences more than others
+
+-   Color palette
+
+-   Text and symbol sizes
+
+![Wilke, Claus. 2019. *Fundamentals of Data Visualization*](Week3Static/red-green-cvd-sim-1.png)
+
+## A layered grammar of graphics
+
+A framework (per Wilkinson et al. 2005; Wickham 2010) used to describe the components of a data visualization in terms of a set of layered objects
+
+![](Week3Static/grammar1.png)
+
+## Aesthetic mapping
+
+![https://wilkelab.org](Week3Static/aes.jpg)
+
+## Additional components
+
+::: {style="font-size: 70%;"}
+| Component   | Description                                      | Example                                                       |
+|------------------|---------------------------|---------------------------|
+| Statistics  | Statistical transformations or summaries of data | mean, log transformation, smoothing spline                    |
+| Facets      | Divisions in data used for multi-plotting        | side-by-side plot, 2 x 2 plot                                 |
+| Coordinates | Space used for plotting values                   | Cartesian 2D space, polar coordinate space                    |
+| Themes      | Non-data ink                                     | Font size, shading of background grid, location of tick marks |
+:::
+
+## Introducing ggplot2
+
+```{r}
+#| echo: TRUE
+#Load tidyverse
+require(tidyverse)
+
+#Create plot with ggplot2
+myPlot<-ggplot(iris,aes(x=Sepal.Length,y=Petal.Length)) +
+  geom_point()
+
+#View plot
+myPlot
+```
+
+## Introducing ggplot2
+
+![](Week3Static/iris1.jpg){fig-align="center"}
+
+## Introducing ggplot2
+
+```{r}
+#| echo: TRUE 
+#Load tidyverse 
+require(tidyverse)  
+
+#Create plot with ggplot2 
+myPlot<-ggplot(iris,aes(x=Sepal.Length,y=Petal.Length,color=Species)) +   
+  geom_point()  
+
+#View plot 
+myPlot
+```
+
+## Introducing ggplot2
+
+![](Week3Static/iris2.jpg)
+
+## Activity: My first plot, part 2
+
+-   Use the `as_tibble` function to convert the `faithful` dataset from dataframe to a tibble
+
+-   Using ggplot2, plot the `faithful` dataset as a scatterplot, with waiting time as the x variable
