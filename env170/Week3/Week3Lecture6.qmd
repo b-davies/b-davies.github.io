@@ -18,7 +18,7 @@ gmAsia<-gapminder[gapminder$continent=="Asia",]
 gmAsia2007<-gmAsia[gmAsia$year==2007,]
 ```
 
--   Start up R Studio and open a new script. Load the **palmerpenguins** and **gapminder** packages (install them if needed)
+-   Start up R Studio and open a new script. Load the **palmerpenguins** packages (install it if needed)
 
 -   Using ggplot2, create a graphic that shows the relationship between two variables: body mass and bill depth
 
@@ -203,11 +203,11 @@ ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
 
 ## Activity: Deliberate penguins
 
--   For this activity, use the **penguins** dataset to plot some of the data. Use at least 3 variables in your plot.
+-   For this activity, use the **penguins** dataset to genreate a graphic. Use at least 3 variables in your plot.
 
--   Try using some of the scale options located in the ggplot2 cheatsheet.
+-   Try using some of the **scale** options located in the ggplot2 cheatsheet.
 
--   What sorts of scales might help you clarify or emphasize different variables?
+    -   What sorts of scales might help you clarify or emphasize different variables?
 
 ## Being deliberately misleading
 
@@ -219,7 +219,7 @@ ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
 
 ## Being deliberately misleading
 
-Size in
+![https://infolific.com/technology/internet/seo-lie-factor/](https://infolific.com/images/internet/seo-traffic-columns.gif){fig-align="center"}
 
 ## Data-ink and themes
 
@@ -235,6 +235,8 @@ ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
 
 ## Themes and data-ink
 
+While each graphical element can be modified individually, themes provide a way to modify the overall look of the "non-data ink"
+
 ```{r}
 #| output: TRUE
 #| echo: TRUE
@@ -248,7 +250,7 @@ ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
 
 ```{r}
 #| output: TRUE 
-#| #| echo: TRUE  
+#| echo: TRUE  
 ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
   geom_point() +   
   scale_x_log10()+
@@ -259,17 +261,31 @@ ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
 
 ```{r}
 #| output: TRUE 
-#| #| echo: TRUE  
+#| echo: TRUE  
 ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
   geom_point() +   
   scale_x_log10()+
   theme_classic()
 ```
 
+## The big picture
+
+::: incremental
+-   Visualization is foremost about making data more understandable
+
+-   Guidelines like maximizing data-ink and being deliberate about design help us make decisions that will facilitate this goal
+
+-   The grammar of graphics helps us to make these decisions in an explicit way by connecting elements
+
+-   The ggplot2 package provides a way for us to put that grammar to work inside of the data environment we're creating in R
+:::
+
 ## Coursekeeping
 
 ::: incremental
 -   Visualization critiques begin next week
+
+    -   Check the list on Canvas to see when your critique is due
 
 -   Coding assignment #1 is due on Thursday
 :::

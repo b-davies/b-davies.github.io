@@ -404,7 +404,7 @@ On Deliberate Visualization
 <section id="warm-up-activity" class="slide level2">
 <h2>Warm-up activity</h2>
 <ul>
-<li><p>Start up R Studio and open a new script. Load the <strong>palmerpenguins</strong> and <strong>gapminder</strong> packages (install them if needed)</p></li>
+<li><p>Start up R Studio and open a new script. Load the <strong>palmerpenguins</strong> packages (install it if needed)</p></li>
 <li><p>Using ggplot2, create a graphic that shows the relationship between two variables: body mass and bill depth</p></li>
 <li><p>Modify the aesthetic mapping so that the geometry is colored based on species</p></li>
 <li><p>With the <code>+</code> operator, add a layer consisting of the <code>labs</code> function, and give it arguments for <strong>x</strong>, <strong>y</strong>, <strong>color</strong>, and <strong>title</strong></p></li>
@@ -571,9 +571,11 @@ On Deliberate Visualization
 <section id="activity-deliberate-penguins" class="slide level2">
 <h2>Activity: Deliberate penguins</h2>
 <ul>
-<li><p>For this activity, use the <strong>penguins</strong> dataset to plot some of the data. Use at least 3 variables in your plot.</p></li>
-<li><p>Try using some of the scale options located in the ggplot2 cheatsheet.</p></li>
-<li><p>What sorts of scales might help you clarify or emphasize different variables?</p></li>
+<li><p>For this activity, use the <strong>penguins</strong> dataset to genreate a graphic. Use at least 3 variables in your plot.</p></li>
+<li><p>Try using some of the <strong>scale</strong> options located in the ggplot2 cheatsheet.</p>
+<ul>
+<li>What sorts of scales might help you clarify or emphasize different variables?</li>
+</ul></li>
 </ul>
 </section>
 <section id="being-deliberately-misleading" class="slide level2">
@@ -586,8 +588,8 @@ On Deliberate Visualization
 <img data-src="https://media.eagereyes.org/wp-content/uploads/2013/04/baseline-bars.png" class="r-stretch quarto-figure-center"><p class="caption">https://eagereyes.org/blog/2013/baselines</p></section>
 <section id="being-deliberately-misleading-2" class="slide level2">
 <h2>Being deliberately misleading</h2>
-<p>Size in</p>
-</section>
+
+<img data-src="https://infolific.com/images/internet/seo-traffic-columns.gif" class="r-stretch quarto-figure-center"><p class="caption">https://infolific.com/technology/internet/seo-lie-factor/</p></section>
 <section id="data-ink-and-themes" class="slide level2">
 <h2>Data-ink and themes</h2>
 <div class="cell">
@@ -600,6 +602,7 @@ On Deliberate Visualization
 <img data-src="Week3Lecture6_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
 <section id="themes-and-data-ink" class="slide level2">
 <h2>Themes and data-ink</h2>
+<p>While each graphical element can be modified individually, themes provide a way to modify the overall look of the “non-data ink”</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">ggplot</span>(gmAsia2007,<span class="fu">aes</span>(<span class="at">x=</span>gdpPercap,<span class="at">y=</span>lifeExp,<span class="at">size=</span>pop))<span class="sc">+</span></span>
 <span id="cb13-2"><a href="#cb13-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
@@ -609,17 +612,43 @@ On Deliberate Visualization
 <img data-src="Week3Lecture6_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
 <section id="themes-and-data-ink-1" class="slide level2">
 <h2>Themes and data-ink</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">ggplot</span>(gmAsia2007,<span class="fu">aes</span>(<span class="at">x=</span>gdpPercap,<span class="at">y=</span>lifeExp,<span class="at">size=</span>pop))<span class="sc">+</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span>   </span>
+<span id="cb14-3"><a href="#cb14-3"></a>  <span class="fu">scale_x_log10</span>()<span class="sc">+</span></span>
+<span id="cb14-4"><a href="#cb14-4"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
+</div>
 <img data-src="Week3Lecture6_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
 <section id="themes-and-data-ink-2" class="slide level2">
 <h2>Themes and data-ink</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">ggplot</span>(gmAsia2007,<span class="fu">aes</span>(<span class="at">x=</span>gdpPercap,<span class="at">y=</span>lifeExp,<span class="at">size=</span>pop))<span class="sc">+</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span>   </span>
+<span id="cb15-3"><a href="#cb15-3"></a>  <span class="fu">scale_x_log10</span>()<span class="sc">+</span></span>
+<span id="cb15-4"><a href="#cb15-4"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
+</div>
 <img data-src="Week3Lecture6_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
+<section id="the-big-picture" class="slide level2">
+<h2>The big picture</h2>
+<div>
+<ul>
+<li class="fragment"><p>Visualization is foremost about making data more understandable</p></li>
+<li class="fragment"><p>Guidelines like maximizing data-ink and being deliberate about design help us make decisions that will facilitate this goal</p></li>
+<li class="fragment"><p>The grammar of graphics helps us to make these decisions in an explicit way by connecting elements</p></li>
+<li class="fragment"><p>The ggplot2 package provides a way for us to put that grammar to work inside of the data environment we’re creating in R</p></li>
+</ul>
+</div>
+</section>
 <section id="coursekeeping" class="slide level2">
 <h2>Coursekeeping</h2>
 <div>
 <ul>
-<li class="fragment"><p>Visualization critiques begin next week</p></li>
+<li class="fragment"><p>Visualization critiques begin next week</p>
+<ul>
+<li class="fragment">Check the list on Canvas to see when your critique is due</li>
+</ul></li>
 <li class="fragment"><p>Coding assignment #1 is due on Thursday</p></li>
 </ul>
 </div>
