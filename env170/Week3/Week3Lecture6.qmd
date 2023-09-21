@@ -1,0 +1,285 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "On Deliberate Visualization"
+format: revealjs
+editor: visual
+---
+
+## Warm-up activity
+
+```{r}
+#| output: FALSE
+#| echo: FALSE
+library(palmerpenguins)
+library(gapminder)
+library(tidyverse)
+gm2007<-gapminder[gapminder$year==2007,]
+gmAsia<-gapminder[gapminder$continent=="Asia",]
+gmAsia2007<-gmAsia[gmAsia$year==2007,]
+```
+
+-   Start up R Studio and open a new script. Load the **palmerpenguins** and **gapminder** packages (install them if needed)
+
+-   Using ggplot2, create a graphic that shows the relationship between two variables: body mass and bill depth
+
+-   Modify the aesthetic mapping so that the geometry is colored based on species
+
+-   With the `+` operator, add a layer consisting of the `labs` function, and give it arguments for **x**, **y**, **color**, and **title**
+
+## Sensor of the day
+
+Mobile phones!
+
+![epSos.de, CC BY 2.0 \<https://creativecommons.org/licenses/by/2.0\>, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/e/e0/Funny_Mobile_Phone_Picture.jpg){fig-align="center"}
+
+## Sensor of the day
+
+![](Week3Static/spotify.jpg){fig-align="center"}
+
+<https://www.kaggle.com/datasets>
+
+## Labeling
+
+```{r}
+ggplot(data=penguins,aes(x=body_mass_g,y=bill_depth_mm,color=species))+
+  geom_point() +
+  labs(x="Body Mass (g)",y="Bill Depth (mm)",color="Species",title="Penguin bill depth by body mass")
+```
+
+## Cheatsheets
+
+![](Week3Static/cheatsheet1.jpg){fig-align="center"}
+
+## Labeling
+
+![](Week3Static/labelCheat.jpg){fig-align="center"}
+
+## Cheatsheets
+
+![](Week3Static/cheatsheet2.jpg){fig-align="center"}
+
+## Order of operations
+
+```{r}
+#| echo: TRUE
+ggplot(data=penguins,aes(body_mass_g,bill_depth_mm,color=species))+
+  geom_point()
+```
+
+## Order of operations
+
+```{r}
+#| echo: TRUE
+ggplot(data=penguins)+
+  geom_point(aes(body_mass_g,bill_depth_mm,color=species))
+```
+
+## Order of operations
+
+```{r}
+#| echo: TRUE
+ggplot()+
+  geom_point(data=penguins,aes(body_mass_g,bill_depth_mm,color=species))
+```
+
+## When does this matter?
+
+-   Where you add your aesthetic mapping will determine what geometries they connect to
+
+-   Where you add your layers will determine their order of drawing
+
+## When does this matter?
+
+```{r}
+#| echo: TRUE
+ggplot(data=gm2007,aes(x = continent, y = lifeExp, color = continent)) +
+  geom_boxplot() +
+  geom_jitter()
+```
+
+## When does this matter?
+
+```{r}
+#| echo: TRUE
+ggplot(data=gm2007,aes(x = continent, y = lifeExp)) +
+  geom_jitter(aes(color = continent)) +
+  geom_boxplot()
+```
+
+## How to make a good visualization
+
+::: incremental
+-   Choose the right chart for the data
+
+-   Maximize the data-to-ink ratio
+
+-   **Make deliberate design decisions**
+:::
+
+## Scales
+
+![](Week3Static/scalesCheat.jpg){fig-align="center"}
+
+## Scales: Being deliberate with color
+
+What can color show effectively?
+
+## Scales: Being deliberate with color
+
+```{r}
+#| output: TRUE
+#| echo: TRUE
+
+ggplot(penguins,aes(body_mass_g,bill_depth_mm,color=species))+
+  geom_point() +
+  labs(x="Body Mass (g)",y="Bill Depth (mm)",title="Penguin bill size by body mass") +
+  scale_color_manual(values=c("Purple","Orange","Green"))
+```
+
+## Scales: Being deliberate with color
+
+```{r}
+#| output: TRUE
+#| echo: TRUE
+
+library(ggthemes)
+
+cvdCols <- c("#000000", "#E69F00", "#56B4E9")
+
+ggplot(penguins,aes(body_mass_g,bill_depth_mm,color=species))+
+  geom_point() +
+  labs(x="Body Mass (g)",y="Bill Depth (mm)",title="Penguin bill size by body mass") +
+  scale_color_manual(values=cvdCols)
+```
+
+## Scales: Being deliberate with color
+
+```{r}
+#| output: TRUE
+#| echo: TRUE
+
+library(ggthemes)
+
+ggplot(penguins,aes(body_mass_g,bill_depth_mm,color=species))+
+  geom_point() +
+  labs(x="Body Mass (g)",y="Bill Depth (mm)",title="Penguin bill size by body mass") +
+  scale_color_colorblind()
+```
+
+## Scales: Being deliberate with size
+
+What sort of information does size suggest?
+
+## Scales: Being deliberate with size
+
+```{r}
+#| output: TRUE
+#| echo: TRUE
+
+ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp))+
+  geom_point() 
+```
+
+## Scales: Being deliberate with size
+
+```{r}
+#| output: TRUE
+#| echo: TRUE
+
+ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
+  geom_point() 
+```
+
+## Scales: Being deliberate with axes
+
+```{r}
+#| output: TRUE
+#| echo: TRUE
+
+ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
+  geom_point() +
+  scale_x_log10() 
+```
+
+## Activity: Deliberate penguins
+
+-   For this activity, use the **penguins** dataset to plot some of the data. Use at least 3 variables in your plot.
+
+-   Try using some of the scale options located in the ggplot2 cheatsheet.
+
+-   What sorts of scales might help you clarify or emphasize different variables?
+
+## Being deliberately misleading
+
+![https://eagereyes.org/blog/2013/banking-45-degrees](https://media.eagereyes.org/wp-content/uploads/2013/06/aspect-ratios.png)
+
+## Being deliberately misleading
+
+![https://eagereyes.org/blog/2013/baselines](https://media.eagereyes.org/wp-content/uploads/2013/04/baseline-bars.png){fig-align="center"}
+
+## Being deliberately misleading
+
+Size in
+
+## Data-ink and themes
+
+```{r}
+#| output: TRUE
+#| echo: TRUE
+
+ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
+  geom_point() +
+  scale_x_log10() +
+  theme_classic()
+```
+
+## Themes and data-ink
+
+```{r}
+#| output: TRUE
+#| echo: TRUE
+
+ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
+  geom_point() +
+  scale_x_log10()
+```
+
+## Themes and data-ink
+
+```{r}
+#| output: TRUE 
+#| #| echo: TRUE  
+ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
+  geom_point() +   
+  scale_x_log10()+
+  theme_bw()
+```
+
+## Themes and data-ink
+
+```{r}
+#| output: TRUE 
+#| #| echo: TRUE  
+ggplot(gmAsia2007,aes(x=gdpPercap,y=lifeExp,size=pop))+
+  geom_point() +   
+  scale_x_log10()+
+  theme_classic()
+```
+
+## Coursekeeping
+
+::: incremental
+-   Visualization critiques begin next week
+
+-   Coding assignment #1 is due on Thursday
+:::
+
+## Next week
+
+-   Introducing data analysis
+
+-   Finding a statistic for assessing your data
+
+-   Visualizing stats
+
+## 
