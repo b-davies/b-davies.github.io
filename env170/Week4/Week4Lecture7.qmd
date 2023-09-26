@@ -1,0 +1,177 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Exploratory Data Analysis"
+format: revealjs
+editor: visual
+---
+
+## Warm-up activity
+
+-   Create a file system for this week and open the script on Canvas
+
+-   Fix the errors in the code so it works
+
+-   Modify the colors/symbols to better express the data (remember to check your cheatsheet!)
+
+## Warm-up activity
+
+![](Week4Static/fixCode.jpg)
+
+## Warm-up activity
+
+```{r}
+#| echo: TRUE
+#install.packages("palmerpenguins","tidyverse")
+library(palmerpenguins)
+library(tidyverse)
+
+#Plot bill depth by species and sex
+myPlot<-ggplot(data=penguins,aes(x=species,y=bill_depth_mm,color=sex))+
+    geom_jitter(width=0.2) +
+  scale_color_manual(values=c("Orange","Green"))+
+    labs(x="Species",y="Bill Depth (mm)",color="Sex")
+
+    myPlot
+```
+
+## Sensor of the week
+
+Traffic sensors
+
+::: columns
+::: {.column width="50%"}
+![https://auto.howstuffworks.com](https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3JlZC1saWdodC1jYW1lcmEtbG9vcC5naWYiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI4NX19fQ==){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![https://trafficvision.com/](https://trafficvision.com/TV-oncoming-traffic-boxes.png)
+:::
+:::
+
+## Sensor of the week
+
+Traffic sensors
+
+![[MassDOT Transportation Data Management System](https://mhd.public.ms2soft.com/tcds/tsearch.asp?loc=Mhd&mod=)](Week4Static/massDOT.jpg)
+
+## Data collection and data re-use
+
+Data is usually collected with a particular goal in mind
+
+-   Answering a research question (e.g., "What is the effect of animal cuteness on conservation priorities?")
+
+-   Establishing baselines (e.g., employment and wage census of workers in the hospitality industry )
+
+-   Meeting reporting requirements (e.g., EPA chemical storage and release reporting)
+
+## Data collection and data re-use
+
+When we re-use publicly available data, we do not have control over collection protocols, so our initial assessment will require us be critical about
+
+-   whether data exists that can help us to answer our question
+
+-   what the quality of that data is
+
+-   whether the data shows patterning
+
+## Exploratory Data Analysis
+
+Exploratory data analysis (EDA) is an approach to evaluating data prior to formal modeling or hypothesis testing.
+
+![](Week4Static/EDA.png){fig-align="center"}
+
+## Describing Data
+
+-   Nominal: no meaningful distance or order.
+
+-   Ordinal: meaningful order but not distance.
+
+-   Interval: meaning distance but no true zero.
+
+-   Ratio: meaningful distance with true zero.
+
+## Nominal data
+
+Data have no meaningful distance or order.
+
+![](Week4Static/winevarieties.jpg){fig-align="center"}
+
+## Ordinal data
+
+Data have meaningful order but no meaningful distance.
+
+![](Week4Static/likert.jpg)
+
+## Interval data
+
+Data have meaningful distance but no true zero
+
+![](Week4Static/temperature.jpg){fig-align="center"}
+
+## Ratio data
+
+Data have meaningful distance and true zero.
+
+![](Week4Static/puppymeasure.jpg)
+
+## Exploring variables
+
+Univariate: Looking at one variable/column at a time
+
+::: incremental
+-   Bar chart -- discrete `ggplot() + geom_bar()`
+
+-   Histograms -- continuous `ggplot() + geom_histogram()`
+
+-   Boxplot - continuous 	`ggplot() + geom_boxplot()`
+:::
+
+## Distributions
+
+![](Week4Static/continuous distributions.png){fig-align="center"}
+
+## Interpreting a histogram
+
+Measures of Center
+
+::: incremental
+-   Mean: Average value of all data `mean()`
+
+-   Median: Central value of all data `median()`
+:::
+
+## Interpreting a histogram
+
+::: incremental
+-   Range: Difference between largest and smallest values
+
+-   Standard deviation: Distance from mean
+:::
+
+## Exploring interactions between variables
+
+Multivariate : Looking at relationship between two or more variables
+
+::: incremental
+-   Scatter plots `ggplot() + geom_point()`
+
+-   Bar chart `ggplot() + geom_bar()`
+
+-   Line plots `ggplot() + geom_line()`
+
+-   Heatmaps `ggplot() + geom_tile()`
+:::
+
+## Exploring interactions between variables
+
+```{r}
+library(modeldata)
+ggplot(data=crickets,aes(x=temp,y=rate)) +
+  geom_point()
+```
+
+## Activity: Explore some data!
+
+Download and open the *abalone.csv* data file from Canvas
+
+Using the
