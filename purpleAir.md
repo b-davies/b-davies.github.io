@@ -1,65 +1,12 @@
 ---
 layout: page
-title: ENV 120 Group Coordinates
+title: US EPA PM2.5 Air Quality Index @ Bromfield Pearson
 permalink: /purpleair/
 tags: aq
 ---
 
-## Group 1
-P1 42°24'29.2"N 71°07'14.0"W
-
-P2 42°24'24.3"N 71°07'15.2"W
-
-P3 42°24'24.5"N 71°07'11.8"W
-
-P4 42°24'25.7"N 71°07'02.5"W
-
-P5 42°24'28.3"N 71°07'11.1"W
-
-## Group 2
-P1 42°24'25.1"N 71°07'04.5"W
-
-P2 42°24'19.5"N 71°07'04.0"W
-
-P3 42°24'23.5"N 71°07'06.6"W
-
-P4 42°24'26.5"N 71°07'14.3"W
-
-P5 42°24'28.4"N 71°07'11.1"W
-
-## Group 3
-P1 42°24'23.3"N 71°07'10.4"W
-
-P2 42°24'27.4"N 71°07'03.4"W
-
-P3 42°24'21.0"N 71°07'11.6"W
-
-P4 42°24'24.6"N 71°07'16.1"W
-
-P5 42°24'28.3"N 71°07'10.1"W
-
-## Group 4
-P1 42°24'30.7"N 71°07'10.6"W
-
-P2 42°24'26.2"N 71°07'14.9"W
-
-P3 42°24'29.1"N 71°07'15.2"W
-
-P4 42°24'26.2"N 71°07'11.1"W
-
-P5 42°24'28.4"N 71°07'11.1"W
-
-
-## Group 5
-P1 42°24'22.1"N 71°07'12.0"W
-
-P2 42°24'21.0"N 71°07'04.0"W
-
-P3 42°24'19.0"N 71°06'58.0"W
-
-P4 42°24'26.1"N 71°07'07.3"W
-
-P5 42°24'28.3"N 71°07'11.1"W
+<div id='PurpleAirWidget_181787_module_AQI_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
+<script src='https://www.purpleair.com/pa.widget.js?key=C6RKVFL1HABLW6ZC&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_181787_module_AQI_conversion_C0_average_10_layer_standard'></script>
 
 
 
