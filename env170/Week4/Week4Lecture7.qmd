@@ -130,7 +130,7 @@ Univariate: Looking at one variable/column at a time
 
 ![](Week4Static/continuous distributions.png){fig-align="center"}
 
-## Interpreting a histogram
+## Interpreting a distribution
 
 Measures of Center
 
@@ -140,12 +140,36 @@ Measures of Center
 -   Median: Central value of all data `median()`
 :::
 
-## Interpreting a histogram
+```{r}
+#| echo: TRUE
+mean(penguins$body_mass_g,na.rm=TRUE)
+median(penguins$flipper_length_mm,na.rm=TRUE)
+```
+
+## Interpreting a distribution
+
+![](Week4Static/medianVsmean.gif){fig-align="center"}
+
+## Interpreting a distribution
 
 ::: incremental
 -   Range: Difference between largest and smallest values
 
 -   Standard deviation: Distance from mean
+:::
+
+![](Week4Static/distribution.png){fig-align="center"}
+
+## Interpreting a distribution
+
+::: columns
+::: {.column width="50%"}
+![Skew](Week4Static/skew.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![Modality](Week4Static/bimodal.png){fig-align="center"}
+:::
 :::
 
 ## Exploring interactions between variables
@@ -165,6 +189,7 @@ Multivariate : Looking at relationship between two or more variables
 ## Exploring interactions between variables
 
 ```{r}
+#| echo: TRUE
 library(modeldata)
 ggplot(data=crickets,aes(x=temp,y=rate)) +
   geom_point()
@@ -174,4 +199,8 @@ ggplot(data=crickets,aes(x=temp,y=rate)) +
 
 Download and open the *abalone.csv* data file from Canvas
 
-Using the
+Evaluate the length, diameter, weight.whole, and rings variables
+
+-   How are each of these distributed?
+
+-   Do they show any relationships?

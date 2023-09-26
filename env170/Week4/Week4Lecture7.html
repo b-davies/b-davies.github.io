@@ -523,8 +523,8 @@ Exploratory Data Analysis
 <h2>Distributions</h2>
 
 <img data-src="Week4Static/continuous%20distributions.png" class="r-stretch quarto-figure-center"></section>
-<section id="interpreting-a-histogram" class="slide level2">
-<h2>Interpreting a histogram</h2>
+<section id="interpreting-a-distribution" class="slide level2">
+<h2>Interpreting a distribution</h2>
 <p>Measures of Center</p>
 <div>
 <ul>
@@ -532,14 +532,49 @@ Exploratory Data Analysis
 <li class="fragment"><p>Median: Central value of all data <code>median()</code></p></li>
 </ul>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">mean</span>(penguins<span class="sc">$</span>body_mass_g,<span class="at">na.rm=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4201.754</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">median</span>(penguins<span class="sc">$</span>flipper_length_mm,<span class="at">na.rm=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 197</code></pre>
+</div>
+</div>
 </section>
-<section id="interpreting-a-histogram-1" class="slide level2">
-<h2>Interpreting a histogram</h2>
+<section id="interpreting-a-distribution-1" class="slide level2">
+<h2>Interpreting a distribution</h2>
+
+<img data-src="Week4Static/medianVsmean.gif" class="r-stretch quarto-figure-center"></section>
+<section id="interpreting-a-distribution-2" class="slide level2">
+<h2>Interpreting a distribution</h2>
 <div>
 <ul>
 <li class="fragment"><p>Range: Difference between largest and smallest values</p></li>
 <li class="fragment"><p>Standard deviation: Distance from mean</p></li>
 </ul>
+</div>
+
+<img data-src="Week4Static/distribution.png" class="r-stretch quarto-figure-center"></section>
+<section id="interpreting-a-distribution-3" class="slide level2">
+<h2>Interpreting a distribution</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Week4Static/skew.png"></p>
+<figcaption>Skew</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Week4Static/bimodal.png"></p>
+<figcaption>Modality</figcaption>
+</figure>
+</div>
+</div>
 </div>
 </section>
 <section id="exploring-interactions-between-variables" class="slide level2">
@@ -556,12 +591,21 @@ Exploratory Data Analysis
 </section>
 <section id="exploring-interactions-between-variables-1" class="slide level2">
 <h2>Exploring interactions between variables</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">library</span>(modeldata)</span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">ggplot</span>(<span class="at">data=</span>crickets,<span class="fu">aes</span>(<span class="at">x=</span>temp,<span class="at">y=</span>rate)) <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<img data-src="Week4Lecture7_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
+</div>
+<img data-src="Week4Lecture7_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
 <section id="activity-explore-some-data" class="slide level2">
 <h2>Activity: Explore some data!</h2>
 <p>Download and open the <em>abalone.csv</em> data file from Canvas</p>
-<p>Using the</p>
+<p>Evaluate the length, diameter, weight.whole, and rings variables</p>
+<ul>
+<li><p>How are each of these distributed?</p></li>
+<li><p>Do they show any relationships?</p></li>
+</ul>
 <div class="footer footer-default">
 
 </div>
