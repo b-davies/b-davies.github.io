@@ -1,6 +1,6 @@
 ---
 layout: page
-title: US EPA PM2.5 Air Quality Index @ Bromfield Pearson
+title: PM2.5 AQI @ Bromfield Pearson
 permalink: /purpleair/
 tags: aq
 ---
