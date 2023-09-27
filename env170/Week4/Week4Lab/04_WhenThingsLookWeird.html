@@ -203,42 +203,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.2     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.3     ✔ tibble    3.2.1
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(modeldata)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>abalone<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"data/abalone.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>New names:
-Rows: 4177 Columns: 10
-── Column specification
-──────────────────────────────────────────────────────── Delimiter: "," chr
-(1): sex dbl (9): ...1, length, diameter, height, weight.whole, weight.shucked,
-weigh...
-ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
-Specify the column types or set `show_col_types = FALSE` to quiet this message.
-• `` -&gt; `...1`</code></pre>
-</div>
-</div>
 <p>So far, most of the example data we have dealt have been selected because they fit the purpose of demonstrating a concept. But real data seldom comes without some kind of issue, problem, or weirdness. People constantly make data entry mistakes, data collection and storage protocols are rarely standardized, and data often include cases that, real or not, fly in the face of our expectations.</p>
 <p>Conducting EDA means keeping a critical eye out for these kinds of things, and being able to make judgement calls about when a value is an appropriate outlier and when it is truly weird. In this section, we’ll look at how we deal with this.</p>
 <section id="outliers-and-unusual-values" class="level3">
 <h3 class="anchored" data-anchor-id="outliers-and-unusual-values">Outliers and unusual values</h3>
 <p>As we mentioned in our discussion of visualizing categorical and numerical data using boxplots, outliers are indicated using points:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>Sacramento,<span class="fu">aes</span>(<span class="at">x=</span>type,<span class="at">y=</span>price)) <span class="sc">+</span>   </span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>Sacramento,<span class="fu">aes</span>(<span class="at">x=</span>type,<span class="at">y=</span>price)) <span class="sc">+</span>   </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="04_WhenThingsLookWeird_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -252,9 +224,9 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 </div>
 <p>So these outliers don’t seem super crazy and probably reflect what we</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone,<span class="fu">aes</span>(<span class="at">x=</span>height<span class="sc">*</span><span class="dv">200</span>,<span class="at">y=</span>weight.shucked<span class="sc">*</span><span class="dv">200</span>)) <span class="sc">+</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone,<span class="fu">aes</span>(<span class="at">x=</span>height<span class="sc">*</span><span class="dv">200</span>,<span class="at">y=</span>weight.shucked<span class="sc">*</span><span class="dv">200</span>)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
@@ -264,8 +236,8 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 </div>
 <p>Is it real? Does it make sense? How can we tell? To do this, we’ll have to think a little critically about what our data represent: the dimensions of shellfish. Abalone are bivalves that are shaped more or less like oblong discs.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone,<span class="fu">aes</span>(<span class="at">x=</span>height<span class="sc">*</span><span class="dv">200</span>,<span class="at">y=</span>length<span class="sc">*</span><span class="dv">200</span>)) <span class="sc">+</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone,<span class="fu">aes</span>(<span class="at">x=</span>height<span class="sc">*</span><span class="dv">200</span>,<span class="at">y=</span>length<span class="sc">*</span><span class="dv">200</span>)) <span class="sc">+</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="04_WhenThingsLookWeird_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -274,10 +246,10 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 <p>What might explain this? It seems possible that the person recording the data made a mistake. Looking at the data, we can see that most other abalones recorded in this dataset with a height of around 90 mm have a height of about 25 mm. It’s entirely possible that whoever entered this data added an extra 2 when typing it in.</p>
 <p>Unfortunately, it’s not good practice to second-guess what someone meant to enter. It could have been 25, or 22, or something else that they meant to type all together. So rather than change the data to a value with think is correct, the safer thing to do is to eliminate that observation. We can use the square brackets to do this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>abalone2<span class="ot">&lt;-</span>abalone[abalone<span class="sc">$</span>height<span class="sc">*</span><span class="dv">200</span><span class="sc">&lt;</span><span class="dv">150</span>,]</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone2,<span class="fu">aes</span>(<span class="at">x=</span>height,<span class="at">y=</span>weight.shucked)) <span class="sc">+</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>abalone2<span class="ot">&lt;-</span>abalone[abalone<span class="sc">$</span>height<span class="sc">*</span><span class="dv">200</span><span class="sc">&lt;</span><span class="dv">150</span>,]</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone2,<span class="fu">aes</span>(<span class="at">x=</span>height,<span class="at">y=</span>weight.shucked)) <span class="sc">+</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
@@ -287,12 +259,12 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 </div>
 <p>However, when you start removing data it is EXTREMELY important that you document that you are doing so, and explain why. Comments in your script are a good place to do this.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Removing outlier due to suspect height value (too high for length)</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>abalone2<span class="ot">&lt;-</span>abalone[abalone<span class="sc">$</span>height<span class="sc">*</span><span class="dv">200</span><span class="sc">&lt;</span><span class="dv">150</span>,]</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone2,<span class="fu">aes</span>(<span class="at">x=</span>height,<span class="at">y=</span>weight.shucked)) <span class="sc">+</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Removing outlier due to suspect height value (too high for length)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>abalone2<span class="ot">&lt;-</span>abalone[abalone<span class="sc">$</span>height<span class="sc">*</span><span class="dv">200</span><span class="sc">&lt;</span><span class="dv">150</span>,]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone2,<span class="fu">aes</span>(<span class="at">x=</span>height,<span class="at">y=</span>weight.shucked)) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
