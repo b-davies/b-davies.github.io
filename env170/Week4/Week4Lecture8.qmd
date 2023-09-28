@@ -1,0 +1,255 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Getting a Clearer View"
+format: revealjs
+editor: visual
+---
+
+```{r}
+#| echo: FALSE
+#| output: FALSE
+abalone<-read.csv("abalone.csv")
+bully<-read.csv("nzffdms.csv")
+library(modeldata)
+library(tidyverse)
+```
+
+## Visualization Critique
+
+```{=html}
+<iframe src="https://ourworldindata.org/grapher/share-of-the-population-with-access-to-electricity" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+```
+<https://ourworldindata.org/grapher/share-of-the-population-with-access-to-electricity>
+
+## Visualization Critique
+
+![City of Portland via <https://www.mainebiz.biz/article/portland-housing-production-exceeds-citys-target-but-affordability-remains-a-problem>](Week4Static/SarahViz.jpg){fig-align="center"}
+
+## Visualization Critique
+
+![<https://www.nytimes.com/slideshow/2020/06/10/learning/graphs-charts-and-maps-from-three-years-of-whats-going-on-in-this-graph/s/SimilarSongsLN1.html>](Week4Static/songGraph.png){fig-align="center"}
+
+## Learning how to look 
+
+![University of Wollongong](https://scx2.b-cdn.net/gfx/news/hires/2018/newstonetool.jpg){fig-align="center"}
+
+## Getting a clearer view
+
+```{r}
+#| echo: TRUE
+ggplot(data=Sacramento,aes(x=city,y=price)) +
+  geom_boxplot()
+```
+
+## Getting a clearer view
+
+Flip x and y axes
+
+```{r}
+#| echo: TRUE
+ggplot(data=Sacramento,aes(x=city,y=price)) +
+  geom_boxplot() +
+  coord_flip()
+```
+
+## Getting a clearer view
+
+Resize axis labels
+
+```{r}
+ #| echo: TRUE 
+ggplot(data=Sacramento,aes(x=city,y=price)) + 
+  geom_boxplot() +
+  coord_flip() +
+  theme(axis.text.y=element_text(size=rel(0.5)))
+```
+
+## Getting a clearer view
+
+Reorder based on median house prices
+
+```{r}
+ #| echo: TRUE 
+ggplot(data=Sacramento,aes(x=fct_reorder(city,price,median),y=price)) + 
+  geom_boxplot() +
+  coord_flip()  +
+  theme(axis.text.y=element_text(size=rel(0.5)))
+```
+
+## Getting a clearer view
+
+Getting a clearer view
+
+```{r}
+ #| echo: FALSE
+ggplot(data=Sacramento,aes(x=fct_reorder(city,price,median),y=price)) + 
+  geom_boxplot() +
+  coord_flip()  +
+  theme(axis.text.y=element_text(size=rel(0.5))) +
+  labs(x="Price ($)",y="City",title="Home prices in Greater Sacramento")
+```
+
+## Getting a clearer view
+
+```{r}
+#| echo: TRUE 
+ggplot(data=abalone,aes(x=diameter*200,y=weight.whole*200)) + 
+  geom_point()
+```
+
+## Getting a clearer view
+
+Changing the transparency (alpha)
+
+```{r}
+#| echo: TRUE 
+ggplot(data=abalone,aes(x=diameter*200,y=weight.whole*200)) + 
+  geom_point(alpha=0.1)
+```
+
+## Getting a clearer view
+
+Changing the size
+
+```{r}
+#| echo: TRUE 
+ggplot(data=abalone,aes(x=diameter*200,y=weight.whole*200)) + 
+  geom_point(size=0.1)
+```
+
+## Getting a clearer view
+
+Binning the values (`geom_bin2d`)
+
+```{r}
+#| echo: TRUE 
+ggplot(data=abalone,aes(x=diameter*200,y=weight.whole*200)) + 
+  geom_bin2d()
+```
+
+## Getting a clearer view
+
+Binning the values (`geom_hex`)
+
+```{r}
+#| echo: TRUE 
+ggplot(data=abalone,aes(x=diameter*200,y=weight.whole*200)) + 
+  geom_hex()
+```
+
+## Getting a clearer view
+
+```{r}
+#| echo: FALSE
+ggplot(data=abalone,aes(x=diameter*200,y=weight.whole*200)) + 
+  geom_hex() +
+  labs(x="Diameter (mm)",y="Whole Weight (g)",title="Abalone weights by diameter")
+```
+
+## Getting a clearer view
+
+Data: [Common bully](https://en.wikipedia.org/wiki/Common_bully) (*Gobiomorphus cotidianus)* records from [New Zealand Freshwater Fish Database](#0){style="font-size: 11pt;"}
+
+```{r}
+#| echo: TRUE 
+ggplot(data=bully,aes(x=altitude,y=maxl)) +
+  geom_point()
+```
+
+## Getting a clearer view 
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point()
+```
+
+## Getting a clearer view
+
+Zooming in
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point() +
+  coord_cartesian(xlim=c(0,100))
+```
+
+## Getting a clearer view
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point()
+```
+
+## Transformations
+
+adsf
+
+## Getting a clearer view
+
+Natural log transformation on x-axis
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point() +
+  scale_x_continuous(trans='log')
+```
+
+## Getting a clearer view
+
+Log-10 transformation on x-axis
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point() +
+  scale_x_continuous(trans='log10')
+```
+
+## Getting a clearer view
+
+Add a smooth line
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point() +
+  scale_x_continuous(trans='log10')+
+  geom_smooth()
+```
+
+## Seeing the bigger picture
+
+Faceted plots can help us view the same pattern across multiple variables.
+
+```{r}
+#| echo: TRUE
+ggplot(data=Sacramento,aes(x=sqft,y=price)) +
+  geom_point() +
+  facet_wrap(vars(type))
+```
+
+## Activity: Looking and comparing
+
+-   In this exercise, you'll use the `scat` dataset in the `modeldata` package (same data, fewer bobcars)
+
+-   Use the `facet_wrap` function to look at relationships (remember to use the `vars` function to identify your aesthetic mapping):
+
+    -   length and diameter by species
+
+    -   diameter and mass by species
+
+    -   length and mass by month
+
+    -   one additional combination of your choice
+
+## Next week
+
+-   Best practices for data documentation
+
+-   Introducing Quarto
+
+-   Data ethics and open science models
