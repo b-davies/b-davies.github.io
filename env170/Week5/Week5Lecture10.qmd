@@ -1,0 +1,135 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Working on a Workflow"
+format: revealjs
+editor: visual
+---
+
+## Visualization critique
+
+![<https://grist.org/climate-connections-diseases-pathogens/>](Week5Static/VizCritique1.png){fig-align="center"}
+
+## Visualization critique
+
+![<https://www.visualcapitalist.com/history-of-pandemics-deadliest/>](Week5Static/VizCritique2.jpg){fig-align="center" width="296"}
+
+## Visualization critique
+
+![<https://www.waterboards.ca.gov/water_issues/programs/swamp/cec_aquatic/index.html>](Week5Static/VizCritique3.png)
+
+## Next visualization critiques
+
+-   Carmen
+
+-   Madeleine
+
+-   Gillian
+
+## Communicating beyond the notebook
+
+[Presentations](https://apreshill.github.io/palmerpenguins-useR-2022/)
+
+[Websites](https://realworlddatascience.net/)
+
+[Interactive Visualizations](https://gallery.shinyapps.io/051-movie-explorer/)
+
+## Working on a workflow
+
+Code notebooks provide a convenient way to document and organize a data science project from beginning to end; in otherwords, they can form the basis of a *workflow*.
+
+## Working on a workflow
+
+![](Week5Static/workflow1.png){fig-align="center"}
+
+## Working on a workflow
+
+![](Week5Static/workflow2.png){fig-align="center"}
+
+## Working on a workflow
+
+![](Week5Static/workflow3.png){fig-align="center"}
+
+## Working on a workflow
+
+![](Week5Static/workflow4.png){fig-align="center"}
+
+## Viewer Tab
+
+Rather than render HTML directly to your browser, you can preview the rendered version in the Viewer tab.
+
+![](Week5Static/viewerPane.png){fig-align="center"}
+
+## What about files?
+
+When we write code that reads from files, these need to be in places where the Quarto document can find them.
+
+```{r}
+#| echo: TRUE
+#| message: FALSE
+# load tidyverse
+library(tidyverse)
+# read in abalone data
+abalone<-read_csv("data/abalone.csv")
+# plot abalone rings by diameter
+ggplot(abalone,aes(x=diameter,y=rings)) +
+  geom_hex()
+```
+
+## Sharing your file system
+
+The `zip` function provides a convenient way to turn your entire working directory into a .zip file
+
+```{r}
+#| echo: TRUE
+#zip up all of my project files
+zip("myProject.zip",list.files())
+```
+
+## Coursekeeping
+
+| Assignment          | Due Date             |
+|---------------------|----------------------|
+| Lab Assignment 5    | Tuesday, October 10  |
+| Coding Assignment 2 | Thursday, October 12 |
+| Lab Assignment 6    | Tuesday, October 17  |
+| Project Proposal    | Thursday, October 19 |
+
+## Project proposal
+
+::: incremental
+-   What is the topic?
+
+-   What is the background to this topic? (2-3 citations)
+
+-   What datasets are you intending to use?
+
+-   How would data analysis/visualization to help you understand the topic?
+
+-   Suggest two visualizations
+:::
+
+## Activity: Brainstorming with Quarto
+
+::: {style="font-size: 80%;"}
+Put the Quarto workflow to work in brainstorming ideas for your final project!
+
+-   Create a file system for your final project
+
+-   Start a new Quarto document and save it to your working directory
+
+-   Use headers to outline a data analysis process from a project you'd *like* to do.
+
+-   Begin filling out the sections with some preliminary ideas about what kinds of data you'd useand
+
+    -   Use links to promising datasets in the text
+
+    -   Use code chunks with comments to draft code
+:::
+
+## Next week
+
+-   Working with messy data
+
+-   Exploring the `tidyverse`
+
+-   Data transformations using `dplyr`
