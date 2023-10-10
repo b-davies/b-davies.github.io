@@ -1,0 +1,247 @@
+---
+title: "Environmental Data Analysis & Visualization"
+author: "Into the tidyverse"
+format: revealjs
+editor: visual
+---
+
+## Warm-up activity
+
+-   Create a file system for this week and add a new Quarto document for today's lecture.
+
+-   Download the GSS.csv dataset and load it into R as a tibble
+
+-   Have a look at sparts and income16 variables: what might these different values represent?
+
+-   Go to the links on Canvas and take a look at the metadata for each variable. Can you think of a way to modify the data to get a meaningful plot out of it?
+
+## ~~Sensor~~ Dataset of the day
+
+General Social Survey
+
+![<https://gss.norc.org/>](Week6Static/GSSLogo.png){fig-align="center"}
+
+## Data
+
+::: columns
+::: {.column width="30%"}
+Data are individual pieces of information.
+:::
+
+::: {.column width="70%"}
+![](Week6Static/piecesOfData.png){fig-align="center"}
+:::
+:::
+
+## Datasets
+
+![](Week6Static/dataToDataset.png){fig-align="center"}
+
+## Data in the field
+
+![](Week6Static/measureVeg.jpg){fig-align="center"}
+
+## Data in the field
+
+![](Week6Static/vegData.png){fig-align="center"}
+
+## Messy data
+
+The process of data entry is often designed and conducted with limited consideration given to the process of data analysis.
+
+![https://openscapes.org/blog/2020-10-12-tidy-data/](Week6Static/messyData.png){fig-align="center"}
+
+## Tidy data principles
+
+::: columns
+::: {.column width="30%"}
+::: {style="color: deepskyblue;"}
+Each variable forms a column
+:::
+
+::: {style="color: orange;"}
+Each observation forms a row
+:::
+
+::: {style="color: purple;"}
+Each cell contains a single value
+:::
+:::
+
+::: {.column width="70%"}
+\
+
+![](Week6Static/tidyTable1.png){fig-align="center"}
+:::
+:::
+
+::: {style="font-size: 50%; text-align: right;"}
+After Wickham, H. 2014. Tidy data. *The Journal of Statistical Software* 59.
+:::
+
+## Vectorization
+
+![](Week6Static/tidyTable2.png){fig-align="center"}
+
+![](Week6Static/vectorization.png){fig-align="center"}
+
+## Querying
+
+![](Week6Static/tidyTable2.png){fig-align="center"}
+
+![](Week6Static/querying.png){fig-align="center"}
+
+## Consistency
+
+![](Week6Static/tidyTable3.png){fig-align="center"}
+
+![](Week6Static/consistency.png){fig-align="center"}
+
+## Ease of identification and re-use
+
+![](Week6Static/csvTidyTable.png){fig-align="center"}
+
+## Activity: Making a mess of data
+
+With the sticky notes you've been given, complete the data table that's been started on the door to the data lab. Use Google Maps or similar to estimate transportation times.
+
+![friendsofthefells.org](Week6Static/fellsImage.jpg){fig-align="center"}
+
+## Exploring the data
+
+Compare **university year** to **drive time**.
+
+## Exploring the data
+
+Compare **university year** to **drive time**.
+
+![](Week6Static/ggplotBlank.png){fig-align="center"}
+
+## Exploring the data
+
+Compare **university year** to **drive time**.
+
+![](Week6Static/ggplot1.png){fig-align="center"}
+
+## Exploring the survey data
+
+Compare **university year** to **public transit time.**
+
+![](Week6Static/ggplotBlank.png){fig-align="center"}
+
+## Exploring the survey data
+
+Compare **university year** to **public transit time.**
+
+![](Week6Static/ggplot2.png){fig-align="center"}
+
+## Exploring the survey data
+
+Compare **mode of transportation** to **time spent in transit**.
+
+![](Week6Static/ggplotBlank.png){fig-align="center"}
+
+## Exploring the survey data
+
+Compare **mode of transportation** to **time spent in transit**.
+
+![](Week6Static/ggplot3.png){fig-align="center"}
+
+![](Week6Static/dataNamesProblemTable.png){fig-align="center"}
+
+## Data wrangling: the big three
+
+Column headers are values, not variable names.
+
+![](Week6Static/messyTable1.png){fig-align="center"}
+
+## Data wrangling: the big three
+
+Multiple variables are stored in a single column.
+
+![](Week6Static/messyTable2.png){fig-align="center"}
+
+## Data wrangling: the big three
+
+Variables stored in both rows and columns.
+
+![](Week6Static/messyTable3.png){fig-align="center"}
+
+## Into the tidyverse
+
+```{r}
+#| echo: TRUE
+#| message: FALSE
+library(tidyverse)
+```
+
+::: columns
+::: {.column width="50%"}
+![](Week6Static/tidyverseLogo.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](Week6Static/tidyversePackages.png){fig-align="center"}
+:::
+:::
+
+## Data wrangling in the tidyverse
+
+![epirhandbook.com/en/pivoting-data.html](https://epirhandbook.com/en/images/pivoting/pivot_longer_new.png){fig-align="center"}
+
+## Data wrangling in the tidyverse
+
+```{r}
+#| echo: TRUE
+#| message: FALSE
+fellsData<-read_csv("data/fakeFellsData.csv")
+fellsData
+```
+
+## Data wrangling in the tidyverse
+
+```{r}
+#| echo: TRUE
+#| message: FALSE
+fellsData2<-pivot_longer(
+  data=fellsData,
+  cols=walkTime:ptTime,
+  names_to="method",
+  values_to="time"
+  )
+fellsData2
+```
+
+## Data wrangling in the tidyverse
+
+```{r}
+#| echo: TRUE
+#| message: FALSE
+fellsData2<-pivot_longer(
+  data=fellsData,
+  cols=walkTime:ptTime,
+  names_to="method",
+  values_to="time",
+  names_pattern = "(.*)Time"
+  )
+fellsData2
+```
+
+## Data wrangling in the tidyverse
+
+```{r}
+#| echo: TRUE
+#| message: FALSE
+ggplot(data=fellsData2,aes(x=method,y=time))+
+  geom_boxplot()
+```
+
+## Summing up
+
+::: incremental
+-   Data messiness can arise in a number of ways from a variety of sources, but will inevitably slow the process
+
+-   Data that follows tidy principles enables vectorization, querying, consistency, and ease of re-use
+
+-   As data scientists, we need to develop practices for quickly manipulating and transforming datasets to be more amenable to analysis and visualization
+:::
