@@ -1,0 +1,209 @@
+---
+title: "Environmental Data Analysis & Visualization"
+author: "From Data Handling to Wrangling"
+format: revealjs
+editor: visual
+---
+
+## Visualization Critique
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+library(openintro)
+```
+
+![<https://jordan-vincent.com/night-under-the-stars/>](Week6Static/Carmen.png){fig-align="center"}
+
+## Visualization Critique
+
+![<https://harcresearch.org/research/mobility-analysis-on-regions-response-to-covid-19-and-stay-at-home-orders/>](Week6Static/Gillian.png){fig-align="center"}
+
+## Checking in
+
+::: incremental
+-   How did it go yesterday?
+
+-   How much do you feel like you remember?
+
+-   Ready to keep going?
+:::
+
+## Flight data
+
+```{r}
+#| echo: true
+library(openintro)
+nycflights 
+```
+
+## Flight data
+
+```{r}
+#| echo: TRUE
+nycflightsSpd<-mutate(nycflights,speed = distance / air_time * 60) 
+
+nycflightsCarrSpd<-select(nycflightsSpd,year:day,carrier,flight,speed)
+
+nycflightsCarrSpd
+```
+
+## Flight data
+
+| function | process                                              | data object             |
+|------------------|-------------------------------------|------------------|
+| mutate   | add speed column                                     | nycflightsSpd           |
+| select   | subset columns to date, carrier, flight #, and speed | nycflightsCarrSpd       |
+| filter   | subset to flights in January                         | nycflightsCarrSpdJan    |
+| unite    | combine year, month, and day into single column      | nycflightsCarrSpdJanYMD |
+
+## Flight data
+
+| function | process                                              | data object |
+|-----------------|--------------------------------------|-----------------|
+| mutate   | add speed column                                     | nycflights1 |
+| select   | subset columns to date, carrier, flight #, and speed | nycflights2 |
+| filter   | subset to flights in January                         | nycflights3 |
+| unite    | combine year, month, and day into single column      | nycflights4 |
+
+## Pipes in R
+
+The pipe operator `|>` allows us to combine multiple functions into a single,
+
+```{r}
+#| echo: TRUE
+nycflights |>
+  mutate(speed = distance / air_time * 60) |>
+  select(year:day,dep_time,carrier,flight,speed) |>
+  filter(month==1) |>
+  unite(col="Date",c(month,day,year),sep="/")
+```
+
+## Pipelines
+
+![](Week6Static/pipeline.png){fig-align="center"}
+
+## Pipelines
+
+Pipelines start with raw data (e.g., tibble) as the input
+
+This table is passed as the first argument to the next function (so they don't need the **data** argument)
+
+The result of a pipeline is a dataset that can be fed into visualizations and analysis
+
+## Pipes
+
+![](Week6Static/pipeline2.png){fig-align="center"}
+
+## Activity: Plumbing 101
+
+Working in pairs or small groups, use the different functions from `dplyr` and `tidyr` to create a pipeline to wrangle raw data into the desired form
+
+Use cheatsheets on Canvas for function descriptions
+
+## Example 1
+
+Body mass and flipper length for **penguins** from Biscoe and Dream islands with a body mass over 400 grams.
+
+## Example 2
+
+Price, number of baths, and square meters for three-bedroom homes in **Sacramento**.
+
+## Example 3
+
+ID Number, Diameter in mm, and number of rings on top 100 **abalone** by ring count.
+
+## Example 3
+
+```{r}
+#| echo: true
+#| message: false
+rawData<-read_csv("data/abalone.csv")
+
+rawData |>
+  mutate(diameter_mm=diameter * 200) |>
+  select(...1,diameter_mm,rings) |>
+  slice_max(order_by=rings,n=100)
+  
+  
+```
+
+## Activity: Plumbing 101, part 2
+
+::: {style="font-size: 50%;"}
+Load the **openintro** package (if you don't have it installed, install it from the command line)
+
+We'll be using the **gss2010** dataset. Look at help to find metadata.
+
+Using pipes, create a dataset of individuals who have attended college/university with the following variables:
+
+-   hours worked per week
+
+-   hours relaxing per week (assume a 7-day week)
+
+-   hours not spent at work or relaxing
+
+-   educational degree
+
+-   attitude towards marijuana legalization
+:::
+
+## Can I use pipes with ggplot2?
+
+## Can I use pipes with ggplot2?
+
+YES!
+
+```{r}
+#| echo: TRUE
+#| message: FALSE
+
+rawData |>
+  mutate(diameter_mm=diameter * 200) |>
+  select(...1,diameter_mm,rings) |>
+  slice_max(order_by=rings,n=100) |>
+  ggplot(aes(x=diameter_mm,y=rings)) + geom_point()
+  
+```
+
+## Can I use pipes with Base R?
+
+## Can I use pipes with Base R?
+
+YES! (But only for functions where the first argument is a table)
+
+```{r}
+#| echo: TRUE
+rawData |>
+  mutate(diameter_mm=diameter * 200) |>
+  select(...1,diameter_mm,rings) |>
+  slice_max(order_by=rings,n=100) |> 
+  colSums()
+```
+
+## Can I use pipes for modeling data?
+
+## Can I use pipes for modeling data?
+
+YES! (But
+
+```{r}
+#| echo: TRUE
+
+rawData |>
+  mutate(diameter_mm=diameter * 200) |>
+  select(...1,diameter_mm,rings) |>
+  slice_max(order_by=rings,n=100) |> 
+  lm(rings ~ diameter_mm, data=_) |>
+  summary()
+```
+
+## Next week
+
+-   Visualizing more relationships
+
+-   Fine controls with ggplot2
+
+-   Time series data
