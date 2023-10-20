@@ -1,0 +1,212 @@
+---
+title: "Environmental Data Analysis & Visualization"
+author: "Does anybody really know what time it is?"
+format: revealjs
+editor: visual
+---
+
+## Warm-up exercise
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+library(openintro)
+```
+
+Create a new file system and Quarto document for this lecture. Download the *walkability.csv* dataset. Using pipes, create a dataset of with the following variables:
+
+-   Core-Based Statistical Area (CBSA) name (excluding the state)
+
+-   Population (only above 5 million)
+
+-   National Walkability Index
+
+Show the distribution of walkability index scores for all CBSAs in this new dataset
+
+## Warm-up exercise
+
+```{r}
+#| echo: TRUE 
+#| #| output: FALSE 
+walkData<-read_csv("data/walkability.csv")    
+
+walkData %>%   
+  select(CBSA_Name,CBSA_POP,NatWalkInd) %>%   
+  separate(CBSA_Name,into=c("cities","states"),sep=",",extra="drop") %>%   
+  filter(CBSA_POP>5000000) %>%  
+  ggplot(aes(x=reorder(cities,NatWalkInd,median),y=NatWalkInd)) +     
+  geom_boxplot() +     
+  coord_flip() +   
+  labs(x="Walkability Index",y="CBSA") 
+```
+
+## Visualization critique
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+```
+
+![[New York Times](https://www.nytimes.com/interactive/2023/climate/extreme-summer-heat.html)](Week7Static/Maddie.png)
+
+## Visualization critique
+
+![<https://www.toptal.com/designers/data-visualization/data-visualization-best-practices>](Week7Static/mayaViz.png){fig-align="center"}
+
+## Visualization critique
+
+![https://experience.arcgis.com/experience/be9006c30a2148f595693066441fb8eb/page/Map/](Week7Static/jamesViz.png){fig-align="center"}
+
+## Dataset of the day
+
+Stock market data
+
+![[Yahoo! Finance](https://finance.yahoo.com/quote/%5EIXIC/chart?p=%5EIXIC#eyJpbnRlcnZhbCI6IndlZWsiLCJwZXJpb2RpY2l0eSI6MSwidGltZVVuaXQiOm51bGwsImNhbmRsZVdpZHRoIjoyLjY2ODI1Nzc1NjU2MzI0NiwiZmxpcHBlZCI6ZmFsc2UsInZvbHVtZVVuZGVybGF5Ijp0cnVlLCJhZGoiOnRydWUsImNyb3NzaGFpciI6dHJ1ZSwiY2hhcnRUeXBlIjoibGluZSIsImV4dGVuZGVkIjpmYWxzZSwibWFya2V0U2Vzc2lvbnMiOnt9LCJhZ2dyZWdhdGlvblR5cGUiOiJvaGxjIiwiY2hhcnRTY2FsZSI6ImxpbmVhciIsInBhbmVscyI6eyJjaGFydCI6eyJwZXJjZW50IjoxLCJkaXNwbGF5IjoiXklYSUMiLCJjaGFydE5hbWUiOiJjaGFydCIsImluZGV4IjowLCJ5QXhpcyI6eyJuYW1lIjoiY2hhcnQiLCJwb3NpdGlvbiI6bnVsbH0sInlheGlzTEhTIjpbXSwieWF4aXNSSFMiOlsiY2hhcnQiLCLigIx2b2wgdW5kcuKAjCJdfX0sInNldFNwYW4iOm51bGwsImxpbmVXaWR0aCI6Miwic3RyaXBlZEJhY2tncm91bmQiOnRydWUsImV2ZW50cyI6dHJ1ZSwiY29sb3IiOiIjMDA4MWYyIiwic3RyaXBlZEJhY2tncm91ZCI6dHJ1ZSwicmFuZ2UiOm51bGwsImV2ZW50TWFwIjp7ImNvcnBvcmF0ZSI6eyJkaXZzIjp0cnVlLCJzcGxpdHMiOnRydWV9LCJzaWdEZXYiOnt9fSwiY3VzdG9tUmFuZ2UiOm51bGwsInN5bWJvbHMiOlt7InN5bWJvbCI6Il5JWElDIiwic3ltYm9sT2JqZWN0Ijp7InN5bWJvbCI6Il5JWElDIiwicXVvdGVUeXBlIjoiSU5ERVgiLCJleGNoYW5nZVRpbWVab25lIjoiQW1lcmljYS9OZXdfWW9yayJ9LCJwZXJpb2RpY2l0eSI6MSwiaW50ZXJ2YWwiOiJ3ZWVrIiwidGltZVVuaXQiOm51bGwsInNldFNwYW4iOm51bGx9XSwic3R1ZGllcyI6eyLigIx2b2wgdW5kcuKAjCI6eyJ0eXBlIjoidm9sIHVuZHIiLCJpbnB1dHMiOnsiaWQiOiLigIx2b2wgdW5kcuKAjCIsImRpc3BsYXkiOiLigIx2b2wgdW5kcuKAjCJ9LCJvdXRwdXRzIjp7IlVwIFZvbHVtZSI6IiMwMGIwNjEiLCJEb3duIFZvbHVtZSI6IiNmZjMzM2EifSwicGFuZWwiOiJjaGFydCIsInBhcmFtZXRlcnMiOnsid2lkdGhGYWN0b3IiOjAuNDUsImNoYXJ0TmFtZSI6ImNoYXJ0IiwicGFuZWxOYW1lIjoiY2hhcnQifX19fQ--)](Week7Static/stockData.png){fig-align="center"}
+
+## When does "when" matter?
+
+{{< video https://svs.gsfc.nasa.gov/vis/a000000/a005100/a005137/GISTEMP_Curves_July2023_1080p60.mp4 >}} NASA Scientific Visualization Studio (https://svs.gsfc.nasa.gov/5137/)
+
+## Time: what is it?
+
+R can store time as character values.
+
+-   `"2023-10-19"`
+
+-   `"10/19/2023"`
+
+-   `"17:05:00"`
+
+## Time: what is it?
+
+It can also store some kinds of time data as numbers:
+
+-   `2023`
+
+-   `10`
+
+-   `19`
+
+## Time: what is it?
+
+\
+Time as data is a strange beast.\
+
+Time by itself isn't something that varies in a meaningful way.\
+
+Time has a defined order, but you can't really *count* time, nor can you really treat it like a number.
+
+## Time: what is it?
+
+R can also recognize time as particular objects like **date** and **date-time** objects. For example:
+
+```{r}
+#| echo: true
+#give today's date as a date object
+today()
+#give the precise time as a date-time object
+now()
+```
+
+## Handling time data
+
+The `lubridate` package lets us convert between other values and time objects.\
+
+```{r}
+#| echo: true
+library(lubridate)
+```
+
+## Handling time data
+
+```{r}
+#| echo: true
+
+#storing the date as a character value
+todaysDate<-"2023-10-19"
+
+todaysDate
+typeof(todaysDate)
+```
+
+## Handling time data
+
+```{r}
+#| echo: true
+
+# converting the date to a date object
+ymd(todaysDate)
+typeof(ymd(todaysDate))
+```
+
+## Visualizing time data
+
+NASDAQ Composite data
+
+```{r}
+#| echo: true
+#| message: false
+nasdaq<-read_csv("data/nasdaq.csv")
+nasdaq
+```
+
+## Visualizing time data
+
+```{r}
+#| echo: true
+ggplot(nasdaq,aes(x=Date,y=Open)) +
+  geom_line(color="darkblue") +
+  labs(x="Date",y="Points at Closing",title="NASDAQ Composite, July-October 2023") +
+  theme_bw()
+```
+
+## Visualizing time data
+
+```{r}
+#| echo: true
+ggplot(nasdaq,aes(x=mdy(Date),y=Open)) +
+  geom_line(color="darkblue") +
+  labs(x="Date",y="Points at Closing",title="NASDAQ Composite, July-October 2023") +
+  theme_bw()
+```
+
+## Activity: Visualizing time data
+
+Load the **openintro** package to access the nycflights data
+
+Create a pipe that
+
+-   subsets the data to Delta Airlines (DL) flights only
+
+-   combines the year, month, and day into a single date column
+
+-   convert to a table of counts using the `count` function
+
+Plot this new data as a line graph using `geom_line`.
+
+## Activity: Visualizing time data
+
+```{r}
+#| echo: true
+nycflights2<-nycflights
+
+nycflights2 |> 
+  filter(carrier=="DL") |>
+  unite(col="Date",year,month,day,sep="-",na.rm = TRUE ) |>
+  count(Date)|>
+  ggplot(aes(x=ymd(Date),y=n)) +
+  geom_line(color="darkblue") 
+```
+
+## Next time
+
+-   Data storytelling
+
+-   Introducing `sf`
+
+-   Making and plotting vector data
