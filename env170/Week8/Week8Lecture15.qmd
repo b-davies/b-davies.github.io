@@ -1,0 +1,79 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Breaking the Fourth Wall"
+format: revealjs
+editor: visual
+---
+
+## Warm-up exercise
+
+```{r}
+#| echo: FALSE
+#| message: FALSE
+
+library(tidyverse)
+library(sf)
+
+```
+
+Go to Canvas and click on the Where Should I Eat? link\
+\
+Follow the instructions and provide information about restaurants in the Boston area (you don't have to like them to include them)\
+\
+Enter at least 2-3 restaurants into the form
+
+## Visualization Critique
+
+[![https://eagereyes.org/blog/2008/linear-vs-quadratic-change](https://media.eagereyes.org/media/2008/FastFood.jpg)](https://eagereyes.org/blog/2008/linear-vs-quadratic-change)
+
+## Visualization Critique
+
+[![Pew Research](Week8Static/VC vanessa.png){fig-align="center"}](https://www.pewresearch.org/religion/2019/10/17/in-u-s-decline-of-christianity-continues-at-rapid-pace/)
+
+## Visualization Critique
+
+[![WaPo](Week8Static/VC Betty.png){fig-align="center"}](https://graphics.wsj.com/elon-musk-twitter-habit-analysis/)
+
+## 
+
+## Activity: Where Should I Eat?
+
+Download the *whereEat.csv* file on Canvas and convert to
+
+## Activity: Where Should I Eat?
+
+```{r}
+library(sf)
+data<-read_csv("data/whereEat.csv")
+data
+```
+
+## Storytelling
+
+![juicyenglish.com](Week8Static/partoftheplot-beginning-middle-end-663378_orig-01.png){alt="juicyenglish.com" fig-align="center"}
+
+## Activity: A Story in Three Images
+
+Working together in pairs, go the Canvas assignment and choose a story from a list. Your task is to convey the main idea to us in three images [without]{.underline} using images directly from that story.
+
+Use the internet to find (tasteful, appropriate) images to tell your story. Add these to the Canvas response.
+
+In each image, think carefully about how
+
+-   Beginning, middle, and end
+
+-   The setup, rise, apex, resolution
+
+-   The mood of the story
+
+## Base Maps
+
+[![IMDB](https://m.media-amazon.com/images/M/MV5BNDFmNDM0MGUtYTYxNS00YThhLTg4ZWUtYTE1MjBkZDU5MzQ0XkEyXkFqcGdeQXVyMzI2MDEwNA@@._V1_.jpg){fig-align="center"}](https://www.imdb.com/title/tt0428183/)
+
+## Next week
+
+-   Data Science in Space! Part 2
+
+-   Raster data and the `terra` package
+
+-   Making maps that
