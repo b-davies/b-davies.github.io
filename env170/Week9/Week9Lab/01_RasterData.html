@@ -200,8 +200,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>randomValues<span class="ot">&lt;-</span><span class="fu">rnorm</span>(<span class="dv">10000</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>randomValues[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  0.4815981  0.4892307 -0.4872740 -0.6054691 -0.5915479  0.2240629
- [7] -1.3027638 -0.3034218  0.7037910  2.0312183</code></pre>
+<pre><code> [1]  0.3650247  0.7832691  0.3042406 -0.3987446 -1.4976881  1.1045793
+ [7]  1.8300398 -1.7650171  0.4452102  1.7652971</code></pre>
 </div>
 </div>
 <p>Here, we’re using square brackets to look at the first ten of these random values. Now let’s say we want to take this and turn it into a matrix with 100 rows and 100 columns. We can use our <strong>randomValues</strong> as an argument in the <code>matrix</code> function, along with arguments for the number of rows (<strong>nrow</strong>) and columns (<strong>ncol</strong>):</p>
@@ -211,17 +211,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Show first ten rows of first three columns</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>randomMatrix[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>            [,1]         [,2]       [,3]
- [1,]  0.4815981  2.480518365  0.8019635
- [2,]  0.4892307  0.008974824 -0.7268542
- [3,] -0.4872740 -1.059949598  1.0804942
- [4,] -0.6054691  0.844388995  0.9780196
- [5,] -0.5915479  0.581425176  1.7163744
- [6,]  0.2240629 -0.149400051  0.7089475
- [7,] -1.3027638 -0.272225604  0.6686689
- [8,] -0.3034218 -0.024754835  0.6252871
- [9,]  0.7037910 -1.120705240  0.2958668
-[10,]  2.0312183  0.657129012  1.5200156</code></pre>
+<pre><code>            [,1]        [,2]       [,3]
+ [1,]  0.3650247  0.52278568  1.2027860
+ [2,]  0.7832691 -0.75081240  0.5711899
+ [3,]  0.3042406 -0.04451878  1.8237723
+ [4,] -0.3987446 -0.82064860 -0.9432617
+ [5,] -1.4976881  1.83387313  1.2915272
+ [6,]  1.1045793 -1.07696849 -0.1493880
+ [7,]  1.8300398 -0.22584977  1.4808539
+ [8,] -1.7650171 -0.56163478 -0.8248841
+ [9,]  0.4452102  1.29103069  0.8245471
+[10,]  1.7652971  1.27003436  1.5546683</code></pre>
 </div>
 </div>
 <p>This gives us a sense of what the matrix looks like: the far left shows row numbers, while the top has column numbers, both in square brackets. The numbers in between are the random values we generated, but now organized in a 100 x 100 matrix. We can see how many rows and columns are in the matrix using the <code>dim</code> function:</p>
@@ -244,8 +244,8 @@ extent      : 0, 100, 0, 100  (xmin, xmax, ymin, ymax)
 coord. ref. :  
 source(s)   : memory
 name        :     lyr.1 
-min value   : -3.557857 
-max value   :  3.933087 </code></pre>
+min value   : -3.818598 
+max value   :  3.684048 </code></pre>
 </div>
 </div>
 <p>This gives us some information about the spatRaster object, including:</p>
@@ -279,8 +279,8 @@ extent      : 0, 100, 0, 100  (xmin, xmax, ymin, ymax)
 coord. ref. : lon/lat WGS 84 (EPSG:4326) 
 source(s)   : memory
 name        :     lyr.1 
-min value   : -3.557857 
-max value   :  3.933087 </code></pre>
+min value   : -3.818598 
+max value   :  3.684048 </code></pre>
 </div>
 </div>
 <p>Now when we plot the data, the coordinates (position in the matrix) are given as degrees longitude and latitude:</p>
@@ -301,7 +301,7 @@ Try it yourself!
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Try and run through the example above again, but when you create the randomValues vector, use the sort function</p>
+<p>Try and run through the example above again, but when you create the randomValues vector, use the sort function to sort the values from least to greatest. What do you think will happen?</p>
 </div>
 </div>
 <p>One more thing to be aware of is <em>multirasters</em>: these are raster datasets with multiple layers. These can be useful for storing different kinds of data within the same spatRaster object, or storing raster data that’s been collected over time. To do this, we’ll generate three random rasters, and then combine them just as we would a vector:</p>
@@ -334,9 +334,9 @@ resolution  : 1, 1  (x, y)
 extent      : 0, 10, 0, 10  (xmin, xmax, ymin, ymax)
 coord. ref. :  
 source(s)   : memory
-names       :       lyr.1,      lyr.1,      lyr.1 
-min values  : 0.005984849, 0.00604978, 0.03306967 
-max values  : 0.995886470, 0.99639613, 0.99844121 </code></pre>
+names       :       lyr.1,      lyr.1,       lyr.1 
+min values  : 0.002778357, 0.00704341, 0.001061728 
+max values  : 0.993688135, 0.99614789, 0.997564374 </code></pre>
 </div>
 </div>
 <p>We can access layer names using the names function, and assign a vector of layer names as character values:</p>
@@ -350,9 +350,9 @@ resolution  : 1, 1  (x, y)
 extent      : 0, 10, 0, 10  (xmin, xmax, ymin, ymax)
 coord. ref. :  
 source(s)   : memory
-names       :     raster1,    raster2,    raster3 
-min values  : 0.005984849, 0.00604978, 0.03306967 
-max values  : 0.995886470, 0.99639613, 0.99844121 </code></pre>
+names       :     raster1,    raster2,     raster3 
+min values  : 0.002778357, 0.00704341, 0.001061728 
+max values  : 0.993688135, 0.99614789, 0.997564374 </code></pre>
 </div>
 </div>
 <p>Visualizing all the layers here requires us to use the <code>facet_wrap</code> function, and the argument we use is <code>~lyr</code>. This is accessing the <strong>lyr</strong> (layer) property of the <strong>spatRaster</strong> object.</p>
@@ -595,7 +595,7 @@ Try it yourself!
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Try seeing if you can ta mean of the first twelve layers of the rainfall data and convert it into inches.</p>
+<p>Try seeing if you can take the mean of the first twelve layers of the rainfall data and convert it into inches.</p>
 </div>
 </div>
 
