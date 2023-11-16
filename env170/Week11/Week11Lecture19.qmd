@@ -1,0 +1,144 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Postering 101"
+format: revealjs
+editor: visual
+---
+
+## Visualization critique
+
+![[Center for Data Innovation](https://datainnovation.org/2023/09/visualizing-the-impact-of-climate-change-on-crops/)](Week11Static/ericVizCritique.png)
+
+## Visualization critique
+
+![[Our World In Data](https://ourworldindata.org/literacy)](Week11Static/ananyaaVizCritique.png){fig-align="center"}
+
+## Visualization critique
+
+![[Visual Capitalist](https://www.visualcapitalist.com/visualized-the-worlds-population-at-8-billion/)](Week11Static/VisCritiqueImage.png){fig-align="center"}
+
+## Linear modeling
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+treeDataNC<-read_csv("data/TS3_Raw_tree_data.csv") |>
+  filter(City=="Charlotte, NC") |>
+  filter(CommonName=="Willow oak")
+```
+
+Unlike hypothesis tests, we are often making judgement calls about how well a model fits the data.
+
+## Linear modeling
+
+```{r}
+#| echo: true
+#| message: false
+ggplot(treeDataNC,aes(x=`DBH (cm)`,y=`TreeHt (m)`)) +
+  geom_point() +
+  geom_smooth(method="lm",se=FALSE)
+```
+
+## Testing assumptions
+
+**Linearity**: The relationship between X and the mean of Y is linear.
+
+```{r}
+#| echo: true
+#| message: false
+treeModel<-lm(`TreeHt (m)`~`DBH (cm)`,data=treeDataNC)
+plot(treeModel,which=1)
+```
+
+**If plot is flat-ish, we can proceed...**
+
+## Testing assumptions
+
+**Normality**: For any fixed value of X, Y is normally distributed.
+
+```{r}
+#| echo: true 
+#| message: false 
+ plot(treeModel,which=2)
+```
+
+**If plot mostly adheres to diagonal line, we can proceed..**
+
+## Testing assumptions
+
+**Homoscedasticity**: The variance of residual is the same for any value of X.
+
+```{r}
+#| echo: true  
+#| #| message: false   
+plot(treeModel,which=3)
+```
+
+**If plot is mostly flat, we can proceed..**
+
+## Posters
+
+-   Make it readable
+
+-   Show, don't tell
+
+## Make it readable
+
+-   Consistent and clean layout; context oriented in a single direction
+
+-   Headings should clearly readable and convey the idea behind graphics or text sections
+
+-   Graphic elements should be able to be seen from 10 feet away
+
+## Make it readable
+
+![Wilke, Claus. 2019. *Fundamentals of Data Visualization.*](Week11Static/smallLegends1.png)
+
+## Make it readable
+
+![Wilke, Claus. 2019. *Fundamentals of Data Visualization*.](Week11Static/smallLegends2.png){fig-align="center"}
+
+## Make it readable
+
+![](Week11Static/crammedPoster3.png){fig-align="center"}
+
+## Make it readable
+
+![](Week11Static/posterOrientation.png){fig-align="center"}
+
+## Show, don't tell
+
+-   Fewer words, bigger words
+
+-   Limit use of text (800-1200 words max)
+
+-   Graphics should be largely self-explantory
+
+-   The poster is meant to come with an interpreter: you!
+
+## Show, don't tell
+
+![](Week11Static/crammedPoster2.png){fig-align="center"}
+
+## Show, don't tell
+
+![](Week11Static/goodPoster1.png){fig-align="center"}
+
+## Activity: Draft a poster
+
+Find a poster template or build your own!
+
+-   You can use your preferred platform, or there is a PowerPoint template on Canvas
+
+If you have any draft graphics, you can also add these in the appropriate places to beginning filling out the space
+
+Poster size should be 36 in wide by 48 inches
+
+## Next week
+
+-   Tuesday I will be holding final project consultations on Zoom between 10 AM and 1PM. A signup will be posted shortly.
+
+-   If you need to discuss your project outside this time, please connect with me as soon as possible.
+
+-   Have a great weekend and a great break!
