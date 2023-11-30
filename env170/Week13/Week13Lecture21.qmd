@@ -1,0 +1,191 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Failing Gloriously"
+format: revealjs
+editor: visual
+---
+
+## Warm-up exercise
+
+::: columns
+::: {.column width="50%"}
+![](Week13LectureStatic/ENVSsociety.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+On Canvas, there is a link to a survey for the **ENVS Society**. Please take a few moments to fill this out.
+:::
+:::
+
+## Visualization Critique
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(palmerpenguins)
+```
+
+![[NY Times](https://www.nytimes.com/interactive/2021/11/12/climate/cop26-emissions-compensation.html?campaign_id=29&emc=edit_up_20211112&instance_id=45236&nl=the-upshot&regi_id=52022771&segment_id=74222&te=1&user_id=7cc6d9cd8f523e256ae41958ee8a9cb5)](Week13LectureStatic/jackieVizCritique.png){fig-align="center"}
+
+## Visualization Critique
+
+![[Sandrine Henry/Tableau](https://public.tableau.com/app/profile/sandrine.henry/viz/MusicRevenueMM21/PhysicalvsDigital)](Week13LectureStatic/adrianDataViz.PNG)
+
+## Visualization Critique
+
+![](Week13LectureStatic/doughnuts.jpeg){fig-align="center"}
+
+## Some things I heard last night
+
+::: incremental
+-   Is it OK if I don't have a significant relationship?
+-   Do I need to revise my project if I can't answer my question with the data?
+-   **What if my results don't show anything exciting/interesting?**
+:::
+
+## Science
+
+## Science fails
+
+## Science fails all
+
+## Science fails all the
+
+## Science fails all the time
+
+## Science fails all the time.
+
+## Does this mean I asked a bad question?
+
+## Does this mean I asked a bad question?
+
+No.
+
+## Perverse incentives
+
+::: columns
+::: {.column width="50%"}
+![Edwards and Roy 2017 Academic Research in the 21st Century DOI: 10.1089/ees.2016.0223](Week13LectureStatic/Perverse.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![](Week13LectureStatic/Perverse2.png){fig-align="center"}
+:::
+:::
+
+## Fail productively
+
+::: columns
+::: {.column width="40%"}
+![XKCD](Week13LectureStatic/p_values_2x.png){fig-align="center" width="342"}
+:::
+
+::: {.column width="60%"}
+::: incremental
+-   A negative result is a result nonetheless.
+
+-   If your assumptions/predictions didn't work out, ask why not.
+
+-   If your results are inconclusive, ask what data might be needed.
+
+-   How does your result compare with other studies?
+:::
+:::
+:::
+
+## Fail productively, fail gloriously
+
+ 
+
+"To fail productively, one has to be aware of the multiple contexts of that fail to find the valuable experience. To fail gloriously is to use the privileges that you have, as you are able, to make it safe for others to fail." - Shawn Graham, *Failing Gloriously*
+
+## Reporting the results of a statistical test
+
+When reporting the results of a statistical test, be sure to include the following information at a minimum *within the context of the hypothesis*:
+
+-   Name of test and variable(s)
+
+-   Test statistic(s) (letter will vary)
+
+-   Degrees of freedom (*df*)
+
+-   P-value (*p*)
+
+## Reporting the results of a statistical test
+
+```{r}
+#| echo: true
+
+library(palmerpenguins)
+
+#create a dataset of just Adelie and Gentoo penguins, and just the species and body mass columns
+genChin <- penguins %>%
+        filter(species == "Chinstrap" | species== "Gentoo") %>%
+        select(species, body_mass_g) %>%
+        drop_na()
+
+t.test(data = genChin, body_mass_g ~ species)
+```
+
+## Reporting the results of a statistical test
+
+\
+
+"I used Welch's two-sample t-test of the body masses for Gentoo and Chinstrap penguins, and rejected the null hypothesis that there is no difference in mean body mass between these two groups (*t*=-20.62, *df*=170.4, *p*\<2.2e-16)."
+
+## Image file formats
+
+There are two main types of image formats
+
+-   Bitmap (also known as raster)
+
+-   Vector
+
+## Bitmap vs Vector
+
+![Wilke, C. 2019. *Fundamentals of Data Visualization*](Week13LectureStatic/bitmap-zoom-1.png){fig-align="center"}
+
+## Bitmap vs Vector
+
+::: columns
+::: {.column width="50%"}
+**Bitmap**
+
+-   Sharpness depends on resolution and size
+
+-   Consistent appearance across platforms
+
+-   Best for complex images (photos, large numbers of elements)
+:::
+
+::: {.column width="50%"}
+**Vector**
+
+-   Sharpness is scale-independent
+
+-   Can look differently using different programs
+
+-   Best for simple images (line drawings, simple graphs)
+:::
+:::
+
+## Image file formats
+
+| File Extension | Type   | Use For                |
+|----------------|--------|------------------------|
+| .jpg           | Bitmap | Photos                 |
+| .png           | Bitmap | Line Drawings          |
+| .tif           | Vector | Print                  |
+| .svg           | Vector | Line drawings (online) |
+| .pdf           | Vector | General purpose        |
+
+## Next week
+
+::: incremental
+-   Tuesday: Final lecture
+
+-   Wednesday: Final final project development session
+
+-   Thursday: [SUBMIT POSTERS BY NOON]{.underline}, present at 4:30 PM
+:::
