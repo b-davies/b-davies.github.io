@@ -56,11 +56,19 @@ library(palmerpenguins)
 
 ## Science fails all the time.
 
+## Science fails all the time.
+
+And that's OK.
+
 ## Does this mean I asked a bad question?
 
 ## Does this mean I asked a bad question?
 
 No.
+
+## Does this mean I asked a bad question?
+
+No. Developing research questions takes time and practice. But they should *never* be asked with the *expressed aim* of getting a "significant" result.
 
 ## Perverse incentives
 
