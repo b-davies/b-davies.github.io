@@ -4,6 +4,12 @@ title: Publications
 permalink: /publications/
 tags: publications
 ---
+
+### 2024
+
+Wright, D. K., S. J. Ivory, J. J. Birk, J.-H. Choi, B. Davies, S. Fiedler, J. Davis, P. Kaliba, and J. C. Thompson. Palaeoenvironmental Data Indicate Late Quaternary Anthropogenic Impacts on Vegetation and Landscapes in Mzimba, Northern Malawi. *Frontiers in Environmental Archaeology* 2. [[Journal](https://doi.org/10.3389/fearc.2023.1250871)][[Author Copy](https://www.duo.uio.no/handle/10852/106848)][[Data and Code](https://figshare.com/articles/dataset/Supplementary_R_code_for_Palaeoenvironmental_data_track_Late_Quaternary_anthropogenic_impacts_on_vegetation_and_landscapes_in_Mzimba_northern_Malawi_submitted_to_em_Frontiers_in_Environmental_Archaeology_em_June_2023_/23092127)]
+
+
 ### 2023
 
 Davies, K., B. Davies, P. Blackett, P. Holland, N. Craddock-Henry. Adaptive and interactive futures: developing ‘serious games’ for coastal community engagement and decision making. In *Re-Envisioning the Anthropocene Ocean*, R. Craig and J. McCarthy (eds). Salt Lake City: University of Utah Press. [[Full-Text Link](https://www.researchgate.net/publication/370773215_Adaptive_and_Interactive_Futures_Developing_Serious_Games_for_Coastal_Community_Engagement_and_Decision-Making_in_Craig_RK_McCarthy_JM_Eds_Re-Envisioning_the_Anthropocene_Ocean_University_of_Utah_Pres)]
