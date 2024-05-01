@@ -24,6 +24,9 @@ I can be reached by email at davies.archaeology AT gmail.com
 #### [Drivers and proxies of behavioral diversity in Late Pleistocene and Holocene hunter-gatherers](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2244673)
 A three-year study aimed at understanding drivers in the emergence of biological and cultural regionalism in Northern and Central Malawi during the late Pleistocene and early Holocene.
 
+### [Documenting the Last Lithic Technologists: A Study of Stone Tool Usage Among Daasanach Pastoralists of East Turkana, Kenya](https://www.emkp.org/documenting-the-last-lithic-technologists-a-study-of-stone-tool-usage-among-daasanach-pastoralists-of-east-turkana-kenya)
+A two-year project documenting lithic technology use among mobile pastoralists in northern Kenya.
+
 #### [Long Term Perspectives on Water Security, Food Security, and Land Management Among Pastoralists Experiencing Change](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1924322)
 A four-year project based in northern Kenya studying the current intersection of development, land management, and changing environmental circumstances in the context of long-term trends in land use among mobile pastoralists communities. 
 
