@@ -15,7 +15,7 @@ I can be reached by email at davies.archaeology AT gmail.com
 **2016**	Ph.D.	University of Auckland, Anthropology 
 [ Dissertation ](https://researchspace.auckland.ac.nz/handle/2292/29847)
 
-**2009**	M.A. (Hons)	University of Auckland, Anthropology [ Thesis ](http://librarysearch.auckland.ac.nz/UOA2_A:Combined_Local:uoa_alma21195924600002091)
+**2009**	M.A. (Hons)	University of Auckland, Anthropology [ Thesis ](https://researchspace.auckland.ac.nz/handle/2292/26553)
 
 **2005**	B.A.	University of Hawai‘i at Mānoa, Anthropology
 
