@@ -1,0 +1,299 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Scripts, File Handling, and Help"
+format:
+  revealjs: 
+    transition: fade
+    transition-speed: slow
+    slide-number: c/t
+editor: visual
+---
+
+## Sensor of the day
+
+![Photo credit: Shenandoah National Park via [CBC.ca](https://www.cbc.ca/news/canada/british-columbia/problem-deer-get-gps-collars-ahead-of-oak-bay-birth-control-plan-1.4031937)](InClassStatic/deer-collar.jpg)
+
+## Sensor of the day
+
+![](InClassStatic/gpsCollar.jpg)
+
+## Sensor of the day
+
+![](InClassStatic/collarData.JPG)
+
+## Sensor of the day
+
+![](InClassStatic/animaltracks.jpg)
+
+## Movebank
+
+![](InClassStatic/movebank.JPG)
+
+<https://www.movebank.org/>
+
+## Checking in
+
+::: incremental
+-   How did it go yesterday?
+
+-   How much do you feel like you remember?
+
+-   Ready to keep going?
+:::
+
+## Scripts
+
+An R script is a text document that contains lines of R code that can be delivered individually or collectively to the command line.
+
+```{r}
+#| echo: TRUE
+#| output: FALSE
+
+varA<-c(1:500)
+varB<-runif(500,1,100)
+
+data<-data.frame(varA,varB)
+
+plot(data$varA,data$varB,type="l",col="orchid2")
+```
+
+## Scripts
+
+An R script is a text document that contains lines of R code that can be delivered individually or collectively to the command line.
+
+```{r}
+#| echo: FALSE
+
+varA<-c(1:500)
+varB<-runif(500,1,100)
+
+data<-data.frame(varA,varB)
+
+plot(data$varA,data$varB,type="l",col="orchid2")
+```
+
+## Scripts
+
+Scripts are text files, so they can be written, saved, and shared relatively easily.
+
+```{r}
+#| echo: TRUE
+#| output: FALSE
+
+varA<-c(1:500)
+varB<-runif(500,1,100)
+
+data<-data.frame(varA,varB)
+
+plot(data$varA,data$varB,type="l",col="orchid2")
+```
+
+## Activity
+
+Open RStudio, go to the **File** menu, and create a new script. In that script, add some code:
+
+-   Create a variable called **myName** and assign your name as a character string
+
+-   Create a second variable called **introduceMe** and assign the character string "Hi, my name is". Be sure to include a space at the end of the character string.
+
+-   Use these two variables as arguments in the `paste` function.
+
+Highlight all of the code in the script and click **Run**.
+
+## Comments
+
+Comments are text preceded by a comment character. For R, the comment character is `#`. When R receives this at the command line, it knows not to run it.
+
+```{r}
+#| echo: TRUE
+#| output: FALSE
+
+#here's where we make some data
+varA<-c(1:500)
+varB<-runif(500,1,100)
+
+#here's where we put it together in a dataframe
+data<-data.frame(varA,varB)
+
+
+#here's where we plot that data
+plot(data$varA,data$varB,type="l",col="orchid2")
+```
+
+## Comments
+
+Comments are useful for documenting what a piece of code does, both for you and for other users. They can also be helpful for temporarily taking out a piece of code from a script without having to delete it.
+
+```{r}
+#| echo: TRUE
+#| output: FALSE
+
+#here's where we make some data
+varA<-c(1:500)
+#varB<-runif(500,1,100)
+varB<-rnorm(500,0,1)  #Trying out a normal distribution here
+
+#here's where we put it together in a dataframe
+data<-data.frame(varA,varB)
+
+
+#here's where we plot that data
+plot(data$varA,data$varB,type="l",col="orchid2")
+```
+
+## File systems
+
+## File systems
+
+The file system is a means of storing and retrieving files on a computer.
+
+## Thinking about file systems
+
+![Pptudela, [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=14530617), CC BY-SA 3.0  ](Week2Static/Wooden_file_cabinet.JPG){fig-align="center"}
+
+## Talking about file systems
+
+![Photo credit: [Daisuke Tashiro - Flickr](https://commons.wikimedia.org/w/index.php?curid=41915637), CC BY-SA 2.0](InClassStatic/yawn.jpg){fig-align="center"}
+
+## 
+
+![Photo credit: [Te Punaha Matatini](https://www.tepunahamatatini.ac.nz/thegn-ladefoged-2/)](InClassStatic/Thegn.jpg){fig-align="center"}
+
+## File systems
+
+The file system is a means of storing and retrieving files on a computer. Many systems are based on a *hierarchical* collection of *directories*.
+
+![](Week2Static/fileTree.png){fig-align="center"}
+
+
+## Reasons for keeping files organized
+
+::: incremental
+-   Makes it easier for you to find and update files
+
+-   Makes it easier for others to understand the logic of the project
+
+-   Ensures files can be located *without* user input
+:::
+
+## File locations
+
+![Photo credit: [LaurMG.](https://commons.wikimedia.org/w/index.php?curid=15293645), CC BY-SA 3.0 ](InClassStatic/Frustrated.jpg){fig-align="center"}
+
+## File locations
+
+![](InClassStatic/Brick.jpg){fig-align="center"}
+
+## Activity: Your file system
+
+::: {style="font-size: 80%;"}
+-   Create a file system for saving your work this week. If you've already got one going, see how it compares with our discussion so far and think about whether this would be a good time to reogranize.
+
+-   Think about the following
+
+    -   Will you be able to find it easily?
+
+    -   Will someone else be able to understand how this folder structure works?
+
+-   Once you've done this, go to the File drop-down menu in RStudio and select **Save As** to store your script inside the appropriate folder for this week's lecture
+:::
+
+## Tips for naming files and folders
+
+::: {style="font-size: 80%;"}
+-   Avoid spaces
+
+    -   Use camel case (myLabExercise) or snake case (my_lab_exercise)
+
+-   Avoid special characters
+
+    -   \~ ! \@ \# \$ % \^ & \* ( ) \` ; \< \> ? , \[ \] { } ' " \|
+
+-   Try and keep them short
+
+-   Avoid the term *final* (e.g., code_exercise_3_finalFinal.R)
+
+    -   Instead, use version numbers or dates (e.g., YYYY-MM-DD)
+
+-   Above all else... BE CONSISTENT!
+:::
+
+## Recommended practices
+
+-   Do not modify your raw data manually, or even better, at all.
+
+-   Data manipulation should work like a conveyor belt: it stops at checkpoints. e.g., it gets modified/cleaned/analyzed, and then it moves on.
+
+-   Always have collaborators in mind. Work towards shareable code. Have public awareness.
+
+-   Consistency (within your project) is key.
+
+## Getting help
+
+## Getting help
+
+My recommended approach to problems you might encounter is
+
+1.  try and change a few things, and if that doesn't work
+
+2.  check the **Help** documentation, and if the answer isn't there
+
+3.  search for a solution on the web, and if that fails
+
+4.  ask someone who can help you
+
+## Accessing help documentation
+
+Help documents describe what functions do, what arguments they take, and what kind of objects they will return.
+
+You can search help using the **Help** tab in the Outputs pane.
+
+## Accessing help documentation
+
+You can also quickly look up a function's help document by typing it into the command line preceded by a question mark (`?`). For example:
+
+`?hist`
+
+## Reading the help documentation
+
+![](InClassStatic/histHelp.JPG)
+
+## Reading the help documentation
+
+Help documents include:
+
+-   **Description** What does the function do
+
+-   **Usage** How do you call it in R?
+
+-   **Arguments** What arguments does it take and what objects should be used?
+
+-   **Details** Specifics about what different arguments do
+
+-   **Value**
+
+-   **Examples** Code showing how the code is used
+
+## Activity
+
+Try looking at the entry for some of the functions we've used so far. Examples include:
+
+-   `rep`
+
+-   `paste`
+
+-   `scan`
+
+-   `rnorm`
+
+See if you can use help to find the function for the **Kolmogorov-Smirnov Test**.
+
+## Coming up next week!
+
+::: incremental
+-   Working from the file system: what doing it right looks like
+
+-   Navigating the high seas of data
+
+-   More on what to do when things go wrong
+:::
