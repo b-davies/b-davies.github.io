@@ -149,7 +149,7 @@ The file system is a means of storing and retrieving files on a computer.
 
 ## Thinking about file systems
 
-![Pptudela, [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=14530617), CC BY-SA 3.0  ](Week2Static/Wooden_file_cabinet.JPG){fig-align="center"}
+![Pptudela, [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=14530617), CC BY-SA 3.0  ](InClassStatic/Wooden_file_cabinet.JPG){fig-align="center"}
 
 ## Talking about file systems
 
@@ -163,7 +163,7 @@ The file system is a means of storing and retrieving files on a computer.
 
 The file system is a means of storing and retrieving files on a computer. Many systems are based on a *hierarchical* collection of *directories*.
 
-![](Week2Static/fileTree.png){fig-align="center"}
+![](InClassStatic/fileTree.png){fig-align="center"}
 
 
 ## Reasons for keeping files organized
