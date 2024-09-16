@@ -244,10 +244,10 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="getting-and-changing-values">Getting and changing values</h3>
 <p>As we saw last week, we can look at individual values in a dataset by giving the row and column numbers in square brackets (<code>[]</code>). For example, if we wanted the value on the 4th row in the 5th column, we’d do this:</p>
 <p><code style="color: blue">raro2022mod[4,5]</code></p>
-<p><strong><code># A tibble: 1 × 1</code></strong></p>
-<p><strong><code>AV_TEMP</code></strong></p>
-<p><strong><code>&lt;dbl&gt;</code></strong></p>
-<p><strong><code>1      80</code></strong></p>
+<p><code># A tibble: 1 × 1</code></p>
+<p><code>AV_TEMP</code></p>
+<p><code>&lt;dbl&gt;</code></p>
+<p><code>1      80</code></p>
 <p>Whoa! That’s a lot of info just to get the number 80. What is happening here is that R is taking the individual value from your tibble and returning them to you as a 1 column, 1 row tibble, complete with column header.</p>
 <p>Occasionally, you might find that individual data points may need adjusting. For example, let’s say that Jerry at NOAA called you up. He was going back through his notes and realized he entered the wrong average temperature in the Rarotonga Airport records on January 4, 2022: it should be 81 degrees rather than 80! He was concerned this might affect your research and called you up to warn you. If you want to fix this value, you can use the square brackets and assign a new value:</p>
 <p><code style="color: blue">raro2022mod[4,5]&lt;-81</code></p>

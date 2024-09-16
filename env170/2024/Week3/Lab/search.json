@@ -24,7 +24,7 @@
     "href": "02_ImportData.html#footnotes",
     "title": "2  Importing data",
     "section": "",
-    "text": "The term “tibble” refers to the data class tbl_df↩︎\nThese are enumerated here: https://adv-r.hadley.nz/vectors-chap.html#tibble↩︎",
+    "text": "The term “tibble” refers to the data class tbl_df↩︎\nThese reasons are enumerated here: https://adv-r.hadley.nz/vectors-chap.html#tibble↩︎",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Importing data</span>"
     ]
