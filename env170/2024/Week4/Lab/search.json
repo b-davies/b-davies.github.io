@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Week 4 Lab",
+    "title": "Getting Started with Visualization in ggplot2",
     "section": "",
     "text": "Introduction\nVisualization is an important aspect of data science because it can reveal patterns that are not immediately obvious in raw data, and it can be used to effectively communicate about data. This lab is focused on introducing an approach to visualization using a “grammar of graphics”. In this lab you will\n\nUnderstand the “grammar of graphics” approach and how it is implemented in the ggplot2 package\nLook at how to plot combinations of categorical and numerical data as amounts, distributions, and relationships using bar charts, histograms, boxplots, and scattterplots\nHow to use aesthetic mapping to look at multiple variables in the same graph.",
     "crumbs": [
