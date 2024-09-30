@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 4 Lab: Exploratory Data Analysis in R - 3&nbsp; Looking for Patterns in More than One Variable</title>
+<title>Exploratory Data Analysis in R - 3&nbsp; Looking for Patterns in More than One Variable</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -81,7 +81,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -90,8 +96,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -104,13 +112,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_TwoPlusVariables.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Looking for Patterns in More than One Variable</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_TwoPlusVariables.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Looking for Patterns in More than One Variable</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -119,10 +127,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Week 4 Lab: Exploratory Data Analysis in R</a> 
+      <a href="./">Exploratory Data Analysis in R</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -171,16 +179,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#categorical-and-numerical" id="toc-categorical-and-numerical" class="nav-link active" data-scroll-target="#categorical-and-numerical">Categorical and numerical</a></li>
-  <li><a href="#two-numerical" id="toc-two-numerical" class="nav-link" data-scroll-target="#two-numerical">Two numerical</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#categorical-and-numerical-variables" id="toc-categorical-and-numerical-variables" class="nav-link active" data-scroll-target="#categorical-and-numerical-variables">Categorical and numerical variables</a></li>
+  <li><a href="#two-numerical-variables" id="toc-two-numerical-variables" class="nav-link" data-scroll-target="#two-numerical-variables">Two numerical variables</a></li>
+  <li><a href="#numerical-descriptions-of-relationships" id="toc-numerical-descriptions-of-relationships" class="nav-link" data-scroll-target="#numerical-descriptions-of-relationships"><strong>Numerical descriptions of relationships</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -202,12 +210,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
 
-<p>The most interesting and useful patterns are often those that involve more than one variable. These allow us to posit a relationship that may help us to explain the cause of a given</p>
-<p>When we look at two variables together, it’s called <em>bivariate analysis</em>, and when we look at more than two we usually use the term <em>multivariate</em>.</p>
-<section id="categorical-and-numerical" class="level3">
-<h3 class="anchored" data-anchor-id="categorical-and-numerical">Categorical and numerical</h3>
+
+<p>Many of the interesting and useful patterns out there are those that involve more than one variable. These allow us to posit a relationship based on causal mechanisms, or develop a useful metric for predicting how one variable will respond when another variable is in a given state.</p>
+<p>When we look at two variables together, it’s called <em>bivariate analysis</em>, and when we look at more than two we usually use the term <em>multivariate analysis</em>.</p>
+<section id="categorical-and-numerical-variables" class="level3">
+<h3 class="anchored" data-anchor-id="categorical-and-numerical-variables">Categorical and numerical variables</h3>
 <p>Like histograms, boxplots show the center, spread, and shape of distributions, but these are most useful when comparing more than one group. These usually have four main components:</p>
 <ul>
 <li><p><strong>Center line</strong> The central line of the boxplot is the median value.</p></li>
@@ -217,7 +227,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>Have a look at the <code>Sacramento</code> dataset from the <strong>modeldata</strong> package:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#|</span></span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#library(modeldata)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Sacramento</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 932 × 9
@@ -241,13 +251,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>Sacramento,<span class="fu">aes</span>(<span class="at">x=</span>type,<span class="at">y=</span>price)) <span class="sc">+</span>   </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>First, there’s a good deal of overlap between these different categories. However, the mean values are greater for multifamily and residential-type housing than they are for condominiums. Finally, there are a fair number of of outliers in the residential-type, indicating a positive skew in the data. We’ll come back to this a bit later. By viewing these boxplots side-by-side, we’re turning our univariate view of price into a bivariate view by type.</p>
 </section>
-<section id="two-numerical" class="level3">
-<h3 class="anchored" data-anchor-id="two-numerical">Two numerical</h3>
+<section id="two-numerical-variables" class="level3">
+<h3 class="anchored" data-anchor-id="two-numerical-variables">Two numerical variables</h3>
 <p>As we’ve seen before, scatterplots are a common way to look at the relationship between two numerical (ratio/interval) variables. When we use scatterplots in EDA, we’r looking for some general <em>kinds</em> of patterns that indicate certain <em>kinds</em> of relationships. To illustrate this, we’ll use the <strong>abalone</strong> dataset you downloaded:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>abalone<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"data/abalone.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -281,12 +295,14 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 # ℹ 2 more variables: weight.shell &lt;dbl&gt;, rings &lt;dbl&gt;</code></pre>
 </div>
 </div>
-<p>These are metrics on black-lipped abalone from Tasmania, used to evaluate the relationship between physical size and age (as determined by growth rings). This data has a number of ratio values, but it’s not immediately what the some of the units are just by looking: given the average length of an abalone shell (80-130mm), they don’t really work for most of the common kinds of measurement units we might encounter (millimeters, centimeters, inches). The original data were actually re-scaled from millimeters and grams to use in a machine-learning exercise by dividing them all by 200. We could do a wholesale conversion of these values, but since we’re exploring we’ll just do this when we do our aesthetic mapping.</p>
+<p>These are metrics on black-lipped abalone from Tasmania, used to evaluate the relationship between physical size and age (as determined by growth rings). This data has a number of ratio values, but it’s not immediately what the some of the units are just by looking: given the average length of an abalone shell (80-130mm), they don’t really work for most of the common kinds of measurement units we might encounter (millimeters, centimeters, inches).</p>
+<p>This is the kind of problem that metadata are good for. The <a href="https://archive.ics.uci.edu/dataset/1/abalone">original data</a> were actually re-scaled from millimeters and grams to use in a machine-learning exercise by dividing them all by 200. We could do a wholesale conversion of these values if we wanted to use this data for a more intensive analysis, but since since we’re just exploring we’ll just do this when we do our aesthetic mapping.</p>
 <p>Patterns that we might be looking for in the shape of a scatterplot are:</p>
 <ul>
 <li><p><strong>Direction</strong> An increase in one variable generally corresponds with a change, either increase (positive direction) or decrease (negative direction), in the other.</p></li>
-<li><p><strong>Form</strong> The change seems to follow a line (linear) or a curve (curvilinear)</p></li>
-<li><p><strong>Strength</strong> The slope of a change is either steep (strong) or shallow (weak)</p></li>
+<li><p><strong>Form</strong> The change seems to follow a line (linear) or a curve (curvilinear).</p></li>
+<li><p><strong>Strength</strong> The slope of a change is either steep (strong) or shallow (weak).</p></li>
+<li><p><strong>Scatter</strong> If a line were drawn through the middle of the points along its primary direction, this indicates how close the points are to that line</p></li>
 </ul>
 <p>Let’s have a look at the abalone data to see what we mean. First, we’ll look at the relationship between shell diameter and the number of growth rings:</p>
 <div class="cell">
@@ -294,7 +310,11 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Diameter (mm)"</span>,<span class="at">y=</span><span class="st">"Number of Rings"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>What do you notice that’s a little strange about this data? It seems to be organized in horizontal lines. Both of our values (diameter and number of rings) are ratio data, but one of them (number of rings) is an integer and therefore discrete. This means that gaps exist between our values, creating the visual effect of horizontal lines.</p>
@@ -302,31 +322,46 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone,<span class="fu">aes</span>(<span class="at">x=</span>diameter<span class="sc">*</span><span class="dv">200</span>,<span class="at">y=</span>rings)) <span class="sc">+</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Diameter (mm)"</span>,<span class="at">y=</span><span class="st">"Number of Rings"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The <code>geom_smooth</code> function adds the line along with a shaded envelope indicating Now let’s look at the relationship between diameter and whole weight of the shellfish:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone,<span class="fu">aes</span>(<span class="at">x=</span>diameter,<span class="at">y=</span>weight.whole)) <span class="sc">+</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Diameter (mm)"</span>,<span class="at">y=</span><span class="st">"Whole Weight (g)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>In this case, the weight increases along with the diameter, but the rate of increase is not consistent; it seems to increase with diameter. On a basic level, we could say that there is a curvilinear relationship here, which we can illustrate again with a smoothed line:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone,<span class="fu">aes</span>(<span class="at">x=</span>diameter<span class="sc">*</span><span class="dv">200</span>,<span class="at">y=</span>weight.whole<span class="sc">*</span><span class="dv">200</span>)) <span class="sc">+</span> <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Diameter (mm)"</span>,<span class="at">y=</span><span class="st">"Whole Weight (g)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -348,10 +383,63 @@ Try it yourself!
 </div>
 </div>
 </section>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section"></h3>
+<section id="numerical-descriptions-of-relationships" class="level3">
+<h3 class="anchored" data-anchor-id="numerical-descriptions-of-relationships"><strong>Numerical descriptions of relationships</strong></h3>
+<p>In the last section, we talked about ways we can describe distributions using numerical summaries like mean and standard deviation. A common metric for describing the relationship between two variables is called the <strong>correlation coefficient</strong>, sometimes also referred to as <strong><em>r</em></strong>in statistics contexts<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>To get a sense of this, let’s look at the abalone data again, with diameter and length as the x and y variables.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone,<span class="fu">aes</span>(<span class="at">x=</span>diameter<span class="sc">*</span><span class="dv">200</span>,<span class="at">y=</span>length<span class="sc">*</span><span class="dv">200</span>)) <span class="sc">+</span> <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Diameter (mm)"</span>,<span class="at">y=</span><span class="st">"Length (m)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This data is not just linear, it’s also not very scattered: we can see that plotting it creates a diagonal line from bottom left to top right, with not a lot of spread around the central line.</p>
+<p>We can get the correlation coefficient using the <code>cor</code> function (note: we’re using base R here, so we need to use the $ symbol to access columns):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(abalone<span class="sc">$</span>diameter<span class="sc">*</span><span class="dv">200</span>,abalone<span class="sc">$</span>length<span class="sc">*</span><span class="dv">200</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.9868116</code></pre>
+</div>
+</div>
+<p>What does this number mean? The correlation coefficient is expressed as a value between -1 and 1. Whether the value is positive or negative is indicating whether the relationship is positive (y goes up as x goes up) or negative (y goes down as x goes up), while distance from zero is indicating how closely that value holds to the line. You can see some examples here:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Week4LabStatic/cor.png" class="img-fluid figure-img"></p>
+<figcaption>Correlation coefficients</figcaption>
+</figure>
+</div>
+<p>Let’s look at another example, this time using the number of rings and the shucked weight.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>abalone,<span class="fu">aes</span>(<span class="at">x=</span>rings,<span class="at">y=</span>weight.shucked<span class="sc">*</span><span class="dv">200</span>)) <span class="sc">+</span> <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Number of Rings"</span>,<span class="at">y=</span><span class="st">"Shucked Weight (g)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="03_TwoPlusVariables_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This still increases, but the linear nature of the relationship between number of rings and shucked weight is not nearly as clear, particularly as the number of growth rings goes up. This should produce a lower correlation coefficient, and when we use <code>cor</code>, we find that in fact it does.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(abalone<span class="sc">$</span>rings,abalone<span class="sc">$</span>weight.shucked<span class="sc">*</span><span class="dv">200</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.4208837</code></pre>
+</div>
+</div>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The <em>r</em> used here actually comes from the term <em>reversion</em>, which was a term the mathematician Francis Galton used for the operation we now call <em>regression</em>. This is something we will talk about in a later lecture.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -434,10 +522,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -447,8 +552,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -460,7 +574,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -504,6 +741,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -529,6 +767,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -590,17 +854,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./02_OneVariable.html" class="pagination-link">
+      <a href="./02_OneVariable.html" class="pagination-link" aria-label="Looking for Patterns in One Variable">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Looking for Patterns in One Variable</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./04_WhenThingsLookWeird.html" class="pagination-link">
+      <a href="./04_WhenThingsLookWeird.html" class="pagination-link" aria-label="What To Do With Outliers">
         <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">What To Do With Outliers</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+
 
 
 
