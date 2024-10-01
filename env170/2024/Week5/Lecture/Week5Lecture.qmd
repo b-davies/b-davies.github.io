@@ -1,0 +1,290 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Getting a Clearer View"
+format: revealjs
+editor: visual
+---
+
+```{r}
+#| echo: FALSE
+#| output: FALSE
+abalone<-read.csv("abalone.csv")
+bully<-read.csv("nzffdms.csv")
+irisData<-iris
+irisData[1,1]<--5.1
+library(modeldata)
+library(tidyverse)
+```
+
+## Visualization Critique
+
+![](Week4Static/isaac.png){fig-align="center"}
+
+## Visualization Critique
+
+![](Week4Static/camille.png){fig-align="center"}
+
+## Visualization Critique
+
+![](Week4Static/amanda.png){fig-align="center"}
+
+## Sensor of the week
+
+Traffic sensors
+
+::: columns
+::: {.column width="50%"}
+![https://auto.howstuffworks.com](Week4Static/inductionLoop.jpg){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![https://trafficvision.com/](https://trafficvision.com/TV-oncoming-traffic-boxes.png)
+:::
+:::
+
+## Sensor of the week
+
+Traffic sensors
+
+![[MassDOT Transportation Data Management System](https://mhd.public.ms2soft.com/tcds/tsearch.asp?loc=Mhd&mod=)](Week4Static/massDOT.jpg)
+
+## Learning how to look
+
+![University of Wollongong](https://scx2.b-cdn.net/gfx/news/hires/2018/newstonetool.jpg){fig-align="center"}
+
+## Getting a clearer view
+
+```{r}
+#| echo: FALSE
+#| output: TRUE
+ggplot(data=Sacramento,aes(x=city,y=price)) +
+  geom_boxplot()
+```
+
+## Getting a clearer view
+
+```{r}
+#| echo: FALSE
+#| output: TRUE
+ggplot(data=Sacramento,aes(x=city,y=price)) +
+  geom_boxplot()
+```
+
+## Getting a clearer view
+
+Flip x and y axes
+
+```{r}
+#| echo: TRUE
+ggplot(data=Sacramento,aes(x=city,y=price)) +
+  geom_boxplot() +
+  coord_flip()
+```
+
+## Getting a clearer view
+
+Resize y-axis labels
+
+```{r}
+#| echo: TRUE 
+ggplot(data=Sacramento,aes(x=city,y=price)) + 
+  geom_boxplot() +
+  coord_flip() +
+  theme(axis.text.y=element_text(size=rel(0.75)))
+```
+
+## Getting a clearer view
+
+Reorder based on median house prices
+
+```{r}
+#| echo: TRUE 
+ggplot(data=Sacramento,aes(x=fct_reorder(city,price,median),y=price)) + 
+  geom_boxplot() +
+  coord_flip()  +
+  theme(axis.text.y=element_text(size=rel(0.5)))
+```
+
+## Getting a clearer view
+
+Add some labels
+
+```{r}
+ #| echo: TRUE
+ggplot(data=Sacramento,aes(x=fct_reorder(city,price,median),y=price)) + 
+  geom_boxplot() +
+  coord_flip()  +
+  theme(axis.text.y=element_text(size=rel(0.5))) +
+  labs(x="Price ($)",y="City",title="Home prices in Greater Sacramento")
+```
+
+## Getting a clearer view
+
+```{r}
+#| echo: TRUE 
+ggplot(data=abalone,aes(x=diameter*200,y=weight.whole*200)) + 
+  geom_point()
+```
+
+## Getting a clearer view
+
+Changing the transparency (alpha)
+
+```{r}
+#| echo: TRUE 
+ggplot(data=abalone,aes(x=diameter*200,y=weight.whole*200)) + 
+  geom_point(alpha=0.1)
+```
+
+## Getting a clearer view
+
+Changing the size
+
+```{r}
+#| echo: TRUE 
+ggplot(data=abalone,aes(x=diameter*200,y=weight.whole*200)) + 
+  geom_point(size=0.25)
+```
+
+## Getting a clearer view
+
+Binning the values (`geom_bin2d`)
+
+```{r}
+#| echo: TRUE 
+ggplot(data=abalone,aes(x=diameter*200,y=weight.whole*200)) + 
+  geom_bin2d()
+```
+
+## Getting a clearer view
+
+Data: [Common bully](https://en.wikipedia.org/wiki/Common_bully) (*Gobiomorphus cotidianus)* records from [New Zealand Freshwater Fish Database](#0){style="font-size: 11pt;"}
+
+```{r}
+#| echo: TRUE 
+ggplot(data=bully,aes(x=altitude,y=maxl)) +
+  geom_point()
+```
+
+## Getting a clearer view
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point()
+```
+
+## Getting a clearer view
+
+Zooming in
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point() +
+  coord_cartesian(xlim=c(0,100))
+```
+
+## Getting a clearer view
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point()
+```
+
+## Getting a clearer view
+
+Log-10 transformation on x-axis
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point() +
+  scale_x_continuous(trans='log10')
+```
+
+## Getting a clearer view
+
+Add a smooth line
+
+```{r}
+#| echo: TRUE 
+ggplot(data=drop_na(bully,maxl),aes(x=altitude,y=maxl)) +
+  geom_point() +
+  scale_x_continuous(trans='log10')+
+  geom_smooth()
+```
+
+## Seeing the bigger picture
+
+Faceted plots can help us view the same pattern across multiple variables.
+
+```{r}
+#| echo: TRUE
+ggplot(data=Sacramento,aes(x=sqft,y=price)) +
+  geom_point() +
+  facet_wrap(vars(type))
+```
+
+## Activity: Looking and comparing
+
+-   In this exercise, you'll use the `scat` dataset in the `modeldata` package (same data, fewer bobcars)
+
+-   Use the `facet_wrap` function to look at relationships (remember to use the `vars` function to identify your aesthetic mapping):
+
+    -   length and diameter by species
+
+    -   diameter and mass by species
+
+```{r}
+ggplot(data=scat,aes(x=Length,y=Diameter))+
+  geom_point() +
+  facet_wrap(vars(fct_recode(Species,Bobcat="bobcat",Coyote="coyote",`Gray Fox`="gray_fox")))
+```
+
+## Correlation coefficient
+
+![https://online.stat.psu.edu](Week4Static/cor.png){fig-align="center"}
+
+## What to do about outliers?
+
+Just because something is an outlier, doesn't automatically make it wrong or a mistake.
+
+![](Week4Static/sat.png){fig-align="center" width="462"}
+
+## What to do about outliers?
+
+Just because something is an outlier, doesn't automatically make it wrong or a mistake.
+
+But some outliers *are* mistakes.
+
+## What to do about outliers?
+
+```{r}
+#| echo: FALSE
+#| output: TRUE
+
+ggplot(irisData,aes(x=Sepal.Length)) + 
+  geom_histogram(fill="royalblue") +
+  labs(x="Sepal Length (mm)") +
+  theme_classic()
+```
+
+## What to do about outliers?
+
+Your job as the data scientist is decide which is which.
+
+If you decide to eliminate an observation, do not modify the original data. Instead, create a new dataset without the observation.
+
+Always detail any decision-making
+
+## Next week
+
+-   Hypothesis testing
+
+-   Best practices for data documentation
+
+-   Introducing Quarto
+
+-   Data ethics and open science models
