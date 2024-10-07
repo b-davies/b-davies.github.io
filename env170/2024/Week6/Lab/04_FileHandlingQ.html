@@ -179,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./LabExercise6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Lab Exercise 5</span></span></a>
+ <span class="menu-text">Week 6 Lab Exercise</span></a>
   </div>
 </li>
     </ul>
@@ -192,8 +192,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#quarto-source-editor" id="toc-quarto-source-editor" class="nav-link active" data-scroll-target="#quarto-source-editor"><span class="header-section-number">4.0.1</span> Quarto source editor</a></li>
-  <li><a href="#file-handling-with-quarto-documents" id="toc-file-handling-with-quarto-documents" class="nav-link" data-scroll-target="#file-handling-with-quarto-documents"><span class="header-section-number">4.0.2</span> File handling with Quarto Documents</a></li>
+  <li><a href="#quarto-source-editor" id="toc-quarto-source-editor" class="nav-link active" data-scroll-target="#quarto-source-editor">Quarto source editor</a></li>
+  <li><a href="#file-handling-with-quarto-documents" id="toc-file-handling-with-quarto-documents" class="nav-link" data-scroll-target="#file-handling-with-quarto-documents">File handling with Quarto Documents</a></li>
   </ul>
 </nav>
     </div>
@@ -223,8 +223,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="Week5Static/editorBar.png" class="img-fluid"></p>
 <p>This bar is included as part of Quarto’s <em>visual editor.</em> The visual editor lets you modify a document using a WYGIWYM (What You See Is What You Mean) interface, so the things that you see in the document (e.g., bolding, headings, code outputs) are rendered more or less as you would expect them to appear, but with some markings and controls embedded in the document (for example, the play button on the code chunk).</p>
 <p>The Quarto document itself is actually a script written using Markdown language, which is used for formatting documents that are a mix of text and executable code. The Visual Editor takes these elements and shows them to you in a way that lets you assess their visual look, but the actual .qmd file you’re creating looks a little different…</p>
-<section id="quarto-source-editor" class="level3" data-number="4.0.1">
-<h3 data-number="4.0.1" class="anchored" data-anchor-id="quarto-source-editor"><span class="header-section-number">4.0.1</span> Quarto source editor</h3>
+<section id="quarto-source-editor" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-source-editor">Quarto source editor</h3>
 <p>At the left side of the editor bar, you can toggle between the visual editor and the <em>source editor</em>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -265,8 +265,8 @@ Try it yourself!
 <p>You can edit your document in the source code editor, then switch back to the visual editor to see what your document will look like. Some more complex elements (for example, adding raw HTML code) will not show up formatted correctly in the visual editor, but will when the document is rendered.</p>
 <p>You might be asking yourself why you would ever use the Source when you can use the Visual Editor. The short answer is that, like other word processing software, there’s room for software error, especially when a document becomes large or formatting becomes very complex (alternating between code formatting and italics in a single line, for example). If something doesn’t look right, you can use the source editor to check what’s going on underneath the hood.</p>
 </section>
-<section id="file-handling-with-quarto-documents" class="level3" data-number="4.0.2">
-<h3 data-number="4.0.2" class="anchored" data-anchor-id="file-handling-with-quarto-documents"><span class="header-section-number">4.0.2</span> File handling with Quarto Documents</h3>
+<section id="file-handling-with-quarto-documents" class="level3">
+<h3 class="anchored" data-anchor-id="file-handling-with-quarto-documents">File handling with Quarto Documents</h3>
 <p>Often, the work that we are documenting in a Quarto document will involve some external dataset: for example, data stored in a .csv file. We’ve dealt with importing data from outside of R before.</p>
 <p>The same is true when working in a Quarto document. The default working directory for a Quarto document is the directory where it is saved, and file paths are considered relative to that position.</p>
 <p>Download the <strong>abalone</strong> dataset from canvas and save it in a subdirectory within your working directory called “data”. Then you can create a new code chunk with the following:</p>
