@@ -1,0 +1,181 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Documenting for Future Users (and Future You)"
+format: revealjs
+editor: visual
+---
+
+## Visualization critique
+
+![[nih.gov](https://www.niddk.nih.gov/health-information/health-statistics/overweight-obesity)](Week5Static/madison.png){fig-align="center"}
+
+## Visualization critique
+
+![[eia.gov](https://www.eia.gov/todayinenergy/detail.php?id=51858#:~:text=The%20share%20of%20U.S.%20homes,2015%20to%2015%25%20in%202020.)](Week5Static/maxima.svg){fig-align="center"}
+
+## Next visualization critiques
+
+-   Megan
+
+-   Sierra
+
+-   Tommy
+
+## Sensor of the Day
+
+Passive acoustic monitoring
+
+![](https://batmanagement.com/cdn/shop/articles/2016NuisanceandRoos2.001_1024x.jpeg?v=1506699648){fig-align="center"}
+
+## Sensor of the Day
+
+Passive acoustic monitoring
+
+![Goulette et al. 2021 "Opportunistic Acoustic Telemetry Platforms" *NOAA*](https://www.researchgate.net/publication/349056656/figure/fig3/AS:987842671030273@1612531454971/Depiction-of-the-different-types-of-passive-acoustic-technology-that-are-used-for-data.png){fig-align="center"}
+
+[NOAA NCEI Passive Acoustic Data](https://www.ncei.noaa.gov/products/passive-acoustic-data)
+
+## Sensor of the Day
+
+![](Week5Static/boma1.jpg){fig-align="center"}
+
+## Sensor of the Day
+
+![](Week5Static/monitor2.jpg){fig-align="center"}
+
+## Sensor of the Day
+
+![](Week5Static/monitor3.jpg){fig-align="center"}
+
+## Quarto
+
+Quarto is a data science documentation and publishing system that comes built-in to RStudio.
+
+![<http://quarto.org>](https://quarto.org/quarto.png){alt="http://quarto.org" fig-align="center" width="390"}
+
+## Reproducibility in data science
+
+![The Turing Way project illustration by Scriberia. CC-BY 4.0 DOI: 10.5281/zenodo.3332807.](https://the-turing-way.netlify.app/_images/reproducibility.jpg){fig-align="center"}
+
+## Isn't code reproducible by default?
+
+Code will do precisely what we want, but it will not necessarily understood by others.
+
+## Isn't code reproducible by default?
+
+![](Week5Static/c_histogram.png){fig-align="center"}
+
+## Literate programming
+
+An approach to writing software that centers the human user (and re-user) by combining natural language explanations with code.
+
+![<https://akkartik.name/post/literate-programming>](Week5Static/literate_programming.png){fig-align="center"}
+
+## Code notebooks
+
+A code notebook is software tool for literate programming.
+
+![](https://docs.posit.co/ide/user/ide/guide/documents/images/rstudio-preview.png)
+
+## Communicating beyond the notebook
+
+[Presentations](https://apreshill.github.io/palmerpenguins-useR-2022/)
+
+[Websites](https://realworlddatascience.net/)
+
+[Interactive Visualizations](https://gallery.shinyapps.io/051-movie-explorer/)
+
+## Working on a workflow
+
+Code notebooks provide a convenient way to document and organize a data science project from beginning to end; in otherwords, they can form the basis of a *workflow*.
+
+## Working on a workflow
+
+![](Week5Static/workflow1.png){fig-align="center"}
+
+## Working on a workflow
+
+![](Week5Static/workflow2.png){fig-align="center"}
+
+## Working on a workflow
+
+![](Week5Static/workflow3.png){fig-align="center"}
+
+## Working on a workflow
+
+![](Week5Static/workflow4.png){fig-align="center"}
+
+## What about files?
+
+When we write code that reads from files, these need to be in places where the Quarto document can find them.
+
+```{r}
+#| echo: TRUE
+#| message: FALSE
+# load tidyverse
+library(tidyverse)
+# read in abalone data
+abalone<-read_csv("data/abalone.csv")
+# plot abalone rings by diameter
+ggplot(abalone,aes(x=diameter,y=rings)) +
+  geom_hex()
+```
+
+## Sharing your file system
+
+The `zip` function provides a convenient way to turn your entire working directory into a .zip file
+
+```{r}
+#| echo: TRUE
+#zip up all of my project files
+zip("myProject.zip",list.files())
+```
+
+## Coursekeeping
+
+| Assignment          | Due Date             |
+|---------------------|----------------------|
+| Coding Assignment 1 | Wednesday, October 9 |
+| Lab Assignment 6    | Monday, October 14   |
+| Project Proposal    | Friday, October 18   |
+| Lab Assignment 7    | Monday, October 21   |
+
+## Project proposal
+
+::: incremental
+-   What is the topic?
+
+-   What is the background to this topic? (2-3 citations)
+
+-   What datasets are you intending to use?
+
+-   How would data analysis/visualization to help you understand the topic?
+
+-   Suggest two visualizations
+:::
+
+## Activity: Brainstorming with Quarto
+
+::: {style="font-size: 80%;"}
+Put the Quarto workflow to work in brainstorming ideas for your final project!
+
+-   Create a file system for your final project
+
+-   Start a new Quarto document and save it to your working directory
+
+-   Use headers to outline a data analysis process from a project you'd *like* to do.
+
+-   Begin filling out the sections with some preliminary ideas about what kinds of data you'd useand
+
+    -   Use links to promising datasets in the text
+
+    -   Use code chunks with comments to draft code
+:::
+
+## Next week
+
+-   Working with messy data
+
+-   Exploring the `tidyverse`
+
+-   Data transformations using `dplyr`
