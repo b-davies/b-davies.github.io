@@ -42,11 +42,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Week 8 Lab:",
+    "title": "Week 8 Lab: Cleaning, Tidying, and Wrangling Data",
     "section": "",
     "text": "Introduction\nDatasets are often assembled in ways that facilitate data collection, but often with limited consideration to how they are analyzed. This is especially true when data is being re-used from published sources and the new use is outside of the scope of what the data authors intended. There is a saying, largely anecdotal but probably accurate, that data scientists spend 80% of their time cleaning and organizing data.\nThe combined processes of data cleaning, organizing, and transforming are often subsumed under the term data wrangling. The definitions of the term “wrangle” are:\n\nhave a long and complicated dispute\nround up, herd, or take charge of (livestock)\n\nBoth of these definitions are strangely appropriate. Working with data can often feel like a discussion, sometimes a heated one, in which you are trying to convince the data to yield to a particular form that allows easier integration into a data workflow. It can also sometimes feel as though you are tending to a herd of animals (cats come to mind), trying to create order from chaos.\nWe have already done some of this in previous lectures. For example, we have seen how we can add transformed columns to a table using the $ and &lt;- operators; we have seen how we can subset cases using square brackets [] and the subset function, and we have used exploratory data analysis to identify suspect and outlier values. However, because wrangling makes up so much of what we do as data scientists, specialized tools have been developed to deal with them, and these available to us through the tidyverse family of packages. In this lab, you will learn to:\n\nsubset, reorder, and transform data using tools from the dplyr package\ncreate tidy datasets using the pivot functions from the tidyr package\nuse helper functions from packages like tidyselect and stringr\n\nTo begin, I recommend creating a file system, opening a new Quarto document, and giving each of the pages in this lab its own heading (see the table of contents). And don’t forget to load the tidyverse package!\n\nlibrary(tidyverse)",
     "crumbs": [
       "Introduction"
+    ]
+  },
+  {
+    "objectID": "LabExercise8.html",
+    "href": "LabExercise8.html",
+    "title": "Week 8 Lab Exercise",
+    "section": "",
+    "text": "In this exercise, you’re going to work on your skills in data wrangling by modifying tables.\nCreate a file system and add a Quarto document. Use headings to structure the workflow of this lab.\nDownload the greenTransitSurvey.csv dataset, which is a fictional survey of students from three Boston area universities on the number of days they used different low-emissions transport options during the fall and spring semester. Using this dataset, and the functions discussed in this lab, complete the following tasks:\n\nCombine student names to a single column with last name first, first name last\nCreate columns for semester and method of transport\nCreate separate tibbles for each institution\nCreate boxplots for each institution showing how use of different transport methods varied between semesters\n\nSubmit your work as a Quarto document to Canvas. Detailed grading criteria can be found there.",
+    "crumbs": [
+      "Week 8 Lab Exercise"
     ]
   }
 ]
