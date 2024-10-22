@@ -1,0 +1,304 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Wrangling in the Tidyverse"
+format: revealjs
+editor: visual
+---
+
+## A brief reminder
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+library(openintro)
+```
+
+This course deals with the representation of data as a means to communicating about important issues. Our ability to consider a wide and topical range of data representations depends on respect for each other and a commitment to our shared motivation to learn.
+
+## Visualization Critique
+
+![[nytimes.com](https://www.nytimes.com/2023/12/26/climate/global-warming-accelerating.html?unlocked_article_code=1.UE4.Yl1-.ZJqpBD3VbOQK)](Week6Static/emma.png)
+
+## Visualization Critique
+
+![[chartcipher.com](https://www.chartcipher.com/2024/03/05/2023-primary-genre-trends-in-billboards-streaming-songs-chart/)](Week6Static/gracie.png){fig-align="center"}
+
+## Visualization Critique
+
+![[visualcapitalist.com](https://www.visualcapitalist.com/wp-content/uploads/2023/09/Music-Industry-Revenues-2023_03-2.png)](Week6Static/sahm.webp){fig-align="center" width="600"}
+
+## Visualization Critique
+
+![[visualizingpalestine.org](https://101.visualizingpalestine.org/visuals#structural-inequality)](Week6Static/becca.jpg){fig-align="center"}
+
+## Next week's critiques
+
+-   Mark
+
+-   Jenny
+
+-   Mia
+
+## Data
+
+::: columns
+::: {.column width="30%"}
+Data are individual pieces of information.
+:::
+
+::: {.column width="70%"}
+![](Week6Static/piecesOfData.png){fig-align="center"}
+:::
+:::
+
+## Datasets
+
+![](Week6Static/dataToDataset.png){fig-align="center"}
+
+## Data in the field
+
+![](Week6Static/measureVeg.jpg){fig-align="center"}
+
+## Data in the field
+
+![](Week6Static/vegData.png){fig-align="center"}
+
+## Messy data
+
+The process of data entry is often designed and conducted with limited consideration given to the process of data analysis.
+
+![https://openscapes.org/blog/2020-10-12-tidy-data/](Week6Static/messyData.png){fig-align="center"}
+
+## Tidy data principles
+
+::: columns
+::: {.column width="30%"}
+::: {style="color: deepskyblue;"}
+Each variable forms a column
+:::
+
+::: {style="color: orange;"}
+Each observation forms a row
+:::
+
+::: {style="color: purple;"}
+Each cell contains a single value
+:::
+:::
+
+::: {.column width="70%"}
+![](Week6Static/tidyTable1.png){fig-align="center"}
+:::
+:::
+
+::: {style="font-size: 50%; text-align: right;"}
+After Wickham, H. 2014. Tidy data. *The Journal of Statistical Software* 59.
+:::
+
+## Vectorization
+
+![](Week6Static/tidyTable2.png){fig-align="center"}
+
+![](Week6Static/vectorization.png){fig-align="center"}
+
+## Querying
+
+![](Week6Static/tidyTable2.png){fig-align="center"}
+
+![](Week6Static/querying.png){fig-align="center"}
+
+## Consistency
+
+![](Week6Static/tidyTable3.png){fig-align="center"}
+
+![](Week6Static/consistency.png){fig-align="center"}
+
+## Ease of identification and re-use
+
+![](Week6Static/csvTidyTable.png){fig-align="center"}
+
+## Data wrangling: the big three
+
+Column headers are values, not variable names.
+
+![](Week6Static/messyTable1.png){fig-align="center"}
+
+## Data wrangling: the big three
+
+Multiple variables are stored in a single column.
+
+![](Week6Static/messyTable2.png){fig-align="center"}
+
+## Data wrangling: the big three
+
+Variables stored in both rows and columns.
+
+![](Week6Static/messyTable3.png){fig-align="center"}
+
+## Pipes in R
+
+The pipe operator `%>%` allows us to combine multiple functions into an ordered set of transformations
+
+## Pipes in R
+
+```{r}
+#| echo: TRUE
+nycflights
+```
+
+## Pipes in R
+
+```{r}
+#| echo: TRUE
+nycflights %>%
+  filter(month==1)
+```
+
+## Data pipelines
+
+-   Pipelines start with raw data (e.g., tibble) as the input
+
+-   This table is passed as the first argument to the next function (so they don't need the **data** argument)
+
+-   The result of a pipeline is a dataset that can be fed into visualizations and analysis.
+
+## Data pipelines
+
+![](Week6Static/pipeline2.png){fig-align="center"}
+
+## Data pipelines
+
+```{r}
+#| echo: TRUE
+nycflights %>%
+  mutate(speed = distance / air_time * 60) %>%
+  select(year:day,dep_time,carrier,flight,speed) %>%
+  filter(month==1) %>%
+  unite(col="Date",c(month,day,year),sep="/")
+```
+
+## Activity: Going with the directional movement of a fluid
+
+Working in pairs or small groups, use the different `tidyverse` functions to create a pipeline to wrangle raw data into the desired form
+
+Datasets will come from Canvas and the `modeldata` package
+
+Use cheatsheets on Canvas for function descriptions
+
+## Example 1
+
+Body mass and flipper length for **penguins** from Biscoe and Dream islands with a body mass over 400 grams.
+
+## Example 2
+
+Price, number of baths, and square meters for three-bedroom homes in the Roseville, Orangevale, and Citrus Heights neighborhoods of **Sacramento**.
+
+## Example 3
+
+ID Number, Diameter in mm, and number of rings on top 100 **abalone** by ring count.
+
+## Example 3
+
+```{r}
+#| echo: true
+#| message: false
+rawData<-read_csv("data/abalone.csv")
+
+rawData %>%
+  mutate(diameter_mm=diameter * 200) %>%
+  select(...1,diameter_mm,rings) %>%
+  slice_max(order_by=rings,n=100)
+```
+
+## Can I use pipes with ggplot2?
+
+## Can I use pipes with ggplot2?
+
+YES!
+
+```{r}
+#| echo: TRUE
+#| message: FALSE
+
+rawData %>%
+  mutate(diameter_mm=diameter * 200) %>%
+  select(...1,diameter_mm,rings) %>%
+  slice_max(order_by=rings,n=100) %>%
+  ggplot(aes(x=diameter_mm,y=rings)) + geom_point() + labs(x="Diameter (mm)",y="Rings")
+  
+```
+
+## Can I use pipes with Base R?
+
+## Can I use pipes with Base R?
+
+YES!
+
+```{r}
+#| echo: TRUE
+rawData %>%
+  mutate(wholeWeight=weight.whole * 200) %>%
+  mutate(shuckedWeight=weight.shucked * 200) %>%
+  select(wholeWeight,shuckedWeight) %>%
+  colSums()
+```
+
+## Can I use pipes with Base R?
+
+YES!\*
+
+```{r}
+#| echo: TRUE  
+#| error: TRUE
+
+rawData %>%   
+  mutate(wholeWeight=weight.whole * 200) %>%   
+  mutate(shuckedWeight=weight.shucked * 200) %>%   
+  select(wholeWeight,shuckedWeight) %>%   
+  sum(wholeWeight)
+```
+
+## Can I use pipes with Base R?
+
+YES!\*
+
+```{r}
+#| echo: TRUE 
+rawData %>%
+  mutate(wholeWeight=weight.whole * 200) %>%
+  mutate(shuckedWeight=weight.shucked * 200) %>%
+  select(wholeWeight,shuckedWeight) %>%
+  {sum(.$wholeWeight)}
+```
+
+\*certain rules apply when first argument is not the first argument, or when referencing column names
+
+## Can I use pipes for modeling data?
+
+YES!
+
+```{r}
+#| echo: TRUE
+
+rawData %>%
+  mutate(diameter_mm=diameter * 200) %>%
+  select(...1,diameter_mm,rings) %>%
+  lm(rings ~ diameter_mm, data=.) %>%
+  summary()
+```
+
+## Coursekeeping
+
+Coding exercise 2 is now available on Canvas, due November 6!
+
+![the-decoder.com](Week6Static/doc_google.png)
+
+## Next week
+
+-   Visualizing more relationships
+
+-   Fine controls with `ggplot2`
+
+-   Time is weird
