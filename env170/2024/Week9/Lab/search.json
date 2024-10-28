@@ -1,0 +1,22 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Week 9 Lab: Let’s get visual",
+    "section": "",
+    "text": "Introduction\nSo far, we’ve mostly built graphs for our own purposes of looking at data and understanding patterns. For example, we can better understand the prices of homes in a city by plotting their distribution as a histogram. We can get a finer understanding of factors contributing to that distribution by separating the data by categories like education, income level, or race and looking at home prices in those categories as boxplots. Here, the choices we make are determined largely by the kind of data we have and the kind of patterning we want to see.\nHowever, visualization is not limited to making data visible to us, the data scientists, but is also used for presenting data in a way that facilitates and encourages engagement from others. Different color choices may better clarify trends across a dataset. Different emphasis\nggplot2 and additional packages offer ways to change the look and feel of a graph in many ways that can help us to better communicate our ideas.\nIn this lab, we will work on ways to control the visual appearance of graphs in order to achieve different goals.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "LabExercise7.html",
+    "href": "LabExercise7.html",
+    "title": "4  Lab Exercise - Week 9",
+    "section": "",
+    "text": "For this exercise, your goal is to reconstruct the following plot using the tree inventory data, and functions learned in this and previous labs. The plot you are going to reconstruct is meant to look like this:\n\n\n\n\n\nTry to match the look of the plot as best you can. For submission, submit the code in a Quarto document to Canvas. Details on assessment are posted there.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lab Exercise - Week 9</span>"
+    ]
+  }
+]
