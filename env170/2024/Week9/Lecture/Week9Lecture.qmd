@@ -1,0 +1,322 @@
+---
+title: "Environmental Data Analysis and Visualization"
+author: "Does Anybody Really Know What Time It Is?"
+format: revealjs
+editor: visual
+---
+
+## Warm-Up Exercise
+
+```{r}
+#| echo: false 
+#| message: false 
+library(tidyverse)
+```
+
+Create a new file system and Quarto document for this lecture. Download the *walkability.csv* dataset. Using pipes, create a dataset of with the following variables:
+
+-   Core-Based Statistical Area (CBSA) name (excluding the state)
+
+-   Population (only above 5 million)
+
+-   National Walkability Index
+
+Show the distribution of walkability index scores for all CBSAs in this new dataset
+
+## Warm-Up Exercise
+
+```{r}
+#| echo: TRUE 
+#| output: FALSE 
+walkData<-read_csv("data/walkability.csv")    
+
+walkData %>%   
+  select(CBSA_Name,CBSA_POP,NatWalkInd) %>%   
+  separate(CBSA_Name,into=c("cities","states"),sep=",",extra="drop") %>%   
+  filter(CBSA_POP>4000000) %>%  
+  ggplot(aes(x=reorder(cities,NatWalkInd,median),y=NatWalkInd)) +     
+  geom_boxplot() +     
+  coord_flip() +   
+  labs(x="Walkability Index",y="CBSA")   
+```
+
+## Warm-up exericse
+
+```{r}
+#| echo: FALSE
+#| output: TRUE 
+ 
+walkData %>%   
+  select(CBSA_Name,CBSA_POP,NatWalkInd) %>%   
+  separate(CBSA_Name,into=c("cities","states"),sep=",",extra="drop") %>%   
+  filter(CBSA_POP>4000000) %>%  
+  ggplot(aes(x=reorder(cities,NatWalkInd,median),y=NatWalkInd)) +     
+  geom_boxplot() +     
+  coord_flip() +   
+  labs(x="Walkability Index",y="CBSA")    
+```
+
+## Visualization Critique
+
+![[r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/17tr7yx/oc_new_england_patriots_rolling_17game_win_total/)](Week7Static/markViz.jpeg){fig-align="center"}
+
+## Visualization Critique
+
+![[nytimes.com](https://www.nytimes.com/2021/11/21/world/us-china-energy.html)](Week7Static/jennyViz.png){fig-align="center"}
+
+## Visualization Critique
+
+![[nytimes.com](https://www.nytimes.com/interactive/2024/07/29/upshot/olympics-medal-table-paris.html)](Week7Static/miaViz.png){fig-align="center"}
+
+## Next week
+
+-   Rolando
+
+-   Tal
+
+## Dataset of the day
+
+Stock market data
+
+![[nasdaq.com](https://www.nasdaq.com/market-activity/stocks/xom)](Week7Static/exxon.jpg){fig-align="center"}
+
+## Dataset of the day
+
+The `quantmod` package
+
+```{r}
+library(quantmod)
+getSymbols("XOM")
+head(XOM)
+```
+
+## Dates as data
+
+```{r}
+#| echo: FALSE
+exxon<-as_tibble(XOM,rownames="Date") %>%
+  mutate(Date=ymd(Date))
+exxon
+
+```
+
+## Dataset of the day
+
+The `quantmod` package
+
+```{r}
+ggplot(exxon,aes(x=Date,y=XOM.High)) +
+  geom_line(col="darkblue") +
+  theme_bw() +
+  labs(y="Daily High (USD)")
+```
+
+## Time: what is it?
+
+\
+Time as data is a strange beast.
+
+## Time: what is it?
+
+\
+Time as data is a strange beast.
+
+Time by itself isn't something that varies in a meaningful way.
+
+## Time: what is it?
+
+\
+Time as data is a strange beast.\
+
+Time by itself isn't something that varies in a meaningful way.\
+
+Time has a defined order, but you can't really *count* time, nor can you really treat it like a number.
+
+## Time: what is it?
+
+R can store time data as character values.
+
+-   `"2023-10-19"`
+
+-   `"10/19/2023"`
+
+-   `"17:05:00"`
+
+## Time: what is it?
+
+It can also store some kinds of time data as numbers:
+
+-   `2023`
+
+-   `10`
+
+-   `19`
+
+## Time: what is it?
+
+R can also recognize time as particular objects like **date** and **date-time** objects. For example:
+
+```{r}
+#| echo: true
+#give today's date as a date object
+today()
+#give the precise time as a date-time object
+now()
+```
+
+## Handling time data
+
+The `lubridate` package lets us convert between other values and time objects. This comes pre-loaded with `tidyverse`.
+
+![](Week7Static/lubridate.png){fig-align="center" width="164"}
+
+## Handling time data
+
+```{r}
+#| echo: true
+
+#storing the date as a character value
+todaysDate<-"2024-10-29"
+
+todaysDate
+typeof(todaysDate)
+```
+
+## Handling time data
+
+```{r}
+#| echo: true
+
+# converting the date to a date object
+ymd(todaysDate)
+typeof(ymd(todaysDate))
+```
+
+## Handling time data
+
+::: incremental
+-   `ymd` = "year, month, day" e.g., 2024/10/29
+
+-   `dmy` = "day, month, year" e.g., 29/10/2024
+
+-   `mdy` = "month, day, year" e.g., 10/29/2024
+:::
+
+## Visualizing time data
+
+{{< video https://svs.gsfc.nasa.gov/vis/a000000/a005100/a005137/GISTEMP_Curves_July2023_1080p60.mp4 >}} NASA Scientific Visualization Studio (<https://svs.gsfc.nasa.gov/5137/>)
+
+## Visualizing time data
+
+{{< video https://svs.gsfc.nasa.gov/vis/a000000/a005000/a005057/GISTEMP_Spiral_30sec_C.mp4>}} NASA Scientific Visualization Studio ([https://svs.gsfc.nasa.gov/5137/](https://svs.gsfc.nasa.gov/5057/))
+
+## Visualizing time data
+
+{{< video https://svs.gsfc.nasa.gov/vis/a000000/a005000/a005057/GISTEMP_Spiral_30sec_C.mp4>}} NASA Scientific Visualization Studio ([https://svs.gsfc.nasa.gov/5137/](https://svs.gsfc.nasa.gov/5057/))
+
+## Visualizing time data
+
+NASDAQ Composite data
+
+```{r}
+#| echo: true
+#| message: false
+nasdaq<-read_csv("data/nasdaq.csv")
+nasdaq
+```
+
+## Visualizing time data
+
+```{r}
+#| echo: true
+ggplot(nasdaq,aes(x=Date,y=Open)) +
+  geom_line(color="darkblue") +
+  labs(x="Date",y="Points at Closing",title="NASDAQ Composite, May-October 2024") +
+  theme_bw()
+```
+
+## Visualizing time data
+
+```{r}
+#| echo: true
+ggplot(nasdaq,aes(x=mdy(Date),y=Open)) +
+  geom_line(color="darkblue") +
+  labs(x="Date",y="Points at Closing",title="NASDAQ Composite, May-October 2024") +
+  theme_bw()
+```
+
+## Activity: Visualizing time data
+
+Load the **openintro** package to access the **nycflights** data
+
+Create a pipeline that
+
+-   subsets the data to Delta Airlines (DL) flights only
+
+-   combines the year, month, and day into a single date column
+
+-   converts this to a table of counts using the `count` function (different from `after_stat`)
+
+Plot this new data as a line graph using `geom_line`.
+
+## Activity: Visualizing time data
+
+```{r}
+#| echo: true
+#| output: false
+library(openintro)
+nycflights2<-nycflights
+
+nycflights2 %>% 
+  filter(carrier=="DL") %>%
+  unite(col="Date",year,month,day,sep="-",na.rm = TRUE ) %>%
+  count(Date) %>%
+  ggplot(aes(x=ymd(Date),y=n)) +
+  geom_line(color="darkblue") +
+  labs(x="Date",y="Number of Flights")
+```
+
+## Activity: Visualizing time data
+
+```{r}
+#| echo: false
+#| output: true
+library(openintro)
+nycflights2<-nycflights
+
+nycflights2 %>% 
+  filter(carrier=="DL") %>%
+  unite(col="Date",year,month,day,sep="-",na.rm = TRUE ) %>%
+  count(Date) %>%
+  ggplot(aes(x=ymd(Date),y=n)) +
+  geom_line(color="darkblue") +
+  labs(x="Date",y="Number of Flights")
+```
+
+## Coursekeeping
+
+By the end of this week, you will have feedback on your project proposal.
+
+Grades on Coding Exercise 1 will be returned early next week.
+
+Coding Exercise 2 is due November 6.
+
+## Coursekeeping
+
+For the next two weeks, we will only have the longer lab session.
+
+Students who have visualization critiques due will deliver these at the start of the session.
+
+There will also be a (brief) introduction to the week's topics before moving on to the lab.
+
+## Coursekeeping
+
+Next week, be prepared to meet with either Denisse or Ben to discuss feedback on proposals and discuss next steps..
+
+## Next time
+
+-   Introducing `sf`
+
+-   Making and plotting vector data
+
+-   Storytelling (with maps!)
