@@ -1,0 +1,10 @@
+Ranking,Water,Trees,Grass,Flooded Vegetation,Crops,Successional Vegetation,Clouds
+1,DW_Water,DW_Trees,DW_Grass,DW_Flooded Vegetation,DW_Crops,DW_Shrub & Scrub,DW_Snow & Ice
+2,DW_Snow & Ice,DW_Shrub & Scrub,DW_Crops,DW_Water,DW_Grass,DW_Trees,DW_Bare Ground
+3,DW_Bare Ground,DW_Crops,DW_Bare Ground,DW_Shrub & Scrub,DW_Trees,DW_Grass,DW_Water
+4,DW_Flooded Vegetation,DW_Flooded Vegetation,DW_Built Area,DW_Trees,DW_Shrub & Scrub,DW_Flooded Vegetation,DW_Built Area
+5,DW_Built Area,DW_Grass,DW_Snow & Ice,DW_Snow & Ice,DW_Flooded Vegetation,DW_Crops,DW_Crops
+6,DW_Crops,DW_Built Area,DW_Water,DW_Crops,DW_Bare Ground,DW_Built Area,DW_Grass
+7,DW_Grass,DW_Bare Ground,DW_Flooded Vegetation,DW_Grass,DW_Built Area,DW_Bare Ground,DW_Flooded Vegetation
+8,DW_Shrub & Scrub,DW_Water,DW_Shrub & Scrub,DW_Bare Ground,DW_Water,DW_Water,DW_Shrub & Scrub
+9,DW_Trees,DW_Snow & Ice,DW_Trees,DW_Built Area,DW_Snow & Ice,DW_Snow & Ice,DW_Trees
