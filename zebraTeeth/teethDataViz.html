@@ -109,28 +109,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="model-𝝳18o-signals" class="level2">
-<h2 class="anchored" data-anchor-id="model-𝝳18o-signals">Model 𝝳<sup>18</sup>O signals</h2>
-<p>Amplitudes of 1, 2, 3, and 4‰ were simulated; most results below are based on the 3‰ signal.</p>
+<section id="birth-and-mortality-profiles" class="level2">
+<h2 class="anchored" data-anchor-id="birth-and-mortality-profiles">Birth and mortality profiles</h2>
+<p>Birth</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>d18O<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"sim_d18O.csv"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols=</span>AMP1<span class="sc">:</span>AMP4,<span class="at">names_to=</span><span class="st">"Amplitude"</span>,<span class="at">values_to=</span><span class="st">"d18O"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 500 Columns: 5
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-dbl (5): DAY, AMP1, AMP2, AMP3, AMP4
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(d18O,<span class="fu">aes</span>(<span class="at">x=</span>DAY,<span class="at">y=</span>d18O,<span class="at">color=</span><span class="fu">case_match</span>(Amplitude,<span class="st">"AMP1"</span><span class="sc">~</span><span class="st">"1"</span>,<span class="st">"AMP2"</span><span class="sc">~</span><span class="st">"2"</span>,<span class="st">"AMP3"</span><span class="sc">~</span><span class="st">"3"</span>,<span class="st">"AMP4"</span><span class="sc">~</span><span class="st">"4"</span>))) <span class="sc">+</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="sc">-</span><span class="dv">4</span>,<span class="at">linetype=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">lwd=</span><span class="fl">1.1</span>) <span class="sc">+</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette=</span><span class="st">"Set1"</span>) <span class="sc">+</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Day"</span>,<span class="at">y=</span><span class="fu">expression</span>(<span class="fu">paste</span>(delta<span class="sc">^</span><span class="st">"18"</span>,<span class="st">"O"</span>)),<span class="at">color=</span><span class="st">"Amplitude (\u{2030})"</span>) <span class="sc">+</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">12</span>),<span class="at">axis.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>birthDeath<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"birthDeath.csv"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>birthDeath<span class="sc">$</span>born<span class="ot">&lt;-</span>month.abb[birthDeath<span class="sc">$</span>born]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(birthDeath,<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">fct_relevel</span>(<span class="fu">as_factor</span>(born),<span class="st">"Jan"</span>,<span class="st">"Feb"</span>,<span class="st">"Mar"</span>,<span class="st">"Apr"</span>,<span class="st">"May"</span>,<span class="st">"Jun"</span>,<span class="st">"Jul"</span>,<span class="st">"Aug"</span>,<span class="st">"Sep"</span>,<span class="st">"Oct"</span>,<span class="st">"Nov"</span>,<span class="st">"Dec"</span>))) <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill=</span><span class="st">"darkblue"</span>) <span class="sc">+</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Birth month"</span>,<span class="at">y=</span><span class="st">"n"</span>)  <span class="sc">+</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">12</span>),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>),</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>,<span class="at">hjust=</span><span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -139,31 +132,15 @@ dbl (5): DAY, AMP1, AMP2, AMP3, AMP4
 </div>
 </div>
 </div>
-</section>
-<section id="constant-vs-non-linear-growth-rate-amplitude-3" class="level2">
-<h2 class="anchored" data-anchor-id="constant-vs-non-linear-growth-rate-amplitude-3">Constant vs non-linear growth rate (Amplitude = 3)</h2>
-<p>These teeth come from animals that are all born on the same day and die after 36 months. Unsurprisingly, the teeth under the linear growth model have not grown as much as the non-linear growth model.</p>
+<p>Death</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Ex1<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"simZebraDataEX12.csv"</span>) <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols=</span>d18O_1<span class="sc">:</span>d18O_4,<span class="at">names_to=</span><span class="st">"Amplitude"</span>,<span class="at">values_to=</span><span class="st">"d18O"</span>,<span class="at">names_prefix=</span><span class="st">"d18O_"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>New names:
-Rows: 34800 Columns: 18
-── Column specification
-──────────────────────────────────────────────────────── Delimiter: "," chr
-(1): model dbl (17): ...1, specimen, age_at_death, birth_year, birth_month,
-birth_day, ...
-ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
-Specify the column types or set `show_col_types = FALSE` to quiet this message.
-• `` -&gt; `...1`</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Ex1_Amp3<span class="ot">&lt;-</span><span class="fu">filter</span>(Ex1,Amplitude<span class="sc">==</span><span class="dv">3</span>,specimen<span class="sc">==</span><span class="dv">1</span>)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Ex1_Amp3,<span class="fu">aes</span>(<span class="at">x=</span>mm_band,<span class="at">y=</span>d18O,<span class="at">color=</span>model)) <span class="sc">+</span> <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="sc">-</span><span class="dv">4</span>,<span class="at">linetype=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">lwd=</span><span class="fl">1.1</span>) <span class="sc">+</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"red"</span>)) <span class="sc">+</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Distance from Occlusal Surface (mm)"</span>,<span class="at">y=</span><span class="fu">expression</span>(<span class="fu">paste</span>(delta<span class="sc">^</span><span class="st">"18"</span>,<span class="st">"O"</span>)),<span class="at">color=</span><span class="st">"Model"</span>)<span class="sc">+</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">12</span>),<span class="at">axis.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(birthDeath,<span class="fu">aes</span>(<span class="at">x=</span>died)) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">fill=</span><span class="st">"darkred"</span>) <span class="sc">+</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age at death (years)"</span>,<span class="at">y=</span><span class="st">"n"</span>) <span class="sc">+</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">12</span>),</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -173,8 +150,93 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 </div>
 </div>
 </section>
+<section id="tooth-growth-models" class="level2">
+<h2 class="anchored" data-anchor-id="tooth-growth-models">Tooth growth models</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>toothGrowth<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"growthRates.csv"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols=</span>constant<span class="sc">:</span>nonLinear,<span class="at">names_to=</span><span class="st">"Model"</span>,<span class="at">values_to=</span><span class="st">"crownHeight"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(toothGrowth,<span class="fu">aes</span>(<span class="at">x=</span>day,<span class="at">y=</span>crownHeight,<span class="at">color=</span><span class="fu">fct_recode</span>(Model,<span class="at">Constant=</span><span class="st">"constant"</span>,<span class="st">"Non-linear"</span><span class="ot">=</span><span class="st">"nonLinear"</span>))) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">lwd=</span><span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"darkorange"</span>)) <span class="sc">+</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Days since start of mineralization"</span>,<span class="at">y=</span><span class="st">"Crown Height (\u{03BC}m)"</span>,<span class="at">color=</span><span class="st">"Model"</span>) <span class="sc">+</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">12</span>),<span class="at">axis.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="model-𝝳18o-signals" class="level2">
+<h2 class="anchored" data-anchor-id="model-𝝳18o-signals">Model 𝝳<sup>18</sup>O signals</h2>
+<p>Amplitudes of 1, 2, 3, and 4‰ were simulated; most results below are based on the 3‰ signal.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>d18O<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"sim_d18O.csv"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols=</span>AMP1<span class="sc">:</span>AMP4,<span class="at">names_to=</span><span class="st">"Amplitude"</span>,<span class="at">values_to=</span><span class="st">"d18O"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(d18O,<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">as_date</span>(DAY,<span class="at">origin=</span><span class="st">"2000-12-21"</span>),<span class="at">y=</span>d18O,<span class="at">color=</span><span class="fu">case_match</span>(Amplitude,<span class="st">"AMP1"</span><span class="sc">~</span><span class="st">"1"</span>,<span class="st">"AMP2"</span><span class="sc">~</span><span class="st">"2"</span>,<span class="st">"AMP3"</span><span class="sc">~</span><span class="st">"3"</span>,<span class="st">"AMP4"</span><span class="sc">~</span><span class="st">"4"</span>))) <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="sc">-</span><span class="dv">4</span>,<span class="at">linetype=</span><span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">lwd=</span><span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette=</span><span class="st">"Set1"</span>) <span class="sc">+</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_labels =</span> <span class="st">"%b"</span>, <span class="at">date_breaks =</span> <span class="st">'3 months'</span>) <span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">""</span>,<span class="at">y=</span><span class="fu">expression</span>(<span class="fu">paste</span>(delta<span class="sc">^</span><span class="st">"18"</span>,<span class="st">"O"</span>)),<span class="at">color=</span><span class="st">"Amplitude (\u{2030})"</span>) <span class="sc">+</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">12</span>),<span class="at">axis.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="constant-vs-non-linear-growth-rate-no-wear-amplitude-3" class="level2">
+<h2 class="anchored" data-anchor-id="constant-vs-non-linear-growth-rate-no-wear-amplitude-3">Constant vs non-linear growth rate (no wear; Amplitude = 3)</h2>
+<p>These teeth come from animals that are all born on the same day (Jan 1) and die after 55 months.</p>
+<p>Just the constant model:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Ex1<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"simZebraDataEX12.csv"</span>) <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols=</span>d18O_1<span class="sc">:</span>d18O_4,<span class="at">names_to=</span><span class="st">"Amplitude"</span>,<span class="at">values_to=</span><span class="st">"d18O"</span>,<span class="at">names_prefix=</span><span class="st">"d18O_"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>Ex1_Amp3<span class="ot">&lt;-</span><span class="fu">filter</span>(Ex1,Amplitude<span class="sc">==</span><span class="dv">3</span>,specimen<span class="sc">==</span><span class="dv">1</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>Ex1_Amp3_con<span class="ot">&lt;-</span><span class="fu">filter</span>(Ex1_Amp3,model<span class="sc">==</span><span class="st">"Constant"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Ex1_Amp3_con,<span class="fu">aes</span>(<span class="at">x=</span>mm_band,<span class="at">y=</span>d18O)) <span class="sc">+</span> </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="sc">-</span><span class="dv">4</span>,<span class="at">linetype=</span><span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">lwd=</span><span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Distance from Occlusal Surface (mm)"</span>,<span class="at">y=</span><span class="fu">expression</span>(<span class="fu">paste</span>(delta<span class="sc">^</span><span class="st">"18"</span>,<span class="st">"O"</span>)))<span class="sc">+</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">12</span>),<span class="at">axis.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Constant and non-linear</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Ex1_Amp3,<span class="fu">aes</span>(<span class="at">x=</span>mm_band,<span class="at">y=</span>d18O,<span class="at">color=</span><span class="fu">fct_recode</span>(model,<span class="st">"Non-Linear"</span> <span class="ot">=</span> <span class="st">"High"</span>))) <span class="sc">+</span> <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="sc">-</span><span class="dv">4</span>,<span class="at">linetype=</span><span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">lwd=</span><span class="fl">1.1</span>) <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">"black"</span>,<span class="st">"darkorange"</span>)) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Distance from Occlusal Surface (mm)"</span>,<span class="at">y=</span><span class="fu">expression</span>(<span class="fu">paste</span>(delta<span class="sc">^</span><span class="st">"18"</span>,<span class="st">"O"</span>)),<span class="at">color=</span><span class="st">"Model"</span>)<span class="sc">+</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">12</span>),<span class="at">axis.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 <section id="non-linear-growth-with-variable-birth-season-amplitude-3" class="level2">
-<h2 class="anchored" data-anchor-id="non-linear-growth-with-variable-birth-season-amplitude-3">Non-linear growth with variable birth season (Amplitude = 3)</h2>
+<h2 class="anchored" data-anchor-id="non-linear-growth-with-variable-birth-season-amplitude-3">Non-linear growth with variable birth season ( Amplitude = 3)</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Ex3<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"simZebraDataEX3.csv"</span>) <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols=</span>d18O_1<span class="sc">:</span>d18O_4,<span class="at">names_to=</span><span class="st">"Amplitude"</span>,<span class="at">values_to=</span><span class="st">"d18O"</span>,<span class="at">names_prefix=</span><span class="st">"d18O_"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -200,7 +262,7 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="teethDataViz_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -208,10 +270,12 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 </section>
 <section id="non-linear-growth-with-variable-birth-season-and-death-age-amplitude-3" class="level2">
 <h2 class="anchored" data-anchor-id="non-linear-growth-with-variable-birth-season-and-death-age-amplitude-3">Non-linear growth with variable birth season and death age (Amplitude = 3)</h2>
+<p>Note: samples chosen random</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>Ex4<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"simZebraDataEX4.csv"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">303</span>) <span class="co">#to keep the sampling of teeth consistent</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Ex4<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">"simZebraDataEX4.csv"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Rows: 31166 Columns: 17
+<pre><code>Rows: 33671 Columns: 17
 ── Column specification ────────────────────────────────────────────────────────
 Delimiter: ","
 chr  (1): model
@@ -235,10 +299,13 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="teethDataViz_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
+</div>
+<p>Boxplots if intratooth variation</p>
+<div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Ex4_Amp3_samp,<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">as_factor</span>(specimen),<span class="at">y=</span>d18O,<span class="at">group=</span><span class="fu">as_factor</span>(specimen),<span class="at">color=</span><span class="fu">as_factor</span>(specimen))) <span class="sc">+</span> </span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="sc">-</span><span class="dv">4</span>,<span class="at">linetype=</span><span class="dv">2</span>)<span class="sc">+</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
@@ -250,7 +317,7 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="teethDataViz_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -259,7 +326,7 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <section id="bulk-sampling-method-a-estimating-amplitude-from-random-1mm-bands-non-linear-growth-amplitude-3" class="level2">
 <h2 class="anchored" data-anchor-id="bulk-sampling-method-a-estimating-amplitude-from-random-1mm-bands-non-linear-growth-amplitude-3">BULK SAMPLING METHOD A: Estimating amplitude from random 1mm bands (Non-linear growth, Amplitude = 3)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>Ex4_high<span class="ot">&lt;-</span>Ex4 <span class="sc">%&gt;%</span>  <span class="fu">filter</span>(model<span class="sc">==</span><span class="st">"High"</span>)</span>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>Ex4_high<span class="ot">&lt;-</span>Ex4 <span class="sc">%&gt;%</span>  <span class="fu">filter</span>(model<span class="sc">==</span><span class="st">"High"</span>) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>()</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>sampleSizes<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">20</span>,<span class="dv">50</span>,<span class="dv">100</span>)</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>size<span class="ot">&lt;-</span><span class="fu">c</span>()</span>
@@ -282,7 +349,7 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="teethDataViz_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -292,7 +359,7 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <h2 class="anchored" data-anchor-id="bulk-sampling-method-a-estimating-amplitude-from-sampling-a-random-1mm-band-with-20mm-size-cutoff-non-linear-growth-amplitude-3">BULK SAMPLING METHOD A: Estimating amplitude from sampling a random 1mm band with 20mm size cutoff (Non-linear growth, Amplitude = 3)</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>cutoff<span class="ot">&lt;-</span><span class="dv">20</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>Ex4_highCut<span class="ot">&lt;-</span>Ex4 <span class="sc">%&gt;%</span>  <span class="fu">filter</span>(model<span class="sc">==</span><span class="st">"High"</span>) <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(specimen) <span class="sc">%&gt;%</span> <span class="fu">filter</span>( <span class="fu">n</span>() <span class="sc">&gt;=</span>cutoff) <span class="sc">%&gt;%</span> <span class="fu">ungroup</span>()</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>Ex4_highCut<span class="ot">&lt;-</span>Ex4 <span class="sc">%&gt;%</span>  <span class="fu">filter</span>(model<span class="sc">==</span><span class="st">"High"</span>) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>() <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(specimen) <span class="sc">%&gt;%</span> <span class="fu">filter</span>( <span class="fu">n</span>() <span class="sc">&gt;=</span>cutoff) <span class="sc">%&gt;%</span> <span class="fu">ungroup</span>()</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>sampleSizes<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">20</span>,<span class="dv">50</span>,<span class="dv">100</span>)</span>
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>size<span class="ot">&lt;-</span><span class="fu">c</span>()</span>
@@ -315,7 +382,7 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="teethDataViz_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -324,7 +391,7 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <section id="bulk-sampling-method-b-estimating-amplitude-from-averaged-sample-taken-along-growth-axis-non-linear-growth-amplitude-3" class="level2">
 <h2 class="anchored" data-anchor-id="bulk-sampling-method-b-estimating-amplitude-from-averaged-sample-taken-along-growth-axis-non-linear-growth-amplitude-3">BULK SAMPLING METHOD B: Estimating amplitude from averaged sample taken along growth axis (Non-linear growth, Amplitude = 3)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>Ex4_high<span class="ot">&lt;-</span>Ex4 <span class="sc">%&gt;%</span>  <span class="fu">filter</span>(model<span class="sc">==</span><span class="st">"High"</span>) </span>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>Ex4_high<span class="ot">&lt;-</span>Ex4 <span class="sc">%&gt;%</span>  <span class="fu">filter</span>(model<span class="sc">==</span><span class="st">"High"</span>) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>()</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>sampleSizes<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">20</span>,<span class="dv">50</span>,<span class="dv">100</span>)</span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>size<span class="ot">&lt;-</span><span class="fu">c</span>()</span>
@@ -347,7 +414,7 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="teethDataViz_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -357,7 +424,7 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <h2 class="anchored" data-anchor-id="bulk-sampling-method-b-estimating-amplitude-from-averaged-sample-taken-along-growth-axis-with-20-mm-cutoff-non-linear-growth-amplitude-3">BULK SAMPLING METHOD B: Estimating amplitude from averaged sample taken along growth axis with 20 mm cutoff (Non-linear growth, Amplitude = 3)</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>cutoff<span class="ot">&lt;-</span><span class="dv">20</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>Ex4_highCut<span class="ot">&lt;-</span>Ex4 <span class="sc">%&gt;%</span>  <span class="fu">filter</span>(model<span class="sc">==</span><span class="st">"High"</span>) <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(specimen) <span class="sc">%&gt;%</span> <span class="fu">filter</span>( <span class="fu">n</span>() <span class="sc">&gt;=</span>cutoff) <span class="sc">%&gt;%</span> <span class="fu">ungroup</span>() </span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>Ex4_highCut<span class="ot">&lt;-</span>Ex4 <span class="sc">%&gt;%</span>  <span class="fu">filter</span>(model<span class="sc">==</span><span class="st">"High"</span>) <span class="sc">%&gt;%</span> <span class="fu">drop_na</span>() <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(specimen) <span class="sc">%&gt;%</span> <span class="fu">filter</span>( <span class="fu">n</span>() <span class="sc">&gt;=</span>cutoff) <span class="sc">%&gt;%</span> <span class="fu">ungroup</span>() </span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>sampleSizes<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">20</span>,<span class="dv">50</span>,<span class="dv">100</span>)</span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>size<span class="ot">&lt;-</span><span class="fu">c</span>()</span>
@@ -380,7 +447,7 @@ dbl (16): specimen, age_at_death, birth_year, birth_month, birth_day, crown_...
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="teethDataViz_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="teethDataViz_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
