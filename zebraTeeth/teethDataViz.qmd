@@ -11,11 +11,16 @@ editor: visual
 #| echo: TRUE
 #| message: FALSE
 library(tidyverse)
+
 ```
 
 ## Birth and mortality profiles
 
+Birth
+
 ```{r}
+#| echo: TRUE
+#| message: FALSE
 birthDeath<-read_csv("birthDeath.csv")
 birthDeath$born<-month.abb[birthDeath$born]
 
@@ -28,6 +33,14 @@ ggplot(birthDeath,aes(x=fct_relevel(as_factor(born),"Jan","Feb","Mar","Apr","May
     axis.title=element_text(size=14),
     axis.text.x = element_text(angle = 45,hjust=1))
 
+```
+
+Death
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
 ggplot(birthDeath,aes(x=died)) +
   geom_histogram(fill="darkred") +
   theme_classic() +
@@ -40,6 +53,8 @@ ggplot(birthDeath,aes(x=died)) +
 ## Tooth growth models
 
 ```{r}
+#| echo: TRUE
+#| message: FALSE
 toothGrowth<-read_csv("growthRates.csv") %>%
   pivot_longer(cols=constant:nonLinear,names_to="Model",values_to="crownHeight")
 ggplot(toothGrowth,aes(x=day,y=crownHeight,color=fct_recode(Model,Constant="constant","Non-linear"="nonLinear"))) +
@@ -56,6 +71,8 @@ ggplot(toothGrowth,aes(x=day,y=crownHeight,color=fct_recode(Model,Constant="cons
 Amplitudes of 1, 2, 3, and 4‰ were simulated; most results below are based on the 3‰ signal.
 
 ```{r}
+#| echo: TRUE
+#| message: FALSE
 d18O<-read_csv("sim_d18O.csv") %>%
   pivot_longer(cols=AMP1:AMP4,names_to="Amplitude",values_to="d18O")
 ggplot(d18O,aes(x=as_date(DAY,origin="2000-12-21"),y=d18O,color=case_match(Amplitude,"AMP1"~"1","AMP2"~"2","AMP3"~"3","AMP4"~"4"))) +
@@ -72,7 +89,11 @@ ggplot(d18O,aes(x=as_date(DAY,origin="2000-12-21"),y=d18O,color=case_match(Ampli
 
 These teeth come from animals that are all born on the same day (Jan 1) and die after 55 months.
 
+Just the constant model:
+
 ```{r}
+#| echo: TRUE
+#| message: FALSE
 Ex1<-read_csv("simZebraDataEX12.csv") %>% pivot_longer(cols=d18O_1:d18O_4,names_to="Amplitude",values_to="d18O",names_prefix="d18O_")
 Ex1_Amp3<-filter(Ex1,Amplitude==3,specimen==1)
 Ex1_Amp3_con<-filter(Ex1_Amp3,model=="Constant")
@@ -86,10 +107,15 @@ ggplot(Ex1_Amp3_con,aes(x=mm_band,y=d18O)) +
   theme(axis.text=element_text(size=12),axis.title=element_text(size=14))
 
 
-ggplot(Ex1_Amp3,aes(x=mm_band,y=d18O,color=model)) + geom_line() +
+```
+
+Constant and non-linear
+
+```{r}
+ggplot(Ex1_Amp3,aes(x=mm_band,y=d18O,color=fct_recode(model,"Non-Linear" = "High"))) + geom_line() +
    geom_hline(yintercept=-4,linetype=2)+
   geom_line(lwd=1.1) +
-  scale_color_manual(values=c("black","red")) +
+  scale_color_manual(values=c("black","darkorange")) +
   theme_classic() +
   labs(x="Distance from Occlusal Surface (mm)",y=expression(paste(delta^"18","O")),color="Model")+
   theme(axis.text=element_text(size=12),axis.title=element_text(size=14))
@@ -113,7 +139,10 @@ ggplot(Ex3_Amp3,aes(x=mm_band,y=d18O,group=specimen,color=specimen)) +
 
 ## Non-linear growth with variable birth season and death age (Amplitude = 3)
 
+Note: samples chosen random
+
 ```{r}
+set.seed(303) #to keep the sampling of teeth consistent
 Ex4<-read_csv("simZebraDataEX4.csv") 
 Ex4_pivot<-Ex4 %>% pivot_longer(cols=d18O_1:d18O_4,names_to="Amplitude",values_to="d18O",names_prefix="d18O_")
 uv<-unique(Ex4$specimen)
@@ -128,6 +157,12 @@ ggplot(Ex4_Amp3_samp,aes(x=mm_band,y=d18O,group=as_factor(specimen),color=as_fac
   labs(x="Distance from Occlusal Surface (mm)",y=expression(paste(delta^"18","O")),color="Specimen #")+
   theme(axis.text=element_text(size=12),axis.title=element_text(size=14))
 
+
+```
+
+Boxplots if intratooth variation
+
+```{r}
 ggplot(Ex4_Amp3_samp,aes(x=as_factor(specimen),y=d18O,group=as_factor(specimen),color=as_factor(specimen))) + 
    geom_hline(yintercept=-4,linetype=2)+
   geom_boxplot(show.legend = FALSE) +
@@ -141,7 +176,7 @@ ggplot(Ex4_Amp3_samp,aes(x=as_factor(specimen),y=d18O,group=as_factor(specimen),
 ## BULK SAMPLING METHOD A: Estimating amplitude from random 1mm bands (Non-linear growth, Amplitude = 3)
 
 ```{r}
-Ex4_high<-Ex4 %>%  filter(model=="High")
+Ex4_high<-Ex4 %>%  filter(model=="High") %>% drop_na()
 
 sampleSizes<-c(10,20,50,100)
 size<-c()
@@ -167,7 +202,7 @@ ggplot(data,aes(x=as_factor(size),y=bootstrapAmp)) +
 
 ```{r}
 cutoff<-20
-Ex4_highCut<-Ex4 %>%  filter(model=="High") %>% group_by(specimen) %>% filter( n() >=cutoff) %>% ungroup()
+Ex4_highCut<-Ex4 %>%  filter(model=="High") %>% drop_na() %>% group_by(specimen) %>% filter( n() >=cutoff) %>% ungroup()
 
 sampleSizes<-c(10,20,50,100)
 size<-c()
@@ -192,7 +227,7 @@ ggplot(data,aes(x=as_factor(size),y=bootstrapAmp)) +
 ## BULK SAMPLING METHOD B: Estimating amplitude from averaged sample taken along growth axis (Non-linear growth, Amplitude = 3)
 
 ```{r}
-Ex4_high<-Ex4 %>%  filter(model=="High") 
+Ex4_high<-Ex4 %>%  filter(model=="High") %>% drop_na()
 
 sampleSizes<-c(10,20,50,100)
 size<-c()
@@ -218,7 +253,7 @@ ggplot(data,aes(x=as_factor(size),y=bootstrapAmp)) +
 
 ```{r}
 cutoff<-20
-Ex4_highCut<-Ex4 %>%  filter(model=="High") %>% group_by(specimen) %>% filter( n() >=cutoff) %>% ungroup() 
+Ex4_highCut<-Ex4 %>%  filter(model=="High") %>% drop_na() %>% group_by(specimen) %>% filter( n() >=cutoff) %>% ungroup() 
 
 sampleSizes<-c(10,20,50,100)
 size<-c()
