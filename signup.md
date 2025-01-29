@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Maple Tapping signup and schedule
+title: Maple Tapping WhatsApp group and schedule
 permalink: /signup/
 tags: teaching
 ---
