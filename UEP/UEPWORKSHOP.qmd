@@ -1,0 +1,324 @@
+---
+title: "Data Visualization Workshop"
+author: "UEP Field Projects"
+format: revealjs
+editor: visual
+---
+
+## Data do not speak for themselves
+
+![Marine reservoir effect data from [calib.org](https://calib.org/marine/index.html)](Week3Static/data%20table.jpg){fig-align="center"}
+
+## Why visualize?
+
+Visualization helps to identify patterns and structures in data that are not evident from tables or numerical summaries.
+
+![Faith, J. Tyler. 2018. "Paleodietary Change and Its Implications for Aridity Indices Derived from δ18O of Herbivore Tooth Enamel." [https://doi.org/10.1016/j.palaeo.2017.11.045.](https://doi.org/10.1016/j.palaeo.2017.11.045)](Week3Static/printTable.jpg){fig-align="center"}
+
+## Why visualize?
+
+::: columns
+::: {.column width="30%"}
+::: {style="font-size: 80%;"}
+**Mean *x*:** 9
+
+**Mean *y*:** 7.5
+
+**Pearson correlation coefficient (*r*):** 0.816
+
+**Coefficient of determination (*R^2^*):** 0.67
+:::
+:::
+
+::: {.column width="70%"}
+![](Week3Static/Anscombe1.png){fig-align="center"}
+:::
+:::
+
+## Why visualize?
+
+![Avenue, CC BY-SA 3.0 \<https://creativecommons.org/licenses/by-sa/3.0\>, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/3/30/Anscombe%27s_quartet_3_cropped.jpg){fig-align="center"}
+
+## Why visualize?
+
+![Matejka and Fitzmaurice, 2017. "Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing." https://doi.org/10.1145/3025453.3025912.](Week3Static/datasaurus.gif){fig-align="center"}
+
+## Making a data visualization
+
+Visualizing data involves *aesthetic mapping*: connecting variables in data to visual elements within a graphing space.
+
+![Wilke, C. 2019. *Fundamentals of Data Visualization*](Week3Static/aes.jpg)
+
+## Aesthetic mapping
+
+![](UEPWORKSHOP_Static/penguinData.png){fig-align="center" width="400"}
+
+## Aesthetic mapping
+
+![](UEPWORKSHOP_Static/mapping.png){fig-align="center"}
+
+## Aesthetic mapping
+
+![](UEPWORKSHOP_Static/Screenshot%202025-04-06%20184531.jpg){fig-align="center"}
+
+## Making *better* visualizations
+
+Good visualizations can help a reader to better understand data and your interpretation of it.
+
+::: incremental
+-   Choose the right chart for the data
+
+-   Maximize the data-to-ink ratio
+
+-   Make deliberate design decisions
+:::
+
+## What kind of visualization?
+
+The type of visualization that should be used depends on the kind of information being conveyed.
+
+## What kind of visualization?
+
+![Wilke, Claus. 2019. *Fundamentals of Data Visualization*](Week3Static/chartTypes.png){fig-align="center"}
+
+## Bar charts and histograms
+
+![https://www.storytellingwithdata.com/blog/2021/1/28/histograms-and-bar-charts](UEPWORKSHOP_Static/histogram.jpg)
+
+## When [not]{.underline} to use a pie chart
+
+-   When you have a large number of categories
+
+-   When you need to compare more than one chart
+
+![](UEPWORKSHOP_Static/pieCharts.png){fig-align="center"}
+
+## Data-ink
+
+Data-ink (per Tufte 1983[^1]) refers to ink (or pixels) that, if erased, would reduce the information being presented.
+
+[^1]: Tufte, Edward. 1982. *The Visual Display of Quantitative Information*. Graphics Press.
+
+Ideally, we want to maximize the ratio of data to ink.
+
+## Data-ink
+
+Visualization with non-data ink.
+
+![](UEPWORKSHOP_Static/dataink0.jpg){fig-align="center"}
+
+## Data-ink
+
+Removing some non-data ink.
+
+![](UEPWORKSHOP_Static/dataInk2.jpg){fig-align="center"}
+
+## Data-ink
+
+Removing too much non-data ink?
+
+![](UEPWORKSHOP_Static/dataInk4.jpg){fig-align="center"}
+
+## Activity: To erase or not to erase?
+
+![<https://simplexct.com/data-ink-ratio>](https://img.pagecloud.com/Let5aQyhIfGfH1cte70SYkHQSNw=/918x0/filters:no_upscale()/simplexct/images/image-tfe54.png){fig-align="center"}
+
+## Activity: To erase or not to erase?
+
+![<https://simplexct.com/data-ink-ratio>](Week3Static/greenhouseGases.jpg)
+
+## Being deliberate about design
+
+How does a design choice help someone understand the data?
+
+::: incremental
+-   **Contrast**: Do the visual elements provide adequate contrast to discern between them?
+
+-   **Clarity:** Is the way the data are displayed making it possible to see it's structure?
+
+-   **Highlighting:** Should I use graphical elements to highlight the aspects I think are important?
+
+-   **Labeling:** Is the labeling clear enough?
+:::
+
+## Contrast *is* clarity
+
+Be sure foreground (plotting) colors are sufficiently different from background colors to aid readability.
+
+![](UEPWORKSHOP_Static/yellowWhite.jpg){fig-align="center"}
+
+## Contrast *is* clarity
+
+When using colors, symbols, or line styles, be sure these are sufficiently different to distinguish between categories.
+
+![](UEPWORKSHOP_Static/salmonTomato.jpg){fig-align="center"}
+
+## Using color effectively
+
+![](UEPWORKSHOP_Static/colorPalettes.png){fig-align="center"}
+
+## Accessibility considerations
+
+Some design choices affect some audiences more than others
+
+-   Color palette
+
+-   Text and symbol sizes
+
+![Wilke, Claus. 2019. Fundamentals of Data Visualization](Week3Static/red-green-cvd-sim-1.png)
+
+## Improving readability
+
+Small symbol and label sizes are difficult to read and leave too much white space
+
+![Wilke, Claus. 2019. *Fundamentals of Data Visualization*](UEPWORKSHOP_Static/Aus-athletes-small-1.png)
+
+## Improving readability
+
+Generally speaking, aim for larger text and point sizes.
+
+![Wilke, Claus. 2019. *Fundamentals of Data Visualization*](UEPWORKSHOP_Static/Aus-athletes-good-1.png)
+
+## Getting a clearer view
+
+Large datasets pose challenges for representing their structure in two dimensions.
+
+![atlassian.com/data/charts/what-is-a-scatter-plot](UEPWORKSHOP_Static/scatter1.png)
+
+## Getting a clearer view
+
+Consider ways to illustrate frequency across the dataset
+
+![atlassian.com/data/charts/what-is-a-scatter-plot](UEPWORKSHOP_Static/scatter2.png){fig-align="center"}
+
+## Drawing the eye to the headline
+
+![Knaflic, Cole Nussbaumer. 2019. *Storytelling with Data*. New York: Wiley.](UEPWORKSHOP_Static/eyeCatch2.jpg){fig-align="center"}
+
+## Drawing the eye to the headline
+
+![Knaflic, Cole Nussbaumer. 2019. *Storytelling with Data*. New York: Wiley.](UEPWORKSHOP_Static/eyeCatch1.jpg){fig-align="center"}
+
+## Avoid being deliberately misleading
+
+Changing the aspect ratio of the graphing space can give the impression that a patterns is more or less dramatic than it s.
+
+![https://eagereyes.org/blog/2013/banking-45-degrees](https://media.eagereyes.org/wp-content/uploads/2013/06/aspect-ratios.png)
+
+## Avoid being deliberately misleading
+
+Bar charts are used for comparing amounts; zooming in on the region of interest can exaggerate differences.
+
+![https://eagereyes.org/blog/2013/baselines](https://media.eagereyes.org/wp-content/uploads/2013/04/baseline-bars.png){fig-align="center"}
+
+## Avoid being deliberately misleading
+
+What's wrong here?
+
+![https://infolific.com/technology/internet/seo-lie-factor/](https://infolific.com/images/internet/seo-traffic-columns.gif){fig-align="center"}
+
+## Image file formats
+
+There are two main types of image formats
+
+-   Bitmap (also known as raster)
+
+-   Vector
+
+## Bitmap vs Vector
+
+![Wilke, C. 2019. *Fundamentals of Data Visualization*](Week13LectureStatic/bitmap-zoom-1.png){fig-align="center"}
+
+## Bitmap vs Vector
+
+![](Week13LectureStatic/bitMap2.png){fig-align="center"}
+
+Wilke, C. 2019. *Fundamentals of Data Visualization*
+
+## Bitmap vs Vector
+
+::: columns
+::: {.column width="50%"}
+**Bitmap**
+
+-   Sharpness depends on resolution and size
+
+-   Consistent appearance across platforms
+
+-   Best for complex images (photos, large numbers of elements)
+:::
+
+::: {.column width="50%"}
+**Vector**
+
+-   Sharpness is scale-independent
+
+-   Can look differently using different programs
+
+-   Best for simple images (line drawings, simple graphs)
+:::
+:::
+
+## Image file formats
+
+| File Extension | Type   | Use For                |
+|----------------|--------|------------------------|
+| .jpg           | Bitmap | Photos                 |
+| .png           | Bitmap | Line Drawings          |
+| .tif           | Bitmap | Print                  |
+| .svg           | Vector | Line drawings (online) |
+| .pdf           | Vector | General purpose        |
+
+## The big picture
+
+::: incremental
+-   Visualization is foremost about making data more understandable
+
+-   Guidelines like maximizing data-ink and being deliberate about design help us make decisions that will facilitate this goal
+
+-   Being conscientious about your audience and your medium will help make your graphic useful to more people
+:::
+
+## Helpful resources
+
+::: columns
+::: {.column width="50%"}
+![https://clauswilke.com/dataviz/](UEPWORKSHOP_Static/wilke.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![https://www.storytellingwithdata.com/](UEPWORKSHOP_Static/storytellingWithData.jpg){fig-align="center"}
+:::
+:::
+
+## Additional tools
+
+-   For choosing the right chart, try [Chart Doctor's Visual Vocabulary](https://github.com/Financial-Times/chart-doctor/blob/main/visual-vocabulary/Visual-vocabulary-en.pdf)
+
+-   For evaluating color palettes, try [ColorBrewer](https://colorbrewer2.org)
+
+-   For assessing color accessibility in existing graphs, try [Color Oracle](https://www.colororacle.org)
+
+## Want to learn more?
+
+![](UEPWORKSHOP_Static/Environmental%20Data%20Analysis%20&%20Visualization%20Flyer_v2.png){fig-align="center"}
+
+## Thank you!
+
+## Examples from past field projects
+
+## Example 1
+
+![](UEPWORKSHOP_Static/pieChartStorytellingRedundant.jpg){fig-align="center"}
+
+## Example 2
+
+![](UEPWORKSHOP_Static/noYAxis.jpg){fig-align="center"}
+
+## Example 3
+
+![](UEPWORKSHOP_Static/mapLowContrastSmallPoints.jpg){fig-align="center"}
+
+## Example 4
+
+![](UEPWORKSHOP_Static/pieAntiAlias.jpg){fig-align="center"}
